@@ -756,12 +756,25 @@ def tsdb_tennis_day(day):
 
 
 def load_sackmann(tour, years_back=4):
-    """Historische Matchdaten (Jeff Sackmann, CC BY-NC-SA) fuer Belag-Bilanz & H2H."""
+    """Historische Matchdaten (Jeff Sackmann, CC BY-NC-SA) fuer Belag-Bilanz & H2H.
+
+    Bevorzugt lokal geklonte Repos (siehe Workflow-Schritt), sonst HTTP-Fallback."""
     rows = []
+    base_dir = os.environ.get(f"SACKMANN_DIR_{tour.upper()}", f"/tmp/tennis_{tour}")
     for y in range(NOW.year - years_back, NOW.year + 1):
-        url = (f"https://raw.githubusercontent.com/JeffSackmann/tennis_{tour}/"
-               f"master/{tour}_matches_{y}.csv")
-        raw = http_get(url, as_json=False, retries=2)
+        fname = f"{tour}_matches_{y}.csv"
+        raw = None
+        path = os.path.join(base_dir, fname)
+        if os.path.exists(path):
+            try:
+                with open(path, encoding="utf-8", errors="replace") as f:
+                    raw = f.read()
+            except OSError:
+                raw = None
+        if raw is None:
+            url = (f"https://raw.githubusercontent.com/JeffSackmann/tennis_{tour}/"
+                   f"master/{fname}")
+            raw = http_get(url, as_json=False, retries=2)
         if not raw:
             continue
         try:

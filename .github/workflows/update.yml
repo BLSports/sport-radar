@@ -23,6 +23,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Tennis-Historie laden (Sackmann, CC BY-NC-SA)
+        run: |
+          for repo in tennis_atp tennis_wta; do
+            git clone --depth 1 --filter=blob:none --sparse \
+              "https://github.com/JeffSackmann/${repo}.git" "/tmp/${repo}" || true
+            if [ -d "/tmp/${repo}" ]; then
+              (cd "/tmp/${repo}" && git sparse-checkout set --no-cone "*matches_20*.csv" \
+               && ls *matches_20*.csv | tail -3) || true
+            fi
+          done
+
       - name: Daten holen & Vorhersagen berechnen
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}   # optional
