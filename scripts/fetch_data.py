@@ -337,6 +337,7 @@ def upcoming_openligadb(shortcut, year):
 
 def upcoming_espn(slug):
     upcoming = []
+    seen = set()
     for i in range(DAYS_AHEAD):
         d = TODAY + timedelta(days=i)
         data = http_get(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard?dates={d:%Y%m%d}")
@@ -351,6 +352,12 @@ def upcoming_espn(slug):
                 dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(TZ)
                 home = next(c for c in comp["competitors"] if c["homeAway"] == "home")
                 away = next(c for c in comp["competitors"] if c["homeAway"] == "away")
+                k = (home["team"]["displayName"], away["team"]["displayName"], dt.date().isoformat())
+                if k in seen:
+                    continue
+                seen.add(k)
+                if not (TODAY <= dt.date() <= TODAY + timedelta(days=DAYS_AHEAD - 1)):
+                    continue
                 upcoming.append({
                     "dt": dt,
                     "home": home["team"]["displayName"], "away": away["team"]["displayName"],
@@ -659,7 +666,18 @@ def espn_tennis_day(tour, day):
         comps = []
         for g in groupings:
             gname = (g.get("grouping") or {}).get("displayName", "")
-            if "doubles" in gname.lower():
+            gl = gname.lower()
+            if "doubles" in gl:
+                continue
+            # Kombinierte Turniere: der WTA-Feed enthaelt teils auch Herren-Matches
+            # (und umgekehrt). Nur die zum Tour-Kontext passenden Singles uebernehmen.
+            if "women" in gl:
+                gender = "W"
+            elif "men" in gl:
+                gender = "M"
+            else:
+                gender = None
+            if (tour == "atp" and gender == "W") or (tour == "wta" and gender == "M"):
                 continue
             comps.extend([(c, gname) for c in g.get("competitions", [])])
         if not groupings:
@@ -675,12 +693,19 @@ def espn_tennis_day(tour, day):
                 players = []
                 for c in comp.get("competitors", []):
                     ath = c.get("athlete", {}) or {}
+                    cr = c.get("curatedRank")
+                    cr_val = cr.get("current") if isinstance(cr, dict) else None
+                    if not isinstance(cr_val, int) or not (1 <= cr_val <= 1500):
+                        cr_val = None
                     players.append({
                         "name": ath.get("displayName") or ath.get("shortName") or "?",
                         "id": str(ath.get("id", "")),
-                        "seed": c.get("curatedRank", {}).get("current") if isinstance(c.get("curatedRank"), dict) else None,
+                        "seed": cr_val,
                     })
                 if len(players) != 2:
+                    continue
+                # Platzhalter (Gegner noch offen) ueberspringen
+                if any(p["name"].strip().upper() in ("TBD", "?", "") for p in players):
                     continue
                 matches.append({
                     "dt": dt, "tour": tour.upper(), "tournament": tour_name,
@@ -850,6 +875,16 @@ def main():
     rank_atp_id, rank_atp_nm = espn_rankings("atp")
     rank_wta_id, rank_wta_nm = espn_rankings("wta")
     print(f"  Rankings: ATP {len(rank_atp_id) or len(rank_atp_nm)}, WTA {len(rank_wta_id) or len(rank_wta_nm)}")
+    out["meta"]["rankCounts"] = {"atp": len(rank_atp_id), "wta": len(rank_wta_id)}
+
+    ROUND_DE = {
+        "round 1": "1. Runde", "round 2": "2. Runde", "round 3": "3. Runde",
+        "round 4": "4. Runde", "round of 128": "1. Runde", "round of 64": "2. Runde",
+        "round of 32": "Runde der 32", "round of 16": "Achtelfinale",
+        "quarterfinal": "Viertelfinale", "quarterfinals": "Viertelfinale",
+        "semifinal": "Halbfinale", "semifinals": "Halbfinale",
+        "final": "Finale", "finals": "Finale",
+    }
 
     seen = set()
     tennis_out = []
@@ -866,20 +901,24 @@ def main():
             if m["tour"] not in espn_tours_today:
                 day_matches.append(m)
         for m in day_matches:
-            key = (m["tour"], norm_team(m["p1"]["name"]), norm_team(m["p2"]["name"]), m["dt"].date().isoformat())
-            key_rev = (m["tour"], key[2], key[1], key[3])
+            # Dedupe OHNE Tour: kombinierte Turniere tauchen in beiden Feeds auf
+            key = (norm_team(m["p1"]["name"]), norm_team(m["p2"]["name"]), m["dt"].date().isoformat())
+            key_rev = (key[1], key[0], key[2])
             if key in seen or key_rev in seen:
                 continue
             seen.add(key)
             by_id = rank_atp_id if m["tour"] == "ATP" else rank_wta_id
             by_nm = rank_atp_nm if m["tour"] == "ATP" else rank_wta_nm
-            r1 = by_id.get(m["p1"]["id"]) or by_nm.get(norm_team(m["p1"]["name"]))
-            r2 = by_id.get(m["p2"]["id"]) or by_nm.get(norm_team(m["p2"]["name"]))
+            # Ranking: Weltrangliste, sonst curatedRank direkt vom Match
+            r1 = by_id.get(m["p1"]["id"]) or by_nm.get(norm_team(m["p1"]["name"])) or m["p1"].get("seed")
+            r2 = by_id.get(m["p2"]["id"]) or by_nm.get(norm_team(m["p2"]["name"])) or m["p2"].get("seed")
             p1win = tennis_predict(r1, r2)
+            rnd = (m.get("round") or "").strip()
+            rnd = ROUND_DE.get(rnd.lower(), rnd)
             tennis_out.append({
                 "start": m["dt"].isoformat(),
                 "tour": m["tour"], "tournament": m["tournament"],
-                "round": m.get("round") or "",
+                "round": rnd,
                 "p1": {"name": m["p1"]["name"], "rank": r1},
                 "p2": {"name": m["p2"]["name"], "rank": r2},
                 "pP1": p1win,
