@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T10:03:02.707356+02:00",
+ "generatedAt": "2026-07-15T10:06:27.884852+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-15",
@@ -107,13 +107,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Lorenzo Sonego",
-    "rank": null
+    "rank": 83
    },
    "p2": {
     "name": "Raphael Collignon",
-    "rank": 7
+    "rank": 42
    },
-   "pP1": 0.0457,
+   "pP1": 0.3592,
    "unconfirmed": false
   },
   {
@@ -143,9 +143,9 @@
    },
    "p2": {
     "name": "Lola Radivojevic",
-    "rank": 5
+    "rank": null
    },
-   "pP1": 0.0347,
+   "pP1": null,
    "unconfirmed": false
   },
   {
@@ -155,13 +155,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Adolfo Daniel Vallejo",
-    "rank": null
+    "rank": 71
    },
    "p2": {
     "name": "Botic Van De Zandschulp",
-    "rank": 6
+    "rank": 55
    },
-   "pP1": 0.0403,
+   "pP1": 0.446,
    "unconfirmed": false
   },
   {
@@ -175,9 +175,9 @@
    },
    "p2": {
     "name": "Julia Grabher",
-    "rank": 4
+    "rank": 116
    },
-   "pP1": 0.0289,
+   "pP1": 0.3424,
    "unconfirmed": false
   },
   {
@@ -191,9 +191,9 @@
    },
    "p2": {
     "name": "Arthur Rinderknech",
-    "rank": 4
+    "rank": 28
    },
-   "pP1": 0.0289,
+   "pP1": 0.1346,
    "unconfirmed": false
   },
   {
@@ -203,13 +203,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Grigor Dimitrov",
-    "rank": null
+    "rank": 146
    },
    "p2": {
     "name": "Nuno Borges",
-    "rank": 5
+    "rank": 52
    },
-   "pP1": 0.0347,
+   "pP1": 0.2937,
    "unconfirmed": false
   },
   {
@@ -219,13 +219,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Alina Charaeva",
-    "rank": null
+    "rank": 118
    },
    "p2": {
     "name": "Yulia Putintseva",
-    "rank": 9
+    "rank": 82
    },
-   "pP1": 0.056,
+   "pP1": 0.4233,
    "unconfirmed": false
   },
   {
@@ -239,9 +239,9 @@
    },
    "p2": {
     "name": "Veronika Erjavec",
-    "rank": 1
+    "rank": 105
    },
-   "pP1": 0.0091,
+   "pP1": 0.3236,
    "unconfirmed": false
   },
   {
@@ -255,9 +255,9 @@
    },
    "p2": {
     "name": "Hanne Vandewinkel",
-    "rank": 3
+    "rank": 98
    },
-   "pP1": 0.0228,
+   "pP1": 0.3109,
    "unconfirmed": false
   },
   {
@@ -283,13 +283,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Mariano Navone",
-    "rank": 4
+    "rank": 48
    },
    "p2": {
     "name": "Stefano Travaglia",
-    "rank": null
+    "rank": 150
    },
-   "pP1": 0.9711,
+   "pP1": 0.7248,
    "unconfirmed": false
   },
   {
@@ -299,13 +299,13 @@
    "round": "1. Runde",
    "p1": {
     "name": "Elsa Jacquemot",
-    "rank": 8
+    "rank": 107
    },
    "p2": {
     "name": "Ilinca Amariei",
     "rank": null
    },
-   "pP1": 0.9491,
+   "pP1": 0.6729,
    "unconfirmed": false
   },
   {
@@ -347,13 +347,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Lanlana Tararudee",
-    "rank": 2
+    "rank": 91
    },
    "p2": {
     "name": "Gabriela Knutson",
     "rank": null
    },
-   "pP1": 0.9838,
+   "pP1": 0.7025,
    "unconfirmed": false
   },
   {
@@ -363,13 +363,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Valentin Vacherot",
-    "rank": 3
+    "rank": 21
    },
    "p2": {
     "name": "Yannick Hanfmann",
-    "rank": null
+    "rank": 51
    },
-   "pP1": 0.9772,
+   "pP1": 0.6801,
    "unconfirmed": false
   },
   {
@@ -379,13 +379,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Luciano Darderi",
-    "rank": 2
+    "rank": 18
    },
    "p2": {
     "name": "Daniel Altmaier",
-    "rank": null
+    "rank": 60
    },
-   "pP1": 0.9838,
+   "pP1": 0.7356,
    "unconfirmed": false
   },
   {
@@ -395,13 +395,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Tamara Zidansek",
-    "rank": null
+    "rank": 148
    },
    "p2": {
     "name": "Anna Bondar",
-    "rank": 7
+    "rank": 73
    },
-   "pP1": 0.0457,
+   "pP1": 0.3542,
    "unconfirmed": false
   },
   {
@@ -427,13 +427,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Damir Dzumhur",
-    "rank": null
+    "rank": 108
    },
    "p2": {
     "name": "Juan Carlos Prado Angelo",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.6712,
    "unconfirmed": false
   },
   {
@@ -443,13 +443,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Daniel Merida",
-    "rank": null
+    "rank": 82
    },
    "p2": {
     "name": "Tomas Martin Etcheverry",
-    "rank": 3
+    "rank": 30
    },
-   "pP1": 0.0228,
+   "pP1": 0.2984,
    "unconfirmed": false
   },
   {
@@ -459,13 +459,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Matteo Arnaldi",
-    "rank": 4
+    "rank": 34
    },
    "p2": {
     "name": "Federico Agustin Gomez",
     "rank": null
    },
-   "pP1": 0.9711,
+   "pP1": 0.845,
    "unconfirmed": false
   },
   {
@@ -479,9 +479,9 @@
    },
    "p2": {
     "name": "Francesca Jones",
-    "rank": 3
+    "rank": 123
    },
-   "pP1": 0.0228,
+   "pP1": 0.3537,
    "unconfirmed": false
   },
   {
@@ -491,13 +491,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Noma Noha Akugue",
-    "rank": 6
+    "rank": 149
    },
    "p2": {
     "name": "Darya Astakhova",
     "rank": null
    },
-   "pP1": 0.9597,
+   "pP1": 0.6082,
    "unconfirmed": false
   },
   {
@@ -507,13 +507,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Zheng Qinwen",
-    "rank": null
+    "rank": 135
    },
    "p2": {
     "name": "Elena Micic",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.628,
    "unconfirmed": false
   },
   {
@@ -523,13 +523,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Stefanos Tsitsipas",
-    "rank": null
+    "rank": 85
    },
    "p2": {
     "name": "Jerome Kym",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.7144,
    "unconfirmed": false
   },
   {
@@ -539,13 +539,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Camilo Ugo Carabelli",
-    "rank": 7
+    "rank": 58
    },
    "p2": {
     "name": "Pablo Carreno Busta",
-    "rank": null
+    "rank": 65
    },
-   "pP1": 0.9543,
+   "pP1": 0.5242,
    "unconfirmed": false
   },
   {
@@ -555,13 +555,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Roman Andres Burruchaga",
-    "rank": null
+    "rank": 67
    },
    "p2": {
     "name": "Flavio Cobolli",
-    "rank": 1
+    "rank": 9
    },
-   "pP1": 0.0091,
+   "pP1": 0.1536,
    "unconfirmed": false
   },
   {
@@ -571,13 +571,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Alejandro Davidovich Fokina",
-    "rank": 2
+    "rank": 20
    },
    "p2": {
     "name": "Marco Trungelliti",
-    "rank": null
+    "rank": 99
    },
-   "pP1": 0.9838,
+   "pP1": 0.7957,
    "unconfirmed": false
   },
   {
@@ -587,13 +587,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Petra Marcinko",
-    "rank": 2
+    "rank": 45
    },
    "p2": {
     "name": "Elina Avanesyan",
     "rank": null
    },
-   "pP1": 0.9838,
+   "pP1": 0.8112,
    "unconfirmed": false
   },
   {
@@ -603,13 +603,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Maria Sakkari",
-    "rank": 4
+    "rank": 37
    },
    "p2": {
     "name": "Harriet Dart",
     "rank": null
    },
-   "pP1": 0.9711,
+   "pP1": 0.8353,
    "unconfirmed": false
   },
   {
@@ -619,13 +619,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Titouan Droguet",
-    "rank": null
+    "rank": 119
    },
    "p2": {
     "name": "Luca Van Assche",
-    "rank": null
+    "rank": 86
    },
-   "pP1": null,
+   "pP1": 0.4314,
    "unconfirmed": false
   },
   {
@@ -635,13 +635,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Alycia Parks",
-    "rank": null
+    "rank": 70
    },
    "p2": {
     "name": "Mai Hontama",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.7469,
    "unconfirmed": false
   },
   {
@@ -651,13 +651,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Sara Bejlek",
-    "rank": 5
+    "rank": 42
    },
    "p2": {
     "name": "Lilli Tagger",
-    "rank": null
+    "rank": 84
    },
-   "pP1": 0.9653,
+   "pP1": 0.6432,
    "unconfirmed": false
   },
   {
@@ -667,13 +667,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Alex Molcan",
-    "rank": null
+    "rank": 101
    },
    "p2": {
     "name": "Dino Prizmic",
-    "rank": null
+    "rank": 84
    },
-   "pP1": null,
+   "pP1": 0.4609,
    "unconfirmed": false
   },
   {
@@ -687,9 +687,9 @@
    },
    "p2": {
     "name": "Alejandro Tabilo",
-    "rank": 3
+    "rank": 31
    },
-   "pP1": 0.0228,
+   "pP1": 0.145,
    "unconfirmed": false
   },
   {
@@ -699,13 +699,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Thiago Agustin Tirante",
-    "rank": 7
+    "rank": 61
    },
    "p2": {
     "name": "Nikoloz Basilashvili",
-    "rank": null
+    "rank": 135
    },
-   "pP1": 0.9543,
+   "pP1": 0.6627,
    "unconfirmed": false
   },
   {
@@ -715,13 +715,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Andrea Pellegrino",
-    "rank": null
+    "rank": 138
    },
    "p2": {
     "name": "Andrey Rublev",
-    "rank": 1
+    "rank": 16
    },
-   "pP1": 0.0091,
+   "pP1": 0.1381,
    "unconfirmed": false
   },
   {
@@ -731,13 +731,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Sebastian Baez",
-    "rank": 8
+    "rank": 56
    },
    "p2": {
     "name": "Jesper de Jong",
-    "rank": null
+    "rank": 73
    },
-   "pP1": 0.9491,
+   "pP1": 0.5561,
    "unconfirmed": false
   },
   {
@@ -751,9 +751,9 @@
    },
    "p2": {
     "name": "Aleksandr Shevchenko",
-    "rank": null
+    "rank": 100
    },
-   "pP1": null,
+   "pP1": 0.3146,
    "unconfirmed": false
   },
   {
@@ -763,13 +763,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Miomir Kecmanovic",
-    "rank": null
+    "rank": 59
    },
    "p2": {
     "name": "Juan Manuel Cerundolo",
-    "rank": 6
+    "rank": 45
    },
-   "pP1": 0.0403,
+   "pP1": 0.4427,
    "unconfirmed": false
   },
   {
@@ -779,13 +779,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Casper Ruud",
-    "rank": 2
+    "rank": 13
    },
    "p2": {
     "name": "Jaime Faria",
-    "rank": null
+    "rank": 92
    },
-   "pP1": 0.9838,
+   "pP1": 0.8407,
    "unconfirmed": false
   },
   {
@@ -795,13 +795,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Quentin Halys",
-    "rank": null
+    "rank": 90
    },
    "p2": {
     "name": "Alexander Bublik",
-    "rank": 1
+    "rank": 11
    },
-   "pP1": 0.0091,
+   "pP1": 0.1435,
    "unconfirmed": false
   },
   {
@@ -811,13 +811,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Ann Li",
-    "rank": 2
+    "rank": 31
    },
    "p2": {
     "name": "Alina Korneeva",
-    "rank": null
+    "rank": 90
    },
-   "pP1": 0.9838,
+   "pP1": 0.7122,
    "unconfirmed": false
   },
   {
@@ -831,9 +831,9 @@
    },
    "p2": {
     "name": "Clara Tauson",
-    "rank": 1
+    "rank": 30
    },
-   "pP1": 0.0091,
+   "pP1": 0.1416,
    "unconfirmed": false
   },
   {
@@ -847,9 +847,9 @@
    },
    "p2": {
     "name": "Barbora Krejcikova",
-    "rank": 3
+    "rank": 32
    },
-   "pP1": 0.0228,
+   "pP1": 0.1484,
    "unconfirmed": false
   },
   {
@@ -859,13 +859,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Aliaksandra Sasnovich",
-    "rank": null
+    "rank": 143
    },
    "p2": {
     "name": "Tereza Valentova",
-    "rank": 7
+    "rank": 49
    },
-   "pP1": 0.0457,
+   "pP1": 0.2869,
    "unconfirmed": false
   },
   {
@@ -875,13 +875,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Katarzyna Kawa",
-    "rank": null
+    "rank": 142
    },
    "p2": {
     "name": "Panna Udvardy",
-    "rank": 5
+    "rank": 71
    },
-   "pP1": 0.0347,
+   "pP1": 0.3568,
    "unconfirmed": false
   },
   {
@@ -891,13 +891,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Paula Badosa",
-    "rank": null
+    "rank": 115
    },
    "p2": {
     "name": "Alevtina Ibragimova",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.6593,
    "unconfirmed": false
   },
   {
@@ -907,13 +907,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Kaitlin Quevedo",
-    "rank": null
+    "rank": 100
    },
    "p2": {
     "name": "Mayar Sherif",
-    "rank": null
+    "rank": 97
    },
-   "pP1": null,
+   "pP1": 0.4935,
    "unconfirmed": false
   },
   {
@@ -927,9 +927,9 @@
    },
    "p2": {
     "name": "Oleksandra Oliynykova",
-    "rank": 3
+    "rank": 52
    },
-   "pP1": 0.0228,
+   "pP1": 0.2084,
    "unconfirmed": false
   },
   {
@@ -959,9 +959,9 @@
    },
    "p2": {
     "name": "Nuria Brancaccio",
-    "rank": 7
+    "rank": null
    },
-   "pP1": 0.0457,
+   "pP1": null,
    "unconfirmed": false
   },
   {
@@ -971,13 +971,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Lucia Bronzetti",
-    "rank": 4
+    "rank": 139
    },
    "p2": {
     "name": "Teodora Kostovic",
     "rank": null
    },
-   "pP1": 0.9711,
+   "pP1": 0.6222,
    "unconfirmed": false
   },
   {
@@ -1019,13 +1019,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Tatiana Prozorova",
-    "rank": 8
+    "rank": null
    },
    "p2": {
     "name": "Daria Khomutsianskaya",
     "rank": null
    },
-   "pP1": 0.9491,
+   "pP1": null,
    "unconfirmed": false
   },
   {
@@ -1039,9 +1039,9 @@
    },
    "p2": {
     "name": "Anastasia Zakharova",
-    "rank": 1
+    "rank": 101
    },
-   "pP1": 0.0091,
+   "pP1": 0.3164,
    "unconfirmed": false
   },
   {
@@ -1051,13 +1051,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Laura Samson",
-    "rank": 6
+    "rank": null
    },
    "p2": {
     "name": "Gina Feistel",
     "rank": null
    },
-   "pP1": 0.9597,
+   "pP1": null,
    "unconfirmed": false
   },
   {
@@ -1067,13 +1067,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Sinja Kraus",
-    "rank": 2
+    "rank": 94
    },
    "p2": {
     "name": "Eva Bennemann",
     "rank": null
    },
-   "pP1": 0.9838,
+   "pP1": 0.6967,
    "unconfirmed": false
   },
   {
@@ -1087,9 +1087,9 @@
    },
    "p2": {
     "name": "Marina Bassols Ribera",
-    "rank": 5
+    "rank": 144
    },
-   "pP1": 0.0347,
+   "pP1": 0.3849,
    "unconfirmed": false
   },
   {
@@ -1099,13 +1099,13 @@
    "round": "2. Runde",
    "p1": {
     "name": "Jeline Vandromme",
-    "rank": 7
+    "rank": 129
    },
    "p2": {
     "name": "Polona Hercog",
     "rank": null
    },
-   "pP1": 0.9543,
+   "pP1": 0.637,
    "unconfirmed": false
   }
  ],
@@ -1134,52 +1134,52 @@
    "playerIds": [
     {
      "name": "Adolfo Daniel Vallejo",
-     "id": "",
+     "id": "11396",
      "tour": "ATP"
     },
     {
      "name": "Grigor Dimitrov",
-     "id": "",
+     "id": "1287",
      "tour": "ATP"
     },
     {
      "name": "Mariano Navone",
-     "id": "",
+     "id": "9992",
      "tour": "ATP"
     },
     {
      "name": "Luciano Darderi",
-     "id": "",
+     "id": "7833",
      "tour": "ATP"
     },
     {
      "name": "Lorenzo Sonego",
-     "id": "",
+     "id": "3052",
      "tour": "ATP"
     },
     {
      "name": "Clement Tabur",
-     "id": "",
+     "id": "3512",
      "tour": "ATP"
     },
     {
      "name": "Valentin Vacherot",
-     "id": "",
+     "id": "9376",
      "tour": "ATP"
     },
     {
      "name": "Stefanos Tsitsipas",
-     "id": "",
+     "id": "2869",
      "tour": "ATP"
     },
     {
      "name": "Damir Dzumhur",
-     "id": "",
+     "id": "1842",
      "tour": "ATP"
     },
     {
      "name": "Daniel Merida",
-     "id": "",
+     "id": "10239",
      "tour": "ATP"
     }
    ]
