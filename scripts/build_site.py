@@ -259,6 +259,8 @@ def build(data_path=None, out_path=None):
         if lg["matches"]:
             continue
         nm = lg.get("nextMatch")
+        if lg.get("isCup") and not nm:
+            continue  # Pokale ohne Termin (z.B. EM bis zur Quali) nicht listen
         if nm:
             md = f' ({nm["matchday"]}. Spieltag)' if nm.get("matchday") else ""
             pause_rows.append(

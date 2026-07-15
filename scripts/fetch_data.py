@@ -175,6 +175,17 @@ def team_match(a, b):
 # ----------------------------------------------------------------------------
 
 LEAGUES = [
+    # Internationale Wettbewerbe (Pokal-Modus: keine Tabellenplaetze)
+    {"id": "wm", "name": "WM", "country": "INT", "flag": "\U0001F30D",
+     "source": "espn", "espn": "fifa.world", "fdcuk": None, "cup": True},
+    {"id": "em", "name": "EM", "country": "INT", "flag": "\U0001F1EA\U0001F1FA",
+     "source": "espn", "espn": "uefa.euro", "fdcuk": None, "cup": True},
+    {"id": "cl", "name": "Champions League", "country": "INT", "flag": "\U0001F3C6",
+     "source": "espn", "espn": "uefa.champions", "fdcuk": None, "cup": True},
+    {"id": "el", "name": "Europa League", "country": "INT", "flag": "\U0001F3C5",
+     "source": "espn", "espn": "uefa.europa", "fdcuk": None, "cup": True},
+    {"id": "ecl", "name": "Conference League", "country": "INT", "flag": "\U0001F396",
+     "source": "espn", "espn": "uefa.europa.conf", "fdcuk": None, "cup": True},
     {"id": "bl1", "name": "1. Bundesliga", "country": "DE", "flag": "\U0001F1E9\U0001F1EA",
      "source": "openligadb", "oldb": "bl1", "fdcuk": "D1"},
     {"id": "bl2", "name": "2. Bundesliga", "country": "DE", "flag": "\U0001F1E9\U0001F1EA",
@@ -189,6 +200,18 @@ LEAGUES = [
      "source": "espn", "espn": "esp.1", "fdcuk": "SP1"},
     {"id": "ll2", "name": "La Liga 2", "country": "ES", "flag": "\U0001F1EA\U0001F1F8",
      "source": "espn", "espn": "esp.2", "fdcuk": "SP2"},
+    {"id": "fr1", "name": "Ligue 1", "country": "FR", "flag": "\U0001F1EB\U0001F1F7",
+     "source": "espn", "espn": "fra.1", "fdcuk": "F1"},
+    {"id": "fr2", "name": "Ligue 2", "country": "FR", "flag": "\U0001F1EB\U0001F1F7",
+     "source": "espn", "espn": "fra.2", "fdcuk": "F2"},
+    {"id": "nl1", "name": "Eredivisie", "country": "NL", "flag": "\U0001F1F3\U0001F1F1",
+     "source": "espn", "espn": "ned.1", "fdcuk": "N1"},
+    {"id": "nl2", "name": "Eerste Divisie", "country": "NL", "flag": "\U0001F1F3\U0001F1F1",
+     "source": "espn", "espn": "ned.2", "fdcuk": None},
+    {"id": "be1", "name": "Pro League (Belgien)", "country": "BE", "flag": "\U0001F1E7\U0001F1EA",
+     "source": "espn", "espn": "bel.1", "fdcuk": "B1"},
+    {"id": "be2", "name": "Challenger Pro League (Belgien)", "country": "BE", "flag": "\U0001F1E7\U0001F1EA",
+     "source": "espn", "espn": "bel.2", "fdcuk": None},
 ]
 
 
@@ -633,6 +656,15 @@ ODDS_API_SPORT_KEYS = {
     "sa": "soccer_italy_serie_a",
     "ll1": "soccer_spain_la_liga",
     "ll2": "soccer_spain_segunda_division",
+    "fr1": "soccer_france_ligue_one",
+    "fr2": "soccer_france_ligue_two",
+    "nl1": "soccer_netherlands_eredivisie",
+    "be1": "soccer_belgium_pro_league",
+    "cl": "soccer_uefa_champs_league",
+    "el": "soccer_uefa_europa_league",
+    "ecl": "soccer_uefa_europa_conference_league",
+    "wm": "soccer_fifa_world_cup",
+    "em": "soccer_uefa_european_championship",
 }
 
 
@@ -1207,7 +1239,11 @@ def main():
         print(f"  {len(results)} Ergebnisse geladen")
 
         strengths, league_avg, home_adv = build_strengths(results)
-        table, n_teams = compute_table(results, season_start)
+        if lg.get("cup"):
+            # Pokale/Turniere: Tabellenplaetze ergeben keinen Sinn
+            table, n_teams = {}, 0
+        else:
+            table, n_teams = compute_table(results, season_start)
         season_results = [r for r in results if r["date"] >= season_start]
 
         # 2) Kommende Spiele
@@ -1287,6 +1323,7 @@ def main():
             "id": lg["id"], "name": lg["name"], "flag": lg["flag"],
             "matches": matches_out,
             "seasonHasStarted": len(season_results) > 0,
+            "isCup": bool(lg.get("cup")),
         }
         if not matches_out and first_future:
             league_out["nextMatch"] = {
