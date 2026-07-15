@@ -185,7 +185,8 @@ def tennis_card(m):
         rows = "".join(
             f'<tr><td>{esc(x["year"])}</td><td>{esc(x["tourney"])} ({esc(x["surface"])})</td>'
             f'<td>{esc(x["winner"])}</td><td class="num">{esc(x["score"])}</td></tr>' for x in m["h2h"])
-        h2h_html = (f'<details class="h2h"><summary>Letzte {len(m["h2h"])} direkte Duelle</summary>'
+        label = "Direktes Duell" if len(m["h2h"]) == 1 else f'Letzte {len(m["h2h"])} direkte Duelle'
+        h2h_html = (f'<details class="h2h"><summary>{label}</summary>'
                     f'<table>{rows}</table></details>')
     analysis_html = f'<p class="analysis">{esc(m["analysis"])}</p>' if m.get("analysis") else ""
     return f"""

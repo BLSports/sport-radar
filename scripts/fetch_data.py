@@ -1002,8 +1002,14 @@ def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h):
         b1 = s1.get("bilanz")
         b2 = s2.get("bilanz")
         if b1 and b2:
-            parts.append(f"Auf {surf_de} gewann {p1} zuletzt {round(b1['pct']*100)} % "
-                         f"seiner/ihrer Matches ({b1['w']}:{b1['l']}), {p2} kommt auf "
+            parts.append(f"Auf {surf_de} liegt die Siegquote von {p1} zuletzt bei "
+                         f"{round(b1['pct']*100)} % ({b1['w']}:{b1['l']}), {p2} kommt auf "
+                         f"{round(b2['pct']*100)} % ({b2['w']}:{b2['l']}).")
+        elif b1:
+            parts.append(f"Auf {surf_de} liegt die Siegquote von {p1} zuletzt bei "
+                         f"{round(b1['pct']*100)} % ({b1['w']}:{b1['l']}).")
+        elif b2:
+            parts.append(f"Auf {surf_de} liegt die Siegquote von {p2} zuletzt bei "
                          f"{round(b2['pct']*100)} % ({b2['w']}:{b2['l']}).")
         if s1.get("fav") and s1["fav"] != surf_de:
             parts.append(f"{p1}s stärkster Belag ist eigentlich {s1['fav']}.")
@@ -1013,14 +1019,19 @@ def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h):
         w1 = sum(1 for m in h2h if m.get("winnerIsP1"))
         w2 = len(h2h) - w1
         last = h2h[0]
-        if w1 or w2:
+        if len(h2h) == 1:
+            score = f" mit {last['score']}" if last.get("score") else ""
+            parts.append(f"Das bisher einzige Duell ({last['year']}, {last['tourney']}) "
+                         f"gewann {last['winner']}{score}.")
+        else:
             leader = p1 if w1 > w2 else p2
             if w1 == w2:
                 parts.append(f"Der direkte Vergleich der letzten {len(h2h)} Duelle ist mit {w1}:{w2} ausgeglichen.")
             else:
                 parts.append(f"Den direkten Vergleich führt {leader} mit {max(w1,w2)}:{min(w1,w2)} "
                              f"aus den letzten {len(h2h)} Duellen an.")
-            parts.append(f"Zuletzt ({last['year']}, {last['tourney']}) gewann {last['winner']} mit {last['score']}.")
+            if last.get("score"):
+                parts.append(f"Zuletzt ({last['year']}, {last['tourney']}) gewann {last['winner']} mit {last['score']}.")
     else:
         parts.append("Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell.")
     if p1win is not None:
@@ -1296,27 +1307,41 @@ def main():
     sack = {"ATP": load_sackmann("atp"), "WTA": load_sackmann("wta")}
     print(f"  Historie: ATP {len(sack['ATP'])} Matches, WTA {len(sack['WTA'])} Matches")
     out["meta"]["sackCounts"] = {"atp": len(sack["ATP"]), "wta": len(sack["WTA"])}
-    # Turnier -> Belag: Zuordnung ueber Ort UND Turniernamen (neueste gewinnen)
-    surf_map = {}
+    # Turnier -> Belag: Orte und Turniernamen getrennt (neueste Eintraege gewinnen,
+    # da Zeilen chronologisch eingelesen werden)
+    loc_map, name_map = {}, {}
     for tour_key, rows in sack.items():
-        smap = {}
+        lm, nm2 = {}, {}
         for r in rows:
-            for key_src in (r.get("loc", ""), r["tourney"]):
-                k = norm_player(key_src)
-                if k and r["surface"]:
-                    smap[k] = r["surface"]
-        surf_map[tour_key] = smap
+            if not r["surface"]:
+                continue
+            lk = norm_player(r.get("loc", ""))
+            nk = norm_player(r["tourney"])
+            if lk:
+                lm[lk] = r["surface"]
+            if nk:
+                nm2[nk] = r["surface"]
+        loc_map[tour_key] = lm
+        name_map[tour_key] = nm2
 
     def tournament_surface(tour_key, name):
         t = norm_player(name)
-        # beide Touren durchsuchen (kombinierte Turniere)
-        for tk in (tour_key, "ATP" if tour_key == "WTA" else "WTA"):
-            smap = surf_map.get(tk, {})
-            if t in smap:
-                return smap[t]
-            for tn, surf in smap.items():
-                if len(tn) >= 4 and (tn in t or t in tn):
-                    return surf
+        tours = (tour_key, "ATP" if tour_key == "WTA" else "WTA")
+        # 1) Ort als ganzes Wort im ESPN-Turniernamen (z.B. "gstaad", "umag")
+        for tk in tours:
+            hits = [(loc, surf) for loc, surf in loc_map.get(tk, {}).items()
+                    if len(loc) >= 4 and re.search(rf"(?<![a-z]){re.escape(loc)}(?![a-z])", t)]
+            if hits:
+                return max(hits, key=lambda x: len(x[0]))[1]
+        # 2) Turniername exakt oder als Teilstring (laengster Treffer)
+        for tk in tours:
+            nm2 = name_map.get(tk, {})
+            if t in nm2:
+                return nm2[t]
+            hits = [(tn, surf) for tn, surf in nm2.items()
+                    if len(tn) >= 8 and (tn in t or t in tn)]
+            if hits:
+                return max(hits, key=lambda x: len(x[0]))[1]
         return None
 
     ROUND_DE = {
