@@ -1110,6 +1110,14 @@ def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h):
     return " ".join(parts)
 
 
+def pct_triple(p_h, p_d, p_a):
+    """Rundet drei Wahrscheinlichkeiten so, dass sie exakt 100 ergeben
+    (Differenz wird dem groessten Wert zugeschlagen) - identisch zum Balken."""
+    r = [round(p_h * 100), round(p_d * 100), round(p_a * 100)]
+    r[r.index(max(r))] += 100 - sum(r)
+    return r
+
+
 def football_text(home, away, m):
     """Deterministischer deutscher Analysetext fuer ein Fussballspiel."""
     parts = []
@@ -1117,17 +1125,18 @@ def football_text(home, away, m):
     ph, pa2 = m.get("posHome"), m.get("posAway")
     if pred:
         p_h, p_d, p_a = pred["pHome"], pred["pDraw"], pred["pAway"]
+        rh, rd, ra = pct_triple(p_h, p_d, p_a)
         if p_h >= 0.55:
-            parts.append(f"{home} geht als klarer Favorit ({round(p_h*100)} %) in das Heimspiel gegen {away}.")
+            parts.append(f"{home} geht als klarer Favorit ({rh} %) in das Heimspiel gegen {away}.")
         elif p_a >= 0.55:
-            parts.append(f"{away} reist als klarer Favorit ({round(p_a*100)} %) zu {home}.")
+            parts.append(f"{away} reist als klarer Favorit ({ra} %) zu {home}.")
         elif abs(p_h - p_a) < 0.08:
             parts.append(f"Zwischen {home} und {away} deutet das Modell auf ein Duell auf Augenhöhe hin "
-                         f"({round(p_h*100)} % / {round(p_d*100)} % / {round(p_a*100)} %).")
+                         f"(Sieg {home} {rh} %, Unentschieden {rd} %, Sieg {away} {ra} %).")
         elif p_h > p_a:
-            parts.append(f"{home} ist gegen {away} leicht favorisiert ({round(p_h*100)} % zu {round(p_a*100)} %).")
+            parts.append(f"{home} ist gegen {away} leicht favorisiert ({rh} % zu {ra} %).")
         else:
-            parts.append(f"{away} ist bei {home} leicht favorisiert ({round(p_a*100)} % zu {round(p_h*100)} %).")
+            parts.append(f"{away} ist bei {home} leicht favorisiert ({ra} % zu {rh} %).")
     if ph and pa2:
         parts.append(f"In der Tabelle stehen sich Platz {ph} und Platz {pa2} gegenüber.")
     fh, fa = m.get("formHome") or [], m.get("formAway") or []
