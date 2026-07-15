@@ -31,15 +31,22 @@ jobs:
           {
             mkdir -p /tmp/tennisdata
             Y=$(date +%Y)
+            fetch_zip() {  # $1=Ziel, $2=Pfadteil (z.B. 2024 oder 2024w), $3=Jahr
+              for base in "https://www.tennis-data.co.uk" "http://www.tennis-data.co.uk" "https://tennis-data.co.uk"; do
+                code=$(curl -sL -w "%{http_code}" "${base}/$2/$3.zip" -o "$1") || code=err
+                if [ "${code}" = "200" ] && file "$1" | grep -qi zip; then
+                  echo "$1: OK über ${base} ($(wc -c < "$1") Bytes)"
+                  return 0
+                fi
+              done
+              echo "$1: FEHLGESCHLAGEN (letzter Code ${code}); Antwort-Anfang:"
+              head -c 300 "$1" 2>/dev/null | tr -d '\0'; echo
+              rm -f "$1"
+              return 1
+            }
             for y in $((Y-4)) $((Y-3)) $((Y-2)) $((Y-1)) $Y; do
-              code=$(curl -sL -w "%{http_code}" "http://www.tennis-data.co.uk/${y}/${y}.zip" \
-                -o "/tmp/tennisdata/atp_${y}.zip") || code=err
-              echo "ATP ${y}: HTTP ${code}, $(wc -c < /tmp/tennisdata/atp_${y}.zip 2>/dev/null || echo 0) Bytes"
-              [ "${code}" != "200" ] && rm -f "/tmp/tennisdata/atp_${y}.zip"
-              code=$(curl -sL -w "%{http_code}" "http://www.tennis-data.co.uk/${y}w/${y}.zip" \
-                -o "/tmp/tennisdata/wta_${y}.zip") || code=err
-              echo "WTA ${y}: HTTP ${code}, $(wc -c < /tmp/tennisdata/wta_${y}.zip 2>/dev/null || echo 0) Bytes"
-              [ "${code}" != "200" ] && rm -f "/tmp/tennisdata/wta_${y}.zip"
+              fetch_zip "/tmp/tennisdata/atp_${y}.zip" "${y}" "${y}" || true
+              fetch_zip "/tmp/tennisdata/wta_${y}.zip" "${y}w" "${y}" || true
             done
             ls -la /tmp/tennisdata/ || true
           } 2>&1 | tee /tmp/clone.log
