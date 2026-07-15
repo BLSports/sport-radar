@@ -5,6 +5,8 @@ on:
     # 04:00 UTC = 06:00 Berlin (Sommerzeit) bzw. 05:00 (Winterzeit)
     - cron: "0 4 * * *"
   workflow_dispatch: {}   # manueller Start über den Actions-Tab
+  push:
+    branches: [main]      # läuft auch nach jedem Push (z.B. bei Code-Änderungen)
 
 permissions:
   contents: write
