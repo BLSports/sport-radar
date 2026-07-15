@@ -302,32 +302,70 @@ def _extract_odds_row(row):
 
 
 def load_results_espn(slug, years):
-    """Fallback: ESPN-Scoreboard je Saison abgrasen ist teuer; wir nutzen ESPN nur,
-    wenn football-data.co.uk nichts liefert (z.B. Saisonbeginn)."""
+    """Ergebnisse via ESPN-Scoreboard. ESPN akzeptiert nur begrenzte Zeitraeume,
+    daher Abruf in 90-Tage-Bloecken."""
     results = []
     start = datetime(years[0], 7, 1)
     end = min(NOW.replace(tzinfo=None), datetime(years[-1] + 1, 6, 30))
-    url = (f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
-           f"?dates={start:%Y%m%d}-{end:%Y%m%d}&limit=1000")
-    data = http_get(url)
-    if not data:
-        return results
-    for ev in data.get("events", []):
-        try:
-            comp = ev["competitions"][0]
-            if comp.get("status", {}).get("type", {}).get("completed") is not True:
-                continue
-            dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00"))
-            home = next(c for c in comp["competitors"] if c["homeAway"] == "home")
-            away = next(c for c in comp["competitors"] if c["homeAway"] == "away")
-            results.append({
-                "date": dt,
-                "home": home["team"]["displayName"], "away": away["team"]["displayName"],
-                "hg": int(home.get("score", 0)), "ag": int(away.get("score", 0)),
-            })
-        except Exception:
+    cur = start
+    while cur < end:
+        chunk_end = min(cur + timedelta(days=89), end)
+        url = (f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
+               f"?dates={cur:%Y%m%d}-{chunk_end:%Y%m%d}&limit=1000")
+        data = http_get(url, retries=2)
+        cur = chunk_end + timedelta(days=1)
+        if not data:
             continue
+        for ev in data.get("events", []):
+            try:
+                comp = ev["competitions"][0]
+                if comp.get("status", {}).get("type", {}).get("completed") is not True:
+                    continue
+                dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00"))
+                home = next(c for c in comp["competitors"] if c["homeAway"] == "home")
+                away = next(c for c in comp["competitors"] if c["homeAway"] == "away")
+                results.append({
+                    "date": dt,
+                    "home": home["team"]["displayName"], "away": away["team"]["displayName"],
+                    "hg": int(home.get("score", 0)), "ag": int(away.get("score", 0)),
+                })
+            except Exception:
+                continue
     return results
+
+
+COUNTRY_DE = {
+    "Germany": "Deutschland", "Argentina": "Argentinien", "France": "Frankreich",
+    "Spain": "Spanien", "Italy": "Italien", "Netherlands": "Niederlande",
+    "Belgium": "Belgien", "Brazil": "Brasilien", "Switzerland": "Schweiz",
+    "Austria": "Österreich", "Croatia": "Kroatien", "Denmark": "Dänemark",
+    "Sweden": "Schweden", "Norway": "Norwegen", "Poland": "Polen",
+    "Czechia": "Tschechien", "Czech Republic": "Tschechien",
+    "Türkiye": "Türkei", "Turkey": "Türkei", "Greece": "Griechenland",
+    "Hungary": "Ungarn", "Romania": "Rumänien", "Bulgaria": "Bulgarien",
+    "Serbia": "Serbien", "Slovakia": "Slowakei", "Slovenia": "Slowenien",
+    "Scotland": "Schottland", "Republic of Ireland": "Irland", "Ireland": "Irland",
+    "Northern Ireland": "Nordirland", "Iceland": "Island", "Finland": "Finnland",
+    "United States": "USA", "USA": "USA", "Mexico": "Mexiko", "Canada": "Kanada",
+    "South Korea": "Südkorea", "Korea Republic": "Südkorea", "Japan": "Japan",
+    "Australia": "Australien", "Morocco": "Marokko", "Tunisia": "Tunesien",
+    "Algeria": "Algerien", "Egypt": "Ägypten", "Cameroon": "Kamerun",
+    "Ivory Coast": "Elfenbeinküste", "Côte d'Ivoire": "Elfenbeinküste",
+    "South Africa": "Südafrika", "Saudi Arabia": "Saudi-Arabien", "Qatar": "Katar",
+    "Uzbekistan": "Usbekistan", "Jordan": "Jordanien", "Colombia": "Kolumbien",
+    "Ecuador": "Ecuador", "Bolivia": "Bolivien", "Cape Verde": "Kap Verde",
+    "New Zealand": "Neuseeland", "Albania": "Albanien", "Georgia": "Georgien",
+    "Jamaica": "Jamaika", "Curacao": "Curaçao", "Russia": "Russland",
+    "Ukraine": "Ukraine", "Portugal": "Portugal", "England": "England",
+    "Wales": "Wales", "Uruguay": "Uruguay", "Chile": "Chile", "Peru": "Peru",
+    "Paraguay": "Paraguay", "Venezuela": "Venezuela", "Panama": "Panama",
+    "Costa Rica": "Costa Rica", "Honduras": "Honduras", "Haiti": "Haiti",
+    "Senegal": "Senegal", "Ghana": "Ghana", "Nigeria": "Nigeria", "Iran": "Iran",
+}
+
+
+def de_team(name):
+    return COUNTRY_DE.get(name, name)
 
 
 # ----------------------------------------------------------------------------
@@ -1177,7 +1215,7 @@ def espn_league_scorers(slug, season_year):
                 continue
             result.append({
                 "name": ath.get("displayName", "?"),
-                "team": norm_team((team or {}).get("displayName", "")),
+                "team": (team or {}).get("displayName", ""),
                 "goals": int(ld.get("value") or 0),
             })
         if result:
@@ -1253,6 +1291,18 @@ def main():
             upcoming, first_future = upcoming_espn(lg["espn"])
         print(f"  {len(upcoming)} Spiele in den naechsten {DAYS_AHEAD} Tagen")
 
+        # Nationalteams: deutsche Laendernamen (konsistent in Ergebnissen & Spielen)
+        is_nat = lg["id"] in ("wm", "em")
+        if is_nat:
+            for r in results:
+                r["home"], r["away"] = de_team(r["home"]), de_team(r["away"])
+            for m in upcoming:
+                m["home"], m["away"] = de_team(m["home"]), de_team(m["away"])
+            if first_future:
+                first_future["home"] = de_team(first_future["home"])
+                first_future["away"] = de_team(first_future["away"])
+            strengths, league_avg, home_adv = build_strengths(results)
+
         # 3) Torschuetzen (aktuelle Saison, sonst Vorsaison) - nur wenn Spiele anstehen
         scorers, scorers_period = {}, ""
         if upcoming:
@@ -1269,7 +1319,8 @@ def main():
                     league_sc = espn_league_scorers(lg["espn"], season - 1)
                     scorers_period = "Vorsaison"
                 for s in league_sc:
-                    scorers.setdefault(s["team"], []).append((s["name"], s["goals"]))
+                    tname = de_team(s["team"]) if lg["id"] in ("wm", "em") else s["team"]
+                    scorers.setdefault(norm_team(tname), []).append((s["name"], s["goals"]))
 
         def team_scorers(team):
             key = norm_team(team)
