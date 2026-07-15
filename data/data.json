@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T09:57:44.986653+02:00",
+ "generatedAt": "2026-07-15T10:03:02.707356+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-15",
@@ -1115,6 +1115,74 @@
   "rankCounts": {
    "atp": 150,
    "wta": 150
+  },
+  "debugRank": {
+   "atpSample": {
+    "3623": 1,
+    "2375": 2,
+    "3782": 3,
+    "3209": 4,
+    "2651": 5
+   },
+   "wtaSample": {
+    "3038": 1,
+    "3126": 2,
+    "2113": 3,
+    "3626": 4,
+    "9820": 5
+   },
+   "playerIds": [
+    {
+     "name": "Adolfo Daniel Vallejo",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Grigor Dimitrov",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Mariano Navone",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Luciano Darderi",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Lorenzo Sonego",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Clement Tabur",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Valentin Vacherot",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Stefanos Tsitsipas",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Damir Dzumhur",
+     "id": "",
+     "tour": "ATP"
+    },
+    {
+     "name": "Daniel Merida",
+     "id": "",
+     "tour": "ATP"
+    }
+   ]
   }
  }
 }
