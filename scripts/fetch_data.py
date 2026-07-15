@@ -876,6 +876,11 @@ def main():
     rank_wta_id, rank_wta_nm = espn_rankings("wta")
     print(f"  Rankings: ATP {len(rank_atp_id) or len(rank_atp_nm)}, WTA {len(rank_wta_id) or len(rank_wta_nm)}")
     out["meta"]["rankCounts"] = {"atp": len(rank_atp_id), "wta": len(rank_wta_id)}
+    out["meta"]["debugRank"] = {
+        "atpSample": dict(list(rank_atp_id.items())[:5]),
+        "wtaSample": dict(list(rank_wta_id.items())[:5]),
+        "playerIds": [],
+    }
 
     ROUND_DE = {
         "round 1": "1. Runde", "round 2": "2. Runde", "round 3": "3. Runde",
@@ -910,6 +915,9 @@ def main():
             by_id = rank_atp_id if m["tour"] == "ATP" else rank_wta_id
             by_nm = rank_atp_nm if m["tour"] == "ATP" else rank_wta_nm
             # Ranking: Weltrangliste, sonst curatedRank direkt vom Match
+            dbg = out["meta"]["debugRank"]["playerIds"]
+            if len(dbg) < 10:
+                dbg.append({"name": m["p1"]["name"], "id": m["p1"]["id"], "tour": m["tour"]})
             r1 = by_id.get(m["p1"]["id"]) or by_nm.get(norm_team(m["p1"]["name"])) or m["p1"].get("seed")
             r2 = by_id.get(m["p2"]["id"]) or by_nm.get(norm_team(m["p2"]["name"])) or m["p2"].get("seed")
             p1win = tennis_predict(r1, r2)
