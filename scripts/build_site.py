@@ -17,6 +17,10 @@ def esc(s):
     return html.escape(str(s)) if s is not None else ""
 
 
+def de_num(x, digits=1):
+    return f"{x:.{digits}f}".replace(".", ",")
+
+
 def fmt_day_label(iso, idx):
     d = date.fromisoformat(iso)
     wd = WEEKDAYS[d.weekday()][:2]
@@ -78,7 +82,7 @@ def odds_chips(odds, value):
         if v is None:
             continue
         hot = ' hot' if value and value.get("outcome") == label else ''
-        chips.append(f'<span class="chip{hot}"><b>{label}</b> {v:.2f}</span>')
+        chips.append(f'<span class="chip{hot}"><b>{label}</b> {de_num(v, 2)}</span>')
     src = esc(odds.get("src", ""))
     return "".join(chips) + (f'<span class="muted tiny">({src})</span>' if src else "")
 
@@ -88,7 +92,7 @@ def value_badge(value):
         return ""
     edge = round(value["edge"] * 100)
     return (f'<div class="value-note">💡 Modell sieht <b>Tipp {esc(value["outcome"])}</b> bei Quote '
-            f'{value["odds"]:.2f} um <b>+{edge} Prozentpunkte</b> wahrscheinlicher als der Markt.</div>')
+            f'{de_num(value["odds"], 2)} um <b>+{edge} Prozentpunkte</b> wahrscheinlicher als der Markt.</div>')
 
 
 def pos_str(pos, n):
@@ -108,12 +112,23 @@ def match_card(m, league):
                     f'<table>{rows}</table></details>')
     pred_html = '<div class="muted small">Zu wenig Daten für eine Vorhersage</div>'
     if pred:
+        btts = f'<span>Beide treffen: {round(pred["pBtts"]*100)}%</span>' if pred.get("pBtts") is not None else ""
         pred_html = (
             prob_bar(pred["pHome"], pred["pDraw"], pred["pAway"]) +
             f'<div class="predmeta"><span>Tipp <b>{esc(pred["tipScore"])}</b></span>'
-            f'<span>xG {pred["xgHome"]:.1f} : {pred["xgAway"]:.1f}</span>'
+            f'<span>xG {de_num(pred["xgHome"])} : {de_num(pred["xgAway"])}</span>'
             f'<span>Über 2,5 Tore: {round(pred["pOver25"]*100)}%</span>'
+            f'{btts}'
             f'<span class="muted">Datenlage: {esc(pred["confidence"])}</span></div>')
+    scorers_html = ""
+    sc_h, sc_a = m.get("scorersHome") or [], m.get("scorersAway") or []
+    if sc_h or sc_a:
+        fmt_sc = lambda lst: ", ".join(f'{esc(s["name"])} ({s["goals"]})' for s in lst[:2]) or "–"
+        period = f' <span class="muted tiny">({esc(m["scorersPeriod"])})</span>' if m.get("scorersPeriod") else ""
+        scorers_html = (f'<div class="scorers">⚽ <b>Top-Torschützen</b>{period}<br>'
+                        f'<span class="muted tiny">Heim:</span> {fmt_sc(sc_h)} &nbsp;·&nbsp; '
+                        f'<span class="muted tiny">Gast:</span> {fmt_sc(sc_a)}</div>')
+    analysis_html = f'<p class="analysis">{esc(m["analysis"])}</p>' if m.get("analysis") else ""
     md = f'<span class="muted tiny">{m["matchday"]}. Spieltag</span>' if m.get("matchday") else ""
     return f"""
   <article class="card">
@@ -130,15 +145,30 @@ def match_card(m, league):
       </div>
     </div>
     {pred_html}
+    {scorers_html}
     <div class="oddsrow">{odds_chips(m.get("odds"), m.get("value"))}</div>
     {value_badge(m.get("value"))}
+    {analysis_html}
     {h2h_html}
   </article>"""
 
 
+def _player_meta(p, surface):
+    r = f'<span class="rank">#{p["rank"]}</span>' if p.get("rank") else '<span class="rank unk">o. R.</span>'
+    surf = ""
+    b = p.get("onSurface")
+    if b and surface:
+        surf = f'<span class="tiny muted">{esc(surface)}: {round(b["pct"]*100)}% ({b["w"]}:{b["l"]})</span>'
+    fav = ""
+    if p.get("favSurface"):
+        fav = f'<span class="tiny muted">Lieblingsbelag: {esc(p["favSurface"])}</span>'
+    return r, surf, fav
+
+
 def tennis_card(m):
-    r1 = f'<span class="rank">#{m["p1"]["rank"]}</span>' if m["p1"].get("rank") else '<span class="rank unk">o. R.</span>'
-    r2 = f'<span class="rank">#{m["p2"]["rank"]}</span>' if m["p2"].get("rank") else '<span class="rank unk">o. R.</span>'
+    surface = m.get("surface")
+    r1, surf1, fav1 = _player_meta(m["p1"], surface)
+    r2, surf2, fav2 = _player_meta(m["p2"], surface)
     bar = ""
     if m.get("pP1") is not None:
         bar = tennis_bar(m["pP1"], m["p1"]["name"], m["p2"]["name"])
@@ -146,20 +176,31 @@ def tennis_card(m):
         pct = round(max(m["pP1"], 1 - m["pP1"]) * 100)
         bar += f'<div class="predmeta"><span>Favorit laut Ranking: <b>{esc(fav)}</b> ({pct}%)</span></div>'
     rnd = f' · {esc(m["round"])}' if m.get("round") else ""
+    surf_chip = f' · {esc(surface)}' if surface else ""
     unc = ('<div class="unc">⚠️ Ansetzung unbestätigt – Quelle: Community-Daten, '
            'finaler Spielplan erscheint meist erst am Vorabend</div>') if m.get("unconfirmed") else ""
     ko = "Zeit offen" if m.get("timeTBD") else f'{fmt_time(m["start"])} Uhr'
+    h2h_html = ""
+    if m.get("h2h"):
+        rows = "".join(
+            f'<tr><td>{esc(x["year"])}</td><td>{esc(x["tourney"])} ({esc(x["surface"])})</td>'
+            f'<td>{esc(x["winner"])}</td><td class="num">{esc(x["score"])}</td></tr>' for x in m["h2h"])
+        h2h_html = (f'<details class="h2h"><summary>Letzte {len(m["h2h"])} direkte Duelle</summary>'
+                    f'<table>{rows}</table></details>')
+    analysis_html = f'<p class="analysis">{esc(m["analysis"])}</p>' if m.get("analysis") else ""
     return f"""
   <article class="card">
     <div class="cardtop"><span class="ko">{ko}</span>
-      <span class="muted tiny">{esc(m["tournament"])}{rnd}</span></div>
+      <span class="muted tiny">{esc(m["tournament"])}{rnd}{surf_chip}</span></div>
     {unc}
     <div class="teams">
-      <div class="team"><span class="tname">{esc(m["p1"]["name"])}</span><span class="tmeta">{r1}</span></div>
+      <div class="team"><span class="tname">{esc(m["p1"]["name"])}</span><span class="tmeta">{r1}</span>{surf1}{fav1}</div>
       <span class="vs">–</span>
-      <div class="team right"><span class="tname">{esc(m["p2"]["name"])}</span><span class="tmeta">{r2}</span></div>
+      <div class="team right"><span class="tname">{esc(m["p2"]["name"])}</span><span class="tmeta">{r2}</span>{surf2}{fav2}</div>
     </div>
     {bar}
+    {analysis_html}
+    {h2h_html}
   </article>"""
 
 
@@ -346,6 +387,9 @@ footer summary {{ cursor:pointer; }}
   padding:9px 13px; font-size:13px; color:var(--ink2); margin:12px 0 0; }}
 .unc {{ font-size:11.5px; color:var(--ink2); border:1px dashed var(--border); border-radius:7px;
   padding:4px 8px; margin-bottom:8px; }}
+.analysis {{ font-size:12.5px; color:var(--ink2); background:var(--page); border-radius:8px;
+  padding:8px 10px; margin:9px 0 0; line-height:1.5; }}
+.scorers {{ font-size:12px; color:var(--ink2); margin-top:8px; line-height:1.5; }}
 </style>
 </head>
 <body>
@@ -375,9 +419,10 @@ footer summary {{ cursor:pointer; }}
     Einschätzung anhand der aktuellen Weltranglisten-Position beider Spieler:innen („o. R.“ = ohne
     Ranking in den Top-Platzierungen). Alle Angaben sind statistische Schätzungen ohne Gewähr.</p>
   </details>
-  <div>Datenquellen: OpenLigaDB (1.–3. Bundesliga), ESPN (internationale Ligen, Tennis, Rankings),
-  football-data.co.uk (Quoten &amp; Historie), TheSportsDB (Tennis-Ergänzung).
-  Automatisches Update: täglich.</div>
+  <div>Datenquellen: OpenLigaDB (1.–3. Bundesliga, Torschützen), ESPN (internationale Ligen, Tennis,
+  Rankings), football-data.co.uk (Quoten &amp; Historie), TheSportsDB (Tennis-Ergänzung),
+  Tennis-Historie: <a href="https://github.com/JeffSackmann/tennis_atp">Jeff Sackmann</a>
+  (CC BY-NC-SA 4.0, nicht-kommerzielle Nutzung). Automatisches Update: täglich.</div>
   <div class="disclaimer">Dieses Dashboard ist ein privates Statistik-Projekt und keine
   Wettempfehlung. Quoten dienen nur dem Vergleich mit dem Modell. Glücksspiel kann süchtig
   machen (18+) – Hilfe: <a href="https://www.bundesweit-gegen-gluecksspielsucht.de">bundesweit-gegen-gluecksspielsucht.de</a>.</div>

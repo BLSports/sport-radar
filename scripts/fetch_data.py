@@ -448,7 +448,7 @@ def find_team(strengths, name):
 def poisson_probs(mu_h, mu_a, max_goals=9):
     ph = [math.exp(-mu_h) * mu_h ** k / math.factorial(k) for k in range(max_goals + 1)]
     pa = [math.exp(-mu_a) * mu_a ** k / math.factorial(k) for k in range(max_goals + 1)]
-    p_home = p_draw = p_away = p_over25 = 0.0
+    p_home = p_draw = p_away = p_over25 = p_btts = 0.0
     best_score, best_p = (0, 0), -1.0
     for i in range(max_goals + 1):
         for j in range(max_goals + 1):
@@ -461,9 +461,11 @@ def poisson_probs(mu_h, mu_a, max_goals=9):
                 p_away += p
             if i + j >= 3:
                 p_over25 += p
+            if i > 0 and j > 0:
+                p_btts += p
             if p > best_p:
                 best_p, best_score = p, (i, j)
-    return p_home, p_draw, p_away, p_over25, best_score
+    return p_home, p_draw, p_away, p_over25, best_score, p_btts
 
 
 def predict_match(strengths, league_avg, home_adv, home, away):
@@ -474,11 +476,11 @@ def predict_match(strengths, league_avg, home_adv, home, away):
     att_a, def_a, wa = sa
     mu_h = max(0.15, league_avg * att_h * def_a * home_adv)
     mu_a = max(0.1, league_avg * att_a * def_h / home_adv)
-    p_h, p_d, p_a, p_o25, score = poisson_probs(mu_h, mu_a)
+    p_h, p_d, p_a, p_o25, score, p_btts = poisson_probs(mu_h, mu_a)
     conf = "hoch" if min(wh, wa) >= 8 else ("mittel" if min(wh, wa) >= 4 else "niedrig")
     return {
         "pHome": round(p_h, 4), "pDraw": round(p_d, 4), "pAway": round(p_a, 4),
-        "pOver25": round(p_o25, 4),
+        "pOver25": round(p_o25, 4), "pBtts": round(p_btts, 4),
         "xgHome": round(mu_h, 2), "xgAway": round(mu_a, 2),
         "tipScore": f"{score[0]}:{score[1]}",
         "confidence": conf,
@@ -753,6 +755,122 @@ def tsdb_tennis_day(day):
     return matches
 
 
+def load_sackmann(tour, years_back=4):
+    """Historische Matchdaten (Jeff Sackmann, CC BY-NC-SA) fuer Belag-Bilanz & H2H."""
+    rows = []
+    for y in range(NOW.year - years_back, NOW.year + 1):
+        url = (f"https://raw.githubusercontent.com/JeffSackmann/tennis_{tour}/"
+               f"master/{tour}_matches_{y}.csv")
+        raw = http_get(url, as_json=False, retries=2)
+        if not raw:
+            continue
+        try:
+            for r in csv.DictReader(io.StringIO(raw)):
+                rows.append({
+                    "date": r.get("tourney_date", ""),
+                    "tourney": r.get("tourney_name", ""),
+                    "surface": (r.get("surface") or "").strip(),
+                    "w": norm_player(r.get("winner_name", "")),
+                    "l": norm_player(r.get("loser_name", "")),
+                    "wname": r.get("winner_name", ""),
+                    "lname": r.get("loser_name", ""),
+                    "wrank": r.get("winner_rank") or "",
+                    "lrank": r.get("loser_rank") or "",
+                    "score": r.get("score", ""),
+                    "rnd": r.get("round", ""),
+                })
+        except Exception as e:
+            print(f"  WARN Sackmann {url}: {e}", file=sys.stderr)
+    return rows
+
+
+def norm_player(name):
+    if not name:
+        return ""
+    s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z ]", "", s.lower()).strip()
+
+
+SURFACE_DE = {"Clay": "Sand", "Hard": "Hartplatz", "Grass": "Rasen", "Carpet": "Teppich"}
+
+
+def surface_stats(rows, player):
+    """Siege/Niederlagen je Belag ueber die geladenen Jahre."""
+    p = norm_player(player)
+    if not p:
+        return {}
+    st = {}
+    for r in rows:
+        surf = r["surface"]
+        if not surf:
+            continue
+        if r["w"] == p:
+            st.setdefault(surf, [0, 0])[0] += 1
+        elif r["l"] == p:
+            st.setdefault(surf, [0, 0])[1] += 1
+    out = {}
+    for surf, (w, l) in st.items():
+        if w + l >= 5:
+            out[surf] = {"w": w, "l": l, "pct": round(w / (w + l), 3)}
+    return out
+
+
+def fav_surface(stats):
+    if not stats:
+        return None
+    return max(stats.items(), key=lambda kv: (kv[1]["pct"], kv[1]["w"] + kv[1]["l"]))[0]
+
+
+def h2h_tennis(rows, p1, p2, n=5):
+    """Letzte n direkte Duelle (neueste zuerst)."""
+    a, b = norm_player(p1), norm_player(p2)
+    if not a or not b:
+        return []
+    meetings = []
+    for r in rows:
+        if {r["w"], r["l"]} == {a, b}:
+            meetings.append({
+                "year": r["date"][:4],
+                "tourney": r["tourney"],
+                "surface": SURFACE_DE.get(r["surface"], r["surface"]),
+                "winner": r["wname"],
+                "score": r["score"],
+                "rnd": r["rnd"],
+            })
+    meetings.sort(key=lambda x: x["year"], reverse=True)
+    return meetings[:n]
+
+
+def sack_tourney_surface(rows, espn_tournament):
+    """Belag des Turniers: Sackmann-Turniernamen gegen ESPN-Namen matchen."""
+    t = norm_player(espn_tournament)
+    for r in rows:
+        tn = norm_player(r["tourney"])
+        if tn and (tn in t or t in tn) and len(tn) >= 4:
+            return r["surface"]
+    return None
+
+
+def sack_last_rank(rows, player, max_age_days=400):
+    """Zuletzt bekannte Weltranglisten-Position aus den Matchdaten (nicht zu alt)."""
+    p = norm_player(player)
+    cutoff = (NOW - timedelta(days=max_age_days)).strftime("%Y%m%d")
+    best = (None, "")
+    for r in rows:
+        if r["date"] < cutoff:
+            continue
+        if r["w"] == p and r["wrank"]:
+            if r["date"] > best[1]:
+                best = (r["wrank"], r["date"])
+        elif r["l"] == p and r["lrank"]:
+            if r["date"] > best[1]:
+                best = (r["lrank"], r["date"])
+    try:
+        return int(float(best[0])) if best[0] else None
+    except ValueError:
+        return None
+
+
 def espn_rankings(tour):
     """athleteId -> rank und name -> rank."""
     idx = http_get(f"https://sports.core.api.espn.com/v2/sports/tennis/leagues/{tour}/rankings")
@@ -774,6 +892,172 @@ def espn_rankings(tour):
         if rank and nm:
             by_name[norm_team(nm)] = rank
     return by_id, by_name
+
+
+def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h):
+    """Deterministischer deutscher Analysetext fuer ein Tennis-Match."""
+    parts = []
+    if r1 and r2:
+        parts.append(f"{p1} (Weltrangliste #{r1}) trifft auf {p2} (#{r2}).")
+    elif r1:
+        parts.append(f"{p1} (#{r1}) trifft auf {p2}, der/die aktuell außerhalb der Top-Platzierungen geführt wird.")
+    elif r2:
+        parts.append(f"{p1} – aktuell ohne Top-Ranking – trifft auf {p2} (#{r2}).")
+    else:
+        parts.append(f"{p1} trifft auf {p2}; für beide liegt kein aktuelles Top-Ranking vor.")
+    if surf_de:
+        b1 = s1.get("bilanz")
+        b2 = s2.get("bilanz")
+        if b1 and b2:
+            parts.append(f"Auf {surf_de} gewann {p1} zuletzt {round(b1['pct']*100)} % "
+                         f"seiner/ihrer Matches ({b1['w']}:{b1['l']}), {p2} kommt auf "
+                         f"{round(b2['pct']*100)} % ({b2['w']}:{b2['l']}).")
+        if s1.get("fav") and s1["fav"] != surf_de:
+            parts.append(f"{p1}s stärkster Belag ist eigentlich {s1['fav']}.")
+        if s2.get("fav") and s2["fav"] != surf_de:
+            parts.append(f"{p2}s stärkster Belag ist eigentlich {s2['fav']}.")
+    if h2h:
+        w1 = sum(1 for m in h2h if norm_player(m["winner"]) == norm_player(p1))
+        w2 = len(h2h) - w1
+        last = h2h[0]
+        if w1 or w2:
+            leader = p1 if w1 > w2 else p2
+            if w1 == w2:
+                parts.append(f"Der direkte Vergleich der letzten {len(h2h)} Duelle ist mit {w1}:{w2} ausgeglichen.")
+            else:
+                parts.append(f"Den direkten Vergleich führt {leader} mit {max(w1,w2)}:{min(w1,w2)} "
+                             f"aus den letzten {len(h2h)} Duellen an.")
+            parts.append(f"Zuletzt ({last['year']}, {last['tourney']}) gewann {last['winner']} mit {last['score']}.")
+    else:
+        parts.append("Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell.")
+    if p1win is not None:
+        fav = p1 if p1win >= 0.5 else p2
+        parts.append(f"Das Ranglisten-Modell sieht {fav} mit {round(max(p1win, 1-p1win)*100)} % vorn.")
+    return " ".join(parts)
+
+
+def football_text(home, away, m):
+    """Deterministischer deutscher Analysetext fuer ein Fussballspiel."""
+    parts = []
+    pred = m.get("prediction")
+    ph, pa2 = m.get("posHome"), m.get("posAway")
+    if pred:
+        p_h, p_d, p_a = pred["pHome"], pred["pDraw"], pred["pAway"]
+        if p_h >= 0.55:
+            parts.append(f"{home} geht als klarer Favorit ({round(p_h*100)} %) in das Heimspiel gegen {away}.")
+        elif p_a >= 0.55:
+            parts.append(f"{away} reist als klarer Favorit ({round(p_a*100)} %) zu {home}.")
+        elif abs(p_h - p_a) < 0.08:
+            parts.append(f"Zwischen {home} und {away} deutet das Modell auf ein Duell auf Augenhöhe hin "
+                         f"({round(p_h*100)} % / {round(p_d*100)} % / {round(p_a*100)} %).")
+        elif p_h > p_a:
+            parts.append(f"{home} ist gegen {away} leicht favorisiert ({round(p_h*100)} % zu {round(p_a*100)} %).")
+        else:
+            parts.append(f"{away} ist bei {home} leicht favorisiert ({round(p_a*100)} % zu {round(p_h*100)} %).")
+    if ph and pa2:
+        parts.append(f"In der Tabelle stehen sich Platz {ph} und Platz {pa2} gegenüber.")
+    fh, fa = m.get("formHome") or [], m.get("formAway") or []
+    if len(fh) >= 3 and len(fa) >= 3:
+        sh, sa = fh.count("S"), fa.count("S")
+        if sh - sa >= 2:
+            parts.append(f"Die Form spricht für {home}: {sh} Siege aus den letzten {len(fh)} Spielen, "
+                         f"{away} holte nur {sa}.")
+        elif sa - sh >= 2:
+            parts.append(f"Die Form spricht für {away}: {sa} Siege aus den letzten {len(fa)} Spielen, "
+                         f"{home} holte nur {sh}.")
+    h2h = m.get("h2h") or []
+    if h2h:
+        parts.append(f"Das letzte Duell ({h2h[0]['date'][-4:]}) endete {h2h[0]['score']} "
+                     f"({h2h[0]['home']} – {h2h[0]['away']}).")
+    if pred:
+        tor = "ein torreiches Spiel" if pred["pOver25"] >= 0.55 else (
+            "eher wenige Tore" if pred["pOver25"] <= 0.45 else "eine offene Tor-Ausbeute")
+        btts = m.get("pBtts")
+        btts_txt = f", beide Teams treffen zu {round(btts*100)} %" if btts is not None else ""
+        xg = f"{pred['xgHome']:.1f}:{pred['xgAway']:.1f}".replace(".", ",")
+        parts.append(f"Das Modell erwartet {tor} (xG {xg}; "
+                     f"über 2,5 Tore: {round(pred['pOver25']*100)} %{btts_txt}).")
+    sc_h, sc_a = m.get("scorersHome") or [], m.get("scorersAway") or []
+    if sc_h or sc_a:
+        bits = []
+        if sc_h:
+            bits.append(f"bei {home} {sc_h[0]['name']} ({sc_h[0]['goals']} Tore)")
+        if sc_a:
+            bits.append(f"bei {away} {sc_a[0]['name']} ({sc_a[0]['goals']} Tore)")
+        parts.append("Gefährlichste Torschützen: " + " und ".join(bits) + ".")
+    v = m.get("value")
+    if v:
+        q = f"{v['odds']:.2f}".replace(".", ",")
+        parts.append(f"Quoten-Hinweis: Das Modell hält Tipp {v['outcome']} (Quote {q}) für "
+                     f"{round(v['edge']*100)} Prozentpunkte wahrscheinlicher als der Markt.")
+    return " ".join(parts)
+
+
+def scorers_openligadb(shortcut, year):
+    """Top-Torschuetzen je Team aus den OpenLigaDB-Tordaten einer Saison."""
+    data = http_get(f"https://api.openligadb.de/getmatchdata/{shortcut}/{year}")
+    per_team = {}
+    if not data:
+        return per_team
+    for match in data:
+        if not match.get("matchIsFinished"):
+            continue
+        t1 = match["team1"]["teamName"]
+        t2 = match["team2"]["teamName"]
+        prev1 = prev2 = 0
+        goals = sorted(match.get("goals") or [], key=lambda g: (g.get("goalID") or 0))
+        for g in goals:
+            s1, s2 = g.get("scoreTeam1") or 0, g.get("scoreTeam2") or 0
+            scorer = (g.get("goalGetterName") or "").strip()
+            team = t1 if s1 > prev1 else (t2 if s2 > prev2 else None)
+            prev1, prev2 = s1, s2
+            if not scorer or not team or g.get("isOwnGoal"):
+                continue
+            key = norm_team(team)
+            per_team.setdefault(key, {})
+            per_team[key][scorer] = per_team[key].get(scorer, 0) + 1
+    return {team: sorted(d.items(), key=lambda kv: -kv[1])[:3] for team, d in per_team.items()}
+
+
+def espn_league_scorers(slug, season_year):
+    """Liga-Torschuetzenliste via ESPN Core-API (Namen per Ref-Fetch, gecacht)."""
+    result = []
+    for stype in (1, 2):
+        url = (f"https://sports.core.api.espn.com/v2/sports/soccer/leagues/{slug}/"
+               f"seasons/{season_year}/types/{stype}/leaders")
+        doc = http_get(url, retries=2)
+        if not doc:
+            continue
+        cats = doc.get("categories") or []
+        goals_cat = next((c for c in cats if c.get("name") in ("goalsLeaders", "goals")), None)
+        if not goals_cat:
+            continue
+        for ld in (goals_cat.get("leaders") or [])[:10]:
+            ath_ref = (ld.get("athlete") or {}).get("$ref", "").replace("http://", "https://")
+            team_ref = (ld.get("team") or {}).get("$ref", "").replace("http://", "https://")
+            ath = _ref_cache_get(ath_ref)
+            team = _ref_cache_get(team_ref)
+            if not ath:
+                continue
+            result.append({
+                "name": ath.get("displayName", "?"),
+                "team": norm_team((team or {}).get("displayName", "")),
+                "goals": int(ld.get("value") or 0),
+            })
+        if result:
+            break
+    return result
+
+
+_ref_cache = {}
+
+
+def _ref_cache_get(url):
+    if not url:
+        return None
+    if url not in _ref_cache:
+        _ref_cache[url] = http_get(url, retries=2)
+    return _ref_cache[url]
 
 
 def tennis_predict(rank1, rank2):
@@ -829,6 +1113,33 @@ def main():
             upcoming, first_future = upcoming_espn(lg["espn"])
         print(f"  {len(upcoming)} Spiele in den naechsten {DAYS_AHEAD} Tagen")
 
+        # 3) Torschuetzen (aktuelle Saison, sonst Vorsaison) - nur wenn Spiele anstehen
+        scorers, scorers_period = {}, ""
+        if upcoming:
+            if lg["source"] == "openligadb":
+                scorers = scorers_openligadb(lg["oldb"], season)
+                scorers_period = "Saison"
+                if not scorers:
+                    scorers = scorers_openligadb(lg["oldb"], season - 1)
+                    scorers_period = "Vorsaison"
+            else:
+                league_sc = espn_league_scorers(lg["espn"], season)
+                scorers_period = "Saison"
+                if not league_sc:
+                    league_sc = espn_league_scorers(lg["espn"], season - 1)
+                    scorers_period = "Vorsaison"
+                for s in league_sc:
+                    scorers.setdefault(s["team"], []).append((s["name"], s["goals"]))
+
+        def team_scorers(team):
+            key = norm_team(team)
+            if key in scorers:
+                return [{"name": n, "goals": g} for n, g in scorers[key][:3]]
+            for k, v in scorers.items():
+                if k and team_match(key, k):
+                    return [{"name": n, "goals": g} for n, g in v[:3]]
+            return []
+
         matches_out = []
         for m in sorted(upcoming, key=lambda x: x["dt"]):
             pred = predict_match(strengths, league_avg, home_adv, m["home"], m["away"])
@@ -846,7 +1157,7 @@ def main():
                                  "edge": round(diffs[best], 4),
                                  "modelP": [pred["pHome"], pred["pDraw"], pred["pAway"]][best],
                                  "odds": [odds["h"], odds["d"], odds["a"]][best]}
-            matches_out.append({
+            m_out = {
                 "kickoff": m["dt"].isoformat(),
                 "home": m["home"], "away": m["away"],
                 "homeIcon": m.get("homeIcon"), "awayIcon": m.get("awayIcon"),
@@ -858,9 +1169,15 @@ def main():
                 "nTeams": n_teams if n_teams else None,
                 "h2h": head_to_head(results, m["home"], m["away"]),
                 "prediction": pred,
+                "pBtts": pred["pBtts"] if pred else None,
                 "odds": odds,
                 "value": value,
-            })
+                "scorersHome": team_scorers(m["home"]),
+                "scorersAway": team_scorers(m["away"]),
+                "scorersPeriod": scorers_period,
+            }
+            m_out["analysis"] = football_text(m["home"], m["away"], m_out)
+            matches_out.append(m_out)
 
         league_out = {
             "id": lg["id"], "name": lg["name"], "flag": lg["flag"],
@@ -881,6 +1198,29 @@ def main():
     rank_wta_id, rank_wta_nm = espn_rankings("wta")
     print(f"  Rankings: ATP {len(rank_atp_id) or len(rank_atp_nm)}, WTA {len(rank_wta_id) or len(rank_wta_nm)}")
     out["meta"]["rankCounts"] = {"atp": len(rank_atp_id), "wta": len(rank_wta_id)}
+
+    # Historie (Sackmann) fuer Belag-Bilanzen, H2H und Rank-Fallback
+    sack = {"ATP": load_sackmann("atp"), "WTA": load_sackmann("wta")}
+    print(f"  Historie: ATP {len(sack['ATP'])} Matches, WTA {len(sack['WTA'])} Matches")
+    out["meta"]["sackCounts"] = {"atp": len(sack["ATP"]), "wta": len(sack["WTA"])}
+    # Turnier -> Belag (neueste Eintraege gewinnen)
+    surf_map = {}
+    for tour_key, rows in sack.items():
+        smap = {}
+        for r in rows:
+            if r["tourney"] and r["surface"]:
+                smap[norm_player(r["tourney"])] = r["surface"]
+        surf_map[tour_key] = smap
+
+    def tournament_surface(tour_key, name):
+        t = norm_player(name)
+        smap = surf_map.get(tour_key, {})
+        if t in smap:
+            return smap[t]
+        for tn, surf in smap.items():
+            if len(tn) >= 4 and (tn in t or t in tn):
+                return surf
+        return None
 
     ROUND_DE = {
         "round 1": "1. Runde", "round 2": "2. Runde", "round 3": "3. Runde",
@@ -914,19 +1254,37 @@ def main():
             seen.add(key)
             by_id = rank_atp_id if m["tour"] == "ATP" else rank_wta_id
             by_nm = rank_atp_nm if m["tour"] == "ATP" else rank_wta_nm
-            # Ranking ausschliesslich aus der Weltrangliste (Top 150 je Tour)
-            r1 = by_id.get(m["p1"]["id"]) or by_nm.get(norm_team(m["p1"]["name"]))
-            r2 = by_id.get(m["p2"]["id"]) or by_nm.get(norm_team(m["p2"]["name"]))
+            rows = sack.get(m["tour"], [])
+            n1, n2 = m["p1"]["name"], m["p2"]["name"]
+            # Ranking: Weltrangliste (Top 150), sonst letzter bekannter Rang aus der Historie
+            r1 = (by_id.get(m["p1"]["id"]) or by_nm.get(norm_team(n1))
+                  or sack_last_rank(rows, n1))
+            r2 = (by_id.get(m["p2"]["id"]) or by_nm.get(norm_team(n2))
+                  or sack_last_rank(rows, n2))
             p1win = tennis_predict(r1, r2)
             rnd = (m.get("round") or "").strip()
             rnd = ROUND_DE.get(rnd.lower(), rnd)
+            # Belag & Bilanzen
+            surf = tournament_surface(m["tour"], m["tournament"])
+            surf_de = SURFACE_DE.get(surf, surf) if surf else None
+            st1, st2 = surface_stats(rows, n1), surface_stats(rows, n2)
+            s1 = {"bilanz": st1.get(surf), "fav": SURFACE_DE.get(fav_surface(st1), fav_surface(st1)),
+                  "alle": {SURFACE_DE.get(k, k): v for k, v in st1.items()}}
+            s2 = {"bilanz": st2.get(surf), "fav": SURFACE_DE.get(fav_surface(st2), fav_surface(st2)),
+                  "alle": {SURFACE_DE.get(k, k): v for k, v in st2.items()}}
+            h2h = h2h_tennis(rows, n1, n2)
             tennis_out.append({
                 "start": m["dt"].isoformat(),
                 "tour": m["tour"], "tournament": m["tournament"],
                 "round": rnd,
-                "p1": {"name": m["p1"]["name"], "rank": r1},
-                "p2": {"name": m["p2"]["name"], "rank": r2},
+                "surface": surf_de,
+                "p1": {"name": n1, "rank": r1,
+                       "onSurface": s1["bilanz"], "favSurface": s1["fav"]},
+                "p2": {"name": n2, "rank": r2,
+                       "onSurface": s2["bilanz"], "favSurface": s2["fav"]},
                 "pP1": p1win,
+                "h2h": h2h,
+                "analysis": tennis_text(n1, n2, r1, r2, p1win, surf_de, s1, s2, h2h),
                 "unconfirmed": m.get("src") == "tsdb",
                 "timeTBD": bool(m.get("timeTBD")),
             })

@@ -33,10 +33,11 @@ HOME_ADV = 1.18
 def predict(sh, sa):
     mu_h = LEAGUE_AVG * sh[0] * sa[1] * HOME_ADV
     mu_a = LEAGUE_AVG * sa[0] * sh[1] / HOME_ADV
-    p_h, p_d, p_a, p_o25, score = poisson_probs(mu_h, mu_a)
+    p_h, p_d, p_a, p_o25, score, p_btts = poisson_probs(mu_h, mu_a)
     return {
         "pHome": round(p_h, 4), "pDraw": round(p_d, 4), "pAway": round(p_a, 4),
-        "pOver25": round(p_o25, 4), "xgHome": round(mu_h, 2), "xgAway": round(mu_a, 2),
+        "pOver25": round(p_o25, 4), "pBtts": round(p_btts, 4),
+        "xgHome": round(mu_h, 2), "xgAway": round(mu_a, 2),
         "tipScore": f"{score[0]}:{score[1]}", "confidence": "hoch",
     }
 
