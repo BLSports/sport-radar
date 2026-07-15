@@ -31,10 +31,10 @@ jobs:
           {
             mkdir -p /tmp/tennisdata
             Y=$(date +%Y)
-            fetch_zip() {  # $1=Ziel, $2=Pfadteil (z.B. 2024 oder 2024w), $3=Jahr
-              for base in "https://www.tennis-data.co.uk" "http://www.tennis-data.co.uk" "https://tennis-data.co.uk"; do
-                code=$(curl -sL -w "%{http_code}" "${base}/$2/$3.zip" -o "$1") || code=err
-                if [ "${code}" = "200" ] && file "$1" | grep -qi zip; then
+            fetch_xlsx() {  # $1=Ziel, $2=Pfadteil (z.B. 2024 oder 2024w), $3=Jahr
+              for base in "https://www.tennis-data.co.uk" "http://www.tennis-data.co.uk"; do
+                code=$(curl -sL -w "%{http_code}" "${base}/$2/$3.xlsx" -o "$1") || code=err
+                if [ "${code}" = "200" ] && file "$1" | grep -qiE 'excel|zip'; then
                   echo "$1: OK über ${base} ($(wc -c < "$1") Bytes)"
                   return 0
                 fi
@@ -45,8 +45,8 @@ jobs:
               return 1
             }
             for y in $((Y-4)) $((Y-3)) $((Y-2)) $((Y-1)) $Y; do
-              fetch_zip "/tmp/tennisdata/atp_${y}.zip" "${y}" "${y}" || true
-              fetch_zip "/tmp/tennisdata/wta_${y}.zip" "${y}w" "${y}" || true
+              fetch_xlsx "/tmp/tennisdata/atp_${y}.xlsx" "${y}" "${y}" || true
+              fetch_xlsx "/tmp/tennisdata/wta_${y}.xlsx" "${y}w" "${y}" || true
             done
             ls -la /tmp/tennisdata/ || true
           } 2>&1 | tee /tmp/clone.log

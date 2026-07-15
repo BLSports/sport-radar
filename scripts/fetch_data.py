@@ -759,11 +759,10 @@ def load_sackmann(tour, years_back=4):
     """Historische Matchdaten von tennis-data.co.uk (ZIPs mit Excel/CSV) fuer
     Belag-Bilanz, H2H und Rank-Fallback. Die ZIPs laedt der Workflow-Schritt
     nach /tmp/tennisdata/; hier gibt es zusaetzlich einen HTTP-Fallback."""
-    import zipfile
     rows = []
     base_dir = os.environ.get("TENNISDATA_DIR", "/tmp/tennisdata")
     for y in range(NOW.year - years_back, NOW.year + 1):
-        path = os.path.join(base_dir, f"{tour}_{y}.zip")
+        path = os.path.join(base_dir, f"{tour}_{y}.xlsx")
         blob = None
         if os.path.exists(path):
             try:
@@ -773,22 +772,12 @@ def load_sackmann(tour, years_back=4):
                 blob = None
         if blob is None:
             suffix = "" if tour == "atp" else "w"
-            url = f"http://www.tennis-data.co.uk/{y}{suffix}/{y}.zip"
+            url = f"https://www.tennis-data.co.uk/{y}{suffix}/{y}.xlsx"
             blob = http_get_bytes(url)
         if not blob:
             continue
         try:
-            zf = zipfile.ZipFile(io.BytesIO(blob))
-            names = zf.namelist()
-            entry = next((n for n in names if n.lower().endswith(".csv")), None) or \
-                    next((n for n in names if n.lower().endswith(".xlsx")), None)
-            if not entry:
-                continue
-            if entry.lower().endswith(".csv"):
-                recs = list(csv.DictReader(io.StringIO(zf.read(entry).decode("utf-8", "replace"))))
-            else:
-                recs = _read_xlsx_rows(zf.read(entry))
-            for r in recs:
+            for r in _read_xlsx_rows(blob):
                 rows.append(_tennisdata_row(r))
         except Exception as e:
             print(f"  WARN tennis-data {tour} {y}: {e}", file=sys.stderr)
