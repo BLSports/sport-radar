@@ -1,15 +1,15 @@
 == Diagnose ==
 raw.githubusercontent direkt: HTTP 404
-atp_matches_2022.csv: HTTP 404, 141 Bytes
-atp_matches_2023.csv: HTTP 404, 141 Bytes
-atp_matches_2024.csv: HTTP 404, 141 Bytes
-atp_matches_2025.csv: HTTP 404, 141 Bytes
-atp_matches_2026.csv: HTTP 404, 141 Bytes
-wta_matches_2022.csv: HTTP 404, 141 Bytes
-wta_matches_2023.csv: HTTP 404, 141 Bytes
-wta_matches_2024.csv: HTTP 404, 141 Bytes
-wta_matches_2025.csv: HTTP 404, 141 Bytes
-wta_matches_2026.csv: HTTP 404, 141 Bytes
+atp_matches_2022.csv: HTTP 404 (jsdelivr), 82 Bytes
+atp_matches_2023.csv: HTTP 404 (jsdelivr), 82 Bytes
+atp_matches_2024.csv: HTTP 404 (jsdelivr), 82 Bytes
+atp_matches_2025.csv: HTTP 404 (jsdelivr), 82 Bytes
+atp_matches_2026.csv: HTTP 404 (jsdelivr), 82 Bytes
+wta_matches_2022.csv: HTTP 404 (jsdelivr), 82 Bytes
+wta_matches_2023.csv: HTTP 404 (jsdelivr), 82 Bytes
+wta_matches_2024.csv: HTTP 404 (jsdelivr), 82 Bytes
+wta_matches_2025.csv: HTTP 404 (jsdelivr), 82 Bytes
+wta_matches_2026.csv: HTTP 404 (jsdelivr), 82 Bytes
   WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
@@ -49,5 +49,5 @@ fixtures.csv: 12 Spiele mit Quoten
 == Tennis ==
   Rankings: ATP 150, WTA 150
   Historie: ATP 0 Matches, WTA 0 Matches
-  50 Tennis-Matches in den naechsten 3 Tagen
+  49 Tennis-Matches in den naechsten 3 Tagen
 OK -> /home/runner/work/sport-radar/sport-radar/scripts/../data/data.json
