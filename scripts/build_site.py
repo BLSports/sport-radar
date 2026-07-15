@@ -148,9 +148,10 @@ def tennis_card(m):
     rnd = f' · {esc(m["round"])}' if m.get("round") else ""
     unc = ('<div class="unc">⚠️ Ansetzung unbestätigt – Quelle: Community-Daten, '
            'finaler Spielplan erscheint meist erst am Vorabend</div>') if m.get("unconfirmed") else ""
+    ko = "Zeit offen" if m.get("timeTBD") else f'{fmt_time(m["start"])} Uhr'
     return f"""
   <article class="card">
-    <div class="cardtop"><span class="ko">{fmt_time(m["start"])} Uhr</span>
+    <div class="cardtop"><span class="ko">{ko}</span>
       <span class="muted tiny">{esc(m["tournament"])}{rnd}</span></div>
     {unc}
     <div class="teams">
