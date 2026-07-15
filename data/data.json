@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T15:14:08.456743+02:00",
+ "generatedAt": "2026-07-15T15:18:43.100754+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-15",
@@ -125,30 +125,6 @@
    "timeTBD": false
   },
   {
-   "start": "2026-07-15T15:20:00+02:00",
-   "tour": "WTA",
-   "tournament": "Enka Open",
-   "round": "2. Runde",
-   "surface": null,
-   "p1": {
-    "name": "Lanlana Tararudee",
-    "rank": 91,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Gabriela Knutson",
-    "rank": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.7025,
-   "h2h": [],
-   "analysis": "Lanlana Tararudee (#91) trifft auf Gabriela Knutson, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Lanlana Tararudee mit 70 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
    "start": "2026-07-15T15:30:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
@@ -217,6 +193,30 @@
    "pP1": null,
    "h2h": [],
    "analysis": "Barbora Palicova trifft auf Maria Lourdes Carle; für beide liegt kein aktuelles Top-Ranking vor. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-15T15:40:00+02:00",
+   "tour": "WTA",
+   "tournament": "Enka Open",
+   "round": "2. Runde",
+   "surface": null,
+   "p1": {
+    "name": "Lanlana Tararudee",
+    "rank": 91,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Gabriela Knutson",
+    "rank": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.7025,
+   "h2h": [],
+   "analysis": "Lanlana Tararudee (#91) trifft auf Gabriela Knutson, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Lanlana Tararudee mit 70 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
