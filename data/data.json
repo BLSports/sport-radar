@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T16:02:01.266256+02:00",
+ "generatedAt": "2026-07-15T16:42:16.316745+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-15",
@@ -8,11 +8,89 @@
  ],
  "football": [
   {
+   "id": "wm",
+   "name": "WM",
+   "flag": "🌍",
+   "matches": [
+    {
+     "kickoff": "2026-07-15T21:00:00+02:00",
+     "home": "England",
+     "away": "Argentina",
+     "homeIcon": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+     "awayIcon": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+     "matchday": null,
+     "formHome": [],
+     "formAway": [],
+     "posHome": null,
+     "posAway": null,
+     "nTeams": null,
+     "h2h": [],
+     "prediction": null,
+     "pBtts": null,
+     "odds": null,
+     "value": null,
+     "scorersHome": [
+      {
+       "name": "Harry Kane",
+       "goals": 6
+      },
+      {
+       "name": "Jude Bellingham",
+       "goals": 6
+      }
+     ],
+     "scorersAway": [
+      {
+       "name": "Lionel Messi",
+       "goals": 8
+      }
+     ],
+     "scorersPeriod": "Saison",
+     "analysis": "Gefährlichste Torschützen: bei England Harry Kane (6 Tore) und bei Argentina Lionel Messi (8 Tore)."
+    }
+   ],
+   "seasonHasStarted": false,
+   "isCup": true
+  },
+  {
+   "id": "em",
+   "name": "EM",
+   "flag": "🇪🇺",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": true
+  },
+  {
+   "id": "cl",
+   "name": "Champions League",
+   "flag": "🏆",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": true
+  },
+  {
+   "id": "el",
+   "name": "Europa League",
+   "flag": "🏅",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": true
+  },
+  {
+   "id": "ecl",
+   "name": "Conference League",
+   "flag": "🎖",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": true
+  },
+  {
    "id": "bl1",
    "name": "1. Bundesliga",
    "flag": "🇩🇪",
    "matches": [],
    "seasonHasStarted": false,
+   "isCup": false,
    "nextMatch": {
     "kickoff": "2026-08-28T20:30:00+02:00",
     "home": "FC Bayern München",
@@ -26,6 +104,7 @@
    "flag": "🇩🇪",
    "matches": [],
    "seasonHasStarted": false,
+   "isCup": false,
    "nextMatch": {
     "kickoff": "2026-08-07T20:30:00+02:00",
     "home": "VfL Bochum",
@@ -39,6 +118,7 @@
    "flag": "🇩🇪",
    "matches": [],
    "seasonHasStarted": false,
+   "isCup": false,
    "nextMatch": {
     "kickoff": "2026-08-07T19:00:00+02:00",
     "home": "SV Waldhof Mannheim",
@@ -52,6 +132,7 @@
    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "matches": [],
    "seasonHasStarted": false,
+   "isCup": false,
    "nextMatch": {
     "kickoff": "2026-08-21T21:00:00+02:00",
     "home": "Arsenal",
@@ -65,6 +146,7 @@
    "flag": "🇮🇹",
    "matches": [],
    "seasonHasStarted": false,
+   "isCup": false,
    "nextMatch": {
     "kickoff": "2026-08-22T18:30:00+02:00",
     "home": "Internazionale",
@@ -78,6 +160,7 @@
    "flag": "🇪🇸",
    "matches": [],
    "seasonHasStarted": false,
+   "isCup": false,
    "nextMatch": {
     "kickoff": "2026-08-15T19:30:00+02:00",
     "home": "Alavés",
@@ -91,121 +174,96 @@
    "flag": "🇪🇸",
    "matches": [],
    "seasonHasStarted": false,
+   "isCup": false,
    "nextMatch": {
     "kickoff": "2026-08-14T20:30:00+02:00",
     "home": "Real Sociedad II",
     "away": "Castellón",
     "matchday": null
    }
+  },
+  {
+   "id": "fr1",
+   "name": "Ligue 1",
+   "flag": "🇫🇷",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": false,
+   "nextMatch": {
+    "kickoff": "2026-08-21T20:45:00+02:00",
+    "home": "Marseille",
+    "away": "Strasbourg",
+    "matchday": null
+   }
+  },
+  {
+   "id": "fr2",
+   "name": "Ligue 2",
+   "flag": "🇫🇷",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": false,
+   "nextMatch": {
+    "kickoff": "2026-08-08T20:45:00+02:00",
+    "home": "Boulogne",
+    "away": "AS Nancy Lorraine",
+    "matchday": null
+   }
+  },
+  {
+   "id": "nl1",
+   "name": "Eredivisie",
+   "flag": "🇳🇱",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": false,
+   "nextMatch": {
+    "kickoff": "2026-08-07T20:00:00+02:00",
+    "home": "SC Cambuur",
+    "away": "Excelsior",
+    "matchday": null
+   }
+  },
+  {
+   "id": "nl2",
+   "name": "Eerste Divisie",
+   "flag": "🇳🇱",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": false,
+   "nextMatch": {
+    "kickoff": "2026-08-07T20:00:00+02:00",
+    "home": "FC Dordrecht",
+    "away": "Jong Ajax",
+    "matchday": null
+   }
+  },
+  {
+   "id": "be1",
+   "name": "Pro League (Belgien)",
+   "flag": "🇧🇪",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": false,
+   "nextMatch": {
+    "kickoff": "2026-08-07T20:45:00+02:00",
+    "home": "Club Brugge",
+    "away": "KV Kortrijk",
+    "matchday": null
+   }
+  },
+  {
+   "id": "be2",
+   "name": "Challenger Pro League (Belgien)",
+   "flag": "🇧🇪",
+   "matches": [],
+   "seasonHasStarted": false,
+   "isCup": false
   }
  ],
  "tennis": [
   {
-   "start": "2026-07-15T16:05:00+02:00",
-   "tour": "ATP",
-   "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "2. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Damir Dzumhur",
-    "rank": 108,
-    "onSurface": {
-     "w": 21,
-     "l": 20,
-     "pct": 0.512
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Juan Carlos Prado Angelo",
-    "rank": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.6712,
-   "h2h": [],
-   "analysis": "Damir Dzumhur (#108) trifft auf Juan Carlos Prado Angelo, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Damir Dzumhur zuletzt bei 51 % (21:20). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Damir Dzumhur mit 67 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-15T16:05:00+02:00",
-   "tour": "ATP",
-   "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "2. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Daniel Merida",
-    "rank": 82,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Tomas Martin Etcheverry",
-    "rank": 30,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.2984,
-   "h2h": [],
-   "analysis": "Daniel Merida (Weltrangliste #82) trifft auf Tomas Martin Etcheverry (#30). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Tomas Martin Etcheverry mit 70 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-15T16:05:00+02:00",
-   "tour": "ATP",
-   "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "2. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Matteo Arnaldi",
-    "rank": 34,
-    "onSurface": {
-     "w": 31,
-     "l": 24,
-     "pct": 0.564
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Federico Agustin Gomez",
-    "rank": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.845,
-   "h2h": [],
-   "analysis": "Matteo Arnaldi (#34) trifft auf Federico Agustin Gomez, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Matteo Arnaldi zuletzt bei 56 % (31:24). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Matteo Arnaldi mit 84 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-15T16:20:00+02:00",
-   "tour": "WTA",
-   "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "2. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Barbora Palicova",
-    "rank": 179,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Maria Lourdes Carle",
-    "rank": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.5705,
-   "h2h": [],
-   "analysis": "Barbora Palicova (#179) trifft auf Maria Lourdes Carle, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Barbora Palicova mit 57 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-15T16:30:00+02:00",
+   "start": "2026-07-15T17:00:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
    "round": "2. Runde",
@@ -247,31 +305,55 @@
    "timeTBD": false
   },
   {
-   "start": "2026-07-15T16:30:00+02:00",
+   "start": "2026-07-15T17:00:00+02:00",
    "tour": "WTA",
-   "tournament": "Vanda Pharmaceuticals Athens Open",
+   "tournament": "ATV Bancomat Tennis Open",
    "round": "2. Runde",
-   "surface": "Hartplatz",
+   "surface": null,
    "p1": {
-    "name": "Zheng Qinwen",
-    "rank": 135,
+    "name": "Federica Urgesi",
+    "rank": 410,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
-    "name": "Elena Micic",
-    "rank": null,
+    "name": "Francesca Jones",
+    "rank": 123,
     "onSurface": null,
-    "favSurface": null
+    "favSurface": "Sand"
    },
-   "pP1": 0.628,
+   "pP1": 0.2644,
    "h2h": [],
-   "analysis": "Zheng Qinwen (#135) trifft auf Elena Micic, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Zheng Qinwen mit 63 % vorn.",
+   "analysis": "Federica Urgesi (Weltrangliste #410) trifft auf Francesca Jones (#123). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Francesca Jones mit 74 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
   {
-   "start": "2026-07-15T16:30:00+02:00",
+   "start": "2026-07-15T17:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "ATV Bancomat Tennis Open",
+   "round": "2. Runde",
+   "surface": null,
+   "p1": {
+    "name": "Noma Noha Akugue",
+    "rank": 149,
+    "onSurface": null,
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Darya Astakhova",
+    "rank": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.6082,
+   "h2h": [],
+   "analysis": "Noma Noha Akugue (#149) trifft auf Darya Astakhova, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Noma Noha Akugue mit 61 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-15T17:10:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
    "round": "2. Runde",
@@ -299,86 +381,6 @@
    "pP1": 0.9035,
    "h2h": [],
    "analysis": "Elsa Jacquemot (Weltrangliste #107) trifft auf Clara Burel (#1486). Auf Sand liegt die Siegquote von Elsa Jacquemot zuletzt bei 29 % (5:12), Clara Burel kommt auf 48 % (15:16). Elsa Jacquemots stärkster Belag ist eigentlich Hartplatz. Clara Burels stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Elsa Jacquemot mit 90 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-15T16:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "ATV Bancomat Tennis Open",
-   "round": "2. Runde",
-   "surface": null,
-   "p1": {
-    "name": "Federica Urgesi",
-    "rank": 410,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Francesca Jones",
-    "rank": 123,
-    "onSurface": null,
-    "favSurface": "Sand"
-   },
-   "pP1": 0.2644,
-   "h2h": [],
-   "analysis": "Federica Urgesi (Weltrangliste #410) trifft auf Francesca Jones (#123). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Francesca Jones mit 74 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-15T16:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "ATV Bancomat Tennis Open",
-   "round": "2. Runde",
-   "surface": null,
-   "p1": {
-    "name": "Noma Noha Akugue",
-    "rank": 149,
-    "onSurface": null,
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Darya Astakhova",
-    "rank": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.6082,
-   "h2h": [],
-   "analysis": "Noma Noha Akugue (#149) trifft auf Darya Astakhova, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Noma Noha Akugue mit 61 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-15T16:40:00+02:00",
-   "tour": "ATP",
-   "tournament": "EFG Swiss Open Gstaad",
-   "round": "2. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Valentin Vacherot",
-    "rank": 21,
-    "onSurface": {
-     "w": 6,
-     "l": 9,
-     "pct": 0.4
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Yannick Hanfmann",
-    "rank": 51,
-    "onSurface": {
-     "w": 45,
-     "l": 40,
-     "pct": 0.529
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.6801,
-   "h2h": [],
-   "analysis": "Valentin Vacherot (Weltrangliste #21) trifft auf Yannick Hanfmann (#51). Auf Sand liegt die Siegquote von Valentin Vacherot zuletzt bei 40 % (6:9), Yannick Hanfmann kommt auf 53 % (45:40). Valentin Vacherots stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Valentin Vacherot mit 68 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
