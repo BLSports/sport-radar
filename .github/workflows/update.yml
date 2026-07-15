@@ -25,19 +25,24 @@ jobs:
 
       - name: Tennis-Historie laden (Sackmann, CC BY-NC-SA)
         run: |
-          for repo in tennis_atp tennis_wta; do
-            git clone --depth 1 --filter=blob:none --sparse \
-              "https://github.com/JeffSackmann/${repo}.git" "/tmp/${repo}" || true
-            if [ -d "/tmp/${repo}" ]; then
-              (cd "/tmp/${repo}" && git sparse-checkout set --no-cone "*matches_20*.csv" \
-               && ls *matches_20*.csv | tail -3) || true
-            fi
-          done
+          {
+            for repo in tennis_atp tennis_wta; do
+              echo "== Clone ${repo} =="
+              git clone --depth 1 --filter=blob:none --sparse \
+                "https://github.com/JeffSackmann/${repo}.git" "/tmp/${repo}" || echo "CLONE FEHLGESCHLAGEN: ${repo}"
+              if [ -d "/tmp/${repo}" ]; then
+                (cd "/tmp/${repo}" && git sparse-checkout set --no-cone "*matches_20*.csv" \
+                 && echo "Dateien:" && ls *matches_20*.csv | tail -5) || echo "SPARSE-CHECKOUT FEHLGESCHLAGEN: ${repo}"
+              fi
+            done
+          } 2>&1 | tee /tmp/clone.log
 
       - name: Daten holen & Vorhersagen berechnen
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}   # optional
-        run: python scripts/fetch_data.py
+        run: |
+          set -o pipefail
+          { cat /tmp/clone.log 2>/dev/null; python scripts/fetch_data.py; } 2>&1 | tee data/last_run.log
 
       - name: Dashboard bauen
         run: python scripts/build_site.py
@@ -46,7 +51,7 @@ jobs:
         run: |
           git config user.name "sport-radar-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/data.json docs/index.html
+          git add data/data.json data/last_run.log docs/index.html
           if git diff --cached --quiet; then
             echo "Keine Änderungen."
           else
