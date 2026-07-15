@@ -693,14 +693,18 @@ def espn_tennis_day(tour, day):
                 players = []
                 for c in comp.get("competitors", []):
                     ath = c.get("athlete", {}) or {}
-                    cr = c.get("curatedRank")
-                    cr_val = cr.get("current") if isinstance(cr, dict) else None
-                    if not isinstance(cr_val, int) or not (1 <= cr_val <= 1500):
-                        cr_val = None
+                    # Athlete-ID steckt je nach Feed-Variante in id, uid ("a:1234")
+                    # oder einem $ref-Link
+                    aid = str(ath.get("id") or "")
+                    if not aid:
+                        blob = " ".join(str(x) for x in (
+                            ath.get("uid"), c.get("uid"), ath.get("$ref"),
+                            (ath.get("links") or [{}])[0].get("href") if ath.get("links") else ""))
+                        m_id = re.search(r"a:(\d+)", blob) or re.search(r"/athletes/(\d+)", blob)
+                        aid = m_id.group(1) if m_id else ""
                     players.append({
                         "name": ath.get("displayName") or ath.get("shortName") or "?",
-                        "id": str(ath.get("id", "")),
-                        "seed": cr_val,
+                        "id": aid,
                     })
                 if len(players) != 2:
                     continue
@@ -914,12 +918,12 @@ def main():
             seen.add(key)
             by_id = rank_atp_id if m["tour"] == "ATP" else rank_wta_id
             by_nm = rank_atp_nm if m["tour"] == "ATP" else rank_wta_nm
-            # Ranking: Weltrangliste, sonst curatedRank direkt vom Match
+            # Ranking ausschliesslich aus der Weltrangliste (Top 150 je Tour)
             dbg = out["meta"]["debugRank"]["playerIds"]
             if len(dbg) < 10:
                 dbg.append({"name": m["p1"]["name"], "id": m["p1"]["id"], "tour": m["tour"]})
-            r1 = by_id.get(m["p1"]["id"]) or by_nm.get(norm_team(m["p1"]["name"])) or m["p1"].get("seed")
-            r2 = by_id.get(m["p2"]["id"]) or by_nm.get(norm_team(m["p2"]["name"])) or m["p2"].get("seed")
+            r1 = by_id.get(m["p1"]["id"]) or by_nm.get(norm_team(m["p1"]["name"]))
+            r2 = by_id.get(m["p2"]["id"]) or by_nm.get(norm_team(m["p2"]["name"]))
             p1win = tennis_predict(r1, r2)
             rnd = (m.get("round") or "").strip()
             rnd = ROUND_DE.get(rnd.lower(), rnd)
