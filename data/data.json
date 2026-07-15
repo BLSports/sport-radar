@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T15:36:59.938700+02:00",
+ "generatedAt": "2026-07-15T15:42:27.284317+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-15",
@@ -101,30 +101,6 @@
  ],
  "tennis": [
   {
-   "start": "2026-07-15T15:40:00+02:00",
-   "tour": "WTA",
-   "tournament": "Enka Open",
-   "round": "2. Runde",
-   "surface": null,
-   "p1": {
-    "name": "Lanlana Tararudee",
-    "rank": 91,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Gabriela Knutson",
-    "rank": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.7025,
-   "h2h": [],
-   "analysis": "Lanlana Tararudee (#91) trifft auf Gabriela Knutson, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Lanlana Tararudee mit 70 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
    "start": "2026-07-15T15:45:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
@@ -149,26 +125,26 @@
    "timeTBD": false
   },
   {
-   "start": "2026-07-15T16:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "EFG Swiss Open Gstaad",
+   "start": "2026-07-15T15:55:00+02:00",
+   "tour": "WTA",
+   "tournament": "Enka Open",
    "round": "2. Runde",
    "surface": null,
    "p1": {
-    "name": "Valentin Vacherot",
-    "rank": 21,
+    "name": "Lanlana Tararudee",
+    "rank": 91,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
-    "name": "Yannick Hanfmann",
-    "rank": 51,
+    "name": "Gabriela Knutson",
+    "rank": null,
     "onSurface": null,
     "favSurface": null
    },
-   "pP1": 0.6801,
+   "pP1": 0.7025,
    "h2h": [],
-   "analysis": "Valentin Vacherot (Weltrangliste #21) trifft auf Yannick Hanfmann (#51). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Valentin Vacherot mit 68 % vorn.",
+   "analysis": "Lanlana Tararudee (#91) trifft auf Gabriela Knutson, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Lanlana Tararudee mit 70 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -337,6 +313,30 @@
    "pP1": 0.7356,
    "h2h": [],
    "analysis": "Luciano Darderi (Weltrangliste #18) trifft auf Daniel Altmaier (#60). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Luciano Darderi mit 74 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-15T16:30:00+02:00",
+   "tour": "ATP",
+   "tournament": "EFG Swiss Open Gstaad",
+   "round": "2. Runde",
+   "surface": null,
+   "p1": {
+    "name": "Valentin Vacherot",
+    "rank": 21,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Yannick Hanfmann",
+    "rank": 51,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.6801,
+   "h2h": [],
+   "analysis": "Valentin Vacherot (Weltrangliste #21) trifft auf Yannick Hanfmann (#51). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Valentin Vacherot mit 68 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1275,6 +1275,30 @@
    "analysis": "Sebastian Baez (Weltrangliste #56) trifft auf Jesper de Jong (#73). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Sebastian Baez mit 56 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
+  },
+  {
+   "start": "2026-07-17T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Enka Open",
+   "round": "Viertelfinale",
+   "surface": null,
+   "p1": {
+    "name": "Harmony Tan",
+    "rank": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Hanne Vandewinkel",
+    "rank": 98,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.3109,
+   "h2h": [],
+   "analysis": "Harmony Tan – aktuell ohne Top-Ranking – trifft auf Hanne Vandewinkel (#98). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Hanne Vandewinkel mit 69 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
   }
  ],
  "meta": {

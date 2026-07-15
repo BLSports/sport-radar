@@ -1,29 +1,30 @@
-== Diagnose ==
-raw.githubusercontent direkt: HTTP 404
-atp_matches_2022.csv: HTTP 404 (jsdelivr), 82 Bytes
-atp_matches_2023.csv: HTTP 404 (jsdelivr), 82 Bytes
-atp_matches_2024.csv: HTTP 404 (jsdelivr), 82 Bytes
-atp_matches_2025.csv: HTTP 404 (jsdelivr), 82 Bytes
-atp_matches_2026.csv: HTTP 404 (jsdelivr), 82 Bytes
-wta_matches_2022.csv: HTTP 404 (jsdelivr), 82 Bytes
-wta_matches_2023.csv: HTTP 404 (jsdelivr), 82 Bytes
-wta_matches_2024.csv: HTTP 404 (jsdelivr), 82 Bytes
-wta_matches_2025.csv: HTTP 404 (jsdelivr), 82 Bytes
-wta_matches_2026.csv: HTTP 404 (jsdelivr), 82 Bytes
+ATP 2022: HTTP 300, 467 Bytes
+WTA 2022: HTTP 300, 470 Bytes
+ATP 2023: HTTP 300, 467 Bytes
+WTA 2023: HTTP 300, 470 Bytes
+ATP 2024: HTTP 300, 467 Bytes
+WTA 2024: HTTP 300, 470 Bytes
+ATP 2025: HTTP 300, 467 Bytes
+WTA 2025: HTTP 300, 470 Bytes
+ATP 2026: HTTP 300, 467 Bytes
+WTA 2026: HTTP 300, 470 Bytes
+total 16
+drwxr-xr-x  2 runner runner  4096 Jul 15 13:42 .
+drwxrwxrwt 14 root   root   12288 Jul 15 13:42 ..
   WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP2.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2022.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2023.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2024.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2025.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2026.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2022.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2023.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2024.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2025.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2026.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: http://www.tennis-data.co.uk/2022/2022.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2023/2023.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2024/2024.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2025/2025.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2026/2026.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2022w/2022.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2023w/2023.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2024w/2024.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2025w/2025.zip nicht erreichbar (binaer)
+  WARN: http://www.tennis-data.co.uk/2026w/2026.zip nicht erreichbar (binaer)
 fixtures.csv: 12 Spiele mit Quoten
 == 1. Bundesliga ==
   306 Ergebnisse geladen
@@ -49,5 +50,5 @@ fixtures.csv: 12 Spiele mit Quoten
 == Tennis ==
   Rankings: ATP 150, WTA 150
   Historie: ATP 0 Matches, WTA 0 Matches
-  49 Tennis-Matches in den naechsten 3 Tagen
+  50 Tennis-Matches in den naechsten 3 Tagen
 OK -> /home/runner/work/sport-radar/sport-radar/scripts/../data/data.json
