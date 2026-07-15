@@ -1,100 +1,30 @@
-/tmp/tennisdata/atp_2022.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2022/2022.zip</code>) could not be found on this server.
-However, we found docum
-/tmp/tennisdata/wta_2022.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2022w/2022.zip</code>) could not be found on this server.
-However, we found docu
-/tmp/tennisdata/atp_2023.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2023/2023.zip</code>) could not be found on this server.
-However, we found docum
-/tmp/tennisdata/wta_2023.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2023w/2023.zip</code>) could not be found on this server.
-However, we found docu
-/tmp/tennisdata/atp_2024.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2024/2024.zip</code>) could not be found on this server.
-However, we found docum
-/tmp/tennisdata/wta_2024.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2024w/2024.zip</code>) could not be found on this server.
-However, we found docu
-/tmp/tennisdata/atp_2025.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2025/2025.zip</code>) could not be found on this server.
-However, we found docum
-/tmp/tennisdata/wta_2025.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2025w/2025.zip</code>) could not be found on this server.
-However, we found docu
-/tmp/tennisdata/atp_2026.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2026/2026.zip</code>) could not be found on this server.
-However, we found docum
-/tmp/tennisdata/wta_2026.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<title>300 Multiple Choices</title>
-</head><body>
-<h1>Multiple Choices</h1>
-The document name you requested (<code>/2026w/2026.zip</code>) could not be found on this server.
-However, we found docu
-total 16
-drwxr-xr-x  2 runner runner  4096 Jul 15 13:46 .
-drwxrwxrwt 14 root   root   12288 Jul 15 13:46 ..
+/tmp/tennisdata/atp_2022.xlsx: OK über http://www.tennis-data.co.uk (417917 Bytes)
+/tmp/tennisdata/wta_2022.xlsx: OK über http://www.tennis-data.co.uk (370069 Bytes)
+/tmp/tennisdata/atp_2023.xlsx: OK über http://www.tennis-data.co.uk (447088 Bytes)
+/tmp/tennisdata/wta_2023.xlsx: OK über http://www.tennis-data.co.uk (407251 Bytes)
+/tmp/tennisdata/atp_2024.xlsx: OK über http://www.tennis-data.co.uk (445729 Bytes)
+/tmp/tennisdata/wta_2024.xlsx: OK über http://www.tennis-data.co.uk (406783 Bytes)
+/tmp/tennisdata/atp_2025.xlsx: OK über http://www.tennis-data.co.uk (426707 Bytes)
+/tmp/tennisdata/wta_2025.xlsx: OK über http://www.tennis-data.co.uk (399398 Bytes)
+/tmp/tennisdata/atp_2026.xlsx: OK über http://www.tennis-data.co.uk (257172 Bytes)
+/tmp/tennisdata/wta_2026.xlsx: OK über http://www.tennis-data.co.uk (245346 Bytes)
+total 3772
+drwxr-xr-x  2 runner runner   4096 Jul 15 13:55 .
+drwxrwxrwt 14 root   root    12288 Jul 15 13:55 ..
+-rw-r--r--  1 runner runner 417917 Jul 15 13:55 atp_2022.xlsx
+-rw-r--r--  1 runner runner 447088 Jul 15 13:55 atp_2023.xlsx
+-rw-r--r--  1 runner runner 445729 Jul 15 13:55 atp_2024.xlsx
+-rw-r--r--  1 runner runner 426707 Jul 15 13:55 atp_2025.xlsx
+-rw-r--r--  1 runner runner 257172 Jul 15 13:55 atp_2026.xlsx
+-rw-r--r--  1 runner runner 370069 Jul 15 13:55 wta_2022.xlsx
+-rw-r--r--  1 runner runner 407251 Jul 15 13:55 wta_2023.xlsx
+-rw-r--r--  1 runner runner 406783 Jul 15 13:55 wta_2024.xlsx
+-rw-r--r--  1 runner runner 399398 Jul 15 13:55 wta_2025.xlsx
+-rw-r--r--  1 runner runner 245346 Jul 15 13:55 wta_2026.xlsx
   WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP2.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: http://www.tennis-data.co.uk/2022/2022.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2023/2023.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2024/2024.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2025/2025.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2026/2026.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2022w/2022.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2023w/2023.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2024w/2024.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2025w/2025.zip nicht erreichbar (binaer)
-  WARN: http://www.tennis-data.co.uk/2026w/2026.zip nicht erreichbar (binaer)
 fixtures.csv: 12 Spiele mit Quoten
 == 1. Bundesliga ==
   306 Ergebnisse geladen
@@ -119,6 +49,6 @@ fixtures.csv: 12 Spiele mit Quoten
   0 Spiele in den naechsten 3 Tagen
 == Tennis ==
   Rankings: ATP 150, WTA 150
-  Historie: ATP 0 Matches, WTA 0 Matches
-  50 Tennis-Matches in den naechsten 3 Tagen
+  Historie: ATP 12275 Matches, WTA 11404 Matches
+  48 Tennis-Matches in den naechsten 3 Tagen
 OK -> /home/runner/work/sport-radar/sport-radar/scripts/../data/data.json
