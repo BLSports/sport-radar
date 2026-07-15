@@ -1,0 +1,49 @@
+== Clone tennis_atp ==
+Cloning into '/tmp/tennis_atp'...
+fatal: could not read Username for 'https://github.com': No such device or address
+CLONE FEHLGESCHLAGEN: tennis_atp
+== Clone tennis_wta ==
+Cloning into '/tmp/tennis_wta'...
+fatal: could not read Username for 'https://github.com': No such device or address
+CLONE FEHLGESCHLAGEN: tennis_wta
+  WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://www.football-data.co.uk/mmz4281/2627/SP2.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2022.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2023.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2024.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2025.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2026.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2022.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2023.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2024.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2025.csv nicht erreichbar (HTTP Error 404: Not Found)
+  WARN: https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_2026.csv nicht erreichbar (HTTP Error 404: Not Found)
+fixtures.csv: 12 Spiele mit Quoten
+== 1. Bundesliga ==
+  306 Ergebnisse geladen
+  0 Spiele in den naechsten 3 Tagen
+== 2. Bundesliga ==
+  306 Ergebnisse geladen
+  0 Spiele in den naechsten 3 Tagen
+== 3. Liga ==
+  380 Ergebnisse geladen
+  0 Spiele in den naechsten 3 Tagen
+== Premier League ==
+  380 Ergebnisse geladen
+  0 Spiele in den naechsten 3 Tagen
+== Serie A ==
+  380 Ergebnisse geladen
+  0 Spiele in den naechsten 3 Tagen
+== La Liga ==
+  380 Ergebnisse geladen
+  0 Spiele in den naechsten 3 Tagen
+== La Liga 2 ==
+  462 Ergebnisse geladen
+  0 Spiele in den naechsten 3 Tagen
+== Tennis ==
+  Rankings: ATP 150, WTA 150
+  Historie: ATP 0 Matches, WTA 0 Matches
+  50 Tennis-Matches in den naechsten 3 Tagen
+OK -> /home/runner/work/sport-radar/sport-radar/scripts/../data/data.json
