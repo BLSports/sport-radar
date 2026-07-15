@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sport-Radar · Spiele &amp; Analysen der nächsten 3 Tage</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e;
+  --muted: #898781; --grid: #e1e0d9; --border: rgba(11,11,11,.10);
+  --home: #2a78d6; --away: #eb6834; --draw: #f0efec; --draw-ink: #52514e;
+  --good: #0ca30c; --bad: #d03b3b; --accent: #2a78d6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #fff; --ink2: #c3c2b7;
+    --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,.10);
+    --home: #3987e5; --away: #d95926; --draw: #383835; --draw-ink: #c3c2b7;
+    --good: #0ca30c; --bad: #e66767; --accent: #3987e5;
+  }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--page); color:var(--ink);
+  font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif; }
+header { padding:22px 18px 10px; max-width:1100px; margin:0 auto; }
+h1 { font-size:24px; margin:0 0 2px; }
+.sub { color:var(--ink2); font-size:13px; }
+main { max-width:1100px; margin:0 auto; padding:0 18px 40px; }
+.tabs { display:flex; gap:8px; margin:16px 0 6px; flex-wrap:wrap; }
+.tab { background:var(--surface); border:1px solid var(--border); border-radius:10px;
+  padding:8px 16px; font:inherit; font-weight:600; color:var(--ink2); cursor:pointer;
+  display:flex; flex-direction:column; align-items:center; min-width:96px; }
+.tab .tabsub { font-weight:400; font-size:11px; color:var(--muted); }
+.tab.active { color:var(--ink); border-color:var(--accent); box-shadow:inset 0 -2px 0 var(--accent); }
+.filters { display:flex; gap:6px; margin:10px 0 4px; flex-wrap:wrap; }
+.flt { background:none; border:1px solid var(--border); border-radius:999px; padding:4px 12px;
+  font:inherit; font-size:13px; color:var(--ink2); cursor:pointer; }
+.flt.active { background:var(--surface); color:var(--ink); border-color:var(--accent); font-weight:600; }
+.daypanel { display:none; } .daypanel.active { display:block; }
+.league { margin-top:22px; }
+.league h2 { font-size:16px; margin:0 0 10px; border-bottom:1px solid var(--grid); padding-bottom:6px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:12px; }
+.card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px 14px; }
+.cardtop { display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:8px; }
+.ko { font-weight:700; font-size:13px; }
+.teams { display:flex; align-items:flex-start; gap:8px; margin-bottom:10px; }
+.team { flex:1; min-width:0; display:flex; flex-direction:column; gap:3px; }
+.team.right { text-align:right; align-items:flex-end; }
+.tname { font-weight:650; font-size:14.5px; }
+.tmeta { display:flex; gap:4px; align-items:center; }
+.vs { color:var(--muted); font-weight:600; padding-top:1px; }
+.pos { font-size:11px; color:var(--ink2); border:1px solid var(--grid); border-radius:5px;
+  padding:0 4px; }
+.fb { display:inline-block; width:17px; height:17px; border-radius:5px; font-size:10.5px;
+  font-weight:700; text-align:center; line-height:17px; color:#fff; }
+.fb.w { background:var(--good); } .fb.l { background:var(--bad); }
+.fb.d { background:var(--draw); color:var(--draw-ink); border:1px solid var(--grid); line-height:15px; }
+.pbar { display:flex; height:22px; border-radius:6px; overflow:hidden; gap:2px; background:var(--page); }
+.seg { display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700;
+  color:#fff; min-width:0; white-space:nowrap; overflow:hidden; }
+.seg.ph { background:var(--home); border-radius:6px 0 0 6px; }
+.seg.pd { background:var(--draw); color:var(--draw-ink); }
+.seg.pa { background:var(--away); border-radius:0 6px 6px 0; }
+.predmeta { display:flex; gap:12px; flex-wrap:wrap; font-size:12px; color:var(--ink2); margin-top:6px; }
+.oddsrow { display:flex; gap:6px; align-items:center; margin-top:9px; flex-wrap:wrap; }
+.chip { border:1px solid var(--grid); border-radius:7px; padding:2px 9px; font-size:12.5px; }
+.chip b { color:var(--ink2); margin-right:3px; font-weight:600; }
+.chip.hot { border-color:var(--accent); box-shadow:inset 0 0 0 1px var(--accent); }
+.value-note { margin-top:8px; font-size:12.5px; background:var(--page); border:1px dashed var(--border);
+  border-radius:8px; padding:6px 9px; color:var(--ink2); }
+.h2h { margin-top:8px; font-size:12.5px; }
+.h2h summary { cursor:pointer; color:var(--ink2); }
+.h2h table { width:100%; border-collapse:collapse; margin-top:6px; }
+.h2h td { padding:3px 4px; border-top:1px solid var(--grid); color:var(--ink2); }
+.h2h td.num { text-align:right; font-variant-numeric:tabular-nums; color:var(--ink); }
+.rank { font-size:11.5px; color:var(--ink2); border:1px solid var(--grid); border-radius:5px; padding:0 5px; }
+.rank.unk { color:var(--muted); border-style:dashed; }
+.empty { margin:26px 0; color:var(--muted); text-align:center; padding:30px;
+  border:1px dashed var(--border); border-radius:12px; }
+.pause { margin-top:30px; }
+.pause h2 { font-size:15px; }
+.pausetable { width:100%; border-collapse:collapse; background:var(--surface);
+  border:1px solid var(--border); border-radius:10px; overflow:hidden; font-size:13px; }
+.pausetable th { text-align:left; padding:8px 10px; color:var(--muted); font-weight:600;
+  border-bottom:1px solid var(--grid); font-size:12px; }
+.pausetable td { padding:8px 10px; border-bottom:1px solid var(--grid); }
+.pausetable tr:last-child td { border-bottom:none; }
+footer { max-width:1100px; margin:0 auto; padding:18px; color:var(--muted); font-size:12px; }
+footer details { margin-bottom:10px; color:var(--ink2); }
+footer summary { cursor:pointer; }
+.muted { color:var(--muted); } .small { font-size:12.5px; } .tiny { font-size:11.5px; }
+.disclaimer { border-top:1px solid var(--grid); padding-top:10px; margin-top:10px; }
+.banner { background:var(--surface); border:1px solid var(--accent); border-radius:10px;
+  padding:9px 13px; font-size:13px; color:var(--ink2); margin:12px 0 0; }
+.unc { font-size:11.5px; color:var(--ink2); border:1px dashed var(--border); border-radius:7px;
+  padding:4px 8px; margin-bottom:8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚽ Sport-Radar 🎾</h1>
+  <div class="sub">Spiele &amp; Analysen der nächsten 3 Tage · Saison 2026/27 ·
+    Stand: <b>28.08.2026, 07:00 Uhr</b> · 6 Fußballspiele · 1 Tennis-Matches</div>
+  <div class="banner">🧪 <b>Demo-Ansicht mit Beispieldaten:</b> So sieht das Dashboard an einem Spieltag aus. Formkurven, Wahrscheinlichkeiten und Quoten sind hier nur illustrative Beispiele.</div>
+  <div class="tabs"><button class="tab active" data-day="0">Heute<span class="tabsub">Fr 28.08.</span></button><button class="tab" data-day="1">Morgen<span class="tabsub">Sa 29.08.</span></button><button class="tab" data-day="2">Sonntag<span class="tabsub">30.08.</span></button></div>
+  <div class="filters">
+    <button class="flt active" data-f="alle">Alle</button>
+    <button class="flt" data-f="fussball">⚽ Fußball</button>
+    <button class="flt" data-f="tennis">🎾 Tennis</button>
+  </div>
+</header>
+<main>
+<div class="daypanel active" data-day="0"><section class="league" data-cat="fussball" data-lg="bl1"><h2>🇩🇪 1. Bundesliga</h2><div class="grid">
+  <article class="card">
+    <div class="cardtop"><span class="ko">20:30 Uhr</span><span class="muted tiny">1. Spieltag</span></div>
+    <div class="teams">
+      <div class="team">
+        <span class="tname">FC Bayern München</span>
+        <span class="tmeta"><span class="pos">1.</span> <span class="fb w">S</span><span class="fb w">S</span><span class="fb w">S</span><span class="fb d">U</span><span class="fb w">S</span></span>
+      </div>
+      <span class="vs">:</span>
+      <div class="team right">
+        <span class="tname">VfB Stuttgart</span>
+        <span class="tmeta"><span class="fb w">S</span><span class="fb l">N</span><span class="fb w">S</span><span class="fb w">S</span><span class="fb d">U</span> <span class="pos">5.</span></span>
+      </div>
+    </div>
+    <div class="pbar" role="img" aria-label="Heimsieg 73%, Unentschieden 15%, Auswärtssieg 12%"><div class="seg ph" style="width:73%"><span>1&thinsp;73%</span></div><div class="seg pd" style="width:15%"><span>X&thinsp;15%</span></div><div class="seg pa" style="width:12%"></div></div><div class="predmeta"><span>Tipp <b>2:1</b></span><span>xG 2.9 : 1.1</span><span>Über 2,5 Tore: 75%</span><span class="muted">Datenlage: hoch</span></div>
+    <div class="oddsrow"><span class="chip hot"><b>1</b> 1.42</span><span class="chip"><b>X</b> 5.10</span><span class="chip"><b>2</b> 6.60</span><span class="muted tiny">(Beispiel)</span></div>
+    <div class="value-note">💡 Modell sieht <b>Tipp 1</b> bei Quote 1.42 um <b>+7 Prozentpunkte</b> wahrscheinlicher als der Markt.</div>
+    
+  </article></div></section></div><div class="daypanel" data-day="1"><section class="league" data-cat="fussball" data-lg="bl1"><h2>🇩🇪 1. Bundesliga</h2><div class="grid">
+  <article class="card">
+    <div class="cardtop"><span class="ko">15:30 Uhr</span><span class="muted tiny">1. Spieltag</span></div>
+    <div class="teams">
+      <div class="team">
+        <span class="tname">Borussia Dortmund</span>
+        <span class="tmeta"><span class="pos">3.</span> <span class="fb w">S</span><span class="fb d">U</span><span class="fb w">S</span><span class="fb w">S</span><span class="fb l">N</span></span>
+      </div>
+      <span class="vs">:</span>
+      <div class="team right">
+        <span class="tname">Hamburger SV</span>
+        <span class="tmeta"><span class="fb d">U</span><span class="fb w">S</span><span class="fb l">N</span><span class="fb w">S</span><span class="fb w">S</span> <span class="pos">12.</span></span>
+      </div>
+    </div>
+    <div class="pbar" role="img" aria-label="Heimsieg 74%, Unentschieden 15%, Auswärtssieg 11%"><div class="seg ph" style="width:74%"><span>1&thinsp;74%</span></div><div class="seg pd" style="width:15%"><span>X&thinsp;15%</span></div><div class="seg pa" style="width:11%"></div></div><div class="predmeta"><span>Tipp <b>2:1</b></span><span>xG 2.7 : 1.0</span><span>Über 2,5 Tore: 72%</span><span class="muted">Datenlage: hoch</span></div>
+    <div class="oddsrow"><span class="chip hot"><b>1</b> 1.55</span><span class="chip"><b>X</b> 4.40</span><span class="chip"><b>2</b> 5.80</span><span class="muted tiny">(Beispiel)</span></div>
+    <div class="value-note">💡 Modell sieht <b>Tipp 1</b> bei Quote 1.55 um <b>+12 Prozentpunkte</b> wahrscheinlicher als der Markt.</div>
+    
+  </article>
+  <article class="card">
+    <div class="cardtop"><span class="ko">15:30 Uhr</span><span class="muted tiny">1. Spieltag</span></div>
+    <div class="teams">
+      <div class="team">
+        <span class="tname">RB Leipzig</span>
+        <span class="tmeta"><span class="pos">4.</span> <span class="fb w">S</span><span class="fb w">S</span><span class="fb l">N</span><span class="fb d">U</span><span class="fb w">S</span></span>
+      </div>
+      <span class="vs">:</span>
+      <div class="team right">
+        <span class="tname">Borussia Mönchengladbach</span>
+        <span class="tmeta"><span class="fb l">N</span><span class="fb d">U</span><span class="fb w">S</span><span class="fb d">U</span><span class="fb l">N</span> <span class="pos">9.</span></span>
+      </div>
+    </div>
+    <div class="pbar" role="img" aria-label="Heimsieg 68%, Unentschieden 17%, Auswärtssieg 15%"><div class="seg ph" style="width:68%"><span>1&thinsp;68%</span></div><div class="seg pd" style="width:17%"><span>X&thinsp;17%</span></div><div class="seg pa" style="width:15%"><span>2&thinsp;15%</span></div></div><div class="predmeta"><span>Tipp <b>2:1</b></span><span>xG 2.5 : 1.1</span><span>Über 2,5 Tore: 70%</span><span class="muted">Datenlage: hoch</span></div>
+    <div class="oddsrow"><span class="chip hot"><b>1</b> 1.75</span><span class="chip"><b>X</b> 4.00</span><span class="chip"><b>2</b> 4.40</span><span class="muted tiny">(Beispiel)</span></div>
+    <div class="value-note">💡 Modell sieht <b>Tipp 1</b> bei Quote 1.75 um <b>+13 Prozentpunkte</b> wahrscheinlicher als der Markt.</div>
+    
+  </article>
+  <article class="card">
+    <div class="cardtop"><span class="ko">15:30 Uhr</span><span class="muted tiny">1. Spieltag</span></div>
+    <div class="teams">
+      <div class="team">
+        <span class="tname">SC Freiburg</span>
+        <span class="tmeta"><span class="pos">7.</span> <span class="fb d">U</span><span class="fb w">S</span><span class="fb w">S</span><span class="fb l">N</span><span class="fb d">U</span></span>
+      </div>
+      <span class="vs">:</span>
+      <div class="team right">
+        <span class="tname">SV Werder Bremen</span>
+        <span class="tmeta"><span class="fb w">S</span><span class="fb l">N</span><span class="fb d">U</span><span class="fb l">N</span><span class="fb w">S</span> <span class="pos">10.</span></span>
+      </div>
+    </div>
+    <div class="pbar" role="img" aria-label="Heimsieg 57%, Unentschieden 21%, Auswärtssieg 22%"><div class="seg ph" style="width:57%"><span>1&thinsp;57%</span></div><div class="seg pd" style="width:21%"><span>X&thinsp;21%</span></div><div class="seg pa" style="width:22%"><span>2&thinsp;22%</span></div></div><div class="predmeta"><span>Tipp <b>2:1</b></span><span>xG 2.1 : 1.2</span><span>Über 2,5 Tore: 65%</span><span class="muted">Datenlage: hoch</span></div>
+    <div class="oddsrow"><span class="chip hot"><b>1</b> 2.10</span><span class="chip"><b>X</b> 3.55</span><span class="chip"><b>2</b> 3.45</span><span class="muted tiny">(Beispiel)</span></div>
+    <div class="value-note">💡 Modell sieht <b>Tipp 1</b> bei Quote 2.10 um <b>+12 Prozentpunkte</b> wahrscheinlicher als der Markt.</div>
+    
+  </article>
+  <article class="card">
+    <div class="cardtop"><span class="ko">15:30 Uhr</span><span class="muted tiny">1. Spieltag</span></div>
+    <div class="teams">
+      <div class="team">
+        <span class="tname">1. FC Union Berlin</span>
+        <span class="tmeta"><span class="pos">13.</span> <span class="fb l">N</span><span class="fb d">U</span><span class="fb w">S</span><span class="fb d">U</span><span class="fb l">N</span></span>
+      </div>
+      <span class="vs">:</span>
+      <div class="team right">
+        <span class="tname">Eintracht Frankfurt</span>
+        <span class="tmeta"><span class="fb w">S</span><span class="fb d">U</span><span class="fb w">S</span><span class="fb w">S</span><span class="fb l">N</span> <span class="pos">6.</span></span>
+      </div>
+    </div>
+    <div class="pbar" role="img" aria-label="Heimsieg 38%, Unentschieden 24%, Auswärtssieg 38%"><div class="seg ph" style="width:38%"><span>1&thinsp;38%</span></div><div class="seg pd" style="width:24%"><span>X&thinsp;24%</span></div><div class="seg pa" style="width:38%"><span>2&thinsp;38%</span></div></div><div class="predmeta"><span>Tipp <b>1:1</b></span><span>xG 1.6 : 1.6</span><span>Über 2,5 Tore: 61%</span><span class="muted">Datenlage: hoch</span></div>
+    <div class="oddsrow"><span class="chip hot"><b>1</b> 3.30</span><span class="chip"><b>X</b> 3.40</span><span class="chip"><b>2</b> 2.20</span><span class="muted tiny">(Beispiel)</span></div>
+    <div class="value-note">💡 Modell sieht <b>Tipp 1</b> bei Quote 3.30 um <b>+9 Prozentpunkte</b> wahrscheinlicher als der Markt.</div>
+    
+  </article>
+  <article class="card">
+    <div class="cardtop"><span class="ko">15:30 Uhr</span><span class="muted tiny">1. Spieltag</span></div>
+    <div class="teams">
+      <div class="team">
+        <span class="tname">SV 07 Elversberg</span>
+        <span class="tmeta"><span class="pos">15.</span> <span class="fb w">S</span><span class="fb d">U</span><span class="fb l">N</span><span class="fb w">S</span><span class="fb d">U</span></span>
+      </div>
+      <span class="vs">:</span>
+      <div class="team right">
+        <span class="tname">Bayer 04 Leverkusen</span>
+        <span class="tmeta"><span class="fb w">S</span><span class="fb w">S</span><span class="fb d">U</span><span class="fb w">S</span><span class="fb w">S</span> <span class="pos">2.</span></span>
+      </div>
+    </div>
+    <div class="pbar" role="img" aria-label="Heimsieg 21%, Unentschieden 20%, Auswärtssieg 59%"><div class="seg ph" style="width:21%"><span>1&thinsp;21%</span></div><div class="seg pd" style="width:20%"><span>X&thinsp;20%</span></div><div class="seg pa" style="width:59%"><span>2&thinsp;59%</span></div></div><div class="predmeta"><span>Tipp <b>1:2</b></span><span>xG 1.2 : 2.2</span><span>Über 2,5 Tore: 67%</span><span class="muted">Datenlage: hoch</span></div>
+    <div class="oddsrow"><span class="chip"><b>1</b> 5.20</span><span class="chip"><b>X</b> 4.20</span><span class="chip"><b>2</b> 1.62</span><span class="muted tiny">(Beispiel)</span></div>
+    
+    
+  </article></div></section><section class="league" data-cat="tennis" data-lg="atp"><h2>🎾 ATP · Beispiel-Turnier</h2><div class="grid">
+  <article class="card">
+    <div class="cardtop"><span class="ko">13:00 Uhr</span>
+      <span class="muted tiny">Beispiel-Turnier · Halbfinale</span></div>
+    
+    <div class="teams">
+      <div class="team"><span class="tname">Spieler A</span><span class="tmeta"><span class="rank">#8</span></span></div>
+      <span class="vs">–</span>
+      <div class="team right"><span class="tname">Spieler B</span><span class="tmeta"><span class="rank">#31</span></span></div>
+    </div>
+    <div class="pbar" role="img" aria-label="Spieler A 76%, Spieler B 24%"><div class="seg ph" style="width:76%"><span>76%</span></div><div class="seg pa" style="width:24%"><span>24%</span></div></div><div class="predmeta"><span>Favorit laut Ranking: <b>Spieler A</b> (76%)</span></div>
+  </article></div></section></div><div class="daypanel" data-day="2"><div class="empty">Für diesen Tag sind (noch) keine Partien angesetzt.</div></div>
+
+</main>
+<footer>
+  <details>
+    <summary>Wie funktionieren die Vorhersagen?</summary>
+    <p>Fußball: Poisson-Modell auf Basis der Ergebnisse der letzten zwei Saisons (neuere Spiele
+    zählen stärker), inkl. Heimvorteil. Daraus ergeben sich Wahrscheinlichkeiten für 1/X/2,
+    erwartete Tore (xG) und ein wahrscheinlichstes Ergebnis. „Value“ markiert Fälle, in denen das
+    Modell ein Ergebnis deutlich wahrscheinlicher einschätzt als die Buchmacher-Quote. Tennis:
+    Einschätzung anhand der aktuellen Weltranglisten-Position beider Spieler:innen („o. R.“ = ohne
+    Ranking in den Top-Platzierungen). Alle Angaben sind statistische Schätzungen ohne Gewähr.</p>
+  </details>
+  <div>Datenquellen: OpenLigaDB (1.–3. Bundesliga), ESPN (internationale Ligen, Tennis, Rankings),
+  football-data.co.uk (Quoten &amp; Historie), TheSportsDB (Tennis-Ergänzung).
+  Automatisches Update: täglich.</div>
+  <div class="disclaimer">Dieses Dashboard ist ein privates Statistik-Projekt und keine
+  Wettempfehlung. Quoten dienen nur dem Vergleich mit dem Modell. Glücksspiel kann süchtig
+  machen (18+) – Hilfe: <a href="https://www.bundesweit-gegen-gluecksspielsucht.de">bundesweit-gegen-gluecksspielsucht.de</a>.</div>
+</footer>
+<script>
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('.daypanel').forEach(x => x.classList.remove('active'));
+  t.classList.add('active');
+  document.querySelector('.daypanel[data-day="' + t.dataset.day + '"]').classList.add('active');
+}));
+document.querySelectorAll('.flt').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.flt').forEach(x => x.classList.remove('active'));
+  b.classList.add('active');
+  const f = b.dataset.f;
+  document.querySelectorAll('.league').forEach(sec => {
+    sec.style.display = (f === 'alle' || sec.dataset.cat === f) ? '' : 'none';
+  });
+}));
+</script>
+</body>
+</html>

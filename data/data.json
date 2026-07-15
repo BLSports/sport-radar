@@ -1,0 +1,37 @@
+{
+ "generatedAt": "2026-07-14T16:45:00+02:00",
+ "windowDays": 3,
+ "days": ["2026-07-14", "2026-07-15", "2026-07-16"],
+ "football": [
+  {"id": "bl1", "name": "1. Bundesliga", "flag": "🇩🇪", "matches": [], "seasonHasStarted": false,
+   "nextMatch": {"kickoff": "2026-08-28T20:30:00+02:00", "home": "FC Bayern München", "away": "VfB Stuttgart", "matchday": 1}},
+  {"id": "bl2", "name": "2. Bundesliga", "flag": "🇩🇪", "matches": [], "seasonHasStarted": false,
+   "nextMatch": {"kickoff": "2026-08-07T20:30:00+02:00", "home": "VfL Bochum", "away": "Hertha BSC", "matchday": 1}},
+  {"id": "bl3", "name": "3. Liga", "flag": "🇩🇪", "matches": [], "seasonHasStarted": false,
+   "nextMatch": {"kickoff": "2026-08-07T19:00:00+02:00", "home": "SV Waldhof Mannheim", "away": "Fortuna Düsseldorf", "matchday": 1}},
+  {"id": "pl", "name": "Premier League", "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "matches": [], "seasonHasStarted": false,
+   "nextMatch": {"kickoff": "2026-08-21T21:00:00+02:00", "home": "Arsenal", "away": "Coventry City", "matchday": 1}},
+  {"id": "sa", "name": "Serie A", "flag": "🇮🇹", "matches": [], "seasonHasStarted": false,
+   "nextMatch": {"kickoff": "2026-08-22T18:30:00+02:00", "home": "Udinese", "away": "Como", "matchday": 1}},
+  {"id": "ll1", "name": "La Liga", "flag": "🇪🇸", "matches": [], "seasonHasStarted": false},
+  {"id": "ll2", "name": "La Liga 2", "flag": "🇪🇸", "matches": [], "seasonHasStarted": false,
+   "nextMatch": {"kickoff": "2026-08-16T17:00:00+02:00", "home": "Las Palmas", "away": "Albacete", "matchday": 1}}
+ ],
+ "tennis": [
+  {"start": "2026-07-14T11:00:00+02:00", "tour": "WTA", "tournament": "Athens Open (Athen)", "round": "",
+   "p1": {"name": "Costoulas", "rank": null}, "p2": {"name": "Valentova", "rank": null}, "pP1": null, "unconfirmed": true},
+  {"start": "2026-07-14T12:30:00+02:00", "tour": "WTA", "tournament": "Athens Open (Athen)", "round": "",
+   "p1": {"name": "Sasnovich", "rank": null}, "p2": {"name": "Blinkova", "rank": null}, "pP1": null, "unconfirmed": true},
+  {"start": "2026-07-14T14:00:00+02:00", "tour": "WTA", "tournament": "Athens Open (Athen)", "round": "",
+   "p1": {"name": "Li", "rank": null}, "p2": {"name": "Timofeeva", "rank": null}, "pP1": null, "unconfirmed": true},
+  {"start": "2026-07-14T19:30:00+02:00", "tour": "ATP", "tournament": "Croatia Open (Umag)", "round": "",
+   "p1": {"name": "Angelo", "rank": null}, "p2": {"name": "Neumayer", "rank": null}, "pP1": null, "unconfirmed": true},
+  {"start": "2026-07-15T10:00:00+02:00", "tour": "WTA", "tournament": "WTA 250 Iași", "round": "",
+   "p1": {"name": "Perelygina", "rank": null}, "p2": {"name": "Grabher", "rank": null}, "pP1": null, "unconfirmed": true},
+  {"start": "2026-07-15T11:30:00+02:00", "tour": "WTA", "tournament": "WTA 250 Iași", "round": "",
+   "p1": {"name": "Ristic", "rank": null}, "p2": {"name": "Andreeva", "rank": null}, "pP1": null, "unconfirmed": true},
+  {"start": "2026-07-15T12:00:00+02:00", "tour": "ATP", "tournament": "Swiss Open (Gstaad)", "round": "",
+   "p1": {"name": "Tabur", "rank": null}, "p2": {"name": "Rinderknech", "rank": null}, "pP1": null, "unconfirmed": true}
+ ],
+ "meta": {"oddsApiEnabled": false, "season": "2026/27", "preview": true}
+}
