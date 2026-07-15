@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T10:08:33.483207+02:00",
+ "generatedAt": "2026-07-15T10:12:40.960566+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-15",
@@ -114,7 +114,8 @@
     "rank": 42
    },
    "pP1": 0.3592,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T10:30:00+02:00",
@@ -130,7 +131,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T10:30:00+02:00",
@@ -146,7 +148,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T11:00:00+02:00",
@@ -162,7 +165,8 @@
     "rank": 55
    },
    "pP1": 0.446,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T11:00:00+02:00",
@@ -178,7 +182,8 @@
     "rank": 116
    },
    "pP1": 0.3424,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T12:00:00+02:00",
@@ -194,7 +199,8 @@
     "rank": 28
    },
    "pP1": 0.1346,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T12:30:00+02:00",
@@ -210,7 +216,8 @@
     "rank": 52
    },
    "pP1": 0.2937,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T12:30:00+02:00",
@@ -226,7 +233,8 @@
     "rank": 82
    },
    "pP1": 0.4233,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T12:30:00+02:00",
@@ -242,7 +250,8 @@
     "rank": 105
    },
    "pP1": 0.3236,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T13:00:00+02:00",
@@ -258,7 +267,8 @@
     "rank": 98
    },
    "pP1": 0.3109,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T13:00:00+02:00",
@@ -274,7 +284,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T14:00:00+02:00",
@@ -290,7 +301,8 @@
     "rank": 150
    },
    "pP1": 0.7248,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T14:00:00+02:00",
@@ -306,7 +318,8 @@
     "rank": null
    },
    "pP1": 0.6729,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T14:00:00+02:00",
@@ -322,7 +335,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T14:30:00+02:00",
@@ -338,7 +352,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T14:30:00+02:00",
@@ -354,7 +369,8 @@
     "rank": null
    },
    "pP1": 0.7025,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T15:00:00+02:00",
@@ -370,7 +386,8 @@
     "rank": 51
    },
    "pP1": 0.6801,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T15:30:00+02:00",
@@ -386,7 +403,8 @@
     "rank": 60
    },
    "pP1": 0.7356,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T15:30:00+02:00",
@@ -402,7 +420,8 @@
     "rank": 73
    },
    "pP1": 0.3542,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T15:30:00+02:00",
@@ -418,7 +437,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T16:00:00+02:00",
@@ -434,7 +454,8 @@
     "rank": null
    },
    "pP1": 0.6712,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T16:00:00+02:00",
@@ -450,7 +471,8 @@
     "rank": 30
    },
    "pP1": 0.2984,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T16:00:00+02:00",
@@ -466,7 +488,8 @@
     "rank": null
    },
    "pP1": 0.845,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T16:00:00+02:00",
@@ -482,7 +505,8 @@
     "rank": 123
    },
    "pP1": 0.3537,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T16:00:00+02:00",
@@ -498,7 +522,8 @@
     "rank": null
    },
    "pP1": 0.6082,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T16:30:00+02:00",
@@ -514,7 +539,8 @@
     "rank": null
    },
    "pP1": 0.628,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T17:30:00+02:00",
@@ -530,7 +556,8 @@
     "rank": null
    },
    "pP1": 0.7144,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T17:30:00+02:00",
@@ -546,7 +573,8 @@
     "rank": 65
    },
    "pP1": 0.5242,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T18:00:00+02:00",
@@ -562,7 +590,8 @@
     "rank": 9
    },
    "pP1": 0.1536,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T18:00:00+02:00",
@@ -578,7 +607,8 @@
     "rank": 99
    },
    "pP1": 0.7957,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T18:00:00+02:00",
@@ -594,7 +624,8 @@
     "rank": null
    },
    "pP1": 0.8112,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T18:30:00+02:00",
@@ -610,7 +641,8 @@
     "rank": null
    },
    "pP1": 0.8353,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T19:30:00+02:00",
@@ -626,7 +658,8 @@
     "rank": 86
    },
    "pP1": 0.4314,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T19:30:00+02:00",
@@ -642,7 +675,8 @@
     "rank": null
    },
    "pP1": 0.7469,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T20:00:00+02:00",
@@ -658,7 +692,8 @@
     "rank": 84
    },
    "pP1": 0.6432,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-15T21:00:00+02:00",
@@ -674,7 +709,8 @@
     "rank": 84
    },
    "pP1": 0.4609,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -690,7 +726,8 @@
     "rank": 31
    },
    "pP1": 0.145,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -706,7 +743,8 @@
     "rank": 135
    },
    "pP1": 0.6627,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -722,7 +760,8 @@
     "rank": 16
    },
    "pP1": 0.1381,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -738,7 +777,8 @@
     "rank": 73
    },
    "pP1": 0.5561,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -754,7 +794,8 @@
     "rank": 100
    },
    "pP1": 0.3146,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -770,7 +811,8 @@
     "rank": 45
    },
    "pP1": 0.4427,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -786,7 +828,8 @@
     "rank": 92
    },
    "pP1": 0.8407,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -802,7 +845,8 @@
     "rank": 11
    },
    "pP1": 0.1435,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -818,7 +862,8 @@
     "rank": 90
    },
    "pP1": 0.7122,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -834,7 +879,8 @@
     "rank": 30
    },
    "pP1": 0.1416,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -850,7 +896,8 @@
     "rank": 32
    },
    "pP1": 0.1484,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -866,7 +913,8 @@
     "rank": 49
    },
    "pP1": 0.2869,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -882,7 +930,8 @@
     "rank": 71
    },
    "pP1": 0.3568,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -898,7 +947,8 @@
     "rank": null
    },
    "pP1": 0.6593,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -914,7 +964,8 @@
     "rank": 97
    },
    "pP1": 0.4935,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -930,7 +981,8 @@
     "rank": 52
    },
    "pP1": 0.2084,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -946,7 +998,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -962,7 +1015,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -978,7 +1032,8 @@
     "rank": null
    },
    "pP1": 0.6222,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -994,7 +1049,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -1010,7 +1066,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -1026,7 +1083,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -1042,7 +1100,8 @@
     "rank": 101
    },
    "pP1": 0.3164,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -1058,7 +1117,8 @@
     "rank": null
    },
    "pP1": null,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -1074,7 +1134,8 @@
     "rank": null
    },
    "pP1": 0.6967,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -1090,7 +1151,8 @@
     "rank": 144
    },
    "pP1": 0.3849,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
@@ -1106,7 +1168,8 @@
     "rank": null
    },
    "pP1": 0.637,
-   "unconfirmed": false
+   "unconfirmed": false,
+   "timeTBD": true
   }
  ],
  "meta": {
@@ -1115,74 +1178,6 @@
   "rankCounts": {
    "atp": 150,
    "wta": 150
-  },
-  "debugRank": {
-   "atpSample": {
-    "3623": 1,
-    "2375": 2,
-    "3782": 3,
-    "3209": 4,
-    "2651": 5
-   },
-   "wtaSample": {
-    "3038": 1,
-    "3126": 2,
-    "2113": 3,
-    "3626": 4,
-    "9820": 5
-   },
-   "playerIds": [
-    {
-     "name": "Adolfo Daniel Vallejo",
-     "id": "11396",
-     "tour": "ATP"
-    },
-    {
-     "name": "Grigor Dimitrov",
-     "id": "1287",
-     "tour": "ATP"
-    },
-    {
-     "name": "Mariano Navone",
-     "id": "9992",
-     "tour": "ATP"
-    },
-    {
-     "name": "Luciano Darderi",
-     "id": "7833",
-     "tour": "ATP"
-    },
-    {
-     "name": "Lorenzo Sonego",
-     "id": "3052",
-     "tour": "ATP"
-    },
-    {
-     "name": "Clement Tabur",
-     "id": "3512",
-     "tour": "ATP"
-    },
-    {
-     "name": "Valentin Vacherot",
-     "id": "9376",
-     "tour": "ATP"
-    },
-    {
-     "name": "Stefanos Tsitsipas",
-     "id": "2869",
-     "tour": "ATP"
-    },
-    {
-     "name": "Damir Dzumhur",
-     "id": "1842",
-     "tour": "ATP"
-    },
-    {
-     "name": "Daniel Merida",
-     "id": "10239",
-     "tour": "ATP"
-    }
-   ]
   }
  }
 }
