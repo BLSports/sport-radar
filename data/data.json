@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T16:42:16.316745+02:00",
+ "generatedAt": "2026-07-15T16:52:33.107427+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-15",
@@ -15,18 +15,40 @@
     {
      "kickoff": "2026-07-15T21:00:00+02:00",
      "home": "England",
-     "away": "Argentina",
+     "away": "Argentinien",
      "homeIcon": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
      "awayIcon": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
      "matchday": null,
-     "formHome": [],
-     "formAway": [],
+     "formHome": [
+      "U",
+      "S",
+      "S",
+      "S",
+      "S"
+     ],
+     "formAway": [
+      "S",
+      "S",
+      "S",
+      "S",
+      "S"
+     ],
      "posHome": null,
      "posAway": null,
      "nTeams": null,
      "h2h": [],
-     "prediction": null,
-     "pBtts": null,
+     "prediction": {
+      "pHome": 0.4215,
+      "pDraw": 0.2243,
+      "pAway": 0.3542,
+      "pOver25": 0.6676,
+      "pBtts": 0.6725,
+      "xgHome": 1.8,
+      "xgAway": 1.64,
+      "tipScore": "1:1",
+      "confidence": "mittel"
+     },
+     "pBtts": 0.6725,
      "odds": null,
      "value": null,
      "scorersHome": [
@@ -46,10 +68,10 @@
       }
      ],
      "scorersPeriod": "Saison",
-     "analysis": "Gefährlichste Torschützen: bei England Harry Kane (6 Tore) und bei Argentina Lionel Messi (8 Tore)."
+     "analysis": "Zwischen England und Argentinien deutet das Modell auf ein Duell auf Augenhöhe hin (42 % / 22 % / 35 %). Das Modell erwartet ein torreiches Spiel (xG 1,8:1,6; über 2,5 Tore: 67 %, beide Teams treffen zu 67 %). Gefährlichste Torschützen: bei England Harry Kane (6 Tore) und bei Argentinien Lionel Messi (8 Tore)."
     }
    ],
-   "seasonHasStarted": false,
+   "seasonHasStarted": true,
    "isCup": true
   },
   {

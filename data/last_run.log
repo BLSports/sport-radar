@@ -9,23 +9,18 @@
 /tmp/tennisdata/atp_2026.xlsx: OK über http://www.tennis-data.co.uk (257172 Bytes)
 /tmp/tennisdata/wta_2026.xlsx: OK über http://www.tennis-data.co.uk (245346 Bytes)
 total 3772
-drwxr-xr-x  2 runner runner   4096 Jul 15 14:42 .
-drwxrwxrwt 14 root   root    12288 Jul 15 14:42 ..
--rw-r--r--  1 runner runner 417917 Jul 15 14:42 atp_2022.xlsx
--rw-r--r--  1 runner runner 447088 Jul 15 14:42 atp_2023.xlsx
--rw-r--r--  1 runner runner 445729 Jul 15 14:42 atp_2024.xlsx
--rw-r--r--  1 runner runner 426707 Jul 15 14:42 atp_2025.xlsx
--rw-r--r--  1 runner runner 257172 Jul 15 14:42 atp_2026.xlsx
--rw-r--r--  1 runner runner 370069 Jul 15 14:42 wta_2022.xlsx
--rw-r--r--  1 runner runner 407251 Jul 15 14:42 wta_2023.xlsx
--rw-r--r--  1 runner runner 406783 Jul 15 14:42 wta_2024.xlsx
--rw-r--r--  1 runner runner 399398 Jul 15 14:42 wta_2025.xlsx
--rw-r--r--  1 runner runner 245346 Jul 15 14:42 wta_2026.xlsx
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20250701-20260715&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=20250701-20260715&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20250701-20260715&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20250701-20260715&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?dates=20250701-20260715&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
+drwxr-xr-x  2 runner runner   4096 Jul 15 14:52 .
+drwxrwxrwt 14 root   root    12288 Jul 15 14:52 ..
+-rw-r--r--  1 runner runner 417917 Jul 15 14:52 atp_2022.xlsx
+-rw-r--r--  1 runner runner 447088 Jul 15 14:52 atp_2023.xlsx
+-rw-r--r--  1 runner runner 445729 Jul 15 14:52 atp_2024.xlsx
+-rw-r--r--  1 runner runner 426707 Jul 15 14:52 atp_2025.xlsx
+-rw-r--r--  1 runner runner 257172 Jul 15 14:52 atp_2026.xlsx
+-rw-r--r--  1 runner runner 370069 Jul 15 14:52 wta_2022.xlsx
+-rw-r--r--  1 runner runner 407251 Jul 15 14:52 wta_2023.xlsx
+-rw-r--r--  1 runner runner 406783 Jul 15 14:52 wta_2024.xlsx
+-rw-r--r--  1 runner runner 399398 Jul 15 14:52 wta_2025.xlsx
+-rw-r--r--  1 runner runner 245346 Jul 15 14:52 wta_2026.xlsx
   WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
@@ -33,28 +28,31 @@ drwxrwxrwt 14 root   root    12288 Jul 15 14:42 ..
   WARN: https://www.football-data.co.uk/mmz4281/2627/F1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/F2.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/N1.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/ned.2/scoreboard?dates=20250701-20260715&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://www.football-data.co.uk/mmz4281/2627/B1.csv nicht erreichbar (HTTP Error 404: Not Found)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20250701-20260715&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
+  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20250701-20250928&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
+  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20250929-20251227&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
+  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20251228-20260327&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
+  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260328-20260625&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
+  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260626-20260715&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260715 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260716 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260717 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260715-20261112&limit=50 nicht erreichbar (HTTP Error 400: Bad Request)
 fixtures.csv: 12 Spiele mit Quoten
 == WM ==
-  0 Ergebnisse geladen
+  101 Ergebnisse geladen
   1 Spiele in den naechsten 3 Tagen
 == EM ==
   0 Ergebnisse geladen
   0 Spiele in den naechsten 3 Tagen
 == Champions League ==
-  0 Ergebnisse geladen
+  189 Ergebnisse geladen
   0 Spiele in den naechsten 3 Tagen
 == Europa League ==
-  0 Ergebnisse geladen
+  189 Ergebnisse geladen
   0 Spiele in den naechsten 3 Tagen
 == Conference League ==
-  0 Ergebnisse geladen
+  153 Ergebnisse geladen
   0 Spiele in den naechsten 3 Tagen
 == 1. Bundesliga ==
   306 Ergebnisse geladen
@@ -87,7 +85,7 @@ fixtures.csv: 12 Spiele mit Quoten
   306 Ergebnisse geladen
   0 Spiele in den naechsten 3 Tagen
 == Eerste Divisie ==
-  0 Ergebnisse geladen
+  380 Ergebnisse geladen
   0 Spiele in den naechsten 3 Tagen
 == Pro League (Belgien) ==
   311 Ergebnisse geladen
