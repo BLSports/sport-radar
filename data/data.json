@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T09:50:54.840749+02:00",
+ "generatedAt": "2026-07-15T09:57:44.986653+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-15",
@@ -104,23 +104,23 @@
    "start": "2026-07-15T10:30:00+02:00",
    "tour": "ATP",
    "tournament": "EFG Swiss Open Gstaad",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Lorenzo Sonego",
     "rank": null
    },
    "p2": {
     "name": "Raphael Collignon",
-    "rank": null
+    "rank": 7
    },
-   "pP1": null,
+   "pP1": 0.0457,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T10:30:00+02:00",
    "tour": "WTA",
    "tournament": "ATV Bancomat Tennis Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Sofya Lansere",
     "rank": null
@@ -136,167 +136,135 @@
    "start": "2026-07-15T10:30:00+02:00",
    "tour": "WTA",
    "tournament": "ATV Bancomat Tennis Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Deborah Chiesa",
     "rank": null
    },
    "p2": {
     "name": "Lola Radivojevic",
-    "rank": null
+    "rank": 5
    },
-   "pP1": null,
+   "pP1": 0.0347,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T11:00:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Adolfo Daniel Vallejo",
     "rank": null
    },
    "p2": {
     "name": "Botic Van De Zandschulp",
-    "rank": null
+    "rank": 6
    },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-15T11:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "Adolfo Daniel Vallejo",
-    "rank": null
-   },
-   "p2": {
-    "name": "Botic Van De Zandschulp",
-    "rank": null
-   },
-   "pP1": null,
+   "pP1": 0.0403,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T11:00:00+02:00",
    "tour": "WTA",
    "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Ekaterina Perelygina",
     "rank": null
    },
    "p2": {
     "name": "Julia Grabher",
-    "rank": null
+    "rank": 4
    },
-   "pP1": null,
+   "pP1": 0.0289,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T12:00:00+02:00",
    "tour": "ATP",
    "tournament": "EFG Swiss Open Gstaad",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Clement Tabur",
     "rank": null
    },
    "p2": {
     "name": "Arthur Rinderknech",
-    "rank": null
+    "rank": 4
    },
-   "pP1": null,
+   "pP1": 0.0289,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T12:30:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Grigor Dimitrov",
     "rank": null
    },
    "p2": {
     "name": "Nuno Borges",
-    "rank": null
+    "rank": 5
    },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-15T12:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "Grigor Dimitrov",
-    "rank": null
-   },
-   "p2": {
-    "name": "Nuno Borges",
-    "rank": null
-   },
-   "pP1": null,
+   "pP1": 0.0347,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T12:30:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Alina Charaeva",
     "rank": null
    },
    "p2": {
     "name": "Yulia Putintseva",
-    "rank": null
+    "rank": 9
    },
-   "pP1": null,
+   "pP1": 0.056,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T12:30:00+02:00",
    "tour": "WTA",
    "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Mona Barthel",
     "rank": null
    },
    "p2": {
     "name": "Veronika Erjavec",
-    "rank": null
+    "rank": 1
    },
-   "pP1": null,
+   "pP1": 0.0091,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T13:00:00+02:00",
    "tour": "WTA",
    "tournament": "Enka Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Weronika Falkowska",
     "rank": null
    },
    "p2": {
     "name": "Hanne Vandewinkel",
-    "rank": null
+    "rank": 3
    },
-   "pP1": null,
+   "pP1": 0.0228,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T13:00:00+02:00",
    "tour": "WTA",
    "tournament": "Enka Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Anastasia Gasanova",
     "rank": null
@@ -312,55 +280,39 @@
    "start": "2026-07-15T14:00:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Mariano Navone",
-    "rank": null
+    "rank": 4
    },
    "p2": {
     "name": "Stefano Travaglia",
     "rank": null
    },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-15T14:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "Mariano Navone",
-    "rank": null
-   },
-   "p2": {
-    "name": "Stefano Travaglia",
-    "rank": null
-   },
-   "pP1": null,
+   "pP1": 0.9711,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T14:00:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
-   "round": "Round 1",
+   "round": "1. Runde",
    "p1": {
     "name": "Elsa Jacquemot",
-    "rank": null
+    "rank": 8
    },
    "p2": {
     "name": "Ilinca Amariei",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9491,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T14:00:00+02:00",
    "tour": "WTA",
    "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Mia Ristic",
     "rank": null
@@ -376,7 +328,7 @@
    "start": "2026-07-15T14:30:00+02:00",
    "tour": "WTA",
    "tournament": "Enka Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Aliona Falei",
     "rank": null
@@ -392,87 +344,71 @@
    "start": "2026-07-15T14:30:00+02:00",
    "tour": "WTA",
    "tournament": "Enka Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Lanlana Tararudee",
-    "rank": null
+    "rank": 2
    },
    "p2": {
     "name": "Gabriela Knutson",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9838,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T15:00:00+02:00",
    "tour": "ATP",
    "tournament": "EFG Swiss Open Gstaad",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Valentin Vacherot",
-    "rank": null
+    "rank": 3
    },
    "p2": {
     "name": "Yannick Hanfmann",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9772,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T15:30:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Luciano Darderi",
-    "rank": null
+    "rank": 2
    },
    "p2": {
     "name": "Daniel Altmaier",
     "rank": null
    },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-15T15:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "Luciano Darderi",
-    "rank": null
-   },
-   "p2": {
-    "name": "Daniel Altmaier",
-    "rank": null
-   },
-   "pP1": null,
+   "pP1": 0.9838,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T15:30:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Tamara Zidansek",
     "rank": null
    },
    "p2": {
     "name": "Anna Bondar",
-    "rank": null
+    "rank": 7
    },
-   "pP1": null,
+   "pP1": 0.0457,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T15:30:00+02:00",
    "tour": "WTA",
    "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Barbora Palicova",
     "rank": null
@@ -488,7 +424,7 @@
    "start": "2026-07-15T16:00:00+02:00",
    "tour": "ATP",
    "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Damir Dzumhur",
     "rank": null
@@ -504,71 +440,71 @@
    "start": "2026-07-15T16:00:00+02:00",
    "tour": "ATP",
    "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Daniel Merida",
     "rank": null
    },
    "p2": {
     "name": "Tomas Martin Etcheverry",
-    "rank": null
+    "rank": 3
    },
-   "pP1": null,
+   "pP1": 0.0228,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T16:00:00+02:00",
    "tour": "ATP",
    "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Matteo Arnaldi",
-    "rank": null
+    "rank": 4
    },
    "p2": {
     "name": "Federico Agustin Gomez",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9711,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T16:00:00+02:00",
    "tour": "WTA",
    "tournament": "ATV Bancomat Tennis Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Federica Urgesi",
     "rank": null
    },
    "p2": {
     "name": "Francesca Jones",
-    "rank": null
+    "rank": 3
    },
-   "pP1": null,
+   "pP1": 0.0228,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T16:00:00+02:00",
    "tour": "WTA",
    "tournament": "ATV Bancomat Tennis Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Noma Noha Akugue",
-    "rank": null
+    "rank": 6
    },
    "p2": {
     "name": "Darya Astakhova",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9597,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T16:30:00+02:00",
    "tour": "WTA",
    "tournament": "Vanda Pharmaceuticals Athens Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Zheng Qinwen",
     "rank": null
@@ -581,26 +517,10 @@
    "unconfirmed": false
   },
   {
-   "start": "2026-07-15T16:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "Unicredit Iasi Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "TBD",
-    "rank": null
-   },
-   "p2": {
-    "name": "Clara Burel",
-    "rank": null
-   },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
    "start": "2026-07-15T17:30:00+02:00",
    "tour": "ATP",
    "tournament": "EFG Swiss Open Gstaad",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Stefanos Tsitsipas",
     "rank": null
@@ -616,87 +536,87 @@
    "start": "2026-07-15T17:30:00+02:00",
    "tour": "ATP",
    "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Camilo Ugo Carabelli",
-    "rank": null
+    "rank": 7
    },
    "p2": {
     "name": "Pablo Carreno Busta",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9543,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T18:00:00+02:00",
    "tour": "ATP",
    "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Roman Andres Burruchaga",
     "rank": null
    },
    "p2": {
     "name": "Flavio Cobolli",
-    "rank": null
+    "rank": 1
    },
-   "pP1": null,
+   "pP1": 0.0091,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T18:00:00+02:00",
    "tour": "ATP",
    "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Alejandro Davidovich Fokina",
-    "rank": null
+    "rank": 2
    },
    "p2": {
     "name": "Marco Trungelliti",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9838,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T18:00:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Petra Marcinko",
-    "rank": null
+    "rank": 2
    },
    "p2": {
     "name": "Elina Avanesyan",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9838,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T18:30:00+02:00",
    "tour": "WTA",
    "tournament": "Vanda Pharmaceuticals Athens Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Maria Sakkari",
-    "rank": null
+    "rank": 4
    },
    "p2": {
     "name": "Harriet Dart",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9711,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T19:30:00+02:00",
    "tour": "ATP",
    "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Titouan Droguet",
     "rank": null
@@ -712,7 +632,7 @@
    "start": "2026-07-15T19:30:00+02:00",
    "tour": "WTA",
    "tournament": "Vanda Pharmaceuticals Athens Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Alycia Parks",
     "rank": null
@@ -728,23 +648,23 @@
    "start": "2026-07-15T20:00:00+02:00",
    "tour": "WTA",
    "tournament": "Vanda Pharmaceuticals Athens Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Sara Bejlek",
-    "rank": null
+    "rank": 5
    },
    "p2": {
     "name": "Lilli Tagger",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9653,
    "unconfirmed": false
   },
   {
    "start": "2026-07-15T21:00:00+02:00",
    "tour": "ATP",
    "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Alex Molcan",
     "rank": null
@@ -760,71 +680,71 @@
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Lautaro Midon",
     "rank": null
    },
    "p2": {
     "name": "Alejandro Tabilo",
-    "rank": null
+    "rank": 3
    },
-   "pP1": null,
+   "pP1": 0.0228,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Thiago Agustin Tirante",
-    "rank": null
+    "rank": 7
    },
    "p2": {
     "name": "Nikoloz Basilashvili",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9543,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Andrea Pellegrino",
     "rank": null
    },
    "p2": {
     "name": "Andrey Rublev",
-    "rank": null
+    "rank": 1
    },
-   "pP1": null,
+   "pP1": 0.0091,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "Nordea Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Sebastian Baez",
-    "rank": null
+    "rank": 8
    },
    "p2": {
     "name": "Jesper de Jong",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9491,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "EFG Swiss Open Gstaad",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Dominic Stricker",
     "rank": null
@@ -840,215 +760,135 @@
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "EFG Swiss Open Gstaad",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Miomir Kecmanovic",
     "rank": null
    },
    "p2": {
     "name": "Juan Manuel Cerundolo",
-    "rank": null
+    "rank": 6
    },
-   "pP1": null,
+   "pP1": 0.0403,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "EFG Swiss Open Gstaad",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Casper Ruud",
-    "rank": null
+    "rank": 2
    },
    "p2": {
     "name": "Jaime Faria",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9838,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "EFG Swiss Open Gstaad",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Quentin Halys",
     "rank": null
    },
    "p2": {
     "name": "Alexander Bublik",
-    "rank": null
+    "rank": 1
    },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-16T06:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Plava Laguna Croatia Open Umag",
-   "round": "Quarterfinal",
-   "p1": {
-    "name": "TBD",
-    "rank": null
-   },
-   "p2": {
-    "name": "TBD",
-    "rank": null
-   },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-16T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "Lautaro Midon",
-    "rank": null
-   },
-   "p2": {
-    "name": "Alejandro Tabilo",
-    "rank": null
-   },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-16T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "Thiago Agustin Tirante",
-    "rank": null
-   },
-   "p2": {
-    "name": "Nikoloz Basilashvili",
-    "rank": null
-   },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-16T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "Andrea Pellegrino",
-    "rank": null
-   },
-   "p2": {
-    "name": "Andrey Rublev",
-    "rank": null
-   },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-16T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "Sebastian Baez",
-    "rank": null
-   },
-   "p2": {
-    "name": "Jesper de Jong",
-    "rank": null
-   },
-   "pP1": null,
+   "pP1": 0.0091,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Vanda Pharmaceuticals Athens Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Ann Li",
-    "rank": null
+    "rank": 2
    },
    "p2": {
     "name": "Alina Korneeva",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9838,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Vanda Pharmaceuticals Athens Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Miriana Tona",
     "rank": null
    },
    "p2": {
     "name": "Clara Tauson",
-    "rank": null
+    "rank": 1
    },
-   "pP1": null,
+   "pP1": 0.0091,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Vanda Pharmaceuticals Athens Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Carole Monnet",
     "rank": null
    },
    "p2": {
     "name": "Barbora Krejcikova",
-    "rank": null
+    "rank": 3
    },
-   "pP1": null,
+   "pP1": 0.0228,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Vanda Pharmaceuticals Athens Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Aliaksandra Sasnovich",
     "rank": null
    },
    "p2": {
     "name": "Tereza Valentova",
-    "rank": null
+    "rank": 7
    },
-   "pP1": null,
+   "pP1": 0.0457,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Katarzyna Kawa",
     "rank": null
    },
    "p2": {
     "name": "Panna Udvardy",
-    "rank": null
+    "rank": 5
    },
-   "pP1": null,
+   "pP1": 0.0347,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Paula Badosa",
     "rank": null
@@ -1064,7 +904,7 @@
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Kaitlin Quevedo",
     "rank": null
@@ -1080,23 +920,23 @@
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Unicredit Iasi Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Elena Pridankina",
     "rank": null
    },
    "p2": {
     "name": "Oleksandra Oliynykova",
-    "rank": null
+    "rank": 3
    },
-   "pP1": null,
+   "pP1": 0.0228,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "ATV Bancomat Tennis Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Julia Riera",
     "rank": null
@@ -1112,55 +952,39 @@
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "ATV Bancomat Tennis Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Eva Vedder",
     "rank": null
    },
    "p2": {
     "name": "Nuria Brancaccio",
-    "rank": null
+    "rank": 7
    },
-   "pP1": null,
+   "pP1": 0.0457,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "ATV Bancomat Tennis Open",
-   "round": "Round 2",
-   "p1": {
-    "name": "TBD",
-    "rank": null
-   },
-   "p2": {
-    "name": "Aurora Zantedeschi",
-    "rank": null
-   },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-16T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "ATV Bancomat Tennis Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Lucia Bronzetti",
-    "rank": null
+    "rank": 4
    },
    "p2": {
     "name": "Teodora Kostovic",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9711,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Enka Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Vendula Valdmannova",
     "rank": null
@@ -1176,7 +1000,7 @@
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Enka Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Viktoria Hruncakova",
     "rank": null
@@ -1192,133 +1016,105 @@
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Enka Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Tatiana Prozorova",
-    "rank": null
+    "rank": 8
    },
    "p2": {
     "name": "Daria Khomutsianskaya",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9491,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Enka Open",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Alexandra Shubladze",
     "rank": null
    },
    "p2": {
     "name": "Anastasia Zakharova",
-    "rank": null
+    "rank": 1
    },
-   "pP1": null,
+   "pP1": 0.0091,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Laura Samson",
-    "rank": null
+    "rank": 6
    },
    "p2": {
     "name": "Gina Feistel",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9597,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Sinja Kraus",
-    "rank": null
+    "rank": 2
    },
    "p2": {
     "name": "Eva Bennemann",
     "rank": null
    },
-   "pP1": null,
+   "pP1": 0.9838,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Arantxa Rus",
     "rank": null
    },
    "p2": {
     "name": "Marina Bassols Ribera",
-    "rank": null
+    "rank": 5
    },
-   "pP1": null,
+   "pP1": 0.0347,
    "unconfirmed": false
   },
   {
    "start": "2026-07-16T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Round 2",
+   "round": "2. Runde",
    "p1": {
     "name": "Jeline Vandromme",
-    "rank": null
+    "rank": 7
    },
    "p2": {
     "name": "Polona Hercog",
     "rank": null
    },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-17T06:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Nordea Open",
-   "round": "Quarterfinal",
-   "p1": {
-    "name": "TBD",
-    "rank": null
-   },
-   "p2": {
-    "name": "TBD",
-    "rank": null
-   },
-   "pP1": null,
-   "unconfirmed": false
-  },
-  {
-   "start": "2026-07-17T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Nordea Open",
-   "round": "Quarterfinal",
-   "p1": {
-    "name": "TBD",
-    "rank": null
-   },
-   "p2": {
-    "name": "TBD",
-    "rank": null
-   },
-   "pP1": null,
+   "pP1": 0.9543,
    "unconfirmed": false
   }
  ],
  "meta": {
   "oddsApiEnabled": false,
-  "season": "2026/27"
+  "season": "2026/27",
+  "rankCounts": {
+   "atp": 150,
+   "wta": 150
+  }
  }
 }
