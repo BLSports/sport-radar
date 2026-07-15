@@ -420,9 +420,10 @@ footer summary {{ cursor:pointer; }}
     Ranking in den Top-Platzierungen). Alle Angaben sind statistische Schätzungen ohne Gewähr.</p>
   </details>
   <div>Datenquellen: OpenLigaDB (1.–3. Bundesliga, Torschützen), ESPN (internationale Ligen, Tennis,
-  Rankings), football-data.co.uk (Quoten &amp; Historie), TheSportsDB (Tennis-Ergänzung),
-  Tennis-Historie: <a href="https://github.com/JeffSackmann/tennis_atp">Jeff Sackmann</a>
-  (CC BY-NC-SA 4.0, nicht-kommerzielle Nutzung). Automatisches Update: täglich.</div>
+  Rankings), football-data.co.uk (Quoten &amp; Fußball-Historie),
+  <a href="http://www.tennis-data.co.uk">tennis-data.co.uk</a> (Tennis-Historie: Belag, H2H),
+  TheSportsDB (Tennis-Ergänzung). Privates, nicht-kommerzielles Projekt.
+  Automatisches Update: täglich.</div>
   <div class="disclaimer">Dieses Dashboard ist ein privates Statistik-Projekt und keine
   Wettempfehlung. Quoten dienen nur dem Vergleich mit dem Modell. Glücksspiel kann süchtig
   machen (18+) – Hilfe: <a href="https://www.bundesweit-gegen-gluecksspielsucht.de">bundesweit-gegen-gluecksspielsucht.de</a>.</div>

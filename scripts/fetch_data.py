@@ -756,45 +756,142 @@ def tsdb_tennis_day(day):
 
 
 def load_sackmann(tour, years_back=4):
-    """Historische Matchdaten (Jeff Sackmann, CC BY-NC-SA) fuer Belag-Bilanz & H2H.
-
-    Bevorzugt lokal geklonte Repos (siehe Workflow-Schritt), sonst HTTP-Fallback."""
+    """Historische Matchdaten von tennis-data.co.uk (ZIPs mit Excel/CSV) fuer
+    Belag-Bilanz, H2H und Rank-Fallback. Die ZIPs laedt der Workflow-Schritt
+    nach /tmp/tennisdata/; hier gibt es zusaetzlich einen HTTP-Fallback."""
+    import zipfile
     rows = []
-    base_dir = os.environ.get(f"SACKMANN_DIR_{tour.upper()}", f"/tmp/tennis_{tour}")
+    base_dir = os.environ.get("TENNISDATA_DIR", "/tmp/tennisdata")
     for y in range(NOW.year - years_back, NOW.year + 1):
-        fname = f"{tour}_matches_{y}.csv"
-        raw = None
-        path = os.path.join(base_dir, fname)
+        path = os.path.join(base_dir, f"{tour}_{y}.zip")
+        blob = None
         if os.path.exists(path):
             try:
-                with open(path, encoding="utf-8", errors="replace") as f:
-                    raw = f.read()
+                with open(path, "rb") as f:
+                    blob = f.read()
             except OSError:
-                raw = None
-        if raw is None:
-            url = (f"https://raw.githubusercontent.com/JeffSackmann/tennis_{tour}/"
-                   f"master/{fname}")
-            raw = http_get(url, as_json=False, retries=2)
-        if not raw:
+                blob = None
+        if blob is None:
+            suffix = "" if tour == "atp" else "w"
+            url = f"http://www.tennis-data.co.uk/{y}{suffix}/{y}.zip"
+            blob = http_get_bytes(url)
+        if not blob:
             continue
         try:
-            for r in csv.DictReader(io.StringIO(raw)):
-                rows.append({
-                    "date": r.get("tourney_date", ""),
-                    "tourney": r.get("tourney_name", ""),
-                    "surface": (r.get("surface") or "").strip(),
-                    "w": norm_player(r.get("winner_name", "")),
-                    "l": norm_player(r.get("loser_name", "")),
-                    "wname": r.get("winner_name", ""),
-                    "lname": r.get("loser_name", ""),
-                    "wrank": r.get("winner_rank") or "",
-                    "lrank": r.get("loser_rank") or "",
-                    "score": r.get("score", ""),
-                    "rnd": r.get("round", ""),
-                })
+            zf = zipfile.ZipFile(io.BytesIO(blob))
+            names = zf.namelist()
+            entry = next((n for n in names if n.lower().endswith(".csv")), None) or \
+                    next((n for n in names if n.lower().endswith(".xlsx")), None)
+            if not entry:
+                continue
+            if entry.lower().endswith(".csv"):
+                recs = list(csv.DictReader(io.StringIO(zf.read(entry).decode("utf-8", "replace"))))
+            else:
+                recs = _read_xlsx_rows(zf.read(entry))
+            for r in recs:
+                rows.append(_tennisdata_row(r))
         except Exception as e:
-            print(f"  WARN Sackmann {url}: {e}", file=sys.stderr)
-    return rows
+            print(f"  WARN tennis-data {tour} {y}: {e}", file=sys.stderr)
+    return [r for r in rows if r]
+
+
+def http_get_bytes(url, retries=2, timeout=40):
+    for attempt in range(retries):
+        try:
+            req = Request(url, headers=UA)
+            with urlopen(req, timeout=timeout) as resp:
+                return resp.read()
+        except Exception:
+            time.sleep(1.5 * (attempt + 1))
+    print(f"  WARN: {url} nicht erreichbar (binaer)", file=sys.stderr)
+    return None
+
+
+def _read_xlsx_rows(blob):
+    try:
+        import openpyxl
+    except ImportError:
+        print("  WARN: openpyxl fehlt - xlsx uebersprungen", file=sys.stderr)
+        return []
+    wb = openpyxl.load_workbook(io.BytesIO(blob), read_only=True, data_only=True)
+    ws = wb[wb.sheetnames[0]]
+    rows_iter = ws.iter_rows(values_only=True)
+    header = [str(h) if h is not None else "" for h in next(rows_iter, [])]
+    out = []
+    for vals in rows_iter:
+        out.append({header[i]: vals[i] for i in range(min(len(header), len(vals)))})
+    wb.close()
+    return out
+
+
+def _tennisdata_row(r):
+    """tennis-data.co.uk-Zeile -> internes Format."""
+    w, l = r.get("Winner"), r.get("Loser")
+    if not w or not l:
+        return None
+    d = r.get("Date")
+    if hasattr(d, "strftime"):
+        date = d.strftime("%Y%m%d")
+    else:
+        date = ""
+        for fmt in ("%d/%m/%Y", "%d/%m/%y", "%Y-%m-%d"):
+            try:
+                date = datetime.strptime(str(d).split()[0], fmt).strftime("%Y%m%d")
+                break
+            except (ValueError, AttributeError):
+                continue
+    def _score():
+        sets = []
+        for i in range(1, 6):
+            a, b = r.get(f"W{i}"), r.get(f"L{i}")
+            if a in (None, "") or b in (None, ""):
+                break
+            try:
+                sets.append(f"{int(float(a))}:{int(float(b))}")
+            except (ValueError, TypeError):
+                break
+        return " ".join(sets)
+    def _rank(key):
+        v = r.get(key)
+        try:
+            return str(int(float(v))) if v not in (None, "", "NR") else ""
+        except (ValueError, TypeError):
+            return ""
+    return {
+        "date": date,
+        "tourney": str(r.get("Tournament") or ""),
+        "loc": str(r.get("Location") or ""),
+        "surface": str(r.get("Surface") or "").strip().capitalize(),
+        "w": player_key(str(w)),
+        "l": player_key(str(l)),
+        "wname": str(w),
+        "lname": str(l),
+        "wrank": _rank("WRank"),
+        "lrank": _rank("LRank"),
+        "score": _score(),
+        "rnd": str(r.get("Round") or ""),
+    }
+
+
+def player_key(name):
+    """Einheitlicher Schluessel fuer beide Namensformate:
+    'Jannik Sinner' (ESPN) und 'Sinner J.' (tennis-data) -> 'sinner j'."""
+    s = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode("ascii")
+    s = re.sub(r"[^A-Za-z. ]", " ", s).strip()
+    if not s:
+        return ""
+    toks = s.split()
+    if len(toks) == 1:
+        return toks[0].lower()
+    # tennis-data-Format: Nachname(n) + Initial(en) mit Punkt am Ende
+    if toks[-1].endswith(".") or (len(toks[-1]) <= 2 and toks[-1].isupper()):
+        surname = " ".join(t for t in toks[:-1])
+        initial = toks[-1][0]
+    else:
+        # ESPN-Format: Vorname zuerst
+        surname = " ".join(toks[1:])
+        initial = toks[0][0]
+    return f"{surname} {initial}".lower().replace(".", "").strip()
 
 
 def norm_player(name):
@@ -809,7 +906,7 @@ SURFACE_DE = {"Clay": "Sand", "Hard": "Hartplatz", "Grass": "Rasen", "Carpet": "
 
 def surface_stats(rows, player):
     """Siege/Niederlagen je Belag ueber die geladenen Jahre."""
-    p = norm_player(player)
+    p = player_key(player)
     if not p:
         return {}
     st = {}
@@ -836,37 +933,31 @@ def fav_surface(stats):
 
 def h2h_tennis(rows, p1, p2, n=5):
     """Letzte n direkte Duelle (neueste zuerst)."""
-    a, b = norm_player(p1), norm_player(p2)
-    if not a or not b:
+    a, b = player_key(p1), player_key(p2)
+    if not a or not b or a == b:
         return []
     meetings = []
     for r in rows:
         if {r["w"], r["l"]} == {a, b}:
             meetings.append({
                 "year": r["date"][:4],
+                "date": r["date"],
                 "tourney": r["tourney"],
                 "surface": SURFACE_DE.get(r["surface"], r["surface"]),
-                "winner": r["wname"],
+                "winner": p1 if r["w"] == a else p2,
+                "winnerIsP1": r["w"] == a,
                 "score": r["score"],
                 "rnd": r["rnd"],
             })
-    meetings.sort(key=lambda x: x["year"], reverse=True)
+    meetings.sort(key=lambda x: x["date"], reverse=True)
+    for m in meetings:
+        m.pop("date", None)
     return meetings[:n]
-
-
-def sack_tourney_surface(rows, espn_tournament):
-    """Belag des Turniers: Sackmann-Turniernamen gegen ESPN-Namen matchen."""
-    t = norm_player(espn_tournament)
-    for r in rows:
-        tn = norm_player(r["tourney"])
-        if tn and (tn in t or t in tn) and len(tn) >= 4:
-            return r["surface"]
-    return None
 
 
 def sack_last_rank(rows, player, max_age_days=400):
     """Zuletzt bekannte Weltranglisten-Position aus den Matchdaten (nicht zu alt)."""
-    p = norm_player(player)
+    p = player_key(player)
     cutoff = (NOW - timedelta(days=max_age_days)).strftime("%Y%m%d")
     best = (None, "")
     for r in rows:
@@ -930,7 +1021,7 @@ def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h):
         if s2.get("fav") and s2["fav"] != surf_de:
             parts.append(f"{p2}s stärkster Belag ist eigentlich {s2['fav']}.")
     if h2h:
-        w1 = sum(1 for m in h2h if norm_player(m["winner"]) == norm_player(p1))
+        w1 = sum(1 for m in h2h if m.get("winnerIsP1"))
         w2 = len(h2h) - w1
         last = h2h[0]
         if w1 or w2:
@@ -1216,23 +1307,27 @@ def main():
     sack = {"ATP": load_sackmann("atp"), "WTA": load_sackmann("wta")}
     print(f"  Historie: ATP {len(sack['ATP'])} Matches, WTA {len(sack['WTA'])} Matches")
     out["meta"]["sackCounts"] = {"atp": len(sack["ATP"]), "wta": len(sack["WTA"])}
-    # Turnier -> Belag (neueste Eintraege gewinnen)
+    # Turnier -> Belag: Zuordnung ueber Ort UND Turniernamen (neueste gewinnen)
     surf_map = {}
     for tour_key, rows in sack.items():
         smap = {}
         for r in rows:
-            if r["tourney"] and r["surface"]:
-                smap[norm_player(r["tourney"])] = r["surface"]
+            for key_src in (r.get("loc", ""), r["tourney"]):
+                k = norm_player(key_src)
+                if k and r["surface"]:
+                    smap[k] = r["surface"]
         surf_map[tour_key] = smap
 
     def tournament_surface(tour_key, name):
         t = norm_player(name)
-        smap = surf_map.get(tour_key, {})
-        if t in smap:
-            return smap[t]
-        for tn, surf in smap.items():
-            if len(tn) >= 4 and (tn in t or t in tn):
-                return surf
+        # beide Touren durchsuchen (kombinierte Turniere)
+        for tk in (tour_key, "ATP" if tour_key == "WTA" else "WTA"):
+            smap = surf_map.get(tk, {})
+            if t in smap:
+                return smap[t]
+            for tn, surf in smap.items():
+                if len(tn) >= 4 and (tn in t or t in tn):
+                    return surf
         return None
 
     ROUND_DE = {

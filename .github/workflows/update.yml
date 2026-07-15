@@ -23,36 +23,25 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Tennis-Historie laden (Sackmann, CC BY-NC-SA)
-        env:
-          GH_API_TOKEN: ${{ github.token }}
+      - name: Abhängigkeiten
+        run: pip install --quiet openpyxl
+
+      - name: Tennis-Historie laden (tennis-data.co.uk)
         run: |
           {
-            echo "== Diagnose =="
-            curl -s -o /dev/null -w "raw.githubusercontent direkt: HTTP %{http_code}\n" \
-              "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2024.csv" || true
-            for tour in atp wta; do
-              mkdir -p "/tmp/tennis_${tour}"
-              for y in 2022 2023 2024 2025 2026; do
-                f="${tour}_matches_${y}.csv"
-                code=$(curl -s -w "%{http_code}" \
-                  -H "Authorization: Bearer ${GH_API_TOKEN}" \
-                  -H "Accept: application/vnd.github.raw+json" \
-                  "https://api.github.com/repos/JeffSackmann/tennis_${tour}/contents/${f}" \
-                  -o "/tmp/tennis_${tour}/${f}") || code=err
-                if [ "${code}" != "200" ]; then
-                  code=$(curl -sL -w "%{http_code}" \
-                    "https://cdn.jsdelivr.net/gh/JeffSackmann/tennis_${tour}@master/${f}" \
-                    -o "/tmp/tennis_${tour}/${f}") || code=err
-                  src="jsdelivr"
-                else
-                  src="gh-api"
-                fi
-                size=$(wc -c < "/tmp/tennis_${tour}/${f}" 2>/dev/null || echo 0)
-                echo "${f}: HTTP ${code} (${src}), ${size} Bytes"
-                if [ "${code}" != "200" ]; then rm -f "/tmp/tennis_${tour}/${f}"; fi
-              done
+            mkdir -p /tmp/tennisdata
+            Y=$(date +%Y)
+            for y in $((Y-4)) $((Y-3)) $((Y-2)) $((Y-1)) $Y; do
+              code=$(curl -sL -w "%{http_code}" "http://www.tennis-data.co.uk/${y}/${y}.zip" \
+                -o "/tmp/tennisdata/atp_${y}.zip") || code=err
+              echo "ATP ${y}: HTTP ${code}, $(wc -c < /tmp/tennisdata/atp_${y}.zip 2>/dev/null || echo 0) Bytes"
+              [ "${code}" != "200" ] && rm -f "/tmp/tennisdata/atp_${y}.zip"
+              code=$(curl -sL -w "%{http_code}" "http://www.tennis-data.co.uk/${y}w/${y}.zip" \
+                -o "/tmp/tennisdata/wta_${y}.zip") || code=err
+              echo "WTA ${y}: HTTP ${code}, $(wc -c < /tmp/tennisdata/wta_${y}.zip 2>/dev/null || echo 0) Bytes"
+              [ "${code}" != "200" ] && rm -f "/tmp/tennisdata/wta_${y}.zip"
             done
+            ls -la /tmp/tennisdata/ || true
           } 2>&1 | tee /tmp/clone.log
 
       - name: Daten holen & Vorhersagen berechnen
