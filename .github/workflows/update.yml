@@ -24,16 +24,26 @@ jobs:
           python-version: "3.12"
 
       - name: Tennis-Historie laden (Sackmann, CC BY-NC-SA)
+        env:
+          GH_API_TOKEN: ${{ github.token }}
         run: |
           {
-            for repo in tennis_atp tennis_wta; do
-              echo "== Clone ${repo} =="
-              git clone --depth 1 --filter=blob:none --sparse \
-                "https://github.com/JeffSackmann/${repo}.git" "/tmp/${repo}" || echo "CLONE FEHLGESCHLAGEN: ${repo}"
-              if [ -d "/tmp/${repo}" ]; then
-                (cd "/tmp/${repo}" && git sparse-checkout set --no-cone "*matches_20*.csv" \
-                 && echo "Dateien:" && ls *matches_20*.csv | tail -5) || echo "SPARSE-CHECKOUT FEHLGESCHLAGEN: ${repo}"
-              fi
+            echo "== Diagnose =="
+            curl -s -o /dev/null -w "raw.githubusercontent direkt: HTTP %{http_code}\n" \
+              "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2024.csv" || true
+            for tour in atp wta; do
+              mkdir -p "/tmp/tennis_${tour}"
+              for y in 2022 2023 2024 2025 2026; do
+                f="${tour}_matches_${y}.csv"
+                code=$(curl -s -w "%{http_code}" \
+                  -H "Authorization: Bearer ${GH_API_TOKEN}" \
+                  -H "Accept: application/vnd.github.raw+json" \
+                  "https://api.github.com/repos/JeffSackmann/tennis_${tour}/contents/${f}" \
+                  -o "/tmp/tennis_${tour}/${f}") || code=err
+                size=$(wc -c < "/tmp/tennis_${tour}/${f}" 2>/dev/null || echo 0)
+                echo "${f}: HTTP ${code}, ${size} Bytes"
+                if [ "${code}" != "200" ]; then rm -f "/tmp/tennis_${tour}/${f}"; fi
+              done
             done
           } 2>&1 | tee /tmp/clone.log
 
