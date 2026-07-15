@@ -1,16 +1,86 @@
-ATP 2022: HTTP 300, 467 Bytes
-WTA 2022: HTTP 300, 470 Bytes
-ATP 2023: HTTP 300, 467 Bytes
-WTA 2023: HTTP 300, 470 Bytes
-ATP 2024: HTTP 300, 467 Bytes
-WTA 2024: HTTP 300, 470 Bytes
-ATP 2025: HTTP 300, 467 Bytes
-WTA 2025: HTTP 300, 470 Bytes
-ATP 2026: HTTP 300, 467 Bytes
-WTA 2026: HTTP 300, 470 Bytes
+/tmp/tennisdata/atp_2022.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2022/2022.zip</code>) could not be found on this server.
+However, we found docum
+/tmp/tennisdata/wta_2022.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2022w/2022.zip</code>) could not be found on this server.
+However, we found docu
+/tmp/tennisdata/atp_2023.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2023/2023.zip</code>) could not be found on this server.
+However, we found docum
+/tmp/tennisdata/wta_2023.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2023w/2023.zip</code>) could not be found on this server.
+However, we found docu
+/tmp/tennisdata/atp_2024.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2024/2024.zip</code>) could not be found on this server.
+However, we found docum
+/tmp/tennisdata/wta_2024.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2024w/2024.zip</code>) could not be found on this server.
+However, we found docu
+/tmp/tennisdata/atp_2025.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2025/2025.zip</code>) could not be found on this server.
+However, we found docum
+/tmp/tennisdata/wta_2025.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2025w/2025.zip</code>) could not be found on this server.
+However, we found docu
+/tmp/tennisdata/atp_2026.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2026/2026.zip</code>) could not be found on this server.
+However, we found docum
+/tmp/tennisdata/wta_2026.zip: FEHLGESCHLAGEN (letzter Code err); Antwort-Anfang:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>300 Multiple Choices</title>
+</head><body>
+<h1>Multiple Choices</h1>
+The document name you requested (<code>/2026w/2026.zip</code>) could not be found on this server.
+However, we found docu
 total 16
-drwxr-xr-x  2 runner runner  4096 Jul 15 13:42 .
-drwxrwxrwt 14 root   root   12288 Jul 15 13:42 ..
+drwxr-xr-x  2 runner runner  4096 Jul 15 13:46 .
+drwxrwxrwt 14 root   root   12288 Jul 15 13:46 ..
   WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
