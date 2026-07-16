@@ -10,6 +10,12 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -72,3 +78,29 @@ jobs:
             git commit -m "Tägliches Update $(date -u +%F)"
             git push
           fi
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Aktuellen Stand auschecken
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: GitHub Pages aktivieren/konfigurieren
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Website-Ordner hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4
