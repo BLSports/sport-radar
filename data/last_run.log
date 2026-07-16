@@ -9,18 +9,18 @@
 /tmp/tennisdata/atp_2026.xlsx: OK über http://www.tennis-data.co.uk (257172 Bytes)
 /tmp/tennisdata/wta_2026.xlsx: OK über http://www.tennis-data.co.uk (245346 Bytes)
 total 3772
-drwxr-xr-x  2 runner runner   4096 Jul 16 06:16 .
-drwxrwxrwt 14 root   root    12288 Jul 16 06:16 ..
--rw-r--r--  1 runner runner 417917 Jul 16 06:16 atp_2022.xlsx
--rw-r--r--  1 runner runner 447088 Jul 16 06:16 atp_2023.xlsx
--rw-r--r--  1 runner runner 445729 Jul 16 06:16 atp_2024.xlsx
--rw-r--r--  1 runner runner 426707 Jul 16 06:16 atp_2025.xlsx
--rw-r--r--  1 runner runner 257172 Jul 16 06:16 atp_2026.xlsx
--rw-r--r--  1 runner runner 370069 Jul 16 06:16 wta_2022.xlsx
--rw-r--r--  1 runner runner 407251 Jul 16 06:16 wta_2023.xlsx
--rw-r--r--  1 runner runner 406783 Jul 16 06:16 wta_2024.xlsx
--rw-r--r--  1 runner runner 399398 Jul 16 06:16 wta_2025.xlsx
--rw-r--r--  1 runner runner 245346 Jul 16 06:16 wta_2026.xlsx
+drwxr-xr-x  2 runner runner   4096 Jul 16 08:02 .
+drwxrwxrwt 14 root   root    12288 Jul 16 08:02 ..
+-rw-r--r--  1 runner runner 417917 Jul 16 08:02 atp_2022.xlsx
+-rw-r--r--  1 runner runner 447088 Jul 16 08:02 atp_2023.xlsx
+-rw-r--r--  1 runner runner 445729 Jul 16 08:02 atp_2024.xlsx
+-rw-r--r--  1 runner runner 426707 Jul 16 08:02 atp_2025.xlsx
+-rw-r--r--  1 runner runner 257172 Jul 16 08:02 atp_2026.xlsx
+-rw-r--r--  1 runner runner 370069 Jul 16 08:02 wta_2022.xlsx
+-rw-r--r--  1 runner runner 407251 Jul 16 08:02 wta_2023.xlsx
+-rw-r--r--  1 runner runner 406783 Jul 16 08:02 wta_2024.xlsx
+-rw-r--r--  1 runner runner 399398 Jul 16 08:02 wta_2025.xlsx
+-rw-r--r--  1 runner runner 245346 Jul 16 08:02 wta_2026.xlsx
   WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
