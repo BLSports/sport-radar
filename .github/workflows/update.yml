@@ -91,6 +91,31 @@ jobs:
         with:
           ref: main
 
+      - name: Pages-Aktivierung mit Diagnose
+        env:
+          GH_T: ${{ github.token }}
+        run: |
+          set +e
+          {
+            echo "== POST /pages (build_type=workflow) =="
+            curl -s -o /tmp/r1 -w "HTTP %{http_code}" -X POST \
+              -H "Authorization: Bearer ${GH_T}" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/pages" \
+              -d '{"build_type":"workflow"}'
+            echo; cat /tmp/r1; echo
+            echo "== GET /pages =="
+            curl -s -o /tmp/r2 -w "HTTP %{http_code}" \
+              -H "Authorization: Bearer ${GH_T}" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/pages"
+            echo; cat /tmp/r2; echo
+          } | tee data/deploy_status.txt
+          git config user.name "sport-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add data/deploy_status.txt
+          git commit -m "Deploy-Diagnose" || true
+          git push || true
+
       - name: GitHub Pages aktivieren/konfigurieren
         uses: actions/configure-pages@v5
         with:
