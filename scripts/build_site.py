@@ -432,6 +432,21 @@ footer summary {{ cursor:pointer; }}
   machen (18+) – Hilfe: <a href="https://www.bundesweit-gegen-gluecksspielsucht.de">bundesweit-gegen-gluecksspielsucht.de</a>.</div>
 </footer>
 <script>
+// Frische-Pruefung: liegt im Repo eine neuere Version als die im Browser-Cache?
+const GEN = {json.dumps(data["generatedAt"])};
+fetch('https://raw.githubusercontent.com/BLSports/sport-radar/main/data/data.json',
+      {{cache: 'no-store'}})
+  .then(r => r.json())
+  .then(d => {{
+    if (d.generatedAt && d.generatedAt > GEN) {{
+      const b = document.createElement('div');
+      b.className = 'banner';
+      b.style.cursor = 'pointer';
+      b.innerHTML = '🔄 <b>Neuere Version verfügbar</b> – hier tippen zum Aktualisieren';
+      b.onclick = () => location.replace(location.pathname + '?v=' + Date.now());
+      document.querySelector('header').insertBefore(b, document.querySelector('.tabs'));
+    }}
+  }}).catch(() => {{}});
 document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {{
   document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
   document.querySelectorAll('.daypanel').forEach(x => x.classList.remove('active'));
