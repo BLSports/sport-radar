@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-17T08:14:17.665581+02:00",
+ "generatedAt": "2026-07-17T11:28:24.045983+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-17",
@@ -342,94 +342,6 @@
   }
  ],
  "tennis": [
-  {
-   "start": "2026-07-17T10:30:00+02:00",
-   "tour": "ATP",
-   "tournament": "EFG Swiss Open Gstaad",
-   "round": "Viertelfinale",
-   "surface": "Sand",
-   "p1": {
-    "name": "Valentin Vacherot",
-    "rank": 21,
-    "onSurface": {
-     "w": 6,
-     "l": 9,
-     "pct": 0.4
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Raphael Collignon",
-    "rank": 42,
-    "onSurface": {
-     "w": 4,
-     "l": 6,
-     "pct": 0.4
-    },
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.6432,
-   "h2h": [],
-   "analysis": "Valentin Vacherot (Weltrangliste #21) trifft auf Raphael Collignon (#42). Auf Sand liegt die Siegquote von Valentin Vacherot zuletzt bei 40 % (6:9), Raphael Collignon kommt auf 40 % (4:6). Valentin Vacherots stärkster Belag ist eigentlich Hartplatz. Raphael Collignons stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Valentin Vacherot mit 64 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-17T11:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Nordea Open",
-   "round": "Viertelfinale",
-   "surface": "Sand",
-   "p1": {
-    "name": "Stefano Travaglia",
-    "rank": 150,
-    "onSurface": null,
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Adolfo Daniel Vallejo",
-    "rank": 71,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.3462,
-   "h2h": [],
-   "analysis": "Stefano Travaglia (Weltrangliste #150) trifft auf Adolfo Daniel Vallejo (#71). Stefano Travaglias stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Adolfo Daniel Vallejo mit 65 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-17T11:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Generali Open Ladies Kitzbühel",
-   "round": "Viertelfinale",
-   "surface": "Sand",
-   "p1": {
-    "name": "Sinja Kraus",
-    "rank": 94,
-    "onSurface": {
-     "w": 2,
-     "l": 6,
-     "pct": 0.25
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Erika Andreeva",
-    "rank": null,
-    "onSurface": {
-     "w": 3,
-     "l": 11,
-     "pct": 0.214
-    },
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.6967,
-   "h2h": [],
-   "analysis": "Sinja Kraus (#94) trifft auf Erika Andreeva, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Sinja Kraus zuletzt bei 25 % (2:6), Erika Andreeva kommt auf 21 % (3:11). Erika Andreevas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Sinja Kraus mit 70 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
   {
    "start": "2026-07-17T12:00:00+02:00",
    "tour": "ATP",
