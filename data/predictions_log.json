@@ -1435,7 +1435,7 @@
    "p2Key": "rocha h",
    "tip": "P2",
    "tipName": "Henrique Rocha",
-   "prob": 0.5517,
+   "prob": 0.5305,
    "status": "open",
    "result": null,
    "correct": null
@@ -1617,7 +1617,7 @@
    "p2Key": "pridankina e",
    "tip": "P1",
    "tipName": "Panna Udvardy",
-   "prob": 0.7078,
+   "prob": 0.712,
    "status": "open",
    "result": null,
    "correct": null
@@ -1671,9 +1671,9 @@
    "label": "Aliaksandra Sasnovich – Maria Timofeeva",
    "p1Key": "sasnovich a",
    "p2Key": "timofeeva m",
-   "tip": "P2",
-   "tipName": "Maria Timofeeva",
-   "prob": 0.5964,
+   "tip": "P1",
+   "tipName": "Aliaksandra Sasnovich",
+   "prob": 0.7039,
    "status": "open",
    "result": null,
    "correct": null
@@ -1687,7 +1687,7 @@
    "p2Key": "parry d",
    "tip": "P2",
    "tipName": "Diane Parry",
-   "prob": 0.7373,
+   "prob": 0.8128,
    "status": "open",
    "result": null,
    "correct": null
@@ -1699,9 +1699,9 @@
    "label": "Sinja Kraus – Darja Semenistaja",
    "p1Key": "kraus s",
    "p2Key": "semenistaja d",
-   "tip": "P1",
-   "tipName": "Sinja Kraus",
-   "prob": 0.5654,
+   "tip": "P2",
+   "tipName": "Darja Semenistaja",
+   "prob": 0.5691,
    "status": "open",
    "result": null,
    "correct": null
@@ -1715,7 +1715,7 @@
    "p2Key": "barthel m",
    "tip": "P1",
    "tipName": "Yulia Putintseva",
-   "prob": 0.7008,
+   "prob": 0.7143,
    "status": "open",
    "result": null,
    "correct": null
@@ -1727,9 +1727,9 @@
    "label": "Veronika Erjavec – Leyre Romero Gormaz",
    "p1Key": "erjavec v",
    "p2Key": "romero gormaz l",
-   "tip": "P1",
-   "tipName": "Veronika Erjavec",
-   "prob": 0.5797,
+   "tip": "P2",
+   "tipName": "Leyre Romero Gormaz",
+   "prob": 0.528,
    "status": "open",
    "result": null,
    "correct": null
@@ -1743,7 +1743,7 @@
    "p2Key": "baez s",
    "tip": "P2",
    "tipName": "Sebastian Baez",
-   "prob": 0.5075,
+   "prob": 0.505,
    "status": "open",
    "result": null,
    "correct": null
@@ -1757,7 +1757,7 @@
    "p2Key": "djere l",
    "tip": "P1",
    "tipName": "Quentin Halys",
-   "prob": 0.71,
+   "prob": 0.5723,
    "status": "open",
    "result": null,
    "correct": null
@@ -1771,7 +1771,7 @@
    "p2Key": "samson l",
    "tip": "P1",
    "tipName": "Maya Joint",
-   "prob": 0.638,
+   "prob": 0.6215,
    "status": "open",
    "result": null,
    "correct": null
@@ -1785,7 +1785,7 @@
    "p2Key": "hon p",
    "tip": "P1",
    "tipName": "Tereza Valentova",
-   "prob": 0.6579,
+   "prob": 0.6473,
    "status": "open",
    "result": null,
    "correct": null
@@ -1827,7 +1827,7 @@
    "p2Key": "gaubas v",
    "tip": "P1",
    "tipName": "Pablo Carreno Busta",
-   "prob": 0.6401,
+   "prob": 0.6659,
    "status": "open",
    "result": null,
    "correct": null
@@ -1839,9 +1839,9 @@
    "label": "Jesper de Jong – Jan Choinski",
    "p1Key": "de jong j",
    "p2Key": "choinski j",
-   "tip": "P2",
-   "tipName": "Jan Choinski",
-   "prob": 0.5181,
+   "tip": "P1",
+   "tipName": "Jesper de Jong",
+   "prob": 0.7369,
    "status": "open",
    "result": null,
    "correct": null
@@ -1869,7 +1869,7 @@
    "p2Key": "molcan a",
    "tip": "P2",
    "tipName": "Alex Molcan",
-   "prob": 0.5895,
+   "prob": 0.7168,
    "status": "open",
    "result": null,
    "correct": null
@@ -1897,7 +1897,7 @@
    "p2Key": "blinkova a",
    "tip": "P1",
    "tipName": "Sara Bejlek",
-   "prob": 0.6943,
+   "prob": 0.6585,
    "status": "open",
    "result": null,
    "correct": null
@@ -1925,7 +1925,7 @@
    "p2Key": "sorribes tormo s",
    "tip": "P1",
    "tipName": "Alina Charaeva",
-   "prob": 0.6237,
+   "prob": 0.531,
    "status": "open",
    "result": null,
    "correct": null
@@ -1939,7 +1939,7 @@
    "p2Key": "korpatsch t",
    "tip": "P2",
    "tipName": "Tamara Korpatsch",
-   "prob": 0.581,
+   "prob": 0.6838,
    "status": "open",
    "result": null,
    "correct": null
@@ -1967,7 +1967,7 @@
    "p2Key": "gaston h",
    "tip": "P1",
    "tipName": "Damir Dzumhur",
-   "prob": 0.5478,
+   "prob": 0.7379,
    "status": "open",
    "result": null,
    "correct": null
@@ -1993,9 +1993,9 @@
    "label": "Elina Avanesyan – Arantxa Rus",
    "p1Key": "avanesyan e",
    "p2Key": "rus a",
-   "tip": "P2",
-   "tipName": "Arantxa Rus",
-   "prob": 0.6313,
+   "tip": "P1",
+   "tipName": "Elina Avanesyan",
+   "prob": 0.5957,
    "status": "open",
    "result": null,
    "correct": null
@@ -2009,7 +2009,7 @@
    "p2Key": "altmaier d",
    "tip": "P1",
    "tipName": "Raphael Collignon",
-   "prob": 0.6047,
+   "prob": 0.682,
    "status": "open",
    "result": null,
    "correct": null
@@ -2023,7 +2023,7 @@
    "p2Key": "fruhvirtova l",
    "tip": "P1",
    "tipName": "Barbora Krejcikova",
-   "prob": 0.8152,
+   "prob": 0.8948,
    "status": "open",
    "result": null,
    "correct": null
@@ -2051,7 +2051,7 @@
    "p2Key": "oliynykova o",
    "tip": "P2",
    "tipName": "Oleksandra Oliynykova",
-   "prob": 0.8289,
+   "prob": 0.8193,
    "status": "open",
    "result": null,
    "correct": null
@@ -2065,7 +2065,7 @@
    "p2Key": "van de zandschulp b",
    "tip": "P2",
    "tipName": "Botic Van De Zandschulp",
-   "prob": 0.5986,
+   "prob": 0.5353,
    "status": "open",
    "result": null,
    "correct": null
@@ -2093,7 +2093,7 @@
    "p2Key": "bublik a",
    "tip": "P2",
    "tipName": "Alexander Bublik",
-   "prob": 0.8745,
+   "prob": 0.8041,
    "status": "open",
    "result": null,
    "correct": null
@@ -2149,7 +2149,7 @@
    "p2Key": "salkova d",
    "tip": "P2",
    "tipName": "Dominika Salkova",
-   "prob": 0.8075,
+   "prob": 0.6729,
    "status": "open",
    "result": null,
    "correct": null
@@ -2177,7 +2177,7 @@
    "p2Key": "kawa k",
    "tip": "P1",
    "tipName": "Paula Badosa",
-   "prob": 0.5723,
+   "prob": 0.7315,
    "status": "open",
    "result": null,
    "correct": null
@@ -2191,7 +2191,7 @@
    "p2Key": "waltert s",
    "tip": "P1",
    "tipName": "Mayar Sherif",
-   "prob": 0.5467,
+   "prob": 0.6445,
    "status": "open",
    "result": null,
    "correct": null

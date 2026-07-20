@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T19:26:51.797430+02:00",
+ "generatedAt": "2026-07-20T19:39:03.710832+02:00",
  "windowDays": 3,
  "days": [
   "2026-07-20",
@@ -226,7 +226,7 @@
  ],
  "tennis": [
   {
-   "start": "2026-07-20T19:30:00+02:00",
+   "start": "2026-07-20T19:50:00+02:00",
    "tour": "ATP",
    "tournament": "Millennium Estoril Open",
    "round": "1. Runde",
@@ -234,6 +234,14 @@
    "p1": {
     "name": "Pedro Martinez",
     "rank": 157,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1431,
     "onSurface": {
      "w": 36,
      "l": 44,
@@ -244,6 +252,14 @@
    "p2": {
     "name": "Henrique Rocha",
     "rank": 123,
+    "form": [
+     "S",
+     "S",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1434,
     "onSurface": {
      "w": 3,
      "l": 6,
@@ -251,41 +267,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.4483,
-   "h2h": [],
-   "analysis": "Pedro Martinez (Weltrangliste #157) trifft auf Henrique Rocha (#123). Auf Sand liegt die Siegquote von Pedro Martinez zuletzt bei 45 % (36:44), Henrique Rocha kommt auf 33 % (3:6). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Henrique Rocha mit 55 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-20T19:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Moyuka Uchijima",
-    "rank": 110,
-    "onSurface": {
-     "w": 7,
-     "l": 11,
-     "pct": 0.389
-    },
-    "favSurface": "Sand"
+   "pP1": 0.4695,
+   "model": {
+    "n1": 151,
+    "n2": 9,
+    "elo1": 1431,
+    "elo2": 1434,
+    "pElo": 0.4955,
+    "pRank": 0.4483,
+    "wElo": 0.45
    },
-   "p2": {
-    "name": "Anna Bondar",
-    "rank": 97,
-    "onSurface": {
-     "w": 35,
-     "l": 28,
-     "pct": 0.556
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.4733,
    "h2h": [],
-   "analysis": "Moyuka Uchijima (Weltrangliste #110) trifft auf Anna Bondar (#97). Auf Sand liegt die Siegquote von Moyuka Uchijima zuletzt bei 39 % (7:11), Anna Bondar kommt auf 56 % (35:28). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Anna Bondar mit 53 % vorn.",
+   "analysis": "Pedro Martinez (Weltrangliste #157) trifft auf Henrique Rocha (#123). Die aktuelle Form spricht für Henrique Rocha: 2 Siege aus den letzten 5 Matches, Pedro Martinez holte nur 0. Auf Sand liegt die Siegquote von Pedro Martinez zuletzt bei 45 % (36:44), Henrique Rocha kommt auf 33 % (3:6). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Henrique Rocha mit 53 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -298,18 +291,33 @@
    "p1": {
     "name": "Ane Mintegi Del Olmo",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Ekaterine Gorgodze",
     "rank": 164,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.4114,
+   "model": {
+    "n1": 0,
+    "n2": 7,
+    "pRank": 0.4114
+   },
    "h2h": [],
-   "analysis": "Ane Mintegi Del Olmo – aktuell ohne Top-Ranking – trifft auf Ekaterine Gorgodze (#164). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Ekaterine Gorgodze mit 59 % vorn.",
+   "analysis": "Ane Mintegi Del Olmo – aktuell ohne Top-Ranking – trifft auf Ekaterine Gorgodze (#164). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Ekaterine Gorgodze mit 59 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -322,18 +330,30 @@
    "p1": {
     "name": "Elizara Yaneva",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Federica Urgesi",
     "rank": 410,
+    "form": [
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.6036,
+   "model": {
+    "n1": 0,
+    "n2": 2,
+    "pRank": 0.6036
+   },
    "h2h": [],
-   "analysis": "Elizara Yaneva – aktuell ohne Top-Ranking – trifft auf Federica Urgesi (#410). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Elizara Yaneva mit 60 % vorn.",
+   "analysis": "Elizara Yaneva – aktuell ohne Top-Ranking – trifft auf Federica Urgesi (#410). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Elizara Yaneva mit 60 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -346,12 +366,22 @@
    "p1": {
     "name": "Ren Yufei",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Fiona Ferro",
     "rank": 181,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 4,
      "l": 12,
@@ -360,8 +390,13 @@
     "favSurface": "Sand"
    },
    "pP1": 0.4318,
+   "model": {
+    "n1": 0,
+    "n2": 22,
+    "pRank": 0.4318
+   },
    "h2h": [],
-   "analysis": "Ren Yufei – aktuell ohne Top-Ranking – trifft auf Fiona Ferro (#181). Auf Sand liegt die Siegquote von Fiona Ferro zuletzt bei 25 % (4:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Fiona Ferro mit 57 % vorn.",
+   "analysis": "Ren Yufei – aktuell ohne Top-Ranking – trifft auf Fiona Ferro (#181). Auf Sand liegt die Siegquote von Fiona Ferro zuletzt bei 25 % (4:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Fiona Ferro mit 57 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -374,16 +409,23 @@
    "p1": {
     "name": "Dalila Spiteri",
     "rank": null,
+    "form": [
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Alessandra Mazzola",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": null,
+   "model": {},
    "h2h": [],
    "analysis": "Dalila Spiteri trifft auf Alessandra Mazzola; für beide liegt kein aktuelles Top-Ranking vor. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell.",
    "unconfirmed": false,
@@ -398,6 +440,14 @@
    "p1": {
     "name": "Lucia Bronzetti",
     "rank": 120,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 18,
      "l": 24,
@@ -408,12 +458,19 @@
    "p2": {
     "name": "Ilary Pistola",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.6511,
+   "model": {
+    "n1": 151,
+    "n2": 0,
+    "pRank": 0.6511
+   },
    "h2h": [],
-   "analysis": "Lucia Bronzetti (#120) trifft auf Ilary Pistola, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Lucia Bronzetti zuletzt bei 43 % (18:24). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Lucia Bronzetti mit 65 % vorn.",
+   "analysis": "Lucia Bronzetti (#120) trifft auf Ilary Pistola, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Lucia Bronzetti zuletzt bei 43 % (18:24). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lucia Bronzetti mit 65 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -426,12 +483,24 @@
    "p1": {
     "name": "Caijsa Hennemann",
     "rank": 292,
+    "form": [
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Miriam Bulgaru",
     "rank": 248,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 1,
      "l": 5,
@@ -440,8 +509,13 @@
     "favSurface": "Sand"
    },
    "pP1": 0.4653,
+   "model": {
+    "n1": 1,
+    "n2": 9,
+    "pRank": 0.4653
+   },
    "h2h": [],
-   "analysis": "Caijsa Hennemann (Weltrangliste #292) trifft auf Miriam Bulgaru (#248). Auf Sand liegt die Siegquote von Miriam Bulgaru zuletzt bei 17 % (1:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Miriam Bulgaru mit 53 % vorn.",
+   "analysis": "Caijsa Hennemann (Weltrangliste #292) trifft auf Miriam Bulgaru (#248). Auf Sand liegt die Siegquote von Miriam Bulgaru zuletzt bei 17 % (1:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Miriam Bulgaru mit 53 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -454,18 +528,33 @@
    "p1": {
     "name": "Anastasia Tikhonova",
     "rank": 1178,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Alice Rame",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.2112,
+   "model": {
+    "n1": 6,
+    "n2": 0,
+    "pRank": 0.2112
+   },
    "h2h": [],
-   "analysis": "Anastasia Tikhonova (#1178) trifft auf Alice Rame, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Alice Rame mit 79 % vorn.",
+   "analysis": "Anastasia Tikhonova (#1178) trifft auf Alice Rame, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Alice Rame mit 79 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -478,18 +567,30 @@
    "p1": {
     "name": "Tyra Caterina Grant",
     "rank": 148,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Noemi Basiletti",
     "rank": 427,
+    "form": [
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.7111,
+   "model": {
+    "n1": 0,
+    "n2": 2,
+    "pRank": 0.7111
+   },
    "h2h": [],
-   "analysis": "Tyra Caterina Grant (Weltrangliste #148) trifft auf Noemi Basiletti (#427). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Tyra Caterina Grant mit 71 % vorn.",
+   "analysis": "Tyra Caterina Grant (Weltrangliste #148) trifft auf Noemi Basiletti (#427). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Tyra Caterina Grant mit 71 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -502,12 +603,25 @@
    "p1": {
     "name": "Alevtina Ibragimova",
     "rank": 275,
+    "form": [
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Tamara Zidansek",
     "rank": 134,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 11,
      "l": 12,
@@ -516,8 +630,13 @@
     "favSurface": "Sand"
    },
    "pP1": 0.3518,
+   "model": {
+    "n1": 2,
+    "n2": 61,
+    "pRank": 0.3518
+   },
    "h2h": [],
-   "analysis": "Alevtina Ibragimova (Weltrangliste #275) trifft auf Tamara Zidansek (#134). Auf Sand liegt die Siegquote von Tamara Zidansek zuletzt bei 48 % (11:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Tamara Zidansek mit 65 % vorn.",
+   "analysis": "Alevtina Ibragimova (Weltrangliste #275) trifft auf Tamara Zidansek (#134). Auf Sand liegt die Siegquote von Tamara Zidansek zuletzt bei 48 % (11:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Tamara Zidansek mit 65 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -530,18 +649,33 @@
    "p1": {
     "name": "Mina Hodzic",
     "rank": 334,
+    "form": [
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Caroline Werner",
     "rank": 271,
+    "form": [
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.4557,
+   "model": {
+    "n1": 1,
+    "n2": 3,
+    "pRank": 0.4557
+   },
    "h2h": [],
-   "analysis": "Mina Hodzic (Weltrangliste #334) trifft auf Caroline Werner (#271). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Caroline Werner mit 54 % vorn.",
+   "analysis": "Mina Hodzic (Weltrangliste #334) trifft auf Caroline Werner (#271). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Caroline Werner mit 54 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -554,6 +688,14 @@
    "p1": {
     "name": "Clara Burel",
     "rank": 630,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 17,
      "l": 17,
@@ -564,12 +706,19 @@
    "p2": {
     "name": "Anastasia Abbagnato",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.3131,
+   "model": {
+    "n1": 86,
+    "n2": 0,
+    "pRank": 0.3131
+   },
    "h2h": [],
-   "analysis": "Clara Burel (#630) trifft auf Anastasia Abbagnato, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Clara Burel zuletzt bei 50 % (17:17). Clara Burels stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Anastasia Abbagnato mit 69 % vorn.",
+   "analysis": "Clara Burel (#630) trifft auf Anastasia Abbagnato, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Clara Burel zuletzt bei 50 % (17:17). Clara Burels stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Anastasia Abbagnato mit 69 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -582,12 +731,22 @@
    "p1": {
     "name": "Darya Astakhova",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Francesca Jones",
     "rank": 113,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 6,
      "l": 8,
@@ -596,8 +755,13 @@
     "favSurface": "Sand"
    },
    "pP1": 0.3374,
+   "model": {
+    "n1": 0,
+    "n2": 45,
+    "pRank": 0.3374
+   },
    "h2h": [],
-   "analysis": "Darya Astakhova – aktuell ohne Top-Ranking – trifft auf Francesca Jones (#113). Auf Sand liegt die Siegquote von Francesca Jones zuletzt bei 43 % (6:8). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Francesca Jones mit 66 % vorn.",
+   "analysis": "Darya Astakhova – aktuell ohne Top-Ranking – trifft auf Francesca Jones (#113). Auf Sand liegt die Siegquote von Francesca Jones zuletzt bei 43 % (6:8). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Francesca Jones mit 66 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -610,6 +774,14 @@
    "p1": {
     "name": "Panna Udvardy",
     "rank": 71,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1602,
     "onSurface": {
      "w": 15,
      "l": 19,
@@ -620,12 +792,29 @@
    "p2": {
     "name": "Elena Pridankina",
     "rank": 201,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1440,
     "onSurface": null,
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.7078,
+   "pP1": 0.712,
+   "model": {
+    "n1": 61,
+    "n2": 9,
+    "elo1": 1602,
+    "elo2": 1440,
+    "pElo": 0.7171,
+    "pRank": 0.7078,
+    "wElo": 0.45
+   },
    "h2h": [],
-   "analysis": "Panna Udvardy (Weltrangliste #71) trifft auf Elena Pridankina (#201). Auf Sand liegt die Siegquote von Panna Udvardy zuletzt bei 44 % (15:19). Elena Pridankinas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Panna Udvardy mit 71 % vorn.",
+   "analysis": "Panna Udvardy (Weltrangliste #71) trifft auf Elena Pridankina (#201). Auf Sand liegt die Siegquote von Panna Udvardy zuletzt bei 44 % (15:19). Elena Pridankinas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Panna Udvardy mit 71 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -638,6 +827,14 @@
    "p1": {
     "name": "Marco Trungelliti",
     "rank": 95,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 10,
      "l": 12,
@@ -648,12 +845,19 @@
    "p2": {
     "name": "Juan Manuel Cerundolo",
     "rank": 50,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.3669,
+   "model": {
+    "n1": 27,
+    "n2": 0,
+    "pRank": 0.3669
+   },
    "h2h": [],
-   "analysis": "Marco Trungelliti (Weltrangliste #95) trifft auf Juan Manuel Cerundolo (#50). Auf Sand liegt die Siegquote von Marco Trungelliti zuletzt bei 46 % (10:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Juan Manuel Cerundolo mit 63 % vorn.",
+   "analysis": "Marco Trungelliti (Weltrangliste #95) trifft auf Juan Manuel Cerundolo (#50). Auf Sand liegt die Siegquote von Marco Trungelliti zuletzt bei 46 % (10:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Juan Manuel Cerundolo mit 63 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -666,6 +870,14 @@
    "p1": {
     "name": "Aleksandr Shevchenko",
     "rank": 84,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 23,
      "l": 29,
@@ -676,12 +888,19 @@
    "p2": {
     "name": "Jan-Lennard Struff",
     "rank": 41,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.3521,
+   "model": {
+    "n1": 133,
+    "n2": 0,
+    "pRank": 0.3521
+   },
    "h2h": [],
-   "analysis": "Aleksandr Shevchenko (Weltrangliste #84) trifft auf Jan-Lennard Struff (#41). Auf Sand liegt die Siegquote von Aleksandr Shevchenko zuletzt bei 44 % (23:29). Aleksandr Shevchenkos stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Jan-Lennard Struff mit 65 % vorn.",
+   "analysis": "Aleksandr Shevchenko (Weltrangliste #84) trifft auf Jan-Lennard Struff (#41). Auf Sand liegt die Siegquote von Aleksandr Shevchenko zuletzt bei 44 % (23:29). Aleksandr Shevchenkos stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Jan-Lennard Struff mit 65 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -694,12 +913,22 @@
    "p1": {
     "name": "Yuan Yue",
     "rank": 121,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Nikola Bartunkova",
     "rank": 44,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 9,
      "l": 7,
@@ -708,8 +937,13 @@
     "favSurface": "Rasen"
    },
    "pP1": 0.2974,
+   "model": {
+    "n1": 0,
+    "n2": 28,
+    "pRank": 0.2974
+   },
    "h2h": [],
-   "analysis": "Yuan Yue (Weltrangliste #121) trifft auf Nikola Bartunkova (#44). Auf Hartplatz liegt die Siegquote von Nikola Bartunkova zuletzt bei 56 % (9:7). Nikola Bartunkovas stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Nikola Bartunkova mit 70 % vorn.",
+   "analysis": "Yuan Yue (Weltrangliste #121) trifft auf Nikola Bartunkova (#44). Auf Hartplatz liegt die Siegquote von Nikola Bartunkova zuletzt bei 56 % (9:7). Nikola Bartunkovas stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Nikola Bartunkova mit 70 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -722,6 +956,14 @@
    "p1": {
     "name": "Aliaksandra Sasnovich",
     "rank": 133,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1590,
     "onSurface": {
      "w": 36,
      "l": 39,
@@ -732,6 +974,14 @@
    "p2": {
     "name": "Maria Timofeeva",
     "rank": 84,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1440,
     "onSurface": {
      "w": 5,
      "l": 6,
@@ -739,7 +989,16 @@
     },
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.4036,
+   "pP1": 0.7039,
+   "model": {
+    "n1": 127,
+    "n2": 27,
+    "elo1": 1590,
+    "elo2": 1440,
+    "pElo": 0.7039,
+    "pRank": 0.4036,
+    "wElo": 1.0
+   },
    "h2h": [
     {
      "year": "2024",
@@ -751,7 +1010,7 @@
      "rnd": "2nd Round"
     }
    ],
-   "analysis": "Aliaksandra Sasnovich (Weltrangliste #133) trifft auf Maria Timofeeva (#84). Auf Hartplatz liegt die Siegquote von Aliaksandra Sasnovich zuletzt bei 48 % (36:39), Maria Timofeeva kommt auf 46 % (5:6). Das bisher einzige Duell (2024, Budapest Open) gewann Aliaksandra Sasnovich mit 6:3 6:4. Das Ranglisten-Modell sieht Maria Timofeeva mit 60 % vorn.",
+   "analysis": "Aliaksandra Sasnovich (Weltrangliste #133) trifft auf Maria Timofeeva (#84). Auf Hartplatz liegt die Siegquote von Aliaksandra Sasnovich zuletzt bei 48 % (36:39), Maria Timofeeva kommt auf 46 % (5:6). Das bisher einzige Duell (2024, Budapest Open) gewann Aliaksandra Sasnovich mit 6:3 6:4. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Aliaksandra Sasnovich mit 70 % vorn. Bemerkenswert: Die Weltrangliste würde eher Maria Timofeeva favorisieren – die Formkurve spricht aber dagegen.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -764,6 +1023,14 @@
    "p1": {
     "name": "Mai Hontama",
     "rank": 202,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1364,
     "onSurface": {
      "w": 11,
      "l": 22,
@@ -774,6 +1041,14 @@
    "p2": {
     "name": "Diane Parry",
     "rank": 60,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1619,
     "onSurface": {
      "w": 31,
      "l": 32,
@@ -781,7 +1056,16 @@
     },
     "favSurface": "Rasen"
    },
-   "pP1": 0.2627,
+   "pP1": 0.1872,
+   "model": {
+    "n1": 35,
+    "n2": 121,
+    "elo1": 1364,
+    "elo2": 1619,
+    "pElo": 0.1872,
+    "pRank": 0.2627,
+    "wElo": 1.0
+   },
    "h2h": [
     {
      "year": "2022",
@@ -793,7 +1077,7 @@
      "rnd": "2nd Round"
     }
    ],
-   "analysis": "Mai Hontama (Weltrangliste #202) trifft auf Diane Parry (#60). Auf Hartplatz liegt die Siegquote von Mai Hontama zuletzt bei 33 % (11:22), Diane Parry kommt auf 49 % (31:32). Diane Parrys stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2022, Wimbledon) gewann Diane Parry mit 6:3 6:2. Das Ranglisten-Modell sieht Diane Parry mit 74 % vorn.",
+   "analysis": "Mai Hontama (Weltrangliste #202) trifft auf Diane Parry (#60). Auf Hartplatz liegt die Siegquote von Mai Hontama zuletzt bei 33 % (11:22), Diane Parry kommt auf 49 % (31:32). Diane Parrys stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2022, Wimbledon) gewann Diane Parry mit 6:3 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Diane Parry mit 81 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -806,6 +1090,14 @@
    "p1": {
     "name": "Sinja Kraus",
     "rank": 80,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1331,
     "onSurface": {
      "w": 2,
      "l": 6,
@@ -816,12 +1108,29 @@
    "p2": {
     "name": "Darja Semenistaja",
     "rank": 109,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1461,
     "onSurface": null,
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.5654,
+   "pP1": 0.4309,
+   "model": {
+    "n1": 18,
+    "n2": 11,
+    "elo1": 1331,
+    "elo2": 1461,
+    "pElo": 0.3209,
+    "pRank": 0.5654,
+    "wElo": 0.55
+   },
    "h2h": [],
-   "analysis": "Sinja Kraus (Weltrangliste #80) trifft auf Darja Semenistaja (#109). Auf Sand liegt die Siegquote von Sinja Kraus zuletzt bei 25 % (2:6). Darja Semenistajas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Sinja Kraus mit 57 % vorn.",
+   "analysis": "Sinja Kraus (Weltrangliste #80) trifft auf Darja Semenistaja (#109). Die aktuelle Form spricht für Darja Semenistaja: 2 Siege aus den letzten 5 Matches, Sinja Kraus holte nur 0. Auf Sand liegt die Siegquote von Sinja Kraus zuletzt bei 25 % (2:6). Darja Semenistajas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Darja Semenistaja mit 57 % vorn. Bemerkenswert: Die Weltrangliste würde eher Sinja Kraus favorisieren – die Formkurve spricht aber dagegen.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -834,6 +1143,14 @@
    "p1": {
     "name": "Yulia Putintseva",
     "rank": 79,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1605,
     "onSurface": {
      "w": 36,
      "l": 28,
@@ -844,12 +1161,27 @@
    "p2": {
     "name": "Mona Barthel",
     "rank": 215,
+    "form": [
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1374,
     "onSurface": null,
     "favSurface": null
    },
-   "pP1": 0.7008,
+   "pP1": 0.7143,
+   "model": {
+    "n1": 197,
+    "n2": 3,
+    "elo1": 1605,
+    "elo2": 1374,
+    "pElo": 0.7911,
+    "pRank": 0.7008,
+    "wElo": 0.15
+   },
    "h2h": [],
-   "analysis": "Yulia Putintseva (Weltrangliste #79) trifft auf Mona Barthel (#215). Auf Sand liegt die Siegquote von Yulia Putintseva zuletzt bei 56 % (36:28). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Yulia Putintseva mit 70 % vorn.",
+   "analysis": "Yulia Putintseva (Weltrangliste #79) trifft auf Mona Barthel (#215). Die aktuelle Form spricht für Yulia Putintseva: 2 Siege aus den letzten 5 Matches, Mona Barthel holte nur 0. Auf Sand liegt die Siegquote von Yulia Putintseva zuletzt bei 56 % (36:28). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Yulia Putintseva mit 71 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -862,12 +1194,28 @@
    "p1": {
     "name": "Veronika Erjavec",
     "rank": 100,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1349,
     "onSurface": null,
     "favSurface": "Hartplatz"
    },
    "p2": {
     "name": "Leyre Romero Gormaz",
     "rank": 146,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1488,
     "onSurface": {
      "w": 3,
      "l": 4,
@@ -875,9 +1223,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.5797,
+   "pP1": 0.472,
+   "model": {
+    "n1": 11,
+    "n2": 8,
+    "elo1": 1349,
+    "elo2": 1488,
+    "pElo": 0.3104,
+    "pRank": 0.5797,
+    "wElo": 0.4
+   },
    "h2h": [],
-   "analysis": "Veronika Erjavec (Weltrangliste #100) trifft auf Leyre Romero Gormaz (#146). Auf Sand liegt die Siegquote von Leyre Romero Gormaz zuletzt bei 43 % (3:4). Veronika Erjavecs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Veronika Erjavec mit 58 % vorn.",
+   "analysis": "Veronika Erjavec (Weltrangliste #100) trifft auf Leyre Romero Gormaz (#146). Die aktuelle Form spricht für Leyre Romero Gormaz: 2 Siege aus den letzten 5 Matches, Veronika Erjavec holte nur 0. Auf Sand liegt die Siegquote von Leyre Romero Gormaz zuletzt bei 43 % (3:4). Veronika Erjavecs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Leyre Romero Gormaz mit 53 % vorn. Bemerkenswert: Die Weltrangliste würde eher Veronika Erjavec favorisieren – die Formkurve spricht aber dagegen.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -890,6 +1247,14 @@
    "p1": {
     "name": "Miomir Kecmanovic",
     "rank": 58,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1579,
     "onSurface": {
      "w": 33,
      "l": 35,
@@ -900,6 +1265,14 @@
    "p2": {
     "name": "Sebastian Baez",
     "rank": 56,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1582,
     "onSurface": {
      "w": 85,
      "l": 56,
@@ -907,7 +1280,16 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.4925,
+   "pP1": 0.495,
+   "model": {
+    "n1": 247,
+    "n2": 234,
+    "elo1": 1579,
+    "elo2": 1582,
+    "pElo": 0.495,
+    "pRank": 0.4925,
+    "wElo": 1.0
+   },
    "h2h": [
     {
      "year": "2025",
@@ -937,7 +1319,7 @@
      "rnd": "2nd Round"
     }
    ],
-   "analysis": "Miomir Kecmanovic (Weltrangliste #58) trifft auf Sebastian Baez (#56). Auf Sand liegt die Siegquote von Miomir Kecmanovic zuletzt bei 48 % (33:35), Sebastian Baez kommt auf 60 % (85:56). Miomir Kecmanovics stärkster Belag ist eigentlich Hartplatz. Den direkten Vergleich führt Miomir Kecmanovic mit 3:0 aus den letzten 3 Duellen an. Zuletzt (2025, French Open) gewann Miomir Kecmanovic mit 6:7 6:7 6:4 6:2 6:2. Das Ranglisten-Modell sieht Sebastian Baez mit 51 % vorn.",
+   "analysis": "Miomir Kecmanovic (Weltrangliste #58) trifft auf Sebastian Baez (#56). Auf Sand liegt die Siegquote von Miomir Kecmanovic zuletzt bei 48 % (33:35), Sebastian Baez kommt auf 60 % (85:56). Miomir Kecmanovics stärkster Belag ist eigentlich Hartplatz. Den direkten Vergleich führt Miomir Kecmanovic mit 3:0 aus den letzten 3 Duellen an. Zuletzt (2025, French Open) gewann Miomir Kecmanovic mit 6:7 6:7 6:4 6:2 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Sebastian Baez mit 50 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -950,6 +1332,14 @@
    "p1": {
     "name": "Quentin Halys",
     "rank": 83,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1606,
     "onSurface": {
      "w": 15,
      "l": 13,
@@ -960,6 +1350,14 @@
    "p2": {
     "name": "Laslo Djere",
     "rank": 238,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1556,
     "onSurface": {
      "w": 43,
      "l": 37,
@@ -967,9 +1365,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.71,
+   "pP1": 0.5723,
+   "model": {
+    "n1": 130,
+    "n2": 159,
+    "elo1": 1606,
+    "elo2": 1556,
+    "pElo": 0.5723,
+    "pRank": 0.71,
+    "wElo": 1.0
+   },
    "h2h": [],
-   "analysis": "Quentin Halys (Weltrangliste #83) trifft auf Laslo Djere (#238). Auf Sand liegt die Siegquote von Quentin Halys zuletzt bei 54 % (15:13), Laslo Djere kommt auf 54 % (43:37). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Quentin Halys mit 71 % vorn.",
+   "analysis": "Quentin Halys (Weltrangliste #83) trifft auf Laslo Djere (#238). Die aktuelle Form spricht für Quentin Halys: 3 Siege aus den letzten 5 Matches, Laslo Djere holte nur 1. Auf Sand liegt die Siegquote von Quentin Halys zuletzt bei 54 % (15:13), Laslo Djere kommt auf 54 % (43:37). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Quentin Halys mit 57 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -982,6 +1389,14 @@
    "p1": {
     "name": "Maya Joint",
     "rank": 77,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1567,
     "onSurface": {
      "w": 24,
      "l": 24,
@@ -992,12 +1407,28 @@
    "p2": {
     "name": "Laura Samson",
     "rank": 150,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1529,
     "onSurface": null,
     "favSurface": null
    },
-   "pP1": 0.638,
+   "pP1": 0.6215,
+   "model": {
+    "n1": 70,
+    "n2": 4,
+    "elo1": 1567,
+    "elo2": 1529,
+    "pElo": 0.5554,
+    "pRank": 0.638,
+    "wElo": 0.2
+   },
    "h2h": [],
-   "analysis": "Maya Joint (Weltrangliste #77) trifft auf Laura Samson (#150). Auf Hartplatz liegt die Siegquote von Maya Joint zuletzt bei 50 % (24:24). Maya Joints stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Maya Joint mit 64 % vorn.",
+   "analysis": "Maya Joint (Weltrangliste #77) trifft auf Laura Samson (#150). Auf Hartplatz liegt die Siegquote von Maya Joint zuletzt bei 50 % (24:24). Maya Joints stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Maya Joint mit 62 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1010,6 +1441,14 @@
    "p1": {
     "name": "Tereza Valentova",
     "rank": 63,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1641,
     "onSurface": {
      "w": 15,
      "l": 10,
@@ -1020,6 +1459,14 @@
    "p2": {
     "name": "Priscilla Hon",
     "rank": 136,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1536,
     "onSurface": {
      "w": 9,
      "l": 17,
@@ -1027,9 +1474,18 @@
     },
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.6579,
+   "pP1": 0.6473,
+   "model": {
+    "n1": 36,
+    "n2": 28,
+    "elo1": 1641,
+    "elo2": 1536,
+    "pElo": 0.6473,
+    "pRank": 0.6579,
+    "wElo": 1.0
+   },
    "h2h": [],
-   "analysis": "Tereza Valentova (Weltrangliste #63) trifft auf Priscilla Hon (#136). Auf Hartplatz liegt die Siegquote von Tereza Valentova zuletzt bei 60 % (15:10), Priscilla Hon kommt auf 35 % (9:17). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Tereza Valentova mit 66 % vorn.",
+   "analysis": "Tereza Valentova (Weltrangliste #63) trifft auf Priscilla Hon (#136). Auf Hartplatz liegt die Siegquote von Tereza Valentova zuletzt bei 60 % (15:10), Priscilla Hon kommt auf 35 % (9:17). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Tereza Valentova mit 65 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1042,6 +1498,14 @@
    "p1": {
     "name": "Lilli Tagger",
     "rank": 74,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 7,
      "l": 4,
@@ -1052,12 +1516,19 @@
    "p2": {
     "name": "Gao Xinyu",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.7378,
+   "model": {
+    "n1": 18,
+    "n2": 0,
+    "pRank": 0.7378
+   },
    "h2h": [],
-   "analysis": "Lilli Tagger (#74) trifft auf Gao Xinyu, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Lilli Tagger zuletzt bei 64 % (7:4). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Lilli Tagger mit 74 % vorn.",
+   "analysis": "Lilli Tagger (#74) trifft auf Gao Xinyu, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Lilli Tagger zuletzt bei 64 % (7:4). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lilli Tagger mit 74 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1070,6 +1541,14 @@
    "p1": {
     "name": "Noma Noha Akugue",
     "rank": 144,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 5,
      "l": 5,
@@ -1080,12 +1559,21 @@
    "p2": {
     "name": "Valentina Steiner",
     "rank": 692,
+    "form": [
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.7916,
+   "model": {
+    "n1": 11,
+    "n2": 1,
+    "pRank": 0.7916
+   },
    "h2h": [],
-   "analysis": "Noma Noha Akugue (Weltrangliste #144) trifft auf Valentina Steiner (#692). Auf Sand liegt die Siegquote von Noma Noha Akugue zuletzt bei 50 % (5:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Noma Noha Akugue mit 79 % vorn.",
+   "analysis": "Noma Noha Akugue (Weltrangliste #144) trifft auf Valentina Steiner (#692). Auf Sand liegt die Siegquote von Noma Noha Akugue zuletzt bei 50 % (5:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Noma Noha Akugue mit 79 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1098,6 +1586,14 @@
    "p1": {
     "name": "Pablo Carreno Busta",
     "rank": 65,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1620,
     "onSurface": {
      "w": 18,
      "l": 19,
@@ -1108,6 +1604,14 @@
    "p2": {
     "name": "Vilius Gaubas",
     "rank": 128,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1491,
     "onSurface": {
      "w": 6,
      "l": 7,
@@ -1115,9 +1619,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.6401,
+   "pP1": 0.6659,
+   "model": {
+    "n1": 110,
+    "n2": 14,
+    "elo1": 1620,
+    "elo2": 1491,
+    "pElo": 0.677,
+    "pRank": 0.6401,
+    "wElo": 0.7
+   },
    "h2h": [],
-   "analysis": "Pablo Carreno Busta (Weltrangliste #65) trifft auf Vilius Gaubas (#128). Auf Sand liegt die Siegquote von Pablo Carreno Busta zuletzt bei 49 % (18:19), Vilius Gaubas kommt auf 46 % (6:7). Pablo Carreno Bustas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Pablo Carreno Busta mit 64 % vorn.",
+   "analysis": "Pablo Carreno Busta (Weltrangliste #65) trifft auf Vilius Gaubas (#128). Auf Sand liegt die Siegquote von Pablo Carreno Busta zuletzt bei 49 % (18:19), Vilius Gaubas kommt auf 46 % (6:7). Pablo Carreno Bustas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Pablo Carreno Busta mit 67 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1130,6 +1643,14 @@
    "p1": {
     "name": "Jesper de Jong",
     "rank": 98,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1608,
     "onSurface": {
      "w": 15,
      "l": 14,
@@ -1140,6 +1661,14 @@
    "p2": {
     "name": "Jan Choinski",
     "rank": 90,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1417,
     "onSurface": {
      "w": 1,
      "l": 4,
@@ -1147,9 +1676,18 @@
     },
     "favSurface": "Rasen"
    },
-   "pP1": 0.4819,
+   "pP1": 0.7369,
+   "model": {
+    "n1": 54,
+    "n2": 19,
+    "elo1": 1608,
+    "elo2": 1417,
+    "pElo": 0.7503,
+    "pRank": 0.4819,
+    "wElo": 0.95
+   },
    "h2h": [],
-   "analysis": "Jesper de Jong (Weltrangliste #98) trifft auf Jan Choinski (#90). Auf Sand liegt die Siegquote von Jesper de Jong zuletzt bei 52 % (15:14), Jan Choinski kommt auf 20 % (1:4). Jan Choinskis stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Jan Choinski mit 52 % vorn.",
+   "analysis": "Jesper de Jong (Weltrangliste #98) trifft auf Jan Choinski (#90). Auf Sand liegt die Siegquote von Jesper de Jong zuletzt bei 52 % (15:14), Jan Choinski kommt auf 20 % (1:4). Jan Choinskis stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Jesper de Jong mit 74 % vorn. Bemerkenswert: Die Weltrangliste würde eher Jan Choinski favorisieren – die Formkurve spricht aber dagegen.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1162,16 +1700,21 @@
    "p1": {
     "name": "Tiago Pereira",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Gonzalo Bueno",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": null,
+   "model": {},
    "h2h": [],
    "analysis": "Tiago Pereira trifft auf Gonzalo Bueno; für beide liegt kein aktuelles Top-Ranking vor. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell.",
    "unconfirmed": false,
@@ -1186,6 +1729,14 @@
    "p1": {
     "name": "Jule Niemeier",
     "rank": 184,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 8,
      "l": 15,
@@ -1196,12 +1747,19 @@
    "p2": {
     "name": "Maria Lourdes Carle",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.5648,
+   "model": {
+    "n1": 77,
+    "n2": 0,
+    "pRank": 0.5648
+   },
    "h2h": [],
-   "analysis": "Jule Niemeier (#184) trifft auf Maria Lourdes Carle, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Jule Niemeier zuletzt bei 35 % (8:15). Jule Niemeiers stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Jule Niemeier mit 56 % vorn.",
+   "analysis": "Jule Niemeier (#184) trifft auf Maria Lourdes Carle, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Jule Niemeier zuletzt bei 35 % (8:15). Jule Niemeiers stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Jule Niemeier mit 56 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1214,6 +1772,14 @@
    "p1": {
     "name": "Sebastian Ofner",
     "rank": 124,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1517,
     "onSurface": {
      "w": 20,
      "l": 30,
@@ -1224,6 +1790,14 @@
    "p2": {
     "name": "Alex Molcan",
     "rank": 81,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1678,
     "onSurface": {
      "w": 31,
      "l": 19,
@@ -1231,7 +1805,16 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.4105,
+   "pP1": 0.2832,
+   "model": {
+    "n1": 99,
+    "n2": 89,
+    "elo1": 1517,
+    "elo2": 1678,
+    "pElo": 0.2832,
+    "pRank": 0.4105,
+    "wElo": 1.0
+   },
    "h2h": [
     {
      "year": "2023",
@@ -1243,7 +1826,7 @@
      "rnd": "2nd Round"
     }
    ],
-   "analysis": "Sebastian Ofner (Weltrangliste #124) trifft auf Alex Molcan (#81). Auf Sand liegt die Siegquote von Sebastian Ofner zuletzt bei 40 % (20:30), Alex Molcan kommt auf 62 % (31:19). Sebastian Ofners stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2023, Generali Open) gewann Alex Molcan mit 4:6 7:5 7:6. Das Ranglisten-Modell sieht Alex Molcan mit 59 % vorn.",
+   "analysis": "Sebastian Ofner (Weltrangliste #124) trifft auf Alex Molcan (#81). Die aktuelle Form spricht für Alex Molcan: 3 Siege aus den letzten 5 Matches, Sebastian Ofner holte nur 1. Auf Sand liegt die Siegquote von Sebastian Ofner zuletzt bei 40 % (20:30), Alex Molcan kommt auf 62 % (31:19). Sebastian Ofners stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2023, Generali Open) gewann Alex Molcan mit 4:6 7:5 7:6. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Alex Molcan mit 72 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1256,18 +1839,29 @@
    "p1": {
     "name": "Kilian Feldbausch",
     "rank": 262,
+    "form": [
+     "N"
+    ],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Adolfo Daniel Vallejo",
     "rank": 63,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.2294,
+   "model": {
+    "n1": 1,
+    "n2": 0,
+    "pRank": 0.2294
+   },
    "h2h": [],
-   "analysis": "Kilian Feldbausch (Weltrangliste #262) trifft auf Adolfo Daniel Vallejo (#63). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Adolfo Daniel Vallejo mit 77 % vorn.",
+   "analysis": "Kilian Feldbausch (Weltrangliste #262) trifft auf Adolfo Daniel Vallejo (#63). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Adolfo Daniel Vallejo mit 77 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1280,6 +1874,14 @@
    "p1": {
     "name": "Sara Bejlek",
     "rank": 40,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1653,
     "onSurface": {
      "w": 11,
      "l": 12,
@@ -1290,6 +1892,14 @@
    "p2": {
     "name": "Anna Blinkova",
     "rank": 105,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1539,
     "onSurface": {
      "w": 46,
      "l": 54,
@@ -1297,7 +1907,16 @@
     },
     "favSurface": "Rasen"
    },
-   "pP1": 0.6943,
+   "pP1": 0.6585,
+   "model": {
+    "n1": 40,
+    "n2": 164,
+    "elo1": 1653,
+    "elo2": 1539,
+    "pElo": 0.6585,
+    "pRank": 0.6943,
+    "wElo": 1.0
+   },
    "h2h": [
     {
      "year": "2024",
@@ -1318,7 +1937,7 @@
      "rnd": "1st Round"
     }
    ],
-   "analysis": "Sara Bejlek (Weltrangliste #40) trifft auf Anna Blinkova (#105). Auf Hartplatz liegt die Siegquote von Sara Bejlek zuletzt bei 48 % (11:12), Anna Blinkova kommt auf 46 % (46:54). Anna Blinkovas stärkster Belag ist eigentlich Rasen. Der direkte Vergleich der letzten 2 Duelle ist mit 1:1 ausgeglichen. Zuletzt (2024, Brisbane International) gewann Anna Blinkova mit 6:1 7:6. Das Ranglisten-Modell sieht Sara Bejlek mit 69 % vorn.",
+   "analysis": "Sara Bejlek (Weltrangliste #40) trifft auf Anna Blinkova (#105). Die aktuelle Form spricht für Sara Bejlek: 3 Siege aus den letzten 5 Matches, Anna Blinkova holte nur 1. Auf Hartplatz liegt die Siegquote von Sara Bejlek zuletzt bei 48 % (11:12), Anna Blinkova kommt auf 46 % (46:54). Anna Blinkovas stärkster Belag ist eigentlich Rasen. Der direkte Vergleich der letzten 2 Duelle ist mit 1:1 ausgeglichen. Zuletzt (2024, Brisbane International) gewann Anna Blinkova mit 6:1 7:6. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Sara Bejlek mit 66 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1331,6 +1950,14 @@
    "p1": {
     "name": "Lanlana Tararudee",
     "rank": 82,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 4,
      "l": 6,
@@ -1341,12 +1968,19 @@
    "p2": {
     "name": "Jana Kovackova",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.7206,
+   "model": {
+    "n1": 12,
+    "n2": 0,
+    "pRank": 0.7206
+   },
    "h2h": [],
-   "analysis": "Lanlana Tararudee (#82) trifft auf Jana Kovackova, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Lanlana Tararudee zuletzt bei 40 % (4:6). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Lanlana Tararudee mit 72 % vorn.",
+   "analysis": "Lanlana Tararudee (#82) trifft auf Jana Kovackova, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Lanlana Tararudee zuletzt bei 40 % (4:6). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lanlana Tararudee mit 72 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1359,12 +1993,28 @@
    "p1": {
     "name": "Alina Charaeva",
     "rank": 117,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1414,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Sara Sorribes Tormo",
     "rank": 212,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1549,
     "onSurface": {
      "w": 29,
      "l": 19,
@@ -1372,9 +2022,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.6237,
+   "pP1": 0.531,
+   "model": {
+    "n1": 6,
+    "n2": 113,
+    "elo1": 1414,
+    "elo2": 1549,
+    "pElo": 0.3147,
+    "pRank": 0.6237,
+    "wElo": 0.3
+   },
    "h2h": [],
-   "analysis": "Alina Charaeva (Weltrangliste #117) trifft auf Sara Sorribes Tormo (#212). Auf Sand liegt die Siegquote von Sara Sorribes Tormo zuletzt bei 60 % (29:19). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Alina Charaeva mit 62 % vorn.",
+   "analysis": "Alina Charaeva (Weltrangliste #117) trifft auf Sara Sorribes Tormo (#212). Auf Sand liegt die Siegquote von Sara Sorribes Tormo zuletzt bei 60 % (29:19). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Alina Charaeva mit 53 % vorn. Bemerkenswert: Die Weltrangliste würde eher Alina Charaeva favorisieren – die Formkurve spricht aber dagegen.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1387,6 +2046,14 @@
    "p1": {
     "name": "Victoria Jimenez Kasintseva",
     "rank": 119,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1401,
     "onSurface": {
      "w": 2,
      "l": 5,
@@ -1397,6 +2064,14 @@
    "p2": {
     "name": "Tamara Korpatsch",
     "rank": 81,
+    "form": [
+     "S",
+     "S",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1535,
     "onSurface": {
      "w": 8,
      "l": 16,
@@ -1404,9 +2079,18 @@
     },
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.419,
+   "pP1": 0.3162,
+   "model": {
+    "n1": 22,
+    "n2": 78,
+    "elo1": 1401,
+    "elo2": 1535,
+    "pElo": 0.3162,
+    "pRank": 0.419,
+    "wElo": 1.0
+   },
    "h2h": [],
-   "analysis": "Victoria Jimenez Kasintseva (Weltrangliste #119) trifft auf Tamara Korpatsch (#81). Auf Sand liegt die Siegquote von Victoria Jimenez Kasintseva zuletzt bei 29 % (2:5), Tamara Korpatsch kommt auf 33 % (8:16). Victoria Jimenez Kasintsevas stärkster Belag ist eigentlich Hartplatz. Tamara Korpatschs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Tamara Korpatsch mit 58 % vorn.",
+   "analysis": "Victoria Jimenez Kasintseva (Weltrangliste #119) trifft auf Tamara Korpatsch (#81). Auf Sand liegt die Siegquote von Victoria Jimenez Kasintseva zuletzt bei 29 % (2:5), Tamara Korpatsch kommt auf 33 % (8:16). Victoria Jimenez Kasintsevas stärkster Belag ist eigentlich Hartplatz. Tamara Korpatschs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Tamara Korpatsch mit 68 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1419,12 +2103,22 @@
    "p1": {
     "name": "Orlando Luz",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Nuno Borges",
     "rank": 48,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 29,
      "l": 26,
@@ -1433,8 +2127,13 @@
     "favSurface": "Sand"
    },
    "pP1": 0.1974,
+   "model": {
+    "n1": 0,
+    "n2": 174,
+    "pRank": 0.1974
+   },
    "h2h": [],
-   "analysis": "Orlando Luz – aktuell ohne Top-Ranking – trifft auf Nuno Borges (#48). Auf Sand liegt die Siegquote von Nuno Borges zuletzt bei 53 % (29:26). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Nuno Borges mit 80 % vorn.",
+   "analysis": "Orlando Luz – aktuell ohne Top-Ranking – trifft auf Nuno Borges (#48). Auf Sand liegt die Siegquote von Nuno Borges zuletzt bei 53 % (29:26). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Nuno Borges mit 80 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1447,6 +2146,14 @@
    "p1": {
     "name": "Damir Dzumhur",
     "rank": 87,
+    "form": [
+     "S",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1595,
     "onSurface": {
      "w": 25,
      "l": 21,
@@ -1457,6 +2164,14 @@
    "p2": {
     "name": "Hugo Gaston",
     "rank": 109,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1415,
     "onSurface": {
      "w": 17,
      "l": 31,
@@ -1464,7 +2179,16 @@
     },
     "favSurface": "Rasen"
    },
-   "pP1": 0.5478,
+   "pP1": 0.7379,
+   "model": {
+    "n1": 84,
+    "n2": 105,
+    "elo1": 1595,
+    "elo2": 1415,
+    "pElo": 0.7379,
+    "pRank": 0.5478,
+    "wElo": 1.0
+   },
    "h2h": [
     {
      "year": "2025",
@@ -1476,7 +2200,7 @@
      "rnd": "2nd Round"
     }
    ],
-   "analysis": "Damir Dzumhur (Weltrangliste #87) trifft auf Hugo Gaston (#109). Auf Sand liegt die Siegquote von Damir Dzumhur zuletzt bei 54 % (25:21), Hugo Gaston kommt auf 35 % (17:31). Hugo Gastons stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2025, Nordea Open) gewann Damir Dzumhur mit 4:6 6:2 6:2. Das Ranglisten-Modell sieht Damir Dzumhur mit 55 % vorn.",
+   "analysis": "Damir Dzumhur (Weltrangliste #87) trifft auf Hugo Gaston (#109). Die aktuelle Form spricht für Damir Dzumhur: 4 Siege aus den letzten 5 Matches, Hugo Gaston holte nur 1. Auf Sand liegt die Siegquote von Damir Dzumhur zuletzt bei 54 % (25:21), Hugo Gaston kommt auf 35 % (17:31). Hugo Gastons stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2025, Nordea Open) gewann Damir Dzumhur mit 4:6 6:2 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Damir Dzumhur mit 74 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1489,6 +2213,14 @@
    "p1": {
     "name": "Taro Daniel",
     "rank": 194,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 6,
      "l": 13,
@@ -1499,12 +2231,19 @@
    "p2": {
     "name": "Daniel Merida",
     "rank": 59,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.2666,
+   "model": {
+    "n1": 99,
+    "n2": 0,
+    "pRank": 0.2666
+   },
    "h2h": [],
-   "analysis": "Taro Daniel (Weltrangliste #194) trifft auf Daniel Merida (#59). Auf Sand liegt die Siegquote von Taro Daniel zuletzt bei 32 % (6:13). Taro Daniels stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Daniel Merida mit 73 % vorn.",
+   "analysis": "Taro Daniel (Weltrangliste #194) trifft auf Daniel Merida (#59). Auf Sand liegt die Siegquote von Taro Daniel zuletzt bei 32 % (6:13). Taro Daniels stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Daniel Merida mit 73 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1517,6 +2256,14 @@
    "p1": {
     "name": "Elina Avanesyan",
     "rank": 224,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1569,
     "onSurface": {
      "w": 25,
      "l": 18,
@@ -1527,6 +2274,14 @@
    "p2": {
     "name": "Arantxa Rus",
     "rank": 119,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1502,
     "onSurface": {
      "w": 18,
      "l": 20,
@@ -1534,9 +2289,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.3687,
+   "pP1": 0.5957,
+   "model": {
+    "n1": 107,
+    "n2": 89,
+    "elo1": 1569,
+    "elo2": 1502,
+    "pElo": 0.5957,
+    "pRank": 0.3687,
+    "wElo": 1.0
+   },
    "h2h": [],
-   "analysis": "Elina Avanesyan (Weltrangliste #224) trifft auf Arantxa Rus (#119). Auf Sand liegt die Siegquote von Elina Avanesyan zuletzt bei 58 % (25:18), Arantxa Rus kommt auf 47 % (18:20). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Arantxa Rus mit 63 % vorn.",
+   "analysis": "Elina Avanesyan (Weltrangliste #224) trifft auf Arantxa Rus (#119). Auf Sand liegt die Siegquote von Elina Avanesyan zuletzt bei 58 % (25:18), Arantxa Rus kommt auf 47 % (18:20). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Elina Avanesyan mit 60 % vorn. Bemerkenswert: Die Weltrangliste würde eher Arantxa Rus favorisieren – die Formkurve spricht aber dagegen.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1549,6 +2313,14 @@
    "p1": {
     "name": "Raphael Collignon",
     "rank": 37,
+    "form": [
+     "S",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1694,
     "onSurface": {
      "w": 8,
      "l": 7,
@@ -1559,6 +2331,14 @@
    "p2": {
     "name": "Daniel Altmaier",
     "rank": 61,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1562,
     "onSurface": {
      "w": 28,
      "l": 42,
@@ -1566,9 +2346,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.6047,
+   "pP1": 0.682,
+   "model": {
+    "n1": 40,
+    "n2": 176,
+    "elo1": 1694,
+    "elo2": 1562,
+    "pElo": 0.682,
+    "pRank": 0.6047,
+    "wElo": 1.0
+   },
    "h2h": [],
-   "analysis": "Raphael Collignon (Weltrangliste #37) trifft auf Daniel Altmaier (#61). Auf Sand liegt die Siegquote von Raphael Collignon zuletzt bei 53 % (8:7), Daniel Altmaier kommt auf 40 % (28:42). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Raphael Collignon mit 60 % vorn.",
+   "analysis": "Raphael Collignon (Weltrangliste #37) trifft auf Daniel Altmaier (#61). Die aktuelle Form spricht für Raphael Collignon: 4 Siege aus den letzten 5 Matches, Daniel Altmaier holte nur 2. Auf Sand liegt die Siegquote von Raphael Collignon zuletzt bei 53 % (8:7), Daniel Altmaier kommt auf 40 % (28:42). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Raphael Collignon mit 68 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1581,6 +2370,14 @@
    "p1": {
     "name": "Barbora Krejcikova",
     "rank": 26,
+    "form": [
+     "S",
+     "S",
+     "S",
+     "S",
+     "S"
+    ],
+    "elo": 1847,
     "onSurface": {
      "w": 71,
      "l": 39,
@@ -1591,6 +2388,14 @@
    "p2": {
     "name": "Linda Fruhvirtova",
     "rank": 149,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1475,
     "onSurface": {
      "w": 29,
      "l": 31,
@@ -1598,7 +2403,16 @@
     },
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.8152,
+   "pP1": 0.8948,
+   "model": {
+    "n1": 168,
+    "n2": 85,
+    "elo1": 1847,
+    "elo2": 1475,
+    "pElo": 0.8948,
+    "pRank": 0.8152,
+    "wElo": 1.0
+   },
    "h2h": [
     {
      "year": "2023",
@@ -1610,7 +2424,7 @@
      "rnd": "Quarterfinals"
     }
    ],
-   "analysis": "Barbora Krejcikova (Weltrangliste #26) trifft auf Linda Fruhvirtova (#149). Auf Hartplatz liegt die Siegquote von Barbora Krejcikova zuletzt bei 64 % (71:39), Linda Fruhvirtova kommt auf 48 % (29:31). Barbora Krejcikovas stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2023, Rothesay Classic ) gewann Barbora Krejcikova mit 6:3 6:2. Das Ranglisten-Modell sieht Barbora Krejcikova mit 82 % vorn.",
+   "analysis": "Barbora Krejcikova (Weltrangliste #26) trifft auf Linda Fruhvirtova (#149). Die aktuelle Form spricht für Barbora Krejcikova: 5 Siege aus den letzten 5 Matches, Linda Fruhvirtova holte nur 0. Auf Hartplatz liegt die Siegquote von Barbora Krejcikova zuletzt bei 64 % (71:39), Linda Fruhvirtova kommt auf 48 % (29:31). Barbora Krejcikovas stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2023, Rothesay Classic ) gewann Barbora Krejcikova mit 6:3 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Barbora Krejcikova mit 89 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1623,12 +2437,22 @@
    "p1": {
     "name": "Roman Andres Burruchaga",
     "rank": 60,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Stan Wawrinka",
     "rank": 118,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 17,
      "l": 29,
@@ -1637,8 +2461,13 @@
     "favSurface": "Rasen"
    },
    "pP1": 0.6399,
+   "model": {
+    "n1": 0,
+    "n2": 124,
+    "pRank": 0.6399
+   },
    "h2h": [],
-   "analysis": "Roman Andres Burruchaga (Weltrangliste #60) trifft auf Stan Wawrinka (#118). Auf Sand liegt die Siegquote von Stan Wawrinka zuletzt bei 37 % (17:29). Stan Wawrinkas stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Roman Andres Burruchaga mit 64 % vorn.",
+   "analysis": "Roman Andres Burruchaga (Weltrangliste #60) trifft auf Stan Wawrinka (#118). Auf Sand liegt die Siegquote von Stan Wawrinka zuletzt bei 37 % (17:29). Stan Wawrinkas stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Roman Andres Burruchaga mit 64 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1651,6 +2480,14 @@
    "p1": {
     "name": "Nastasja Schunk",
     "rank": 288,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1379,
     "onSurface": {
      "w": 1,
      "l": 4,
@@ -1661,6 +2498,14 @@
    "p2": {
     "name": "Oleksandra Oliynykova",
     "rank": 45,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1622,
     "onSurface": {
      "w": 9,
      "l": 7,
@@ -1668,9 +2513,18 @@
     },
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.1711,
+   "pP1": 0.1807,
+   "model": {
+    "n1": 7,
+    "n2": 22,
+    "elo1": 1379,
+    "elo2": 1622,
+    "pElo": 0.1985,
+    "pRank": 0.1711,
+    "wElo": 0.35
+   },
    "h2h": [],
-   "analysis": "Nastasja Schunk (Weltrangliste #288) trifft auf Oleksandra Oliynykova (#45). Auf Sand liegt die Siegquote von Nastasja Schunk zuletzt bei 20 % (1:4), Oleksandra Oliynykova kommt auf 56 % (9:7). Oleksandra Oliynykovas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Oleksandra Oliynykova mit 83 % vorn.",
+   "analysis": "Nastasja Schunk (Weltrangliste #288) trifft auf Oleksandra Oliynykova (#45). Die aktuelle Form spricht für Oleksandra Oliynykova: 3 Siege aus den letzten 5 Matches, Nastasja Schunk holte nur 1. Auf Sand liegt die Siegquote von Nastasja Schunk zuletzt bei 20 % (1:4), Oleksandra Oliynykova kommt auf 56 % (9:7). Oleksandra Oliynykovas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Oleksandra Oliynykova mit 82 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1683,6 +2537,14 @@
    "p1": {
     "name": "Jaime Faria",
     "rank": 88,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1573,
     "onSurface": {
      "w": 9,
      "l": 11,
@@ -1693,6 +2555,14 @@
    "p2": {
     "name": "Botic Van De Zandschulp",
     "rank": 55,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1598,
     "onSurface": {
      "w": 31,
      "l": 30,
@@ -1700,9 +2570,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.4014,
+   "pP1": 0.4647,
+   "model": {
+    "n1": 28,
+    "n2": 207,
+    "elo1": 1573,
+    "elo2": 1598,
+    "pElo": 0.4647,
+    "pRank": 0.4014,
+    "wElo": 1.0
+   },
    "h2h": [],
-   "analysis": "Jaime Faria (Weltrangliste #88) trifft auf Botic Van De Zandschulp (#55). Auf Sand liegt die Siegquote von Jaime Faria zuletzt bei 45 % (9:11), Botic Van De Zandschulp kommt auf 51 % (31:30). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Botic Van De Zandschulp mit 60 % vorn.",
+   "analysis": "Jaime Faria (Weltrangliste #88) trifft auf Botic Van De Zandschulp (#55). Auf Sand liegt die Siegquote von Jaime Faria zuletzt bei 45 % (9:11), Botic Van De Zandschulp kommt auf 51 % (31:30). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Botic Van De Zandschulp mit 54 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1715,6 +2594,14 @@
    "p1": {
     "name": "Elsa Jacquemot",
     "rank": 104,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 6,
      "l": 13,
@@ -1725,12 +2612,19 @@
    "p2": {
     "name": "Tessa Johanna Brockmann",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.6782,
+   "model": {
+    "n1": 47,
+    "n2": 0,
+    "pRank": 0.6782
+   },
    "h2h": [],
-   "analysis": "Elsa Jacquemot (#104) trifft auf Tessa Johanna Brockmann, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Elsa Jacquemot zuletzt bei 32 % (6:13). Elsa Jacquemots stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Elsa Jacquemot mit 68 % vorn.",
+   "analysis": "Elsa Jacquemot (#104) trifft auf Tessa Johanna Brockmann, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Elsa Jacquemot zuletzt bei 32 % (6:13). Elsa Jacquemots stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Elsa Jacquemot mit 68 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
@@ -1743,6 +2637,14 @@
    "p1": {
     "name": "Facundo Diaz Acosta",
     "rank": 108,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1473,
     "onSurface": {
      "w": 17,
      "l": 17,
@@ -1753,6 +2655,14 @@
    "p2": {
     "name": "Alexander Bublik",
     "rank": 11,
+    "form": [
+     "S",
+     "S",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1719,
     "onSurface": {
      "w": 31,
      "l": 29,
@@ -1760,9 +2670,18 @@
     },
     "favSurface": "Rasen"
    },
-   "pP1": 0.1255,
+   "pP1": 0.1959,
+   "model": {
+    "n1": 51,
+    "n2": 244,
+    "elo1": 1473,
+    "elo2": 1719,
+    "pElo": 0.1959,
+    "pRank": 0.1255,
+    "wElo": 1.0
+   },
    "h2h": [],
-   "analysis": "Facundo Diaz Acosta (Weltrangliste #108) trifft auf Alexander Bublik (#11). Auf Sand liegt die Siegquote von Facundo Diaz Acosta zuletzt bei 50 % (17:17), Alexander Bublik kommt auf 52 % (31:29). Alexander Bubliks stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Alexander Bublik mit 87 % vorn.",
+   "analysis": "Facundo Diaz Acosta (Weltrangliste #108) trifft auf Alexander Bublik (#11). Die aktuelle Form spricht für Alexander Bublik: 3 Siege aus den letzten 5 Matches, Facundo Diaz Acosta holte nur 1. Auf Sand liegt die Siegquote von Facundo Diaz Acosta zuletzt bei 50 % (17:17), Alexander Bublik kommt auf 52 % (31:29). Alexander Bubliks stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Alexander Bublik mit 80 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -1775,6 +2694,14 @@
    "p1": {
     "name": "Jurij Rodionov",
     "rank": 145,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 4,
      "l": 9,
@@ -1785,12 +2712,19 @@
    "p2": {
     "name": "Tomas Martin Etcheverry",
     "rank": 31,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.2123,
+   "model": {
+    "n1": 24,
+    "n2": 0,
+    "pRank": 0.2123
+   },
    "h2h": [],
-   "analysis": "Jurij Rodionov (Weltrangliste #145) trifft auf Tomas Martin Etcheverry (#31). Auf Sand liegt die Siegquote von Jurij Rodionov zuletzt bei 31 % (4:9). Jurij Rodionovs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Tomas Martin Etcheverry mit 79 % vorn.",
+   "analysis": "Jurij Rodionov (Weltrangliste #145) trifft auf Tomas Martin Etcheverry (#31). Auf Sand liegt die Siegquote von Jurij Rodionov zuletzt bei 31 % (4:9). Jurij Rodionovs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Tomas Martin Etcheverry mit 79 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -1803,12 +2737,22 @@
    "p1": {
     "name": "Tiago Torres",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Alejandro Tabilo",
     "rank": 30,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 40,
      "l": 32,
@@ -1817,8 +2761,13 @@
     "favSurface": "Sand"
    },
    "pP1": 0.1416,
+   "model": {
+    "n1": 0,
+    "n2": 150,
+    "pRank": 0.1416
+   },
    "h2h": [],
-   "analysis": "Tiago Torres – aktuell ohne Top-Ranking – trifft auf Alejandro Tabilo (#30). Auf Sand liegt die Siegquote von Alejandro Tabilo zuletzt bei 56 % (40:32). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Alejandro Tabilo mit 86 % vorn.",
+   "analysis": "Tiago Torres – aktuell ohne Top-Ranking – trifft auf Alejandro Tabilo (#30). Auf Sand liegt die Siegquote von Alejandro Tabilo zuletzt bei 56 % (40:32). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Alejandro Tabilo mit 86 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -1831,12 +2780,22 @@
    "p1": {
     "name": "Carol Young Suh Lee",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "p2": {
     "name": "Marie Bouzkova",
     "rank": 21,
+    "form": [
+     "S",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 78,
      "l": 60,
@@ -1845,8 +2804,13 @@
     "favSurface": "Sand"
    },
    "pP1": 0.1086,
+   "model": {
+    "n1": 0,
+    "n2": 213,
+    "pRank": 0.1086
+   },
    "h2h": [],
-   "analysis": "Carol Young Suh Lee – aktuell ohne Top-Ranking – trifft auf Marie Bouzkova (#21). Auf Hartplatz liegt die Siegquote von Marie Bouzkova zuletzt bei 56 % (78:60). Marie Bouzkovas stärkster Belag ist eigentlich Sand. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Marie Bouzkova mit 89 % vorn.",
+   "analysis": "Carol Young Suh Lee – aktuell ohne Top-Ranking – trifft auf Marie Bouzkova (#21). Auf Hartplatz liegt die Siegquote von Marie Bouzkova zuletzt bei 56 % (78:60). Marie Bouzkovas stärkster Belag ist eigentlich Sand. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Marie Bouzkova mit 89 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -1859,6 +2823,14 @@
    "p1": {
     "name": "Oceane Dodin",
     "rank": 686,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1447,
     "onSurface": {
      "w": 6,
      "l": 13,
@@ -1869,6 +2841,14 @@
    "p2": {
     "name": "Dominika Salkova",
     "rank": 127,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1538,
     "onSurface": {
      "w": 6,
      "l": 4,
@@ -1876,9 +2856,18 @@
     },
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.1925,
+   "pP1": 0.3271,
+   "model": {
+    "n1": 36,
+    "n2": 15,
+    "elo1": 1447,
+    "elo2": 1538,
+    "pElo": 0.372,
+    "pRank": 0.1925,
+    "wElo": 0.75
+   },
    "h2h": [],
-   "analysis": "Oceane Dodin (Weltrangliste #686) trifft auf Dominika Salkova (#127). Auf Hartplatz liegt die Siegquote von Oceane Dodin zuletzt bei 32 % (6:13), Dominika Salkova kommt auf 60 % (6:4). Oceane Dodins stärkster Belag ist eigentlich Sand. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Dominika Salkova mit 81 % vorn.",
+   "analysis": "Oceane Dodin (Weltrangliste #686) trifft auf Dominika Salkova (#127). Die aktuelle Form spricht für Dominika Salkova: 2 Siege aus den letzten 5 Matches, Oceane Dodin holte nur 0. Auf Hartplatz liegt die Siegquote von Oceane Dodin zuletzt bei 32 % (6:13), Dominika Salkova kommt auf 60 % (6:4). Oceane Dodins stärkster Belag ist eigentlich Sand. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Dominika Salkova mit 67 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -1891,6 +2880,14 @@
    "p1": {
     "name": "Daria Snigur",
     "rank": 54,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
     "onSurface": {
      "w": 6,
      "l": 7,
@@ -1901,12 +2898,19 @@
    "p2": {
     "name": "Ayla Aksu",
     "rank": null,
+    "form": [],
+    "elo": null,
     "onSurface": null,
     "favSurface": null
    },
    "pP1": 0.7863,
+   "model": {
+    "n1": 32,
+    "n2": 0,
+    "pRank": 0.7863
+   },
    "h2h": [],
-   "analysis": "Daria Snigur (#54) trifft auf Ayla Aksu, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Daria Snigur zuletzt bei 46 % (6:7). Daria Snigurs stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Daria Snigur mit 79 % vorn.",
+   "analysis": "Daria Snigur (#54) trifft auf Ayla Aksu, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Daria Snigur zuletzt bei 46 % (6:7). Daria Snigurs stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Daria Snigur mit 79 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -1919,6 +2923,14 @@
    "p1": {
     "name": "Paula Badosa",
     "rank": 93,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "S"
+    ],
+    "elo": 1711,
     "onSurface": {
      "w": 34,
      "l": 20,
@@ -1929,6 +2941,14 @@
    "p2": {
     "name": "Katarzyna Kawa",
     "rank": 131,
+    "form": [
+     "S",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1537,
     "onSurface": {
      "w": 7,
      "l": 5,
@@ -1936,9 +2956,18 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.5723,
+   "pP1": 0.7315,
+   "model": {
+    "n1": 189,
+    "n2": 23,
+    "elo1": 1711,
+    "elo2": 1537,
+    "pElo": 0.7315,
+    "pRank": 0.5723,
+    "wElo": 1.0
+   },
    "h2h": [],
-   "analysis": "Paula Badosa (Weltrangliste #93) trifft auf Katarzyna Kawa (#131). Auf Sand liegt die Siegquote von Paula Badosa zuletzt bei 63 % (34:20), Katarzyna Kawa kommt auf 58 % (7:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Ranglisten-Modell sieht Paula Badosa mit 57 % vorn.",
+   "analysis": "Paula Badosa (Weltrangliste #93) trifft auf Katarzyna Kawa (#131). Auf Sand liegt die Siegquote von Paula Badosa zuletzt bei 63 % (34:20), Katarzyna Kawa kommt auf 58 % (7:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Paula Badosa mit 73 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
@@ -1951,6 +2980,14 @@
    "p1": {
     "name": "Mayar Sherif",
     "rank": 73,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "S"
+    ],
+    "elo": 1562,
     "onSurface": {
      "w": 30,
      "l": 22,
@@ -1961,6 +2998,14 @@
    "p2": {
     "name": "Simona Waltert",
     "rank": 91,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1459,
     "onSurface": {
      "w": 9,
      "l": 12,
@@ -1968,7 +3013,16 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.5467,
+   "pP1": 0.6445,
+   "model": {
+    "n1": 101,
+    "n2": 31,
+    "elo1": 1562,
+    "elo2": 1459,
+    "pElo": 0.6445,
+    "pRank": 0.5467,
+    "wElo": 1.0
+   },
    "h2h": [
     {
      "year": "2022",
@@ -1980,7 +3034,7 @@
      "rnd": "2nd Round"
     }
    ],
-   "analysis": "Mayar Sherif (Weltrangliste #73) trifft auf Simona Waltert (#91). Auf Sand liegt die Siegquote von Mayar Sherif zuletzt bei 58 % (30:22), Simona Waltert kommt auf 43 % (9:12). Das bisher einzige Duell (2022, Parma Ladies Open) gewann Mayar Sherif mit 6:3 7:6. Das Ranglisten-Modell sieht Mayar Sherif mit 55 % vorn.",
+   "analysis": "Mayar Sherif (Weltrangliste #73) trifft auf Simona Waltert (#91). Die aktuelle Form spricht für Mayar Sherif: 4 Siege aus den letzten 5 Matches, Simona Waltert holte nur 0. Auf Sand liegt die Siegquote von Mayar Sherif zuletzt bei 58 % (30:22), Simona Waltert kommt auf 43 % (9:12). Das bisher einzige Duell (2022, Parma Ladies Open) gewann Mayar Sherif mit 6:3 7:6. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Mayar Sherif mit 64 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   }
