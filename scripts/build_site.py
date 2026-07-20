@@ -155,6 +155,8 @@ def match_card(m, league):
 
 def _player_meta(p, surface):
     r = f'<span class="rank">#{p["rank"]}</span>' if p.get("rank") else '<span class="rank unk">o. R.</span>'
+    if p.get("form"):
+        r += " " + form_badges(p["form"])
     surf = ""
     b = p.get("onSurface")
     if b and surface:
@@ -162,6 +164,8 @@ def _player_meta(p, surface):
     fav = ""
     if p.get("favSurface"):
         fav = f'<span class="tiny muted">Lieblingsbelag: {esc(p["favSurface"])}</span>'
+    if p.get("elo"):
+        fav += f'<span class="tiny muted">Formstärke (Elo): {p["elo"]}</span>'
     return r, surf, fav
 
 
@@ -174,7 +178,9 @@ def tennis_card(m):
         bar = tennis_bar(m["pP1"], m["p1"]["name"], m["p2"]["name"])
         fav = m["p1"]["name"] if m["pP1"] >= 0.5 else m["p2"]["name"]
         pct = round(max(m["pP1"], 1 - m["pP1"]) * 100)
-        bar += f'<div class="predmeta"><span>Favorit laut Ranking: <b>{esc(fav)}</b> ({pct}%)</span></div>'
+        basis = "Elo-Formmodell" if (m.get("model") or {}).get("pElo") is not None else "Weltrangliste"
+        bar += (f'<div class="predmeta"><span>Modell-Favorit: <b>{esc(fav)}</b> ({pct}%)</span>'
+                f'<span class="muted">Basis: {basis}</span></div>')
     rnd = f' · {esc(m["round"])}' if m.get("round") else ""
     surf_chip = f' · {esc(surface)}' if surface else ""
     unc = ('<div class="unc">⚠️ Ansetzung unbestätigt – Quelle: Community-Daten, '
@@ -463,8 +469,12 @@ footer summary {{ cursor:pointer; }}
     zählen stärker), inkl. Heimvorteil. Daraus ergeben sich Wahrscheinlichkeiten für 1/X/2,
     erwartete Tore (xG) und ein wahrscheinlichstes Ergebnis. „Value“ markiert Fälle, in denen das
     Modell ein Ergebnis deutlich wahrscheinlicher einschätzt als die Buchmacher-Quote. Tennis:
-    Einschätzung anhand der aktuellen Weltranglisten-Position beider Spieler:innen („o. R.“ = ohne
-    Ranking in den Top-Platzierungen). Alle Angaben sind statistische Schätzungen ohne Gewähr.</p>
+    Elo-Formmodell aus rund 24.000 Tour-Matches der letzten fünf Jahre – jede Spielerin/jeder
+    Spieler trägt eine Spielstärke-Bewertung, die sich nach jedem Match anpasst (Siege gegen starke
+    Gegner zählen mehr, aktuelle Ergebnisse wirken stärker = Form). Dazu fließen ein: ein eigenes
+    Rating je Belag (Sand/Hartplatz/Rasen), der direkte Vergleich (H2H) und bei dünner Datenlage
+    die Weltrangliste als Absicherung („o. R.“ = ohne Top-Ranking). Alle Angaben sind statistische
+    Schätzungen ohne Gewähr.</p>
   </details>
   <div>Datenquellen: OpenLigaDB (1.–3. Bundesliga, Torschützen), ESPN (internationale Ligen, Tennis,
   Rankings), football-data.co.uk (Quoten &amp; Fußball-Historie),

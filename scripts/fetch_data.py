@@ -920,6 +920,7 @@ def _tennisdata_row(r):
         "date": date,
         "tourney": str(r.get("Tournament") or ""),
         "loc": str(r.get("Location") or ""),
+        "comment": str(r.get("Comment") or ""),
         "surface": str(r.get("Surface") or "").strip().capitalize(),
         "w": player_key(str(w)),
         "l": player_key(str(l)),
@@ -1249,9 +1250,10 @@ def espn_rankings(tour):
     return by_id, by_name
 
 
-def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h):
+def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h, comp=None, f1=None, f2=None):
     """Deterministischer deutscher Analysetext fuer ein Tennis-Match."""
     parts = []
+    comp = comp or {}
     if r1 and r2:
         parts.append(f"{p1} (Weltrangliste #{r1}) trifft auf {p2} (#{r2}).")
     elif r1:
@@ -1260,6 +1262,15 @@ def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h):
         parts.append(f"{p1} – aktuell ohne Top-Ranking – trifft auf {p2} (#{r2}).")
     else:
         parts.append(f"{p1} trifft auf {p2}; für beide liegt kein aktuelles Top-Ranking vor.")
+    # Form (letzte 5 Matches)
+    if f1 and f2 and (len(f1) >= 3 and len(f2) >= 3):
+        s1w, s2w = f1.count("S"), f2.count("S")
+        if s1w - s2w >= 2:
+            parts.append(f"Die aktuelle Form spricht für {p1}: {s1w} Siege aus den letzten "
+                         f"{len(f1)} Matches, {p2} holte nur {s2w}.")
+        elif s2w - s1w >= 2:
+            parts.append(f"Die aktuelle Form spricht für {p2}: {s2w} Siege aus den letzten "
+                         f"{len(f2)} Matches, {p1} holte nur {s1w}.")
     if surf_de:
         b1 = s1.get("bilanz")
         b2 = s2.get("bilanz")
@@ -1298,7 +1309,22 @@ def tennis_text(p1, p2, r1, r2, p1win, surf_de, s1, s2, h2h):
         parts.append("Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell.")
     if p1win is not None:
         fav = p1 if p1win >= 0.5 else p2
-        parts.append(f"Das Ranglisten-Modell sieht {fav} mit {round(max(p1win, 1-p1win)*100)} % vorn.")
+        pct = round(max(p1win, 1 - p1win) * 100)
+        if comp.get("pElo") is not None:
+            parts.append(f"Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und "
+                         f"Head-to-Head) sieht {fav} mit {pct} % vorn.")
+            # Stimmen Elo und Weltrangliste ueberein?
+            p_rank = comp.get("pRank")
+            if p_rank is not None:
+                rank_fav_p1 = p_rank >= 0.5
+                elo_fav_p1 = comp["pElo"] >= 0.5
+                if rank_fav_p1 != elo_fav_p1:
+                    rank_fav = p1 if rank_fav_p1 else p2
+                    parts.append(f"Bemerkenswert: Die Weltrangliste würde eher {rank_fav} "
+                                 f"favorisieren – die Formkurve spricht aber dagegen.")
+        else:
+            parts.append(f"Mangels ausreichender Match-Historie stützt sich die Einschätzung "
+                         f"auf die Weltrangliste: {fav} mit {pct} % vorn.")
     return " ".join(parts)
 
 
@@ -1436,7 +1462,7 @@ def _ref_cache_get(url):
 
 
 def tennis_predict(rank1, rank2):
-    """Einfaches Ranglisten-Modell: P(1 gewinnt)."""
+    """Ranglisten-Schaetzung: P(1 gewinnt). Dient als Absicherung des Elo-Modells."""
     if not rank1 and not rank2:
         return None
     r1 = float(rank1) if rank1 else 250.0
@@ -1444,6 +1470,101 @@ def tennis_predict(rank1, rank2):
     e = 0.85
     p1 = r2 ** e / (r1 ** e + r2 ** e)
     return round(p1, 4)
+
+
+def build_tennis_elo(rows):
+    """Elo-Ratings aus der Match-Historie: gesamt + je Belag.
+
+    K-Faktor nach FiveThirtyEight-Formel 250/(n+5)^0.4 - neue Spieler bewegen
+    sich schnell, etablierte traege. Ergebnis: {key: (elo, matches)} und
+    {surface: {key: (elo, matches)}}."""
+    overall, by_surface = {}, {}
+    counts, s_counts = {}, {}
+
+    def upd(table, cnts, w, l):
+        e_w, e_l = table.get(w, 1500.0), table.get(l, 1500.0)
+        n_w, n_l = cnts.get(w, 0), cnts.get(l, 0)
+        exp_w = 1.0 / (1.0 + 10 ** ((e_l - e_w) / 400.0))
+        k_w = 250.0 / ((n_w + 5) ** 0.4)
+        k_l = 250.0 / ((n_l + 5) ** 0.4)
+        table[w] = e_w + k_w * (1.0 - exp_w)
+        table[l] = e_l - k_l * (1.0 - exp_w)
+        cnts[w] = n_w + 1
+        cnts[l] = n_l + 1
+
+    for r in sorted(rows, key=lambda x: x["date"]):
+        w, l = r["w"], r["l"]
+        if not w or not l or w == l:
+            continue
+        if "walkover" in (r.get("comment") or "").lower():
+            continue
+        upd(overall, counts, w, l)
+        surf = r.get("surface")
+        if surf:
+            t = by_surface.setdefault(surf, {})
+            c = s_counts.setdefault(surf, {})
+            upd(t, c, w, l)
+    return ({k: (v, counts.get(k, 0)) for k, v in overall.items()},
+            {s: {k: (v, s_counts[s].get(k, 0)) for k, v in t.items()}
+             for s, t in by_surface.items()})
+
+
+def tennis_predict_v2(elo_all, elo_surf, surface, p1, p2, r1, r2, h2h):
+    """Kombiniertes Modell: Elo (Form + Gegnerstaerke + Belag) x H2H x Weltrangliste.
+
+    Rueckgabe: (P(p1 gewinnt), Komponenten-Dict) oder (None, {})."""
+    k1, k2 = player_key(p1), player_key(p2)
+    e1, n1 = elo_all.get(k1, (None, 0))
+    e2, n2 = elo_all.get(k2, (None, 0))
+    comp = {"n1": n1, "n2": n2}
+
+    p_elo = None
+    if e1 is not None and e2 is not None and min(n1, n2) >= 3:
+        # Belag-Rating einblenden, sofern vorhanden
+        def blended(key, base):
+            s = (elo_surf.get(surface) or {}).get(key)
+            if s and s[1] >= 3:
+                return 0.6 * base + 0.4 * s[0]
+            return base
+        b1, b2 = blended(k1, e1), blended(k2, e2)
+        # H2H-Faktor: pro Netto-Sieg +10 Elo-Punkte, gedeckelt
+        if h2h:
+            net = sum(1 if m.get("winnerIsP1") else -1 for m in h2h)
+            b1 += max(-40, min(40, 10 * net))
+        comp["elo1"], comp["elo2"] = round(b1), round(b2)
+        p_elo = 1.0 / (1.0 + 10 ** ((b2 - b1) / 400.0))
+        comp["pElo"] = round(p_elo, 4)
+
+    p_rank = tennis_predict(r1, r2)
+    if p_rank is not None:
+        comp["pRank"] = p_rank
+
+    if p_elo is None and p_rank is None:
+        return None, {}
+    if p_elo is None:
+        return p_rank, comp
+    if p_rank is None:
+        return round(p_elo, 4), comp
+    # Gewichtung: je mehr Matches in der Historie, desto mehr zaehlt das Elo
+    w = min(1.0, min(n1, n2) / 20.0)
+    comp["wElo"] = round(w, 2)
+    return round(w * p_elo + (1 - w) * p_rank, 4), comp
+
+
+def tennis_form(rows, player, n=5):
+    """Letzte n Einzel-Ergebnisse als S/N-Kette (aeltestes zuerst)."""
+    p = player_key(player)
+    if not p:
+        return []
+    played = []
+    for r in sorted(rows, key=lambda x: x["date"]):
+        if "walkover" in (r.get("comment") or "").lower():
+            continue
+        if r["w"] == p:
+            played.append("S")
+        elif r["l"] == p:
+            played.append("N")
+    return played[-n:]
 
 
 # ----------------------------------------------------------------------------
@@ -1598,6 +1719,11 @@ def main():
     sack = {"ATP": load_sackmann("atp"), "WTA": load_sackmann("wta")}
     print(f"  Historie: ATP {len(sack['ATP'])} Matches, WTA {len(sack['WTA'])} Matches")
     out["meta"]["sackCounts"] = {"atp": len(sack["ATP"]), "wta": len(sack["WTA"])}
+    # Elo-Ratings (Form + Gegnerstaerke, gesamt + je Belag)
+    elo = {}
+    for tour_key, rows in sack.items():
+        elo[tour_key] = build_tennis_elo(rows)
+        print(f"  Elo {tour_key}: {len(elo[tour_key][0])} Spieler bewertet")
     # Turnier -> Belag: Orte und Turniernamen getrennt (neueste Eintraege gewinnen,
     # da Zeilen chronologisch eingelesen werden)
     loc_map, name_map = {}, {}
@@ -1674,7 +1800,6 @@ def main():
                   or sack_last_rank(rows, n1))
             r2 = (by_id.get(m["p2"]["id"]) or by_nm.get(norm_team(n2))
                   or sack_last_rank(rows, n2))
-            p1win = tennis_predict(r1, r2)
             rnd = (m.get("round") or "").strip()
             rnd = ROUND_DE.get(rnd.lower(), rnd)
             # Belag & Bilanzen
@@ -1686,18 +1811,26 @@ def main():
             s2 = {"bilanz": st2.get(surf), "fav": SURFACE_DE.get(fav_surface(st2), fav_surface(st2)),
                   "alle": {SURFACE_DE.get(k, k): v for k, v in st2.items()}}
             h2h = h2h_tennis(rows, n1, n2)
+            # Kombiniertes Modell: Elo (Form, Gegnerstaerke, Belag, H2H) + Weltrangliste
+            elo_all, elo_surf = elo.get(m["tour"], ({}, {}))
+            p1win, comp = tennis_predict_v2(elo_all, elo_surf, surf, n1, n2, r1, r2, h2h)
+            f1, f2 = tennis_form(rows, n1), tennis_form(rows, n2)
             tennis_out.append({
                 "start": m["dt"].isoformat(),
                 "tour": m["tour"], "tournament": m["tournament"],
                 "round": rnd,
                 "surface": surf_de,
-                "p1": {"name": n1, "rank": r1,
+                "p1": {"name": n1, "rank": r1, "form": f1,
+                       "elo": comp.get("elo1"),
                        "onSurface": s1["bilanz"], "favSurface": s1["fav"]},
-                "p2": {"name": n2, "rank": r2,
+                "p2": {"name": n2, "rank": r2, "form": f2,
+                       "elo": comp.get("elo2"),
                        "onSurface": s2["bilanz"], "favSurface": s2["fav"]},
                 "pP1": p1win,
+                "model": comp,
                 "h2h": h2h,
-                "analysis": tennis_text(n1, n2, r1, r2, p1win, surf_de, s1, s2, h2h),
+                "analysis": tennis_text(n1, n2, r1, r2, p1win, surf_de, s1, s2, h2h,
+                                        comp=comp, f1=f1, f2=f2),
                 "unconfirmed": m.get("src") == "tsdb",
                 "timeTBD": bool(m.get("timeTBD")),
             })
