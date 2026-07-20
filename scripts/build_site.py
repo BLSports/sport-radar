@@ -278,6 +278,41 @@ def build(data_path=None, out_path=None):
             '<table class="pausetable"><thead><tr><th>Liga</th><th>Nächstes Spiel</th><th>Partie</th></tr></thead>'
             f'<tbody>{"".join(pause_rows)}</tbody></table></section>')
 
+    # --- Trefferquoten-Statistik ---
+    stats_html = ""
+    st = data.get("stats")
+    if st:
+        def tile(label, s, extra=""):
+            if not s or not s.get("n"):
+                return (f'<div class="tile"><div class="tval muted">–</div>'
+                        f'<div class="tlab">{label}</div></div>')
+            pct = round(s["correct"] / s["n"] * 100)
+            return (f'<div class="tile"><div class="tval">{pct}<span class="tunit">%</span></div>'
+                    f'<div class="tlab">{label}</div>'
+                    f'<div class="tsub">{s["correct"]} von {s["n"]} richtig{extra}</div></div>')
+        tiles = (tile("Alle Tipps", st.get("overall")) +
+                 tile("Fußball (1X2)", st.get("football")) +
+                 tile("Tennis (Sieger)", st.get("tennis")) +
+                 tile("Exaktes Ergebnis", st.get("exact")))
+        rows = ""
+        for r in st.get("recent", []):
+            mark = "✅" if r["correct"] else "❌"
+            res = esc(r.get("result") or "–")
+            icon = "⚽" if r["sport"] == "fb" else "🎾"
+            rows += (f'<tr><td>{mark}</td><td>{esc(r["date"][8:10])}.{esc(r["date"][5:7])}.</td>'
+                     f'<td>{icon} {esc(r["label"])}</td>'
+                     f'<td>Tipp: {esc(r["tipName"])} ({round(r["prob"]*100)}%)</td>'
+                     f'<td class="num">{res}</td></tr>')
+        table = (f'<details class="h2h"><summary>Zuletzt ausgewertete Tipps ({len(st.get("recent", []))})</summary>'
+                 f'<table>{rows}</table></details>') if rows else ""
+        note = ""
+        if not st.get("overall", {}).get("n"):
+            note = ('<div class="muted small">Noch keine ausgewerteten Tipps – die Statistik '
+                    'füllt sich automatisch, sobald protokollierte Spiele beendet sind.</div>')
+        open_note = f'<span class="muted tiny">{st.get("open", 0)} Tipps offen</span>'
+        stats_html = (f'<section class="pause"><h2>📊 Trefferquote des Modells {open_note}</h2>'
+                      f'<div class="tiles">{tiles}</div>{note}{table}</section>')
+
     n_fb = sum(len(l["matches"]) for l in data["football"])
     n_tn = len(data["tennis"])
 
@@ -392,6 +427,14 @@ footer summary {{ cursor:pointer; }}
   padding:4px 8px; margin-bottom:8px; }}
 .analysis {{ font-size:12.5px; color:var(--ink2); background:var(--page); border-radius:8px;
   padding:8px 10px; margin:9px 0 0; line-height:1.5; }}
+.tiles {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px;
+  margin:10px 0; }}
+.tile {{ background:var(--surface); border:1px solid var(--border); border-radius:12px;
+  padding:12px 14px; }}
+.tval {{ font-size:28px; font-weight:700; line-height:1.1; }}
+.tunit {{ font-size:16px; font-weight:600; color:var(--ink2); }}
+.tlab {{ font-size:12.5px; color:var(--ink2); margin-top:2px; font-weight:600; }}
+.tsub {{ font-size:11.5px; color:var(--muted); margin-top:1px; }}
 .scorers {{ font-size:12px; color:var(--ink2); margin-top:8px; line-height:1.5; }}
 </style>
 </head>
@@ -410,6 +453,7 @@ footer summary {{ cursor:pointer; }}
 </header>
 <main>
 {"".join(panels)}
+{stats_html}
 {pause_html}
 </main>
 <footer>

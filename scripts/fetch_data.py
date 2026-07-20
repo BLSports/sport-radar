@@ -1034,6 +1034,198 @@ def sack_last_rank(rows, player, max_age_days=400):
         return None
 
 
+def espn_tennis_results(tour, day):
+    """Beendete Einzel-Matches eines Tages: [(spieler-paar, gewinner-key)]."""
+    data = http_get(f"https://site.api.espn.com/apis/site/v2/sports/tennis/{tour}/scoreboard?dates={day:%Y%m%d}")
+    out = []
+    if not data:
+        return out
+    for ev in data.get("events", []):
+        groupings = ev.get("groupings") or []
+        comps = []
+        for g in groupings:
+            gname = ((g.get("grouping") or {}).get("displayName", "")).lower()
+            if "doubles" in gname:
+                continue
+            comps.extend(g.get("competitions", []))
+        if not groupings:
+            comps = ev.get("competitions", [])
+        for comp in comps:
+            try:
+                if comp.get("status", {}).get("type", {}).get("state") != "post":
+                    continue
+                keys, winner = [], None
+                for c in comp.get("competitors", []):
+                    ath = c.get("athlete", {}) or {}
+                    k = player_key(ath.get("displayName") or "")
+                    keys.append(k)
+                    if c.get("winner") is True:
+                        winner = k
+                if len(keys) == 2 and winner:
+                    out.append({"pair": tuple(sorted(keys)), "winner": winner,
+                                "day": day.isoformat()})
+            except Exception:
+                continue
+    return out
+
+
+def update_prediction_log(out, results_by_league, log_path):
+    """Tipps protokollieren, vergangene aufloesen, Trefferquote berechnen."""
+    try:
+        with open(log_path, encoding="utf-8") as f:
+            log = json.load(f)
+    except Exception:
+        log = {}
+    entries = log.setdefault("entries", {})
+    today_iso = TODAY.isoformat()
+
+    # --- 1) Aktuelle Fussball-Tipps einloggen (bis Anpfiff aktualisierbar) ---
+    for lgo in out["football"]:
+        for m in lgo["matches"]:
+            pred = m.get("prediction")
+            if not pred:
+                continue
+            d = m["kickoff"][:10]
+            hk, ak = norm_team(m["home"]), norm_team(m["away"])
+            key = f'fb|{lgo["id"]}|{d}|{hk}|{ak}'
+            ex = entries.get(key)
+            if ex and ex.get("status") != "open":
+                continue
+            try:
+                ko = datetime.fromisoformat(m["kickoff"])
+            except ValueError:
+                continue
+            if ex and ko <= NOW:
+                continue  # nach Anpfiff eingefrorenen Tipp behalten
+            probs = [pred["pHome"], pred["pDraw"], pred["pAway"]]
+            best = max(range(3), key=lambda i: probs[i])
+            entries[key] = {
+                "sport": "fb", "comp": lgo["name"], "compId": lgo["id"], "date": d,
+                "label": f'{m["home"]} – {m["away"]}',
+                "homeKey": hk, "awayKey": ak,
+                "tip": ["1", "X", "2"][best],
+                "tipName": [m["home"], "Unentschieden", m["away"]][best],
+                "prob": round(probs[best], 4),
+                "tipScore": pred.get("tipScore"), "pOver25": pred.get("pOver25"),
+                "status": "open", "result": None, "correct": None, "exact": None,
+            }
+
+    # --- 2) Aktuelle Tennis-Tipps einloggen ---
+    for t in out["tennis"]:
+        if t.get("pP1") is None:
+            continue
+        d = t["start"][:10]
+        k1, k2 = player_key(t["p1"]["name"]), player_key(t["p2"]["name"])
+        if not k1 or not k2 or k1 == k2:
+            continue
+        key = f'tn|{t["tour"].lower()}|{d}|{"|".join(sorted((k1, k2)))}'
+        ex = entries.get(key)
+        if ex and ex.get("status") != "open":
+            continue
+        try:
+            st = datetime.fromisoformat(t["start"])
+        except ValueError:
+            continue
+        if ex and st <= NOW:
+            continue
+        fav_is_p1 = t["pP1"] >= 0.5
+        entries[key] = {
+            "sport": "tn", "comp": f'{t["tour"]} · {t["tournament"]}', "date": d,
+            "label": f'{t["p1"]["name"]} – {t["p2"]["name"]}',
+            "p1Key": k1, "p2Key": k2,
+            "tip": "P1" if fav_is_p1 else "P2",
+            "tipName": t["p1"]["name"] if fav_is_p1 else t["p2"]["name"],
+            "prob": round(max(t["pP1"], 1 - t["pP1"]), 4),
+            "status": "open", "result": None, "correct": None,
+        }
+
+    # --- 3) Offene Fussball-Tipps aufloesen ---
+    for e in entries.values():
+        if e["sport"] != "fb" or e["status"] != "open" or e["date"] >= today_iso:
+            continue
+        e_date = datetime.strptime(e["date"], "%Y-%m-%d").date()
+        found = False
+        for r in results_by_league.get(e.get("compId", ""), []):
+            r_date = r["date"].astimezone(TZ).date() if r["date"].tzinfo else r["date"].date()
+            if abs((r_date - e_date).days) > 1:
+                continue
+            if norm_team(r["home"]) == e["homeKey"] and norm_team(r["away"]) == e["awayKey"]:
+                hg, ag = r["hg"], r["ag"]
+                outcome = "1" if hg > ag else ("2" if ag > hg else "X")
+                e["result"] = f"{hg}:{ag}"
+                e["correct"] = (outcome == e["tip"])
+                e["exact"] = (e["result"] == e.get("tipScore"))
+                e["status"] = "correct" if e["correct"] else "wrong"
+                found = True
+                break
+        if not found and (TODAY - e_date).days > 10:
+            e["status"] = "void"  # abgesagt/verlegt o.ae.
+
+    # --- 4) Offene Tennis-Tipps aufloesen ---
+    open_tn = [e for e in entries.values()
+               if e["sport"] == "tn" and e["status"] == "open" and e["date"] < today_iso]
+    if open_tn:
+        need_days = set()
+        for e in open_tn:
+            d0 = datetime.strptime(e["date"], "%Y-%m-%d").date()
+            for delta in (0, 1):
+                dd = d0 + timedelta(days=delta)
+                if dd <= TODAY and (TODAY - dd).days <= 12:
+                    need_days.add(dd)
+        res_map = {}
+        for dd in sorted(need_days):
+            for tour in ("atp", "wta"):
+                for r in espn_tennis_results(tour, dd):
+                    res_map.setdefault(r["pair"], []).append(r)
+        for e in open_tn:
+            pair = tuple(sorted((e["p1Key"], e["p2Key"])))
+            e_date = datetime.strptime(e["date"], "%Y-%m-%d").date()
+            hit = None
+            for r in res_map.get(pair, []):
+                r_day = datetime.strptime(r["day"], "%Y-%m-%d").date()
+                if abs((r_day - e_date).days) <= 1:
+                    hit = r
+                    break
+            if hit:
+                tip_key = e["p1Key"] if e["tip"] == "P1" else e["p2Key"]
+                e["correct"] = (hit["winner"] == tip_key)
+                e["result"] = f'Sieger: {"P1" if hit["winner"] == e["p1Key"] else "P2"}'
+                e["status"] = "correct" if e["correct"] else "wrong"
+            elif (TODAY - e_date).days > 10:
+                e["status"] = "void"
+
+    # --- 5) Statistik ---
+    resolved = [e for e in entries.values() if e["status"] in ("correct", "wrong")]
+
+    def agg(items):
+        c = sum(1 for e in items if e["correct"])
+        return {"n": len(items), "correct": c,
+                "pct": round(c / len(items), 4) if items else None}
+
+    fb_res = [e for e in resolved if e["sport"] == "fb"]
+    stats = {
+        "overall": agg(resolved),
+        "football": agg(fb_res),
+        "tennis": agg([e for e in resolved if e["sport"] == "tn"]),
+        "exact": {"n": len(fb_res),
+                  "correct": sum(1 for e in fb_res if e.get("exact"))},
+        "open": sum(1 for e in entries.values() if e["status"] == "open"),
+        "recent": [
+            {"date": e["date"], "comp": e["comp"], "label": e["label"],
+             "tipName": e["tipName"], "tip": e["tip"], "prob": e["prob"],
+             "result": e.get("result"), "correct": e["correct"],
+             "sport": e["sport"]}
+            for e in sorted(resolved, key=lambda x: x["date"], reverse=True)[:25]
+        ],
+    }
+    out["stats"] = stats
+    with open(log_path, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=1)
+    print(f"  Tipp-Log: {len(entries)} Eintraege, {len(resolved)} ausgewertet, "
+          f"{stats['overall']['correct']} richtig")
+    return stats
+
+
 def espn_rankings(tour):
     """athleteId -> rank und name -> rank."""
     idx = http_get(f"https://sports.core.api.espn.com/v2/sports/tennis/leagues/{tour}/rankings")
@@ -1274,6 +1466,7 @@ def main():
     fixture_odds = load_fixture_odds_fdcuk()
     print(f"fixtures.csv: {len(fixture_odds)} Spiele mit Quoten")
 
+    results_by_league = {}
     for lg in LEAGUES:
         print(f"== {lg['name']} ==")
         # 1) Ergebnisse (Form + Modell)
@@ -1385,6 +1578,7 @@ def main():
             "seasonHasStarted": len(season_results) > 0,
             "isCup": bool(lg.get("cup")),
         }
+        results_by_league[lg["id"]] = results
         if not matches_out and first_future:
             league_out["nextMatch"] = {
                 "kickoff": first_future["dt"].isoformat(),
@@ -1512,6 +1706,12 @@ def main():
     print(f"  {len(tennis_out)} Tennis-Matches in den naechsten {DAYS_AHEAD} Tagen")
 
     os.makedirs(os.path.join(os.path.dirname(__file__), "..", "data"), exist_ok=True)
+    # Tipps protokollieren, Ergebnisse abgleichen, Trefferquote berechnen
+    log_path = os.path.join(os.path.dirname(__file__), "..", "data", "predictions_log.json")
+    try:
+        update_prediction_log(out, results_by_league, log_path)
+    except Exception as e:
+        print(f"  WARN Tipp-Log: {e}", file=sys.stderr)
     path = os.path.join(os.path.dirname(__file__), "..", "data", "data.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1, default=str)
