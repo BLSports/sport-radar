@@ -10,9 +10,9 @@
    "tip": "P2",
    "tipName": "Raphael Collignon",
    "prob": 0.6408,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-15|chiesa d|radivojevic l": {
    "sport": "tn",
@@ -24,9 +24,9 @@
    "tip": "P2",
    "tipName": "Lola Radivojevic",
    "prob": 0.9653,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|atp|2026-07-15|daniel vallejo a|van de zandschulp b": {
    "sport": "tn",
@@ -38,9 +38,9 @@
    "tip": "P2",
    "tipName": "Botic Van De Zandschulp",
    "prob": 0.554,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-15|grabher j|perelygina e": {
    "sport": "tn",
@@ -52,9 +52,9 @@
    "tip": "P2",
    "tipName": "Julia Grabher",
    "prob": 0.6576,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-15|rinderknech a|tabur c": {
    "sport": "tn",
@@ -66,9 +66,9 @@
    "tip": "P2",
    "tipName": "Arthur Rinderknech",
    "prob": 0.8654,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-15|borges n|dimitrov g": {
    "sport": "tn",
@@ -80,9 +80,9 @@
    "tip": "P2",
    "tipName": "Nuno Borges",
    "prob": 0.7063,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-15|charaeva a|putintseva y": {
    "sport": "tn",
@@ -94,9 +94,9 @@
    "tip": "P2",
    "tipName": "Yulia Putintseva",
    "prob": 0.5767,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-15|barthel m|erjavec v": {
    "sport": "tn",
@@ -108,9 +108,9 @@
    "tip": "P2",
    "tipName": "Veronika Erjavec",
    "prob": 0.6764,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-15|falkowska w|vandewinkel h": {
    "sport": "tn",
@@ -122,9 +122,9 @@
    "tip": "P2",
    "tipName": "Hanne Vandewinkel",
    "prob": 0.6891,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-15|navone m|travaglia s": {
    "sport": "tn",
@@ -136,9 +136,9 @@
    "tip": "P1",
    "tipName": "Mariano Navone",
    "prob": 0.7248,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-15|amariei i|jacquemot e": {
    "sport": "tn",
@@ -150,9 +150,9 @@
    "tip": "P1",
    "tipName": "Elsa Jacquemot",
    "prob": 0.6729,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-15|knutson g|tararudee l": {
    "sport": "tn",
@@ -164,9 +164,9 @@
    "tip": "P1",
    "tipName": "Lanlana Tararudee",
    "prob": 0.7025,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-15|hanfmann y|vacherot v": {
    "sport": "tn",
@@ -178,9 +178,9 @@
    "tip": "P1",
    "tipName": "Valentin Vacherot",
    "prob": 0.6801,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-15|altmaier d|darderi l": {
    "sport": "tn",
@@ -192,9 +192,9 @@
    "tip": "P1",
    "tipName": "Luciano Darderi",
    "prob": 0.7356,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-15|bondar a|zidansek t": {
    "sport": "tn",
@@ -206,9 +206,9 @@
    "tip": "P2",
    "tipName": "Anna Bondar",
    "prob": 0.6458,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|atp|2026-07-15|martin etcheverry t|merida d": {
    "sport": "tn",
@@ -220,9 +220,9 @@
    "tip": "P2",
    "tipName": "Tomas Martin Etcheverry",
    "prob": 0.7016,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|atp|2026-07-15|agustin gomez f|arnaldi m": {
    "sport": "tn",
@@ -234,9 +234,9 @@
    "tip": "P1",
    "tipName": "Matteo Arnaldi",
    "prob": 0.845,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-15|jones f|urgesi f": {
    "sport": "tn",
@@ -248,9 +248,9 @@
    "tip": "P2",
    "tipName": "Francesca Jones",
    "prob": 0.7356,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-15|astakhova d|noha akugue n": {
    "sport": "tn",
@@ -262,9 +262,9 @@
    "tip": "P1",
    "tipName": "Noma Noha Akugue",
    "prob": 0.6082,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-15|carreno busta p|ugo carabelli c": {
    "sport": "tn",
@@ -276,9 +276,9 @@
    "tip": "P1",
    "tipName": "Camilo Ugo Carabelli",
    "prob": 0.5242,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-15|andres burruchaga r|cobolli f": {
    "sport": "tn",
@@ -290,9 +290,9 @@
    "tip": "P2",
    "tipName": "Flavio Cobolli",
    "prob": 0.8464,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|atp|2026-07-15|davidovich fokina a|trungelliti m": {
    "sport": "tn",
@@ -304,9 +304,9 @@
    "tip": "P1",
    "tipName": "Alejandro Davidovich Fokina",
    "prob": 0.7957,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-15|avanesyan e|marcinko p": {
    "sport": "tn",
@@ -318,9 +318,9 @@
    "tip": "P1",
    "tipName": "Petra Marcinko",
    "prob": 0.7549,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-15|dart h|sakkari m": {
    "sport": "tn",
@@ -332,9 +332,9 @@
    "tip": "P1",
    "tipName": "Maria Sakkari",
    "prob": 0.7687,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-15|bejlek s|tagger l": {
    "sport": "tn",
@@ -346,9 +346,9 @@
    "tip": "P1",
    "tipName": "Sara Bejlek",
    "prob": 0.6432,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-16|midon l|tabilo a": {
    "sport": "tn",
@@ -360,9 +360,9 @@
    "tip": "P2",
    "tipName": "Alejandro Tabilo",
    "prob": 0.8455,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-16|agustin tirante t|basilashvili n": {
    "sport": "tn",
@@ -374,9 +374,9 @@
    "tip": "P1",
    "tipName": "Thiago Agustin Tirante",
    "prob": 0.6627,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-16|pellegrino a|rublev a": {
    "sport": "tn",
@@ -388,9 +388,9 @@
    "tip": "P2",
    "tipName": "Andrey Rublev",
    "prob": 0.8619,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-16|baez s|de jong j": {
    "sport": "tn",
@@ -402,9 +402,9 @@
    "tip": "P1",
    "tipName": "Sebastian Baez",
    "prob": 0.5561,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-16|kecmanovic m|manuel cerundolo j": {
    "sport": "tn",
@@ -416,9 +416,9 @@
    "tip": "P2",
    "tipName": "Juan Manuel Cerundolo",
    "prob": 0.5573,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-16|faria j|ruud c": {
    "sport": "tn",
@@ -430,9 +430,9 @@
    "tip": "P1",
    "tipName": "Casper Ruud",
    "prob": 0.8407,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-16|bublik a|halys q": {
    "sport": "tn",
@@ -444,9 +444,9 @@
    "tip": "P2",
    "tipName": "Alexander Bublik",
    "prob": 0.8565,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-16|korneeva a|li a": {
    "sport": "tn",
@@ -458,9 +458,9 @@
    "tip": "P1",
    "tipName": "Ann Li",
    "prob": 0.7122,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-16|tauson c|tona m": {
    "sport": "tn",
@@ -472,9 +472,9 @@
    "tip": "P2",
    "tipName": "Clara Tauson",
    "prob": 0.9021,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-16|krejcikova b|monnet c": {
    "sport": "tn",
@@ -486,9 +486,9 @@
    "tip": "P2",
    "tipName": "Barbora Krejcikova",
    "prob": 0.806,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-16|sasnovich a|valentova t": {
    "sport": "tn",
@@ -500,9 +500,9 @@
    "tip": "P2",
    "tipName": "Tereza Valentova",
    "prob": 0.7131,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-16|kawa k|udvardy p": {
    "sport": "tn",
@@ -514,9 +514,9 @@
    "tip": "P2",
    "tipName": "Panna Udvardy",
    "prob": 0.6432,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-16|oliynykova o|pridankina e": {
    "sport": "tn",
@@ -528,9 +528,9 @@
    "tip": "P2",
    "tipName": "Oleksandra Oliynykova",
    "prob": 0.7718,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-16|brancaccio n|vedder e": {
    "sport": "tn",
@@ -542,9 +542,9 @@
    "tip": "P2",
    "tipName": "Nuria Brancaccio",
    "prob": 0.5792,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-16|bronzetti l|kostovic t": {
    "sport": "tn",
@@ -556,9 +556,9 @@
    "tip": "P1",
    "tipName": "Lucia Bronzetti",
    "prob": 0.5593,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-16|khomutsianskaya d|prozorova t": {
    "sport": "tn",
@@ -584,9 +584,9 @@
    "tip": "P2",
    "tipName": "Anastasia Zakharova",
    "prob": 0.6836,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-16|feistel g|samson l": {
    "sport": "tn",
@@ -598,9 +598,9 @@
    "tip": "P1",
    "tipName": "Laura Samson",
    "prob": 0.58,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-16|bennemann e|kraus s": {
    "sport": "tn",
@@ -612,9 +612,9 @@
    "tip": "P1",
    "tipName": "Sinja Kraus",
    "prob": 0.6967,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-16|bassols ribera m|rus a": {
    "sport": "tn",
@@ -626,9 +626,9 @@
    "tip": "P1",
    "tipName": "Arantxa Rus",
    "prob": 0.5404,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-16|hercog p|vandromme j": {
    "sport": "tn",
@@ -640,9 +640,9 @@
    "tip": "P1",
    "tipName": "Jeline Vandromme",
    "prob": 0.6088,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-15|carlos prado angelo j|dzumhur d": {
    "sport": "tn",
@@ -654,9 +654,9 @@
    "tip": "P1",
    "tipName": "Damir Dzumhur",
    "prob": 0.6712,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-15|micic e|qinwen z": {
    "sport": "tn",
@@ -668,9 +668,9 @@
    "tip": "P1",
    "tipName": "Zheng Qinwen",
    "prob": 0.628,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-15|kym j|tsitsipas s": {
    "sport": "tn",
@@ -682,9 +682,9 @@
    "tip": "P1",
    "tipName": "Stefanos Tsitsipas",
    "prob": 0.6488,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-15|droguet t|van assche l": {
    "sport": "tn",
@@ -696,9 +696,9 @@
    "tip": "P2",
    "tipName": "Luca Van Assche",
    "prob": 0.5686,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-15|hontama m|parks a": {
    "sport": "tn",
@@ -710,9 +710,9 @@
    "tip": "P1",
    "tipName": "Alycia Parks",
    "prob": 0.7507,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-15|molcan a|prizmic d": {
    "sport": "tn",
@@ -724,9 +724,9 @@
    "tip": "P2",
    "tipName": "Dino Prizmic",
    "prob": 0.5391,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|atp|2026-07-16|shevchenko a|stricker d": {
    "sport": "tn",
@@ -738,9 +738,9 @@
    "tip": "P2",
    "tipName": "Aleksandr Shevchenko",
    "prob": 0.6691,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-16|badosa p|ibragimova a": {
    "sport": "tn",
@@ -752,9 +752,9 @@
    "tip": "P1",
    "tipName": "Paula Badosa",
    "prob": 0.6593,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-16|quevedo k|sherif m": {
    "sport": "tn",
@@ -766,9 +766,9 @@
    "tip": "P2",
    "tipName": "Mayar Sherif",
    "prob": 0.5065,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-15|burel c|jacquemot e": {
    "sport": "tn",
@@ -780,9 +780,9 @@
    "tip": "P1",
    "tipName": "Elsa Jacquemot",
    "prob": 0.9035,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-17|tan h|vandewinkel h": {
    "sport": "tn",
@@ -794,9 +794,9 @@
    "tip": "P2",
    "tipName": "Hanne Vandewinkel",
    "prob": 0.649,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-15|lourdes carle m|palicova b": {
    "sport": "tn",
@@ -808,9 +808,9 @@
    "tip": "P1",
    "tipName": "Barbora Palicova",
    "prob": 0.5705,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-16|kovinic d|riera j": {
    "sport": "tn",
@@ -822,9 +822,9 @@
    "tip": "P1",
    "tipName": "Julia Riera",
    "prob": 0.5625,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-16|valdmannova v|xinyu g": {
    "sport": "tn",
@@ -836,9 +836,9 @@
    "tip": "P2",
    "tipName": "Gao Xinyu",
    "prob": 0.5387,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-16|hruncakova v|zvonareva v": {
    "sport": "tn",
@@ -850,9 +850,9 @@
    "tip": "P1",
    "tipName": "Viktoria Hruncakova",
    "prob": 0.5562,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-16|trevisan m|zantedeschi a": {
    "sport": "tn",
@@ -864,9 +864,9 @@
    "tip": "P2",
    "tipName": "Aurora Zantedeschi",
    "prob": 0.6493,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "fb|wm|2026-07-15|england|argentinien": {
    "sport": "fb",
@@ -881,10 +881,10 @@
    "prob": 0.4215,
    "tipScore": "1:1",
    "pOver25": 0.6676,
-   "status": "open",
-   "result": null,
-   "correct": null,
-   "exact": null
+   "status": "wrong",
+   "result": "1:2",
+   "correct": false,
+   "exact": false
   },
   "tn|atp|2026-07-17|daniel vallejo a|travaglia s": {
    "sport": "tn",
@@ -896,9 +896,9 @@
    "tip": "P2",
    "tipName": "Adolfo Daniel Vallejo",
    "prob": 0.6538,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "fb|wm|2026-07-18|frankreich|england": {
    "sport": "fb",
@@ -913,10 +913,10 @@
    "prob": 0.7108,
    "tipScore": "2:0",
    "pOver25": 0.5259,
-   "status": "open",
-   "result": null,
-   "correct": null,
-   "exact": null
+   "status": "wrong",
+   "result": "4:6",
+   "correct": false,
+   "exact": false
   },
   "tn|atp|2026-07-16|kym j|tsitsipas s": {
    "sport": "tn",
@@ -928,9 +928,9 @@
    "tip": "P1",
    "tipName": "Stefanos Tsitsipas",
    "prob": 0.6488,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-16|khamutsianskaya d|prozorova t": {
    "sport": "tn",
@@ -942,9 +942,9 @@
    "tip": "P1",
    "tipName": "Tatiana Prozorova",
    "prob": 0.5788,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-16|lourdes carle m|palicova b": {
    "sport": "tn",
@@ -956,9 +956,9 @@
    "tip": "P1",
    "tipName": "Barbora Palicova",
    "prob": 0.5705,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|atp|2026-07-16|droguet t|merida d": {
    "sport": "tn",
@@ -970,9 +970,9 @@
    "tip": "P2",
    "tipName": "Daniel Merida",
    "prob": 0.5785,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-16|arnaldi m|dzumhur d": {
    "sport": "tn",
@@ -984,9 +984,9 @@
    "tip": "P1",
    "tipName": "Matteo Arnaldi",
    "prob": 0.7276,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|atp|2026-07-16|andres burruchaga r|ugo carabelli c": {
    "sport": "tn",
@@ -998,9 +998,9 @@
    "tip": "P1",
    "tipName": "Camilo Ugo Carabelli",
    "prob": 0.5306,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|atp|2026-07-16|davidovich fokina a|molcan a": {
    "sport": "tn",
@@ -1012,9 +1012,9 @@
    "tip": "P1",
    "tipName": "Alejandro Davidovich Fokina",
    "prob": 0.7984,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|atp|2026-07-17|borges n|darderi l": {
    "sport": "tn",
@@ -1026,9 +1026,9 @@
    "tip": "P1",
    "tipName": "Luciano Darderi",
    "prob": 0.7113,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-17|collignon r|vacherot v": {
    "sport": "tn",
@@ -1040,9 +1040,9 @@
    "tip": "P1",
    "tipName": "Valentin Vacherot",
    "prob": 0.6432,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-17|parks a|sakkari m": {
    "sport": "tn",
@@ -1054,9 +1054,9 @@
    "tip": "P1",
    "tipName": "Maria Sakkari",
    "prob": 0.6323,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-17|marcinko p|zidansek t": {
    "sport": "tn",
@@ -1068,9 +1068,9 @@
    "tip": "P1",
    "tipName": "Petra Marcinko",
    "prob": 0.7334,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-17|jones f|noha akugue n": {
    "sport": "tn",
@@ -1082,9 +1082,9 @@
    "tip": "P2",
    "tipName": "Francesca Jones",
    "prob": 0.5407,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "fb|wm|2026-07-19|spanien|argentinien": {
    "sport": "fb",
@@ -1099,10 +1099,10 @@
    "prob": 0.7108,
    "tipScore": "1:0",
    "pOver25": 0.2608,
-   "status": "open",
-   "result": null,
-   "correct": null,
-   "exact": null
+   "status": "correct",
+   "result": "1:0",
+   "correct": true,
+   "exact": true
   },
   "tn|wta|2026-07-17|andreeva e|kraus s": {
    "sport": "tn",
@@ -1114,9 +1114,9 @@
    "tip": "P1",
    "tipName": "Sinja Kraus",
    "prob": 0.6967,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|atp|2026-07-17|shevchenko a|stricker d": {
    "sport": "tn",
@@ -1128,9 +1128,9 @@
    "tip": "P2",
    "tipName": "Aleksandr Shevchenko",
    "prob": 0.6691,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-17|bublik a|halys q": {
    "sport": "tn",
@@ -1142,9 +1142,9 @@
    "tip": "P2",
    "tipName": "Alexander Bublik",
    "prob": 0.8565,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-17|putintseva y|sherif m": {
    "sport": "tn",
@@ -1156,9 +1156,9 @@
    "tip": "P2",
    "tipName": "Yulia Putintseva",
    "prob": 0.5356,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-17|grabher j|vandromme j": {
    "sport": "tn",
@@ -1170,9 +1170,9 @@
    "tip": "P2",
    "tipName": "Julia Grabher",
    "prob": 0.5226,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-17|bassols ribera m|lourdes carle m": {
    "sport": "tn",
@@ -1184,9 +1184,9 @@
    "tip": "P2",
    "tipName": "Marina Bassols Ribera",
    "prob": 0.6151,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-17|manuel cerundolo j|ruud c": {
    "sport": "tn",
@@ -1198,9 +1198,9 @@
    "tip": "P1",
    "tipName": "Casper Ruud",
    "prob": 0.7418,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-17|burel c|oliynykova o": {
    "sport": "tn",
@@ -1212,9 +1212,9 @@
    "tip": "P2",
    "tipName": "Oleksandra Oliynykova",
    "prob": 0.9453,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-17|baez s|rublev a": {
    "sport": "tn",
@@ -1226,9 +1226,9 @@
    "tip": "P2",
    "tipName": "Andrey Rublev",
    "prob": 0.7436,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-17|prozorova t|zakharova a": {
    "sport": "tn",
@@ -1240,9 +1240,9 @@
    "tip": "P2",
    "tipName": "Anastasia Zakharova",
    "prob": 0.6112,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-17|tararudee l|zvonareva v": {
    "sport": "tn",
@@ -1254,9 +1254,9 @@
    "tip": "P1",
    "tipName": "Lanlana Tararudee",
    "prob": 0.7474,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P1",
+   "correct": true
   },
   "tn|wta|2026-07-17|erjavec v|feistel g": {
    "sport": "tn",
@@ -1268,9 +1268,9 @@
    "tip": "P2",
    "tipName": "Veronika Erjavec",
    "prob": 0.6764,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-17|agustin tirante t|tabilo a": {
    "sport": "tn",
@@ -1282,9 +1282,9 @@
    "tip": "P2",
    "tipName": "Alejandro Tabilo",
    "prob": 0.64,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-17|falei a|valdmannova v": {
    "sport": "tn",
@@ -1296,9 +1296,9 @@
    "tip": "P2",
    "tipName": "Vendula Valdmannova",
    "prob": 0.5266,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-17|korneeva a|valentova t": {
    "sport": "tn",
@@ -1310,9 +1310,9 @@
    "tip": "P2",
    "tipName": "Tereza Valentova",
    "prob": 0.6264,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-17|krejcikova b|qinwen z": {
    "sport": "tn",
@@ -1324,9 +1324,9 @@
    "tip": "P2",
    "tipName": "Barbora Krejcikova",
    "prob": 0.7727,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-17|badosa p|udvardy p": {
    "sport": "tn",
@@ -1338,9 +1338,9 @@
    "tip": "P2",
    "tipName": "Panna Udvardy",
    "prob": 0.6011,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|atp|2026-07-17|rinderknech a|tsitsipas s": {
    "sport": "tn",
@@ -1352,9 +1352,9 @@
    "tip": "P2",
    "tipName": "Arthur Rinderknech",
    "prob": 0.7199,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-17|trevisan m|yaneva e": {
    "sport": "tn",
@@ -1366,9 +1366,9 @@
    "tip": "P2",
    "tipName": "Elizara Yaneva",
    "prob": 0.6493,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-17|brancaccio n|riera j": {
    "sport": "tn",
@@ -1380,9 +1380,9 @@
    "tip": "P2",
    "tipName": "Nuria Brancaccio",
    "prob": 0.5179,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-17|andres burruchaga r|merida d": {
    "sport": "tn",
@@ -1394,9 +1394,9 @@
    "tip": "P2",
    "tipName": "Roman Andres Burruchaga",
    "prob": 0.5428,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-17|bejlek s|tauson c": {
    "sport": "tn",
@@ -1408,9 +1408,9 @@
    "tip": "P2",
    "tipName": "Clara Tauson",
    "prob": 0.571,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|atp|2026-07-17|dzumhur d|molcan a": {
    "sport": "tn",
@@ -1422,6 +1422,776 @@
    "tip": "P1",
    "tipName": "Alex Molcan",
    "prob": 0.5142,
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
+  },
+  "tn|atp|2026-07-20|martinez p|rocha h": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-20",
+   "label": "Pedro Martinez – Henrique Rocha",
+   "p1Key": "martinez p",
+   "p2Key": "rocha h",
+   "tip": "P2",
+   "tipName": "Henrique Rocha",
+   "prob": 0.5517,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-20|bondar a|uchijima m": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-20",
+   "label": "Moyuka Uchijima – Anna Bondar",
+   "p1Key": "uchijima m",
+   "p2Key": "bondar a",
+   "tip": "P2",
+   "tipName": "Anna Bondar",
+   "prob": 0.5267,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-20|gorgodze e|mintegi del olmo a": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-20",
+   "label": "Ane Mintegi Del Olmo – Ekaterine Gorgodze",
+   "p1Key": "mintegi del olmo a",
+   "p2Key": "gorgodze e",
+   "tip": "P2",
+   "tipName": "Ekaterine Gorgodze",
+   "prob": 0.5886,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-20|urgesi f|yaneva e": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-20",
+   "label": "Elizara Yaneva – Federica Urgesi",
+   "p1Key": "yaneva e",
+   "p2Key": "urgesi f",
+   "tip": "P1",
+   "tipName": "Elizara Yaneva",
+   "prob": 0.6036,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-20|ferro f|yufei r": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-20",
+   "label": "Ren Yufei – Fiona Ferro",
+   "p1Key": "yufei r",
+   "p2Key": "ferro f",
+   "tip": "P2",
+   "tipName": "Fiona Ferro",
+   "prob": 0.5682,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|bronzetti l|pistola i": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-21",
+   "label": "Lucia Bronzetti – Ilary Pistola",
+   "p1Key": "bronzetti l",
+   "p2Key": "pistola i",
+   "tip": "P1",
+   "tipName": "Lucia Bronzetti",
+   "prob": 0.6511,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|bulgaru m|hennemann c": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-21",
+   "label": "Caijsa Hennemann – Miriam Bulgaru",
+   "p1Key": "hennemann c",
+   "p2Key": "bulgaru m",
+   "tip": "P2",
+   "tipName": "Miriam Bulgaru",
+   "prob": 0.5347,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|rame a|tikhonova a": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-21",
+   "label": "Anastasia Tikhonova – Alice Rame",
+   "p1Key": "tikhonova a",
+   "p2Key": "rame a",
+   "tip": "P2",
+   "tipName": "Alice Rame",
+   "prob": 0.7888,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|basiletti n|caterina grant t": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-21",
+   "label": "Tyra Caterina Grant – Noemi Basiletti",
+   "p1Key": "caterina grant t",
+   "p2Key": "basiletti n",
+   "tip": "P1",
+   "tipName": "Tyra Caterina Grant",
+   "prob": 0.7111,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|ibragimova a|zidansek t": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-21",
+   "label": "Alevtina Ibragimova – Tamara Zidansek",
+   "p1Key": "ibragimova a",
+   "p2Key": "zidansek t",
+   "tip": "P2",
+   "tipName": "Tamara Zidansek",
+   "prob": 0.6482,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|hodzic m|werner c": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-21",
+   "label": "Mina Hodzic – Caroline Werner",
+   "p1Key": "hodzic m",
+   "p2Key": "werner c",
+   "tip": "P2",
+   "tipName": "Caroline Werner",
+   "prob": 0.5443,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|abbagnato a|burel c": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-21",
+   "label": "Clara Burel – Anastasia Abbagnato",
+   "p1Key": "burel c",
+   "p2Key": "abbagnato a",
+   "tip": "P2",
+   "tipName": "Anastasia Abbagnato",
+   "prob": 0.6869,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|astakhova d|jones f": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-21",
+   "label": "Darya Astakhova – Francesca Jones",
+   "p1Key": "astakhova d",
+   "p2Key": "jones f",
+   "tip": "P2",
+   "tipName": "Francesca Jones",
+   "prob": 0.6626,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|pridankina e|udvardy p": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Panna Udvardy – Elena Pridankina",
+   "p1Key": "udvardy p",
+   "p2Key": "pridankina e",
+   "tip": "P1",
+   "tipName": "Panna Udvardy",
+   "prob": 0.7078,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|manuel cerundolo j|trungelliti m": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-21",
+   "label": "Marco Trungelliti – Juan Manuel Cerundolo",
+   "p1Key": "trungelliti m",
+   "p2Key": "manuel cerundolo j",
+   "tip": "P2",
+   "tipName": "Juan Manuel Cerundolo",
+   "prob": 0.6331,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|lennard struff j|shevchenko a": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-21",
+   "label": "Aleksandr Shevchenko – Jan-Lennard Struff",
+   "p1Key": "shevchenko a",
+   "p2Key": "lennard struff j",
+   "tip": "P2",
+   "tipName": "Jan-Lennard Struff",
+   "prob": 0.6479,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|bartunkova n|yue y": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Yuan Yue – Nikola Bartunkova",
+   "p1Key": "yue y",
+   "p2Key": "bartunkova n",
+   "tip": "P2",
+   "tipName": "Nikola Bartunkova",
+   "prob": 0.7026,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|sasnovich a|timofeeva m": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Aliaksandra Sasnovich – Maria Timofeeva",
+   "p1Key": "sasnovich a",
+   "p2Key": "timofeeva m",
+   "tip": "P2",
+   "tipName": "Maria Timofeeva",
+   "prob": 0.5964,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|hontama m|parry d": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Mai Hontama – Diane Parry",
+   "p1Key": "hontama m",
+   "p2Key": "parry d",
+   "tip": "P2",
+   "tipName": "Diane Parry",
+   "prob": 0.7373,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|kraus s|semenistaja d": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Sinja Kraus – Darja Semenistaja",
+   "p1Key": "kraus s",
+   "p2Key": "semenistaja d",
+   "tip": "P1",
+   "tipName": "Sinja Kraus",
+   "prob": 0.5654,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|barthel m|putintseva y": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Yulia Putintseva – Mona Barthel",
+   "p1Key": "putintseva y",
+   "p2Key": "barthel m",
+   "tip": "P1",
+   "tipName": "Yulia Putintseva",
+   "prob": 0.7008,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|erjavec v|romero gormaz l": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Veronika Erjavec – Leyre Romero Gormaz",
+   "p1Key": "erjavec v",
+   "p2Key": "romero gormaz l",
+   "tip": "P1",
+   "tipName": "Veronika Erjavec",
+   "prob": 0.5797,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|baez s|kecmanovic m": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-21",
+   "label": "Miomir Kecmanovic – Sebastian Baez",
+   "p1Key": "kecmanovic m",
+   "p2Key": "baez s",
+   "tip": "P2",
+   "tipName": "Sebastian Baez",
+   "prob": 0.5075,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|djere l|halys q": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-21",
+   "label": "Quentin Halys – Laslo Djere",
+   "p1Key": "halys q",
+   "p2Key": "djere l",
+   "tip": "P1",
+   "tipName": "Quentin Halys",
+   "prob": 0.71,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|joint m|samson l": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Maya Joint – Laura Samson",
+   "p1Key": "joint m",
+   "p2Key": "samson l",
+   "tip": "P1",
+   "tipName": "Maya Joint",
+   "prob": 0.638,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|hon p|valentova t": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Tereza Valentova – Priscilla Hon",
+   "p1Key": "valentova t",
+   "p2Key": "hon p",
+   "tip": "P1",
+   "tipName": "Tereza Valentova",
+   "prob": 0.6579,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|tagger l|xinyu g": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Lilli Tagger – Gao Xinyu",
+   "p1Key": "tagger l",
+   "p2Key": "xinyu g",
+   "tip": "P1",
+   "tipName": "Lilli Tagger",
+   "prob": 0.7378,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|noha akugue n|steiner v": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Noma Noha Akugue – Valentina Steiner",
+   "p1Key": "noha akugue n",
+   "p2Key": "steiner v",
+   "tip": "P1",
+   "tipName": "Noma Noha Akugue",
+   "prob": 0.7916,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|carreno busta p|gaubas v": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-21",
+   "label": "Pablo Carreno Busta – Vilius Gaubas",
+   "p1Key": "carreno busta p",
+   "p2Key": "gaubas v",
+   "tip": "P1",
+   "tipName": "Pablo Carreno Busta",
+   "prob": 0.6401,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|choinski j|de jong j": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-21",
+   "label": "Jesper de Jong – Jan Choinski",
+   "p1Key": "de jong j",
+   "p2Key": "choinski j",
+   "tip": "P2",
+   "tipName": "Jan Choinski",
+   "prob": 0.5181,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|lourdes carle m|niemeier j": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Jule Niemeier – Maria Lourdes Carle",
+   "p1Key": "niemeier j",
+   "p2Key": "lourdes carle m",
+   "tip": "P1",
+   "tipName": "Jule Niemeier",
+   "prob": 0.5648,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|molcan a|ofner s": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-21",
+   "label": "Sebastian Ofner – Alex Molcan",
+   "p1Key": "ofner s",
+   "p2Key": "molcan a",
+   "tip": "P2",
+   "tipName": "Alex Molcan",
+   "prob": 0.5895,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|daniel vallejo a|feldbausch k": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-21",
+   "label": "Kilian Feldbausch – Adolfo Daniel Vallejo",
+   "p1Key": "feldbausch k",
+   "p2Key": "daniel vallejo a",
+   "tip": "P2",
+   "tipName": "Adolfo Daniel Vallejo",
+   "prob": 0.7706,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|bejlek s|blinkova a": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Sara Bejlek – Anna Blinkova",
+   "p1Key": "bejlek s",
+   "p2Key": "blinkova a",
+   "tip": "P1",
+   "tipName": "Sara Bejlek",
+   "prob": 0.6943,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|kovackova j|tararudee l": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Lanlana Tararudee – Jana Kovackova",
+   "p1Key": "tararudee l",
+   "p2Key": "kovackova j",
+   "tip": "P1",
+   "tipName": "Lanlana Tararudee",
+   "prob": 0.7206,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|charaeva a|sorribes tormo s": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Alina Charaeva – Sara Sorribes Tormo",
+   "p1Key": "charaeva a",
+   "p2Key": "sorribes tormo s",
+   "tip": "P1",
+   "tipName": "Alina Charaeva",
+   "prob": 0.6237,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|jimenez kasintseva v|korpatsch t": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Victoria Jimenez Kasintseva – Tamara Korpatsch",
+   "p1Key": "jimenez kasintseva v",
+   "p2Key": "korpatsch t",
+   "tip": "P2",
+   "tipName": "Tamara Korpatsch",
+   "prob": 0.581,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|borges n|luz o": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-21",
+   "label": "Orlando Luz – Nuno Borges",
+   "p1Key": "luz o",
+   "p2Key": "borges n",
+   "tip": "P2",
+   "tipName": "Nuno Borges",
+   "prob": 0.8026,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|dzumhur d|gaston h": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-21",
+   "label": "Damir Dzumhur – Hugo Gaston",
+   "p1Key": "dzumhur d",
+   "p2Key": "gaston h",
+   "tip": "P1",
+   "tipName": "Damir Dzumhur",
+   "prob": 0.5478,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|daniel t|merida d": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-21",
+   "label": "Taro Daniel – Daniel Merida",
+   "p1Key": "daniel t",
+   "p2Key": "merida d",
+   "tip": "P2",
+   "tipName": "Daniel Merida",
+   "prob": 0.7334,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|avanesyan e|rus a": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Elina Avanesyan – Arantxa Rus",
+   "p1Key": "avanesyan e",
+   "p2Key": "rus a",
+   "tip": "P2",
+   "tipName": "Arantxa Rus",
+   "prob": 0.6313,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|altmaier d|collignon r": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-21",
+   "label": "Raphael Collignon – Daniel Altmaier",
+   "p1Key": "collignon r",
+   "p2Key": "altmaier d",
+   "tip": "P1",
+   "tipName": "Raphael Collignon",
+   "prob": 0.6047,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|fruhvirtova l|krejcikova b": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-21",
+   "label": "Barbora Krejcikova – Linda Fruhvirtova",
+   "p1Key": "krejcikova b",
+   "p2Key": "fruhvirtova l",
+   "tip": "P1",
+   "tipName": "Barbora Krejcikova",
+   "prob": 0.8152,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|andres burruchaga r|wawrinka s": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-21",
+   "label": "Roman Andres Burruchaga – Stan Wawrinka",
+   "p1Key": "andres burruchaga r",
+   "p2Key": "wawrinka s",
+   "tip": "P1",
+   "tipName": "Roman Andres Burruchaga",
+   "prob": 0.6399,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|oliynykova o|schunk n": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Nastasja Schunk – Oleksandra Oliynykova",
+   "p1Key": "schunk n",
+   "p2Key": "oliynykova o",
+   "tip": "P2",
+   "tipName": "Oleksandra Oliynykova",
+   "prob": 0.8289,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|faria j|van de zandschulp b": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-21",
+   "label": "Jaime Faria – Botic Van De Zandschulp",
+   "p1Key": "faria j",
+   "p2Key": "van de zandschulp b",
+   "tip": "P2",
+   "tipName": "Botic Van De Zandschulp",
+   "prob": 0.5986,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-21|jacquemot e|johanna brockmann t": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-21",
+   "label": "Elsa Jacquemot – Tessa Johanna Brockmann",
+   "p1Key": "jacquemot e",
+   "p2Key": "johanna brockmann t",
+   "tip": "P1",
+   "tipName": "Elsa Jacquemot",
+   "prob": 0.6782,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-22|bublik a|diaz acosta f": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-22",
+   "label": "Facundo Diaz Acosta – Alexander Bublik",
+   "p1Key": "diaz acosta f",
+   "p2Key": "bublik a",
+   "tip": "P2",
+   "tipName": "Alexander Bublik",
+   "prob": 0.8745,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-22|martin etcheverry t|rodionov j": {
+   "sport": "tn",
+   "comp": "ATP · Generali Open",
+   "date": "2026-07-22",
+   "label": "Jurij Rodionov – Tomas Martin Etcheverry",
+   "p1Key": "rodionov j",
+   "p2Key": "martin etcheverry t",
+   "tip": "P2",
+   "tipName": "Tomas Martin Etcheverry",
+   "prob": 0.7877,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-22|tabilo a|torres t": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-22",
+   "label": "Tiago Torres – Alejandro Tabilo",
+   "p1Key": "torres t",
+   "p2Key": "tabilo a",
+   "tip": "P2",
+   "tipName": "Alejandro Tabilo",
+   "prob": 0.8584,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-22|bouzkova m|young suh lee c": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-22",
+   "label": "Carol Young Suh Lee – Marie Bouzkova",
+   "p1Key": "young suh lee c",
+   "p2Key": "bouzkova m",
+   "tip": "P2",
+   "tipName": "Marie Bouzkova",
+   "prob": 0.8914,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-22|dodin o|salkova d": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-22",
+   "label": "Oceane Dodin – Dominika Salkova",
+   "p1Key": "dodin o",
+   "p2Key": "salkova d",
+   "tip": "P2",
+   "tipName": "Dominika Salkova",
+   "prob": 0.8075,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-22|aksu a|snigur d": {
+   "sport": "tn",
+   "comp": "WTA · Livesport Prague Open",
+   "date": "2026-07-22",
+   "label": "Daria Snigur – Ayla Aksu",
+   "p1Key": "snigur d",
+   "p2Key": "aksu a",
+   "tip": "P1",
+   "tipName": "Daria Snigur",
+   "prob": 0.7863,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-22|badosa p|kawa k": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-22",
+   "label": "Paula Badosa – Katarzyna Kawa",
+   "p1Key": "badosa p",
+   "p2Key": "kawa k",
+   "tip": "P1",
+   "tipName": "Paula Badosa",
+   "prob": 0.5723,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-22|sherif m|waltert s": {
+   "sport": "tn",
+   "comp": "WTA · MSC Hamburg Ladies Open",
+   "date": "2026-07-22",
+   "label": "Mayar Sherif – Simona Waltert",
+   "p1Key": "sherif m",
+   "p2Key": "waltert s",
+   "tip": "P1",
+   "tipName": "Mayar Sherif",
+   "prob": 0.5467,
    "status": "open",
    "result": null,
    "correct": null
