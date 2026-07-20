@@ -6,21 +6,21 @@
 /tmp/tennisdata/wta_2024.xlsx: OK über http://www.tennis-data.co.uk (406783 Bytes)
 /tmp/tennisdata/atp_2025.xlsx: OK über http://www.tennis-data.co.uk (426707 Bytes)
 /tmp/tennisdata/wta_2025.xlsx: OK über http://www.tennis-data.co.uk (399398 Bytes)
-/tmp/tennisdata/atp_2026.xlsx: OK über http://www.tennis-data.co.uk (257172 Bytes)
-/tmp/tennisdata/wta_2026.xlsx: OK über http://www.tennis-data.co.uk (245346 Bytes)
-total 3772
-drwxr-xr-x  2 runner runner   4096 Jul 19 06:29 .
-drwxrwxrwt 14 root   root    12288 Jul 19 06:29 ..
--rw-r--r--  1 runner runner 417917 Jul 19 06:29 atp_2022.xlsx
--rw-r--r--  1 runner runner 447088 Jul 19 06:29 atp_2023.xlsx
--rw-r--r--  1 runner runner 445729 Jul 19 06:29 atp_2024.xlsx
--rw-r--r--  1 runner runner 426707 Jul 19 06:29 atp_2025.xlsx
--rw-r--r--  1 runner runner 257172 Jul 19 06:29 atp_2026.xlsx
--rw-r--r--  1 runner runner 370069 Jul 19 06:29 wta_2022.xlsx
--rw-r--r--  1 runner runner 407251 Jul 19 06:29 wta_2023.xlsx
--rw-r--r--  1 runner runner 406783 Jul 19 06:29 wta_2024.xlsx
--rw-r--r--  1 runner runner 399398 Jul 19 06:29 wta_2025.xlsx
--rw-r--r--  1 runner runner 245346 Jul 19 06:29 wta_2026.xlsx
+/tmp/tennisdata/atp_2026.xlsx: OK über http://www.tennis-data.co.uk (269755 Bytes)
+/tmp/tennisdata/wta_2026.xlsx: OK über http://www.tennis-data.co.uk (255245 Bytes)
+total 3796
+drwxr-xr-x  2 runner runner   4096 Jul 20 06:44 .
+drwxrwxrwt 14 root   root    12288 Jul 20 06:44 ..
+-rw-r--r--  1 runner runner 417917 Jul 20 06:44 atp_2022.xlsx
+-rw-r--r--  1 runner runner 447088 Jul 20 06:44 atp_2023.xlsx
+-rw-r--r--  1 runner runner 445729 Jul 20 06:44 atp_2024.xlsx
+-rw-r--r--  1 runner runner 426707 Jul 20 06:44 atp_2025.xlsx
+-rw-r--r--  1 runner runner 269755 Jul 20 06:44 atp_2026.xlsx
+-rw-r--r--  1 runner runner 370069 Jul 20 06:44 wta_2022.xlsx
+-rw-r--r--  1 runner runner 407251 Jul 20 06:44 wta_2023.xlsx
+-rw-r--r--  1 runner runner 406783 Jul 20 06:44 wta_2024.xlsx
+-rw-r--r--  1 runner runner 399398 Jul 20 06:44 wta_2025.xlsx
+-rw-r--r--  1 runner runner 255245 Jul 20 06:44 wta_2026.xlsx
   WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
@@ -33,15 +33,15 @@ drwxrwxrwt 14 root   root    12288 Jul 19 06:29 ..
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20250929-20251227&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20251228-20260327&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260328-20260625&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260626-20260719&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260719 nicht erreichbar (HTTP Error 400: Bad Request)
+  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260626-20260720&limit=1000 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260720 nicht erreichbar (HTTP Error 400: Bad Request)
   WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260721 nicht erreichbar (HTTP Error 400: Bad Request)
-  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260719-20261116&limit=50 nicht erreichbar (HTTP Error 400: Bad Request)
+  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260722 nicht erreichbar (HTTP Error 400: Bad Request)
+  WARN: https://site.api.espn.com/apis/site/v2/sports/soccer/bel.2/scoreboard?dates=20260720-20261117&limit=50 nicht erreichbar (HTTP Error 400: Bad Request)
 fixtures.csv: 12 Spiele mit Quoten
 == WM ==
-  103 Ergebnisse geladen
-  1 Spiele in den naechsten 3 Tagen
+  104 Ergebnisse geladen
+  0 Spiele in den naechsten 3 Tagen
 == EM ==
   0 Ergebnisse geladen
   0 Spiele in den naechsten 3 Tagen
@@ -95,6 +95,6 @@ fixtures.csv: 12 Spiele mit Quoten
   0 Spiele in den naechsten 3 Tagen
 == Tennis ==
   Rankings: ATP 150, WTA 150
-  Historie: ATP 12275 Matches, WTA 11404 Matches
-  76 Tennis-Matches in den naechsten 3 Tagen
+  Historie: ATP 12356 Matches, WTA 11465 Matches
+  75 Tennis-Matches in den naechsten 3 Tagen
 OK -> /home/runner/work/sport-radar/sport-radar/scripts/../data/data.json
