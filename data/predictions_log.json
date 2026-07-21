@@ -1436,9 +1436,9 @@
    "tip": "P2",
    "tipName": "Henrique Rocha",
    "prob": 0.5305,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P1",
+   "correct": false
   },
   "tn|wta|2026-07-20|bondar a|uchijima m": {
    "sport": "tn",
@@ -1450,9 +1450,9 @@
    "tip": "P2",
    "tipName": "Anna Bondar",
    "prob": 0.5267,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-20|gorgodze e|mintegi del olmo a": {
    "sport": "tn",
@@ -1464,9 +1464,9 @@
    "tip": "P2",
    "tipName": "Ekaterine Gorgodze",
    "prob": 0.5886,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-20|urgesi f|yaneva e": {
    "sport": "tn",
@@ -1478,9 +1478,9 @@
    "tip": "P1",
    "tipName": "Elizara Yaneva",
    "prob": 0.6036,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "wrong",
+   "result": "Sieger: P2",
+   "correct": false
   },
   "tn|wta|2026-07-20|ferro f|yufei r": {
    "sport": "tn",
@@ -1492,9 +1492,9 @@
    "tip": "P2",
    "tipName": "Fiona Ferro",
    "prob": 0.5682,
-   "status": "open",
-   "result": null,
-   "correct": null
+   "status": "correct",
+   "result": "Sieger: P2",
+   "correct": true
   },
   "tn|wta|2026-07-21|bronzetti l|pistola i": {
    "sport": "tn",
@@ -2177,7 +2177,7 @@
    "p2Key": "kawa k",
    "tip": "P1",
    "tipName": "Paula Badosa",
-   "prob": 0.7315,
+   "prob": 0.701,
    "status": "open",
    "result": null,
    "correct": null
@@ -2191,7 +2191,77 @@
    "p2Key": "waltert s",
    "tip": "P1",
    "tipName": "Mayar Sherif",
-   "prob": 0.6445,
+   "prob": 0.6833,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-21|jacquet k|merida d": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-21",
+   "label": "Kyrian Jacquet – Daniel Merida",
+   "p1Key": "jacquet k",
+   "p2Key": "merida d",
+   "tip": "P2",
+   "tipName": "Daniel Merida",
+   "prob": 0.6676,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|atp|2026-07-22|darderi l|martinez p": {
+   "sport": "tn",
+   "comp": "ATP · Millennium Estoril Open",
+   "date": "2026-07-22",
+   "label": "Luciano Darderi – Pedro Martinez",
+   "p1Key": "darderi l",
+   "p2Key": "martinez p",
+   "tip": "P1",
+   "tipName": "Luciano Darderi",
+   "prob": 0.873,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-22|radivojevic l|ruggeri j": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-22",
+   "label": "Lola Radivojevic – Jennifer Ruggeri",
+   "p1Key": "radivojevic l",
+   "p2Key": "ruggeri j",
+   "tip": "P1",
+   "tipName": "Lola Radivojevic",
+   "prob": 0.5124,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-22|gorgodze e|kabbaj y": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-22",
+   "label": "Yasmine Kabbaj – Ekaterine Gorgodze",
+   "p1Key": "kabbaj y",
+   "p2Key": "gorgodze e",
+   "tip": "P2",
+   "tipName": "Ekaterine Gorgodze",
+   "prob": 0.5721,
+   "status": "open",
+   "result": null,
+   "correct": null
+  },
+  "tn|wta|2026-07-22|andreeva e|ferro f": {
+   "sport": "tn",
+   "comp": "WTA · Palermo Ladies Open",
+   "date": "2026-07-22",
+   "label": "Erika Andreeva – Fiona Ferro",
+   "p1Key": "andreeva e",
+   "p2Key": "ferro f",
+   "tip": "P2",
+   "tipName": "Fiona Ferro",
+   "prob": 0.5478,
    "status": "open",
    "result": null,
    "correct": null
