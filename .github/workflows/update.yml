@@ -2,8 +2,10 @@ name: Tägliches Daten-Update
 
 on:
   schedule:
-    # 04:00 UTC = 06:00 Berlin (Sommerzeit) bzw. 05:00 (Winterzeit)
+    # 3x täglich (UTC): ~06:00, ~12:00, ~17:00 deutscher Sommerzeit
     - cron: "0 4 * * *"
+    - cron: "0 10 * * *"
+    - cron: "0 15 * * *"
   workflow_dispatch: {}   # manueller Start über den Actions-Tab
   push:
     branches: [main]      # läuft auch nach jedem Push (z.B. bei Code-Änderungen)
@@ -79,53 +81,3 @@ jobs:
             git push
           fi
 
-  deploy:
-    needs: update
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Aktuellen Stand auschecken
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Pages-Aktivierung mit Diagnose
-        env:
-          GH_T: ${{ github.token }}
-        run: |
-          set +e
-          {
-            echo "== POST /pages (build_type=workflow) =="
-            curl -s -o /tmp/r1 -w "HTTP %{http_code}" -X POST \
-              -H "Authorization: Bearer ${GH_T}" -H "Accept: application/vnd.github+json" \
-              "https://api.github.com/repos/${{ github.repository }}/pages" \
-              -d '{"build_type":"workflow"}'
-            echo; cat /tmp/r1; echo
-            echo "== GET /pages =="
-            curl -s -o /tmp/r2 -w "HTTP %{http_code}" \
-              -H "Authorization: Bearer ${GH_T}" -H "Accept: application/vnd.github+json" \
-              "https://api.github.com/repos/${{ github.repository }}/pages"
-            echo; cat /tmp/r2; echo
-          } | tee data/deploy_status.txt
-          git config user.name "sport-radar-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git pull --rebase origin main || true
-          git add data/deploy_status.txt
-          git commit -m "Deploy-Diagnose" || true
-          git push || true
-
-      - name: GitHub Pages aktivieren/konfigurieren
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - name: Website-Ordner hochladen
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-      - name: Veröffentlichen
-        id: deployment
-        uses: actions/deploy-pages@v4
