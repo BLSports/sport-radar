@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-07-21T08:27:10.340773+02:00",
+ "generatedAt": "2026-07-22T08:27:11.065634+02:00",
  "windowDays": 3,
  "days": [
-  "2026-07-21",
   "2026-07-22",
-  "2026-07-23"
+  "2026-07-23",
+  "2026-07-24"
  ],
  "football": [
   {
@@ -226,14 +226,57 @@
  ],
  "tennis": [
   {
-   "start": "2026-07-21T10:00:00+02:00",
+   "start": "2026-07-22T10:00:00+02:00",
    "tour": "WTA",
    "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
+   "round": "2. Runde",
    "surface": "Sand",
    "p1": {
-    "name": "Panna Udvardy",
-    "rank": 71,
+    "name": "Anhelina Kalinina",
+    "rank": 56,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": {
+     "w": 32,
+     "l": 26,
+     "pct": 0.552
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Maria Lourdes Carle",
+    "rank": null,
+    "form": [],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.781,
+   "model": {
+    "n1": 170,
+    "n2": 0,
+    "pRank": 0.781
+   },
+   "h2h": [],
+   "analysis": "Anhelina Kalinina (#56) trifft auf Maria Lourdes Carle, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Anhelina Kalinina zuletzt bei 55 % (32:26). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Anhelina Kalinina mit 78 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T11:00:00+02:00",
+   "tour": "ATP",
+   "tournament": "Generali Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Valentin Vacherot",
+    "rank": 19,
     "form": [
      "N",
      "N",
@@ -241,484 +284,68 @@
      "S",
      "N"
     ],
-    "elo": 1602,
+    "elo": 1728,
+    "onSurface": {
+     "w": 7,
+     "l": 10,
+     "pct": 0.412
+    },
+    "favSurface": "Hartplatz"
+   },
+   "p2": {
+    "name": "Quentin Halys",
+    "rank": 83,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1606,
     "onSurface": {
      "w": 15,
-     "l": 19,
-     "pct": 0.441
+     "l": 13,
+     "pct": 0.536
     },
     "favSurface": "Sand"
    },
-   "p2": {
-    "name": "Elena Pridankina",
-    "rank": 201,
-    "form": [
-     "S",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1440,
-    "onSurface": null,
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.712,
+   "pP1": 0.6685,
    "model": {
-    "n1": 61,
-    "n2": 9,
-    "elo1": 1602,
-    "elo2": 1440,
-    "pElo": 0.7171,
-    "pRank": 0.7078,
-    "wElo": 0.45
-   },
-   "h2h": [],
-   "analysis": "Panna Udvardy (Weltrangliste #71) trifft auf Elena Pridankina (#201). Auf Sand liegt die Siegquote von Panna Udvardy zuletzt bei 44 % (15:19). Elena Pridankinas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Panna Udvardy mit 71 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T11:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Generali Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Marco Trungelliti",
-    "rank": 95,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 10,
-     "l": 12,
-     "pct": 0.455
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Juan Manuel Cerundolo",
-    "rank": 50,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.3669,
-   "model": {
-    "n1": 27,
-    "n2": 0,
-    "pRank": 0.3669
-   },
-   "h2h": [],
-   "analysis": "Marco Trungelliti (Weltrangliste #95) trifft auf Juan Manuel Cerundolo (#50). Auf Sand liegt die Siegquote von Marco Trungelliti zuletzt bei 46 % (10:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Juan Manuel Cerundolo mit 63 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T11:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Generali Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Aleksandr Shevchenko",
-    "rank": 84,
-    "form": [
-     "N",
-     "S",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 23,
-     "l": 29,
-     "pct": 0.442
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Jan-Lennard Struff",
-    "rank": 41,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.3521,
-   "model": {
-    "n1": 133,
-    "n2": 0,
-    "pRank": 0.3521
-   },
-   "h2h": [],
-   "analysis": "Aleksandr Shevchenko (Weltrangliste #84) trifft auf Jan-Lennard Struff (#41). Auf Sand liegt die Siegquote von Aleksandr Shevchenko zuletzt bei 44 % (23:29). Aleksandr Shevchenkos stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Jan-Lennard Struff mit 65 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T11:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Yuan Yue",
-    "rank": 121,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Nikola Bartunkova",
-    "rank": 44,
-    "form": [
-     "S",
-     "N",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 9,
-     "l": 7,
-     "pct": 0.562
-    },
-    "favSurface": "Rasen"
-   },
-   "pP1": 0.2974,
-   "model": {
-    "n1": 0,
-    "n2": 28,
-    "pRank": 0.2974
-   },
-   "h2h": [],
-   "analysis": "Yuan Yue (Weltrangliste #121) trifft auf Nikola Bartunkova (#44). Auf Hartplatz liegt die Siegquote von Nikola Bartunkova zuletzt bei 56 % (9:7). Nikola Bartunkovas stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Nikola Bartunkova mit 70 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T11:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Aliaksandra Sasnovich",
-    "rank": 133,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1590,
-    "onSurface": {
-     "w": 36,
-     "l": 39,
-     "pct": 0.48
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Maria Timofeeva",
-    "rank": 84,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1440,
-    "onSurface": {
-     "w": 5,
-     "l": 6,
-     "pct": 0.455
-    },
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.7039,
-   "model": {
-    "n1": 127,
-    "n2": 27,
-    "elo1": 1590,
-    "elo2": 1440,
-    "pElo": 0.7039,
-    "pRank": 0.4036,
+    "n1": 43,
+    "n2": 130,
+    "elo1": 1728,
+    "elo2": 1606,
+    "pElo": 0.6685,
+    "pRank": 0.7779,
     "wElo": 1.0
    },
-   "h2h": [
-    {
-     "year": "2024",
-     "tourney": "Budapest Open",
-     "surface": "Sand",
-     "winner": "Aliaksandra Sasnovich",
-     "winnerIsP1": true,
-     "score": "6:3 6:4",
-     "rnd": "2nd Round"
-    }
-   ],
-   "analysis": "Aliaksandra Sasnovich (Weltrangliste #133) trifft auf Maria Timofeeva (#84). Auf Hartplatz liegt die Siegquote von Aliaksandra Sasnovich zuletzt bei 48 % (36:39), Maria Timofeeva kommt auf 46 % (5:6). Das bisher einzige Duell (2024, Budapest Open) gewann Aliaksandra Sasnovich mit 6:3 6:4. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Aliaksandra Sasnovich mit 70 % vorn. Bemerkenswert: Die Weltrangliste würde eher Maria Timofeeva favorisieren – die Formkurve spricht aber dagegen.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T11:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Mai Hontama",
-    "rank": 202,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1364,
-    "onSurface": {
-     "w": 11,
-     "l": 22,
-     "pct": 0.333
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Diane Parry",
-    "rank": 60,
-    "form": [
-     "N",
-     "S",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1619,
-    "onSurface": {
-     "w": 31,
-     "l": 32,
-     "pct": 0.492
-    },
-    "favSurface": "Rasen"
-   },
-   "pP1": 0.1872,
-   "model": {
-    "n1": 35,
-    "n2": 121,
-    "elo1": 1364,
-    "elo2": 1619,
-    "pElo": 0.1872,
-    "pRank": 0.2627,
-    "wElo": 1.0
-   },
-   "h2h": [
-    {
-     "year": "2022",
-     "tourney": "Wimbledon",
-     "surface": "Rasen",
-     "winner": "Diane Parry",
-     "winnerIsP1": false,
-     "score": "6:3 6:2",
-     "rnd": "2nd Round"
-    }
-   ],
-   "analysis": "Mai Hontama (Weltrangliste #202) trifft auf Diane Parry (#60). Auf Hartplatz liegt die Siegquote von Mai Hontama zuletzt bei 33 % (11:22), Diane Parry kommt auf 49 % (31:32). Diane Parrys stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2022, Wimbledon) gewann Diane Parry mit 6:3 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Diane Parry mit 81 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T11:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Sinja Kraus",
-    "rank": 80,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1331,
-    "onSurface": {
-     "w": 2,
-     "l": 6,
-     "pct": 0.25
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Darja Semenistaja",
-    "rank": 109,
-    "form": [
-     "N",
-     "S",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1461,
-    "onSurface": null,
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.4309,
-   "model": {
-    "n1": 18,
-    "n2": 11,
-    "elo1": 1331,
-    "elo2": 1461,
-    "pElo": 0.3209,
-    "pRank": 0.5654,
-    "wElo": 0.55
-   },
    "h2h": [],
-   "analysis": "Sinja Kraus (Weltrangliste #80) trifft auf Darja Semenistaja (#109). Die aktuelle Form spricht für Darja Semenistaja: 2 Siege aus den letzten 5 Matches, Sinja Kraus holte nur 0. Auf Sand liegt die Siegquote von Sinja Kraus zuletzt bei 25 % (2:6). Darja Semenistajas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Darja Semenistaja mit 57 % vorn. Bemerkenswert: Die Weltrangliste würde eher Sinja Kraus favorisieren – die Formkurve spricht aber dagegen.",
+   "analysis": "Valentin Vacherot (Weltrangliste #19) trifft auf Quentin Halys (#83). Auf Sand liegt die Siegquote von Valentin Vacherot zuletzt bei 41 % (7:10), Quentin Halys kommt auf 54 % (15:13). Valentin Vacherots stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Valentin Vacherot mit 67 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
   {
-   "start": "2026-07-21T11:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Yulia Putintseva",
-    "rank": 79,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1605,
-    "onSurface": {
-     "w": 36,
-     "l": 28,
-     "pct": 0.562
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Mona Barthel",
-    "rank": 215,
-    "form": [
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1374,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.7143,
-   "model": {
-    "n1": 197,
-    "n2": 3,
-    "elo1": 1605,
-    "elo2": 1374,
-    "pElo": 0.7911,
-    "pRank": 0.7008,
-    "wElo": 0.15
-   },
-   "h2h": [],
-   "analysis": "Yulia Putintseva (Weltrangliste #79) trifft auf Mona Barthel (#215). Die aktuelle Form spricht für Yulia Putintseva: 2 Siege aus den letzten 5 Matches, Mona Barthel holte nur 0. Auf Sand liegt die Siegquote von Yulia Putintseva zuletzt bei 56 % (36:28). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Yulia Putintseva mit 71 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T11:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Veronika Erjavec",
-    "rank": 100,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1349,
-    "onSurface": null,
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Leyre Romero Gormaz",
-    "rank": 146,
-    "form": [
-     "N",
-     "S",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1488,
-    "onSurface": {
-     "w": 3,
-     "l": 4,
-     "pct": 0.429
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.472,
-   "model": {
-    "n1": 11,
-    "n2": 8,
-    "elo1": 1349,
-    "elo2": 1488,
-    "pElo": 0.3104,
-    "pRank": 0.5797,
-    "wElo": 0.4
-   },
-   "h2h": [],
-   "analysis": "Veronika Erjavec (Weltrangliste #100) trifft auf Leyre Romero Gormaz (#146). Die aktuelle Form spricht für Leyre Romero Gormaz: 2 Siege aus den letzten 5 Matches, Veronika Erjavec holte nur 0. Auf Sand liegt die Siegquote von Leyre Romero Gormaz zuletzt bei 43 % (3:4). Veronika Erjavecs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Leyre Romero Gormaz mit 53 % vorn. Bemerkenswert: Die Weltrangliste würde eher Veronika Erjavec favorisieren – die Formkurve spricht aber dagegen.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T12:30:00+02:00",
+   "start": "2026-07-22T11:00:00+02:00",
    "tour": "ATP",
    "tournament": "Generali Open",
-   "round": "1. Runde",
+   "round": "2. Runde",
    "surface": "Sand",
    "p1": {
-    "name": "Miomir Kecmanovic",
-    "rank": 58,
+    "name": "Arthur Rinderknech",
+    "rank": 27,
     "form": [
      "S",
-     "N",
+     "S",
      "N",
      "S",
      "N"
     ],
-    "elo": 1579,
+    "elo": 1643,
     "onSurface": {
-     "w": 33,
-     "l": 35,
-     "pct": 0.485
+     "w": 21,
+     "l": 27,
+     "pct": 0.438
     },
     "favSurface": "Hartplatz"
    },
@@ -740,1427 +367,66 @@
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.495,
+   "pP1": 0.5868,
    "model": {
-    "n1": 247,
+    "n1": 193,
     "n2": 234,
-    "elo1": 1579,
+    "elo1": 1643,
     "elo2": 1582,
-    "pElo": 0.495,
-    "pRank": 0.4925,
-    "wElo": 1.0
-   },
-   "h2h": [
-    {
-     "year": "2025",
-     "tourney": "French Open",
-     "surface": "Sand",
-     "winner": "Miomir Kecmanovic",
-     "winnerIsP1": true,
-     "score": "6:7 6:7 6:4 6:2 6:2",
-     "rnd": "1st Round"
-    },
-    {
-     "year": "2024",
-     "tourney": "BNP Paribas Masters",
-     "surface": "Hartplatz",
-     "winner": "Miomir Kecmanovic",
-     "winnerIsP1": true,
-     "score": "6:4 6:7 7:5",
-     "rnd": "1st Round"
-    },
-    {
-     "year": "2024",
-     "tourney": "Eastbourne International",
-     "surface": "Rasen",
-     "winner": "Miomir Kecmanovic",
-     "winnerIsP1": true,
-     "score": "6:3 6:2",
-     "rnd": "2nd Round"
-    }
-   ],
-   "analysis": "Miomir Kecmanovic (Weltrangliste #58) trifft auf Sebastian Baez (#56). Auf Sand liegt die Siegquote von Miomir Kecmanovic zuletzt bei 48 % (33:35), Sebastian Baez kommt auf 60 % (85:56). Miomir Kecmanovics stärkster Belag ist eigentlich Hartplatz. Den direkten Vergleich führt Miomir Kecmanovic mit 3:0 aus den letzten 3 Duellen an. Zuletzt (2025, French Open) gewann Miomir Kecmanovic mit 6:7 6:7 6:4 6:2 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Sebastian Baez mit 50 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T12:30:00+02:00",
-   "tour": "ATP",
-   "tournament": "Generali Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Quentin Halys",
-    "rank": 83,
-    "form": [
-     "S",
-     "N",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1606,
-    "onSurface": {
-     "w": 15,
-     "l": 13,
-     "pct": 0.536
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Laslo Djere",
-    "rank": 238,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1556,
-    "onSurface": {
-     "w": 43,
-     "l": 37,
-     "pct": 0.537
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.5723,
-   "model": {
-    "n1": 130,
-    "n2": 159,
-    "elo1": 1606,
-    "elo2": 1556,
-    "pElo": 0.5723,
-    "pRank": 0.71,
+    "pElo": 0.5868,
+    "pRank": 0.6502,
     "wElo": 1.0
    },
    "h2h": [],
-   "analysis": "Quentin Halys (Weltrangliste #83) trifft auf Laslo Djere (#238). Die aktuelle Form spricht für Quentin Halys: 3 Siege aus den letzten 5 Matches, Laslo Djere holte nur 1. Auf Sand liegt die Siegquote von Quentin Halys zuletzt bei 54 % (15:13), Laslo Djere kommt auf 54 % (43:37). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Quentin Halys mit 57 % vorn.",
+   "analysis": "Arthur Rinderknech (Weltrangliste #27) trifft auf Sebastian Baez (#56). Auf Sand liegt die Siegquote von Arthur Rinderknech zuletzt bei 44 % (21:27), Sebastian Baez kommt auf 60 % (85:56). Arthur Rinderknechs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Arthur Rinderknech mit 59 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
   {
-   "start": "2026-07-21T12:30:00+02:00",
+   "start": "2026-07-22T11:00:00+02:00",
    "tour": "WTA",
    "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
+   "round": "2. Runde",
    "surface": "Hartplatz",
    "p1": {
-    "name": "Maya Joint",
-    "rank": 77,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1567,
-    "onSurface": {
-     "w": 24,
-     "l": 24,
-     "pct": 0.5
-    },
-    "favSurface": "Rasen"
-   },
-   "p2": {
-    "name": "Laura Samson",
-    "rank": 150,
-    "form": [
-     "N",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1529,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.6215,
-   "model": {
-    "n1": 70,
-    "n2": 4,
-    "elo1": 1567,
-    "elo2": 1529,
-    "pElo": 0.5554,
-    "pRank": 0.638,
-    "wElo": 0.2
-   },
-   "h2h": [],
-   "analysis": "Maya Joint (Weltrangliste #77) trifft auf Laura Samson (#150). Auf Hartplatz liegt die Siegquote von Maya Joint zuletzt bei 50 % (24:24). Maya Joints stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Maya Joint mit 62 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T12:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Tereza Valentova",
-    "rank": 63,
+    "name": "Daria Snigur",
+    "rank": 54,
     "form": [
      "N",
      "N",
      "S",
-     "S",
-     "N"
-    ],
-    "elo": 1641,
-    "onSurface": {
-     "w": 15,
-     "l": 10,
-     "pct": 0.6
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Priscilla Hon",
-    "rank": 136,
-    "form": [
-     "N",
-     "S",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1536,
-    "onSurface": {
-     "w": 9,
-     "l": 17,
-     "pct": 0.346
-    },
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.6473,
-   "model": {
-    "n1": 36,
-    "n2": 28,
-    "elo1": 1641,
-    "elo2": 1536,
-    "pElo": 0.6473,
-    "pRank": 0.6579,
-    "wElo": 1.0
-   },
-   "h2h": [],
-   "analysis": "Tereza Valentova (Weltrangliste #63) trifft auf Priscilla Hon (#136). Auf Hartplatz liegt die Siegquote von Tereza Valentova zuletzt bei 60 % (15:10), Priscilla Hon kommt auf 35 % (9:17). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Tereza Valentova mit 65 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T12:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Lilli Tagger",
-    "rank": 74,
-    "form": [
-     "N",
-     "N",
-     "N",
      "S",
      "N"
     ],
     "elo": null,
-    "onSurface": {
-     "w": 7,
-     "l": 4,
-     "pct": 0.636
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Gao Xinyu",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.7378,
-   "model": {
-    "n1": 18,
-    "n2": 0,
-    "pRank": 0.7378
-   },
-   "h2h": [],
-   "analysis": "Lilli Tagger (#74) trifft auf Gao Xinyu, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Lilli Tagger zuletzt bei 64 % (7:4). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lilli Tagger mit 74 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T12:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Noma Noha Akugue",
-    "rank": 144,
-    "form": [
-     "S",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 5,
-     "l": 5,
-     "pct": 0.5
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Valentina Steiner",
-    "rank": 692,
-    "form": [
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.7916,
-   "model": {
-    "n1": 11,
-    "n2": 1,
-    "pRank": 0.7916
-   },
-   "h2h": [],
-   "analysis": "Noma Noha Akugue (Weltrangliste #144) trifft auf Valentina Steiner (#692). Auf Sand liegt die Siegquote von Noma Noha Akugue zuletzt bei 50 % (5:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Noma Noha Akugue mit 79 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T13:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Millennium Estoril Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Pablo Carreno Busta",
-    "rank": 65,
-    "form": [
-     "N",
-     "S",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1620,
-    "onSurface": {
-     "w": 18,
-     "l": 19,
-     "pct": 0.486
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Vilius Gaubas",
-    "rank": 128,
-    "form": [
-     "S",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1491,
     "onSurface": {
      "w": 6,
      "l": 7,
      "pct": 0.462
     },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.6659,
-   "model": {
-    "n1": 110,
-    "n2": 14,
-    "elo1": 1620,
-    "elo2": 1491,
-    "pElo": 0.677,
-    "pRank": 0.6401,
-    "wElo": 0.7
-   },
-   "h2h": [],
-   "analysis": "Pablo Carreno Busta (Weltrangliste #65) trifft auf Vilius Gaubas (#128). Auf Sand liegt die Siegquote von Pablo Carreno Busta zuletzt bei 49 % (18:19), Vilius Gaubas kommt auf 46 % (6:7). Pablo Carreno Bustas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Pablo Carreno Busta mit 67 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T13:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Millennium Estoril Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Jesper de Jong",
-    "rank": 98,
-    "form": [
-     "N",
-     "S",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1608,
-    "onSurface": {
-     "w": 15,
-     "l": 14,
-     "pct": 0.517
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Jan Choinski",
-    "rank": 90,
-    "form": [
-     "S",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1417,
-    "onSurface": {
-     "w": 1,
-     "l": 4,
-     "pct": 0.2
-    },
-    "favSurface": "Rasen"
-   },
-   "pP1": 0.7369,
-   "model": {
-    "n1": 54,
-    "n2": 19,
-    "elo1": 1608,
-    "elo2": 1417,
-    "pElo": 0.7503,
-    "pRank": 0.4819,
-    "wElo": 0.95
-   },
-   "h2h": [],
-   "analysis": "Jesper de Jong (Weltrangliste #98) trifft auf Jan Choinski (#90). Auf Sand liegt die Siegquote von Jesper de Jong zuletzt bei 52 % (15:14), Jan Choinski kommt auf 20 % (1:4). Jan Choinskis stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Jesper de Jong mit 74 % vorn. Bemerkenswert: Die Weltrangliste würde eher Jan Choinski favorisieren – die Formkurve spricht aber dagegen.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T13:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Millennium Estoril Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Tiago Pereira",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Gonzalo Bueno",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": null,
-   "model": {},
-   "h2h": [],
-   "analysis": "Tiago Pereira trifft auf Gonzalo Bueno; für beide liegt kein aktuelles Top-Ranking vor. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T13:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Jule Niemeier",
-    "rank": 184,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 8,
-     "l": 15,
-     "pct": 0.348
-    },
     "favSurface": "Rasen"
    },
    "p2": {
-    "name": "Maria Lourdes Carle",
+    "name": "Ayla Aksu",
     "rank": null,
     "form": [],
     "elo": null,
     "onSurface": null,
     "favSurface": null
    },
-   "pP1": 0.5648,
+   "pP1": 0.7863,
    "model": {
-    "n1": 77,
+    "n1": 32,
     "n2": 0,
-    "pRank": 0.5648
+    "pRank": 0.7863
    },
    "h2h": [],
-   "analysis": "Jule Niemeier (#184) trifft auf Maria Lourdes Carle, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Jule Niemeier zuletzt bei 35 % (8:15). Jule Niemeiers stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Jule Niemeier mit 56 % vorn.",
+   "analysis": "Daria Snigur (#54) trifft auf Ayla Aksu, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Daria Snigur zuletzt bei 46 % (6:7). Daria Snigurs stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Daria Snigur mit 79 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
   {
-   "start": "2026-07-21T14:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Generali Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Sebastian Ofner",
-    "rank": 124,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1517,
-    "onSurface": {
-     "w": 20,
-     "l": 30,
-     "pct": 0.4
-    },
-    "favSurface": "Rasen"
-   },
-   "p2": {
-    "name": "Alex Molcan",
-    "rank": 81,
-    "form": [
-     "N",
-     "S",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1678,
-    "onSurface": {
-     "w": 31,
-     "l": 19,
-     "pct": 0.62
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.2832,
-   "model": {
-    "n1": 99,
-    "n2": 89,
-    "elo1": 1517,
-    "elo2": 1678,
-    "pElo": 0.2832,
-    "pRank": 0.4105,
-    "wElo": 1.0
-   },
-   "h2h": [
-    {
-     "year": "2023",
-     "tourney": "Generali Open",
-     "surface": "Sand",
-     "winner": "Alex Molcan",
-     "winnerIsP1": false,
-     "score": "4:6 7:5 7:6",
-     "rnd": "2nd Round"
-    }
-   ],
-   "analysis": "Sebastian Ofner (Weltrangliste #124) trifft auf Alex Molcan (#81). Die aktuelle Form spricht für Alex Molcan: 3 Siege aus den letzten 5 Matches, Sebastian Ofner holte nur 1. Auf Sand liegt die Siegquote von Sebastian Ofner zuletzt bei 40 % (20:30), Alex Molcan kommt auf 62 % (31:19). Sebastian Ofners stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2023, Generali Open) gewann Alex Molcan mit 4:6 7:5 7:6. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Alex Molcan mit 72 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T14:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Generali Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Kilian Feldbausch",
-    "rank": 262,
-    "form": [
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Adolfo Daniel Vallejo",
-    "rank": 63,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.2294,
-   "model": {
-    "n1": 1,
-    "n2": 0,
-    "pRank": 0.2294
-   },
-   "h2h": [],
-   "analysis": "Kilian Feldbausch (Weltrangliste #262) trifft auf Adolfo Daniel Vallejo (#63). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Adolfo Daniel Vallejo mit 77 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T14:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Sara Bejlek",
-    "rank": 40,
-    "form": [
-     "S",
-     "N",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1653,
-    "onSurface": {
-     "w": 11,
-     "l": 12,
-     "pct": 0.478
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Anna Blinkova",
-    "rank": 105,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1539,
-    "onSurface": {
-     "w": 46,
-     "l": 54,
-     "pct": 0.46
-    },
-    "favSurface": "Rasen"
-   },
-   "pP1": 0.6585,
-   "model": {
-    "n1": 40,
-    "n2": 164,
-    "elo1": 1653,
-    "elo2": 1539,
-    "pElo": 0.6585,
-    "pRank": 0.6943,
-    "wElo": 1.0
-   },
-   "h2h": [
-    {
-     "year": "2024",
-     "tourney": "Brisbane International",
-     "surface": "Hartplatz",
-     "winner": "Anna Blinkova",
-     "winnerIsP1": false,
-     "score": "6:1 7:6",
-     "rnd": "1st Round"
-    },
-    {
-     "year": "2024",
-     "tourney": "Mutua Madrid Open",
-     "surface": "Sand",
-     "winner": "Sara Bejlek",
-     "winnerIsP1": true,
-     "score": "4:6 6:3 6:3",
-     "rnd": "1st Round"
-    }
-   ],
-   "analysis": "Sara Bejlek (Weltrangliste #40) trifft auf Anna Blinkova (#105). Die aktuelle Form spricht für Sara Bejlek: 3 Siege aus den letzten 5 Matches, Anna Blinkova holte nur 1. Auf Hartplatz liegt die Siegquote von Sara Bejlek zuletzt bei 48 % (11:12), Anna Blinkova kommt auf 46 % (46:54). Anna Blinkovas stärkster Belag ist eigentlich Rasen. Der direkte Vergleich der letzten 2 Duelle ist mit 1:1 ausgeglichen. Zuletzt (2024, Brisbane International) gewann Anna Blinkova mit 6:1 7:6. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Sara Bejlek mit 66 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T14:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Lanlana Tararudee",
-    "rank": 82,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 4,
-     "l": 6,
-     "pct": 0.4
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Jana Kovackova",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.7206,
-   "model": {
-    "n1": 12,
-    "n2": 0,
-    "pRank": 0.7206
-   },
-   "h2h": [],
-   "analysis": "Lanlana Tararudee (#82) trifft auf Jana Kovackova, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Lanlana Tararudee zuletzt bei 40 % (4:6). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lanlana Tararudee mit 72 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T14:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Alina Charaeva",
-    "rank": 117,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1414,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Sara Sorribes Tormo",
-    "rank": 212,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1549,
-    "onSurface": {
-     "w": 29,
-     "l": 19,
-     "pct": 0.604
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.531,
-   "model": {
-    "n1": 6,
-    "n2": 113,
-    "elo1": 1414,
-    "elo2": 1549,
-    "pElo": 0.3147,
-    "pRank": 0.6237,
-    "wElo": 0.3
-   },
-   "h2h": [],
-   "analysis": "Alina Charaeva (Weltrangliste #117) trifft auf Sara Sorribes Tormo (#212). Auf Sand liegt die Siegquote von Sara Sorribes Tormo zuletzt bei 60 % (29:19). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Alina Charaeva mit 53 % vorn. Bemerkenswert: Die Weltrangliste würde eher Alina Charaeva favorisieren – die Formkurve spricht aber dagegen.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T14:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Victoria Jimenez Kasintseva",
-    "rank": 119,
-    "form": [
-     "S",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1401,
-    "onSurface": {
-     "w": 2,
-     "l": 5,
-     "pct": 0.286
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Tamara Korpatsch",
-    "rank": 81,
-    "form": [
-     "S",
-     "S",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1535,
-    "onSurface": {
-     "w": 8,
-     "l": 16,
-     "pct": 0.333
-    },
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.3162,
-   "model": {
-    "n1": 22,
-    "n2": 78,
-    "elo1": 1401,
-    "elo2": 1535,
-    "pElo": 0.3162,
-    "pRank": 0.419,
-    "wElo": 1.0
-   },
-   "h2h": [],
-   "analysis": "Victoria Jimenez Kasintseva (Weltrangliste #119) trifft auf Tamara Korpatsch (#81). Auf Sand liegt die Siegquote von Victoria Jimenez Kasintseva zuletzt bei 29 % (2:5), Tamara Korpatsch kommt auf 33 % (8:16). Victoria Jimenez Kasintsevas stärkster Belag ist eigentlich Hartplatz. Tamara Korpatschs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Tamara Korpatsch mit 68 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T14:30:00+02:00",
-   "tour": "ATP",
-   "tournament": "Millennium Estoril Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Orlando Luz",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Nuno Borges",
-    "rank": 48,
-    "form": [
-     "S",
-     "N",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 29,
-     "l": 26,
-     "pct": 0.527
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.1974,
-   "model": {
-    "n1": 0,
-    "n2": 174,
-    "pRank": 0.1974
-   },
-   "h2h": [],
-   "analysis": "Orlando Luz – aktuell ohne Top-Ranking – trifft auf Nuno Borges (#48). Auf Sand liegt die Siegquote von Nuno Borges zuletzt bei 53 % (29:26). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Nuno Borges mit 80 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T14:30:00+02:00",
-   "tour": "ATP",
-   "tournament": "Millennium Estoril Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Damir Dzumhur",
-    "rank": 87,
-    "form": [
-     "S",
-     "S",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1595,
-    "onSurface": {
-     "w": 25,
-     "l": 21,
-     "pct": 0.543
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Hugo Gaston",
-    "rank": 109,
-    "form": [
-     "N",
-     "S",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1415,
-    "onSurface": {
-     "w": 17,
-     "l": 31,
-     "pct": 0.354
-    },
-    "favSurface": "Rasen"
-   },
-   "pP1": 0.7379,
-   "model": {
-    "n1": 84,
-    "n2": 105,
-    "elo1": 1595,
-    "elo2": 1415,
-    "pElo": 0.7379,
-    "pRank": 0.5478,
-    "wElo": 1.0
-   },
-   "h2h": [
-    {
-     "year": "2025",
-     "tourney": "Nordea Open",
-     "surface": "Sand",
-     "winner": "Damir Dzumhur",
-     "winnerIsP1": true,
-     "score": "4:6 6:2 6:2",
-     "rnd": "2nd Round"
-    }
-   ],
-   "analysis": "Damir Dzumhur (Weltrangliste #87) trifft auf Hugo Gaston (#109). Die aktuelle Form spricht für Damir Dzumhur: 4 Siege aus den letzten 5 Matches, Hugo Gaston holte nur 1. Auf Sand liegt die Siegquote von Damir Dzumhur zuletzt bei 54 % (25:21), Hugo Gaston kommt auf 35 % (17:31). Hugo Gastons stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2025, Nordea Open) gewann Damir Dzumhur mit 4:6 6:2 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Damir Dzumhur mit 74 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T14:30:00+02:00",
-   "tour": "ATP",
-   "tournament": "Millennium Estoril Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Kyrian Jacquet",
-    "rank": 134,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Daniel Merida",
-    "rank": 59,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.3324,
-   "model": {
-    "n1": 10,
-    "n2": 0,
-    "pRank": 0.3324
-   },
-   "h2h": [],
-   "analysis": "Kyrian Jacquet (Weltrangliste #134) trifft auf Daniel Merida (#59). Kyrian Jacquets stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Daniel Merida mit 67 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T15:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Elina Avanesyan",
-    "rank": 224,
-    "form": [
-     "N",
-     "S",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1569,
-    "onSurface": {
-     "w": 25,
-     "l": 18,
-     "pct": 0.581
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Arantxa Rus",
-    "rank": 119,
-    "form": [
-     "S",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1502,
-    "onSurface": {
-     "w": 18,
-     "l": 20,
-     "pct": 0.474
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.5957,
-   "model": {
-    "n1": 107,
-    "n2": 89,
-    "elo1": 1569,
-    "elo2": 1502,
-    "pElo": 0.5957,
-    "pRank": 0.3687,
-    "wElo": 1.0
-   },
-   "h2h": [],
-   "analysis": "Elina Avanesyan (Weltrangliste #224) trifft auf Arantxa Rus (#119). Auf Sand liegt die Siegquote von Elina Avanesyan zuletzt bei 58 % (25:18), Arantxa Rus kommt auf 47 % (18:20). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Elina Avanesyan mit 60 % vorn. Bemerkenswert: Die Weltrangliste würde eher Arantxa Rus favorisieren – die Formkurve spricht aber dagegen.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T15:30:00+02:00",
-   "tour": "ATP",
-   "tournament": "Generali Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Raphael Collignon",
-    "rank": 37,
-    "form": [
-     "S",
-     "S",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1694,
-    "onSurface": {
-     "w": 8,
-     "l": 7,
-     "pct": 0.533
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Daniel Altmaier",
-    "rank": 61,
-    "form": [
-     "S",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1562,
-    "onSurface": {
-     "w": 28,
-     "l": 42,
-     "pct": 0.4
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.682,
-   "model": {
-    "n1": 40,
-    "n2": 176,
-    "elo1": 1694,
-    "elo2": 1562,
-    "pElo": 0.682,
-    "pRank": 0.6047,
-    "wElo": 1.0
-   },
-   "h2h": [],
-   "analysis": "Raphael Collignon (Weltrangliste #37) trifft auf Daniel Altmaier (#61). Die aktuelle Form spricht für Raphael Collignon: 4 Siege aus den letzten 5 Matches, Daniel Altmaier holte nur 2. Auf Sand liegt die Siegquote von Raphael Collignon zuletzt bei 53 % (8:7), Daniel Altmaier kommt auf 40 % (28:42). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Raphael Collignon mit 68 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T15:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "1. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Barbora Krejcikova",
-    "rank": 26,
-    "form": [
-     "S",
-     "S",
-     "S",
-     "S",
-     "S"
-    ],
-    "elo": 1847,
-    "onSurface": {
-     "w": 71,
-     "l": 39,
-     "pct": 0.645
-    },
-    "favSurface": "Rasen"
-   },
-   "p2": {
-    "name": "Linda Fruhvirtova",
-    "rank": 149,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1475,
-    "onSurface": {
-     "w": 29,
-     "l": 31,
-     "pct": 0.483
-    },
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.8948,
-   "model": {
-    "n1": 168,
-    "n2": 85,
-    "elo1": 1847,
-    "elo2": 1475,
-    "pElo": 0.8948,
-    "pRank": 0.8152,
-    "wElo": 1.0
-   },
-   "h2h": [
-    {
-     "year": "2023",
-     "tourney": "Rothesay Classic ",
-     "surface": "Rasen",
-     "winner": "Barbora Krejcikova",
-     "winnerIsP1": true,
-     "score": "6:3 6:2",
-     "rnd": "Quarterfinals"
-    }
-   ],
-   "analysis": "Barbora Krejcikova (Weltrangliste #26) trifft auf Linda Fruhvirtova (#149). Die aktuelle Form spricht für Barbora Krejcikova: 5 Siege aus den letzten 5 Matches, Linda Fruhvirtova holte nur 0. Auf Hartplatz liegt die Siegquote von Barbora Krejcikova zuletzt bei 64 % (71:39), Linda Fruhvirtova kommt auf 48 % (29:31). Barbora Krejcikovas stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2023, Rothesay Classic ) gewann Barbora Krejcikova mit 6:3 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Barbora Krejcikova mit 89 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T16:00:00+02:00",
-   "tour": "ATP",
-   "tournament": "Millennium Estoril Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Roman Andres Burruchaga",
-    "rank": 60,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Stan Wawrinka",
-    "rank": 118,
-    "form": [
-     "S",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 17,
-     "l": 29,
-     "pct": 0.37
-    },
-    "favSurface": "Rasen"
-   },
-   "pP1": 0.6399,
-   "model": {
-    "n1": 0,
-    "n2": 124,
-    "pRank": 0.6399
-   },
-   "h2h": [],
-   "analysis": "Roman Andres Burruchaga (Weltrangliste #60) trifft auf Stan Wawrinka (#118). Auf Sand liegt die Siegquote von Stan Wawrinka zuletzt bei 37 % (17:29). Stan Wawrinkas stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Roman Andres Burruchaga mit 64 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T16:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Nastasja Schunk",
-    "rank": 288,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1379,
-    "onSurface": {
-     "w": 1,
-     "l": 4,
-     "pct": 0.2
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Oleksandra Oliynykova",
-    "rank": 45,
-    "form": [
-     "N",
-     "S",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1622,
-    "onSurface": {
-     "w": 9,
-     "l": 7,
-     "pct": 0.562
-    },
-    "favSurface": "Hartplatz"
-   },
-   "pP1": 0.1807,
-   "model": {
-    "n1": 7,
-    "n2": 22,
-    "elo1": 1379,
-    "elo2": 1622,
-    "pElo": 0.1985,
-    "pRank": 0.1711,
-    "wElo": 0.35
-   },
-   "h2h": [],
-   "analysis": "Nastasja Schunk (Weltrangliste #288) trifft auf Oleksandra Oliynykova (#45). Die aktuelle Form spricht für Oleksandra Oliynykova: 3 Siege aus den letzten 5 Matches, Nastasja Schunk holte nur 1. Auf Sand liegt die Siegquote von Nastasja Schunk zuletzt bei 20 % (1:4), Oleksandra Oliynykova kommt auf 56 % (9:7). Oleksandra Oliynykovas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Oleksandra Oliynykova mit 82 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T17:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Darya Astakhova",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Francesca Jones",
-    "rank": 113,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 6,
-     "l": 8,
-     "pct": 0.429
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.3374,
-   "model": {
-    "n1": 0,
-    "n2": 45,
-    "pRank": 0.3374
-   },
-   "h2h": [],
-   "analysis": "Darya Astakhova – aktuell ohne Top-Ranking – trifft auf Francesca Jones (#113). Auf Sand liegt die Siegquote von Francesca Jones zuletzt bei 43 % (6:8). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Francesca Jones mit 66 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T17:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Mina Hodzic",
-    "rank": 334,
-    "form": [
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Caroline Werner",
-    "rank": 271,
-    "form": [
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.4557,
-   "model": {
-    "n1": 1,
-    "n2": 3,
-    "pRank": 0.4557
-   },
-   "h2h": [],
-   "analysis": "Mina Hodzic (Weltrangliste #334) trifft auf Caroline Werner (#271). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Caroline Werner mit 54 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T17:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Tyra Caterina Grant",
-    "rank": 148,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Noemi Basiletti",
-    "rank": 427,
-    "form": [
-     "S",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.7111,
-   "model": {
-    "n1": 0,
-    "n2": 2,
-    "pRank": 0.7111
-   },
-   "h2h": [],
-   "analysis": "Tyra Caterina Grant (Weltrangliste #148) trifft auf Noemi Basiletti (#427). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Tyra Caterina Grant mit 71 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T17:30:00+02:00",
-   "tour": "ATP",
-   "tournament": "Millennium Estoril Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Jaime Faria",
-    "rank": 88,
-    "form": [
-     "N",
-     "S",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1573,
-    "onSurface": {
-     "w": 9,
-     "l": 11,
-     "pct": 0.45
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Botic Van De Zandschulp",
-    "rank": 55,
-    "form": [
-     "N",
-     "S",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1598,
-    "onSurface": {
-     "w": 31,
-     "l": 30,
-     "pct": 0.508
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.4647,
-   "model": {
-    "n1": 28,
-    "n2": 207,
-    "elo1": 1573,
-    "elo2": 1598,
-    "pElo": 0.4647,
-    "pRank": 0.4014,
-    "wElo": 1.0
-   },
-   "h2h": [],
-   "analysis": "Jaime Faria (Weltrangliste #88) trifft auf Botic Van De Zandschulp (#55). Auf Sand liegt die Siegquote von Jaime Faria zuletzt bei 45 % (9:11), Botic Van De Zandschulp kommt auf 51 % (31:30). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Botic Van De Zandschulp mit 54 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T17:30:00+02:00",
+   "start": "2026-07-22T11:00:00+02:00",
    "tour": "WTA",
    "tournament": "MSC Hamburg Ladies Open",
    "round": "1. Runde",
@@ -2203,14 +469,32 @@
    "timeTBD": false
   },
   {
-   "start": "2026-07-21T18:30:00+02:00",
+   "start": "2026-07-22T11:00:00+02:00",
    "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
+   "tournament": "MSC Hamburg Ladies Open",
    "round": "1. Runde",
    "surface": "Sand",
    "p1": {
-    "name": "Lucia Bronzetti",
-    "rank": 120,
+    "name": "Mayar Sherif",
+    "rank": 73,
+    "form": [
+     "S",
+     "S",
+     "S",
+     "S",
+     "S"
+    ],
+    "elo": 1593,
+    "onSurface": {
+     "w": 31,
+     "l": 22,
+     "pct": 0.585
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Simona Waltert",
+    "rank": 91,
     "form": [
      "N",
      "N",
@@ -2218,127 +502,346 @@
      "N",
      "N"
     ],
-    "elo": null,
+    "elo": 1459,
     "onSurface": {
-     "w": 18,
-     "l": 24,
+     "w": 9,
+     "l": 12,
      "pct": 0.429
     },
     "favSurface": "Sand"
    },
-   "p2": {
-    "name": "Ilary Pistola",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.6511,
+   "pP1": 0.6833,
    "model": {
-    "n1": 151,
-    "n2": 0,
-    "pRank": 0.6511
+    "n1": 102,
+    "n2": 31,
+    "elo1": 1593,
+    "elo2": 1459,
+    "pElo": 0.6833,
+    "pRank": 0.5467,
+    "wElo": 1.0
    },
-   "h2h": [],
-   "analysis": "Lucia Bronzetti (#120) trifft auf Ilary Pistola, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Lucia Bronzetti zuletzt bei 43 % (18:24). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lucia Bronzetti mit 65 % vorn.",
+   "h2h": [
+    {
+     "year": "2022",
+     "tourney": "Parma Ladies Open",
+     "surface": "Sand",
+     "winner": "Mayar Sherif",
+     "winnerIsP1": true,
+     "score": "6:3 7:6",
+     "rnd": "2nd Round"
+    }
+   ],
+   "analysis": "Mayar Sherif (Weltrangliste #73) trifft auf Simona Waltert (#91). Die aktuelle Form spricht für Mayar Sherif: 5 Siege aus den letzten 5 Matches, Simona Waltert holte nur 0. Auf Sand liegt die Siegquote von Mayar Sherif zuletzt bei 58 % (31:22), Simona Waltert kommt auf 43 % (9:12). Das bisher einzige Duell (2022, Parma Ladies Open) gewann Mayar Sherif mit 6:3 7:6. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Mayar Sherif mit 68 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
   {
-   "start": "2026-07-21T18:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
-   "round": "1. Runde",
+   "start": "2026-07-22T12:30:00+02:00",
+   "tour": "ATP",
+   "tournament": "Generali Open",
+   "round": "2. Runde",
    "surface": "Sand",
    "p1": {
-    "name": "Anastasia Tikhonova",
-    "rank": 1178,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Alice Rame",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.2112,
-   "model": {
-    "n1": 6,
-    "n2": 0,
-    "pRank": 0.2112
-   },
-   "h2h": [],
-   "analysis": "Anastasia Tikhonova (#1178) trifft auf Alice Rame, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Alice Rame mit 79 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": false
-  },
-  {
-   "start": "2026-07-21T18:30:00+02:00",
-   "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Alevtina Ibragimova",
-    "rank": 275,
+    "name": "Mariano Navone",
+    "rank": 47,
     "form": [
      "S",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Tamara Zidansek",
-    "rank": 134,
-    "form": [
      "N",
-     "S",
-     "S",
-     "S",
+     "N",
+     "N",
      "N"
     ],
     "elo": null,
     "onSurface": {
-     "w": 11,
-     "l": 12,
-     "pct": 0.478
+     "w": 41,
+     "l": 30,
+     "pct": 0.577
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.3518,
+   "p2": {
+    "name": "Jan-Lennard Struff",
+    "rank": 41,
+    "form": [],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.471,
    "model": {
-    "n1": 2,
-    "n2": 61,
-    "pRank": 0.3518
+    "n1": 111,
+    "n2": 0,
+    "pRank": 0.471
    },
    "h2h": [],
-   "analysis": "Alevtina Ibragimova (Weltrangliste #275) trifft auf Tamara Zidansek (#134). Auf Sand liegt die Siegquote von Tamara Zidansek zuletzt bei 48 % (11:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Tamara Zidansek mit 65 % vorn.",
+   "analysis": "Mariano Navone (Weltrangliste #47) trifft auf Jan-Lennard Struff (#41). Auf Sand liegt die Siegquote von Mariano Navone zuletzt bei 58 % (41:30). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Jan-Lennard Struff mit 53 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
   {
-   "start": "2026-07-21T20:00:00+02:00",
+   "start": "2026-07-22T12:30:00+02:00",
+   "tour": "ATP",
+   "tournament": "Generali Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Yannick Hanfmann",
+    "rank": 52,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1642,
+    "onSurface": {
+     "w": 46,
+     "l": 41,
+     "pct": 0.529
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Marco Trungelliti",
+    "rank": 95,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1490,
+    "onSurface": {
+     "w": 10,
+     "l": 12,
+     "pct": 0.455
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.7055,
+   "model": {
+    "n1": 150,
+    "n2": 27,
+    "elo1": 1642,
+    "elo2": 1490,
+    "pElo": 0.7055,
+    "pRank": 0.6253,
+    "wElo": 1.0
+   },
+   "h2h": [],
+   "analysis": "Yannick Hanfmann (Weltrangliste #52) trifft auf Marco Trungelliti (#95). Auf Sand liegt die Siegquote von Yannick Hanfmann zuletzt bei 53 % (46:41), Marco Trungelliti kommt auf 46 % (10:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Yannick Hanfmann mit 71 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T12:30:00+02:00",
+   "tour": "ATP",
+   "tournament": "Generali Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Ignacio Buse",
+    "rank": 35,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": {
+     "w": 15,
+     "l": 12,
+     "pct": 0.556
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Kilian Feldbausch",
+    "rank": 262,
+    "form": [
+     "N"
+    ],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.847,
+   "model": {
+    "n1": 35,
+    "n2": 1,
+    "pRank": 0.847
+   },
+   "h2h": [],
+   "analysis": "Ignacio Buse (Weltrangliste #35) trifft auf Kilian Feldbausch (#262). Auf Sand liegt die Siegquote von Ignacio Buse zuletzt bei 56 % (15:12). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Ignacio Buse mit 85 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T12:30:00+02:00",
    "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
+   "tournament": "Livesport Prague Open",
+   "round": "2. Runde",
+   "surface": "Hartplatz",
+   "p1": {
+    "name": "Carol Young Suh Lee",
+    "rank": null,
+    "form": [],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Marie Bouzkova",
+    "rank": 21,
+    "form": [
+     "S",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": {
+     "w": 78,
+     "l": 60,
+     "pct": 0.565
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.1086,
+   "model": {
+    "n1": 0,
+    "n2": 213,
+    "pRank": 0.1086
+   },
+   "h2h": [],
+   "analysis": "Carol Young Suh Lee – aktuell ohne Top-Ranking – trifft auf Marie Bouzkova (#21). Auf Hartplatz liegt die Siegquote von Marie Bouzkova zuletzt bei 56 % (78:60). Marie Bouzkovas stärkster Belag ist eigentlich Sand. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Marie Bouzkova mit 89 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T12:30:00+02:00",
+   "tour": "WTA",
+   "tournament": "MSC Hamburg Ladies Open",
    "round": "1. Runde",
    "surface": "Sand",
    "p1": {
-    "name": "Clara Burel",
-    "rank": 630,
+    "name": "Paula Badosa",
+    "rank": 93,
+    "form": [
+     "S",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1685,
+    "onSurface": {
+     "w": 34,
+     "l": 21,
+     "pct": 0.618
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Katarzyna Kawa",
+    "rank": 131,
+    "form": [
+     "S",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1537,
+    "onSurface": {
+     "w": 7,
+     "l": 5,
+     "pct": 0.583
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.701,
+   "model": {
+    "n1": 190,
+    "n2": 23,
+    "elo1": 1685,
+    "elo2": 1537,
+    "pElo": 0.701,
+    "pRank": 0.5723,
+    "wElo": 1.0
+   },
+   "h2h": [],
+   "analysis": "Paula Badosa (Weltrangliste #93) trifft auf Katarzyna Kawa (#131). Auf Sand liegt die Siegquote von Paula Badosa zuletzt bei 62 % (34:21), Katarzyna Kawa kommt auf 58 % (7:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Paula Badosa mit 70 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T12:30:00+02:00",
+   "tour": "WTA",
+   "tournament": "MSC Hamburg Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Sinja Kraus",
+    "rank": 80,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1331,
+    "onSurface": {
+     "w": 2,
+     "l": 6,
+     "pct": 0.25
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Alina Charaeva",
+    "rank": 117,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1414,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.5209,
+   "model": {
+    "n1": 18,
+    "n2": 6,
+    "elo1": 1331,
+    "elo2": 1414,
+    "pElo": 0.3828,
+    "pRank": 0.5801,
+    "wElo": 0.3
+   },
+   "h2h": [],
+   "analysis": "Sinja Kraus (Weltrangliste #80) trifft auf Alina Charaeva (#117). Auf Sand liegt die Siegquote von Sinja Kraus zuletzt bei 25 % (2:6). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Sinja Kraus mit 52 % vorn. Bemerkenswert: Die Weltrangliste würde eher Sinja Kraus favorisieren – die Formkurve spricht aber dagegen.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T13:00:00+02:00",
+   "tour": "ATP",
+   "tournament": "Millennium Estoril Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Titouan Droguet",
+    "rank": 114,
     "form": [
      "N",
      "N",
@@ -2346,52 +849,142 @@
      "S",
      "N"
     ],
-    "elo": null,
+    "elo": 1583,
     "onSurface": {
-     "w": 17,
-     "l": 17,
+     "w": 6,
+     "l": 6,
      "pct": 0.5
     },
     "favSurface": "Hartplatz"
    },
    "p2": {
-    "name": "Anastasia Abbagnato",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
+    "name": "Hugo Gaston",
+    "rank": 109,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1415,
+    "onSurface": {
+     "w": 17,
+     "l": 31,
+     "pct": 0.354
+    },
+    "favSurface": "Rasen"
    },
-   "pP1": 0.3131,
+   "pP1": 0.7244,
    "model": {
-    "n1": 86,
-    "n2": 0,
-    "pRank": 0.3131
+    "n1": 20,
+    "n2": 105,
+    "elo1": 1583,
+    "elo2": 1415,
+    "pElo": 0.7244,
+    "pRank": 0.4905,
+    "wElo": 1.0
    },
-   "h2h": [],
-   "analysis": "Clara Burel (#630) trifft auf Anastasia Abbagnato, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Clara Burel zuletzt bei 50 % (17:17). Clara Burels stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Anastasia Abbagnato mit 69 % vorn.",
+   "h2h": [
+    {
+     "year": "2024",
+     "tourney": "Open de Moselle",
+     "surface": "Hartplatz",
+     "winner": "Hugo Gaston",
+     "winnerIsP1": false,
+     "score": "7:6 4:6 6:3",
+     "rnd": "1st Round"
+    }
+   ],
+   "analysis": "Titouan Droguet (Weltrangliste #114) trifft auf Hugo Gaston (#109). Auf Sand liegt die Siegquote von Titouan Droguet zuletzt bei 50 % (6:6), Hugo Gaston kommt auf 35 % (17:31). Titouan Droguets stärkster Belag ist eigentlich Hartplatz. Hugo Gastons stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2024, Open de Moselle) gewann Hugo Gaston mit 7:6 4:6 6:3. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Titouan Droguet mit 72 % vorn. Bemerkenswert: Die Weltrangliste würde eher Hugo Gaston favorisieren – die Formkurve spricht aber dagegen.",
    "unconfirmed": false,
    "timeTBD": false
   },
   {
-   "start": "2026-07-21T20:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
-   "round": "1. Runde",
+   "start": "2026-07-22T14:00:00+02:00",
+   "tour": "ATP",
+   "tournament": "Generali Open",
+   "round": "2. Runde",
    "surface": "Sand",
    "p1": {
-    "name": "Caijsa Hennemann",
-    "rank": 292,
+    "name": "Daniel Altmaier",
+    "rank": 61,
     "form": [
+     "S",
+     "N",
+     "N",
+     "S",
      "N"
     ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
+    "elo": 1542,
+    "onSurface": {
+     "w": 28,
+     "l": 42,
+     "pct": 0.4
+    },
+    "favSurface": "Sand"
    },
    "p2": {
-    "name": "Miriam Bulgaru",
-    "rank": 248,
+    "name": "Alex Molcan",
+    "rank": 81,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1678,
+    "onSurface": {
+     "w": 31,
+     "l": 19,
+     "pct": 0.62
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.3136,
+   "model": {
+    "n1": 176,
+    "n2": 89,
+    "elo1": 1542,
+    "elo2": 1678,
+    "pElo": 0.3136,
+    "pRank": 0.56,
+    "wElo": 1.0
+   },
+   "h2h": [
+    {
+     "year": "2026",
+     "tourney": "Wimbledon",
+     "surface": "Rasen",
+     "winner": "Alex Molcan",
+     "winnerIsP1": false,
+     "score": "6:4 3:6 7:5 6:2",
+     "rnd": "1st Round"
+    },
+    {
+     "year": "2026",
+     "tourney": "BMW Open",
+     "surface": "Sand",
+     "winner": "Alex Molcan",
+     "winnerIsP1": false,
+     "score": "6:4 7:6",
+     "rnd": "2nd Round"
+    }
+   ],
+   "analysis": "Daniel Altmaier (Weltrangliste #61) trifft auf Alex Molcan (#81). Auf Sand liegt die Siegquote von Daniel Altmaier zuletzt bei 40 % (28:42), Alex Molcan kommt auf 62 % (31:19). Den direkten Vergleich führt Alex Molcan mit 2:0 aus den letzten 2 Duellen an. Zuletzt (2026, Wimbledon) gewann Alex Molcan mit 6:4 3:6 7:5 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Alex Molcan mit 69 % vorn. Bemerkenswert: Die Weltrangliste würde eher Daniel Altmaier favorisieren – die Formkurve spricht aber dagegen.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T14:00:00+02:00",
+   "tour": "ATP",
+   "tournament": "Generali Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Jurij Rodionov",
+    "rank": 145,
     "form": [
      "S",
      "N",
@@ -2401,25 +994,145 @@
     ],
     "elo": null,
     "onSurface": {
-     "w": 1,
-     "l": 5,
-     "pct": 0.167
+     "w": 4,
+     "l": 9,
+     "pct": 0.308
     },
-    "favSurface": "Sand"
+    "favSurface": "Hartplatz"
    },
-   "pP1": 0.4653,
+   "p2": {
+    "name": "Tomas Martin Etcheverry",
+    "rank": 31,
+    "form": [],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.2123,
    "model": {
-    "n1": 1,
-    "n2": 9,
-    "pRank": 0.4653
+    "n1": 24,
+    "n2": 0,
+    "pRank": 0.2123
    },
    "h2h": [],
-   "analysis": "Caijsa Hennemann (Weltrangliste #292) trifft auf Miriam Bulgaru (#248). Auf Sand liegt die Siegquote von Miriam Bulgaru zuletzt bei 17 % (1:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Miriam Bulgaru mit 53 % vorn.",
+   "analysis": "Jurij Rodionov (Weltrangliste #145) trifft auf Tomas Martin Etcheverry (#31). Auf Sand liegt die Siegquote von Jurij Rodionov zuletzt bei 31 % (4:9). Jurij Rodionovs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Tomas Martin Etcheverry mit 79 % vorn.",
    "unconfirmed": false,
    "timeTBD": false
   },
   {
-   "start": "2026-07-22T06:00:00+02:00",
+   "start": "2026-07-22T14:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Livesport Prague Open",
+   "round": "2. Runde",
+   "surface": "Hartplatz",
+   "p1": {
+    "name": "Tereza Valentova",
+    "rank": 63,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1651,
+    "onSurface": {
+     "w": 15,
+     "l": 10,
+     "pct": 0.6
+    },
+    "favSurface": "Hartplatz"
+   },
+   "p2": {
+    "name": "Maya Joint",
+    "rank": 77,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1567,
+    "onSurface": {
+     "w": 24,
+     "l": 24,
+     "pct": 0.5
+    },
+    "favSurface": "Rasen"
+   },
+   "pP1": 0.6188,
+   "model": {
+    "n1": 36,
+    "n2": 70,
+    "elo1": 1651,
+    "elo2": 1567,
+    "pElo": 0.6188,
+    "pRank": 0.5425,
+    "wElo": 1.0
+   },
+   "h2h": [
+    {
+     "year": "2026",
+     "tourney": "Australian Open",
+     "surface": "Hartplatz",
+     "winner": "Tereza Valentova",
+     "winnerIsP1": true,
+     "score": "6:4 6:4",
+     "rnd": "1st Round"
+    }
+   ],
+   "analysis": "Tereza Valentova (Weltrangliste #63) trifft auf Maya Joint (#77). Auf Hartplatz liegt die Siegquote von Tereza Valentova zuletzt bei 60 % (15:10), Maya Joint kommt auf 50 % (24:24). Maya Joints stärkster Belag ist eigentlich Rasen. Das bisher einzige Duell (2026, Australian Open) gewann Tereza Valentova mit 6:4 6:4. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Tereza Valentova mit 62 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T14:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "MSC Hamburg Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Julia Stusek",
+    "rank": null,
+    "form": [
+     "N"
+    ],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Tamara Korpatsch",
+    "rank": 81,
+    "form": [
+     "S",
+     "S",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": {
+     "w": 8,
+     "l": 16,
+     "pct": 0.333
+    },
+    "favSurface": "Hartplatz"
+   },
+   "pP1": 0.2773,
+   "model": {
+    "n1": 1,
+    "n2": 78,
+    "pRank": 0.2773
+   },
+   "h2h": [],
+   "analysis": "Julia Stusek – aktuell ohne Top-Ranking – trifft auf Tamara Korpatsch (#81). Auf Sand liegt die Siegquote von Tamara Korpatsch zuletzt bei 33 % (8:16). Tamara Korpatschs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Tamara Korpatsch mit 72 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T15:30:00+02:00",
    "tour": "ATP",
    "tournament": "Generali Open",
    "round": "2. Runde",
@@ -2473,17 +1186,152 @@
    "h2h": [],
    "analysis": "Facundo Diaz Acosta (Weltrangliste #108) trifft auf Alexander Bublik (#11). Die aktuelle Form spricht für Alexander Bublik: 3 Siege aus den letzten 5 Matches, Facundo Diaz Acosta holte nur 1. Auf Sand liegt die Siegquote von Facundo Diaz Acosta zuletzt bei 50 % (17:17), Alexander Bublik kommt auf 52 % (31:29). Alexander Bubliks stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Alexander Bublik mit 80 % vorn.",
    "unconfirmed": false,
-   "timeTBD": true
+   "timeTBD": false
   },
   {
-   "start": "2026-07-22T06:00:00+02:00",
+   "start": "2026-07-22T15:30:00+02:00",
    "tour": "ATP",
-   "tournament": "Generali Open",
+   "tournament": "Millennium Estoril Open",
    "round": "2. Runde",
    "surface": "Sand",
    "p1": {
-    "name": "Jurij Rodionov",
-    "rank": 145,
+    "name": "Roman Andres Burruchaga",
+    "rank": 60,
+    "form": [],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Nuno Borges",
+    "rank": 48,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": {
+     "w": 29,
+     "l": 26,
+     "pct": 0.527
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.4527,
+   "model": {
+    "n1": 0,
+    "n2": 174,
+    "pRank": 0.4527
+   },
+   "h2h": [],
+   "analysis": "Roman Andres Burruchaga (Weltrangliste #60) trifft auf Nuno Borges (#48). Auf Sand liegt die Siegquote von Nuno Borges zuletzt bei 53 % (29:26). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Nuno Borges mit 55 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T15:30:00+02:00",
+   "tour": "WTA",
+   "tournament": "Livesport Prague Open",
+   "round": "2. Runde",
+   "surface": "Hartplatz",
+   "p1": {
+    "name": "Oceane Dodin",
+    "rank": 686,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1447,
+    "onSurface": {
+     "w": 6,
+     "l": 13,
+     "pct": 0.316
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Dominika Salkova",
+    "rank": 127,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1538,
+    "onSurface": {
+     "w": 6,
+     "l": 4,
+     "pct": 0.6
+    },
+    "favSurface": "Hartplatz"
+   },
+   "pP1": 0.3271,
+   "model": {
+    "n1": 36,
+    "n2": 15,
+    "elo1": 1447,
+    "elo2": 1538,
+    "pElo": 0.372,
+    "pRank": 0.1925,
+    "wElo": 0.75
+   },
+   "h2h": [],
+   "analysis": "Oceane Dodin (Weltrangliste #686) trifft auf Dominika Salkova (#127). Die aktuelle Form spricht für Dominika Salkova: 2 Siege aus den letzten 5 Matches, Oceane Dodin holte nur 0. Auf Hartplatz liegt die Siegquote von Oceane Dodin zuletzt bei 32 % (6:13), Dominika Salkova kommt auf 60 % (6:4). Oceane Dodins stärkster Belag ist eigentlich Sand. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Dominika Salkova mit 67 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T17:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Palermo Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Lola Radivojevic",
+    "rank": null,
+    "form": [],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Jennifer Ruggeri",
+    "rank": 265,
+    "form": [
+     "N"
+    ],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.5124,
+   "model": {
+    "n1": 0,
+    "n2": 1,
+    "pRank": 0.5124
+   },
+   "h2h": [],
+   "analysis": "Lola Radivojevic – aktuell ohne Top-Ranking – trifft auf Jennifer Ruggeri (#265). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lola Radivojevic mit 51 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T17:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "MSC Hamburg Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Noma Noha Akugue",
+    "rank": 144,
     "form": [
      "S",
      "N",
@@ -2491,35 +1339,421 @@
      "N",
      "N"
     ],
-    "elo": null,
+    "elo": 1485,
     "onSurface": {
-     "w": 4,
-     "l": 9,
-     "pct": 0.308
+     "w": 5,
+     "l": 5,
+     "pct": 0.5
     },
-    "favSurface": "Hartplatz"
+    "favSurface": "Sand"
    },
    "p2": {
-    "name": "Tomas Martin Etcheverry",
-    "rank": 31,
+    "name": "Anna Bondar",
+    "rank": 97,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1618,
+    "onSurface": {
+     "w": 35,
+     "l": 28,
+     "pct": 0.556
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.362,
+   "model": {
+    "n1": 11,
+    "n2": 133,
+    "elo1": 1485,
+    "elo2": 1618,
+    "pElo": 0.3171,
+    "pRank": 0.4168,
+    "wElo": 0.55
+   },
+   "h2h": [
+    {
+     "year": "2025",
+     "tourney": "Hamburg Open",
+     "surface": "Sand",
+     "winner": "Anna Bondar",
+     "winnerIsP1": false,
+     "score": "6:4 3:6 7:6",
+     "rnd": "1st Round"
+    }
+   ],
+   "analysis": "Noma Noha Akugue (Weltrangliste #144) trifft auf Anna Bondar (#97). Auf Sand liegt die Siegquote von Noma Noha Akugue zuletzt bei 50 % (5:5), Anna Bondar kommt auf 56 % (35:28). Das bisher einzige Duell (2025, Hamburg Open) gewann Anna Bondar mit 6:4 3:6 7:6. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Anna Bondar mit 64 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T18:00:00+02:00",
+   "tour": "ATP",
+   "tournament": "Millennium Estoril Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Tiago Torres",
+    "rank": null,
     "form": [],
     "elo": null,
     "onSurface": null,
     "favSurface": null
    },
-   "pP1": 0.2123,
+   "p2": {
+    "name": "Alejandro Tabilo",
+    "rank": 30,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": {
+     "w": 40,
+     "l": 32,
+     "pct": 0.556
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.1416,
    "model": {
-    "n1": 24,
-    "n2": 0,
-    "pRank": 0.2123
+    "n1": 0,
+    "n2": 150,
+    "pRank": 0.1416
    },
    "h2h": [],
-   "analysis": "Jurij Rodionov (Weltrangliste #145) trifft auf Tomas Martin Etcheverry (#31). Auf Sand liegt die Siegquote von Jurij Rodionov zuletzt bei 31 % (4:9). Jurij Rodionovs stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Tomas Martin Etcheverry mit 79 % vorn.",
+   "analysis": "Tiago Torres – aktuell ohne Top-Ranking – trifft auf Alejandro Tabilo (#30). Auf Sand liegt die Siegquote von Alejandro Tabilo zuletzt bei 56 % (40:32). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Alejandro Tabilo mit 86 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T18:30:00+02:00",
+   "tour": "WTA",
+   "tournament": "Palermo Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Federica Urgesi",
+    "rank": 410,
+    "form": [
+     "N",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Clara Burel",
+    "rank": 630,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": {
+     "w": 17,
+     "l": 17,
+     "pct": 0.5
+    },
+    "favSurface": "Hartplatz"
+   },
+   "pP1": 0.5903,
+   "model": {
+    "n1": 2,
+    "n2": 86,
+    "pRank": 0.5903
+   },
+   "h2h": [],
+   "analysis": "Federica Urgesi (Weltrangliste #410) trifft auf Clara Burel (#630). Auf Sand liegt die Siegquote von Clara Burel zuletzt bei 50 % (17:17). Clara Burels stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Federica Urgesi mit 59 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T18:30:00+02:00",
+   "tour": "WTA",
+   "tournament": "Palermo Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Yasmine Kabbaj",
+    "rank": 334,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1481,
+    "onSurface": {
+     "w": 2,
+     "l": 3,
+     "pct": 0.4
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Ekaterine Gorgodze",
+    "rank": 164,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1372,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.4279,
+   "model": {
+    "n1": 5,
+    "n2": 7,
+    "elo1": 1481,
+    "elo2": 1372,
+    "pElo": 0.6518,
+    "pRank": 0.3533,
+    "wElo": 0.25
+   },
+   "h2h": [],
+   "analysis": "Yasmine Kabbaj (Weltrangliste #334) trifft auf Ekaterine Gorgodze (#164). Die aktuelle Form spricht für Yasmine Kabbaj: 2 Siege aus den letzten 5 Matches, Ekaterine Gorgodze holte nur 0. Auf Sand liegt die Siegquote von Yasmine Kabbaj zuletzt bei 40 % (2:3). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Ekaterine Gorgodze mit 57 % vorn. Bemerkenswert: Die Weltrangliste würde eher Ekaterine Gorgodze favorisieren – die Formkurve spricht aber dagegen.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T19:30:00+02:00",
+   "tour": "ATP",
+   "tournament": "Millennium Estoril Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Alexander Blockx",
+    "rank": 38,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1735,
+    "onSurface": {
+     "w": 11,
+     "l": 6,
+     "pct": 0.647
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Kyrian Jacquet",
+    "rank": 134,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1406,
+    "onSurface": null,
+    "favSurface": "Hartplatz"
+   },
+   "pP1": 0.807,
+   "model": {
+    "n1": 27,
+    "n2": 10,
+    "elo1": 1735,
+    "elo2": 1406,
+    "pElo": 0.8691,
+    "pRank": 0.7448,
+    "wElo": 0.5
+   },
+   "h2h": [],
+   "analysis": "Alexander Blockx (Weltrangliste #38) trifft auf Kyrian Jacquet (#134). Auf Sand liegt die Siegquote von Alexander Blockx zuletzt bei 65 % (11:6). Kyrian Jacquets stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Alexander Blockx mit 81 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-22T20:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Palermo Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Erika Andreeva",
+    "rank": null,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1355,
+    "onSurface": {
+     "w": 3,
+     "l": 11,
+     "pct": 0.214
+    },
+    "favSurface": "Hartplatz"
+   },
+   "p2": {
+    "name": "Fiona Ferro",
+    "rank": 181,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1389,
+    "onSurface": {
+     "w": 4,
+     "l": 12,
+     "pct": 0.25
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.4522,
+   "model": {
+    "n1": 49,
+    "n2": 22,
+    "elo1": 1355,
+    "elo2": 1389,
+    "pElo": 0.4522,
+    "pRank": 0.4318,
+    "wElo": 1.0
+   },
+   "h2h": [
+    {
+     "year": "2024",
+     "tourney": "Internationaux de Strasbourg",
+     "surface": "Sand",
+     "winner": "Fiona Ferro",
+     "winnerIsP1": false,
+     "score": "6:2 6:2",
+     "rnd": "1st Round"
+    }
+   ],
+   "analysis": "Erika Andreeva – aktuell ohne Top-Ranking – trifft auf Fiona Ferro (#181). Auf Sand liegt die Siegquote von Erika Andreeva zuletzt bei 21 % (3:11), Fiona Ferro kommt auf 25 % (4:12). Erika Andreevas stärkster Belag ist eigentlich Hartplatz. Das bisher einzige Duell (2024, Internationaux de Strasbourg) gewann Fiona Ferro mit 6:2 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Fiona Ferro mit 55 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": false
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "ATP",
+   "tournament": "Millennium Estoril Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Gonzalo Bueno",
+    "rank": null,
+    "form": [],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Jaime Faria",
+    "rank": 88,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": {
+     "w": 9,
+     "l": 11,
+     "pct": 0.45
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.2916,
+   "model": {
+    "n1": 0,
+    "n2": 28,
+    "pRank": 0.2916
+   },
+   "h2h": [],
+   "analysis": "Gonzalo Bueno – aktuell ohne Top-Ranking – trifft auf Jaime Faria (#88). Auf Sand liegt die Siegquote von Jaime Faria zuletzt bei 45 % (9:11). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Jaime Faria mit 71 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
   {
-   "start": "2026-07-22T06:00:00+02:00",
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "ATP",
+   "tournament": "Millennium Estoril Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Pablo Carreno Busta",
+    "rank": 65,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1620,
+    "onSurface": {
+     "w": 18,
+     "l": 19,
+     "pct": 0.486
+    },
+    "favSurface": "Hartplatz"
+   },
+   "p2": {
+    "name": "Luca Van Assche",
+    "rank": 78,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1501,
+    "onSurface": {
+     "w": 12,
+     "l": 16,
+     "pct": 0.429
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.6644,
+   "model": {
+    "n1": 110,
+    "n2": 62,
+    "elo1": 1620,
+    "elo2": 1501,
+    "pElo": 0.6644,
+    "pRank": 0.5387,
+    "wElo": 1.0
+   },
+   "h2h": [],
+   "analysis": "Pablo Carreno Busta (Weltrangliste #65) trifft auf Luca Van Assche (#78). Auf Sand liegt die Siegquote von Pablo Carreno Busta zuletzt bei 49 % (18:19), Luca Van Assche kommt auf 43 % (12:16). Pablo Carreno Bustas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Pablo Carreno Busta mit 66 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "Millennium Estoril Open",
    "round": "2. Runde",
@@ -2613,412 +1847,128 @@
    "timeTBD": true
   },
   {
-   "start": "2026-07-22T06:00:00+02:00",
+   "start": "2026-07-23T06:00:00+02:00",
    "tour": "ATP",
    "tournament": "Millennium Estoril Open",
    "round": "2. Runde",
    "surface": "Sand",
    "p1": {
-    "name": "Tiago Torres",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Alejandro Tabilo",
-    "rank": 30,
+    "name": "Timofey Skatov",
+    "rank": 163,
     "form": [
      "N",
      "N",
      "N",
-     "S",
+     "N",
      "N"
     ],
-    "elo": null,
+    "elo": 1380,
     "onSurface": {
-     "w": 40,
-     "l": 32,
-     "pct": 0.556
+     "w": 2,
+     "l": 5,
+     "pct": 0.286
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.1416,
+   "p2": {
+    "name": "Andrey Rublev",
+    "rank": 14,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "S"
+    ],
+    "elo": 1802,
+    "onSurface": {
+     "w": 69,
+     "l": 28,
+     "pct": 0.711
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.0928,
    "model": {
-    "n1": 0,
-    "n2": 150,
-    "pRank": 0.1416
+    "n1": 12,
+    "n2": 318,
+    "elo1": 1380,
+    "elo2": 1802,
+    "pElo": 0.0811,
+    "pRank": 0.1104,
+    "wElo": 0.6
    },
    "h2h": [],
-   "analysis": "Tiago Torres – aktuell ohne Top-Ranking – trifft auf Alejandro Tabilo (#30). Auf Sand liegt die Siegquote von Alejandro Tabilo zuletzt bei 56 % (40:32). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Alejandro Tabilo mit 86 % vorn.",
+   "analysis": "Timofey Skatov (Weltrangliste #163) trifft auf Andrey Rublev (#14). Die aktuelle Form spricht für Andrey Rublev: 4 Siege aus den letzten 5 Matches, Timofey Skatov holte nur 0. Auf Sand liegt die Siegquote von Timofey Skatov zuletzt bei 29 % (2:5), Andrey Rublev kommt auf 71 % (69:28). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Andrey Rublev mit 91 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
   {
-   "start": "2026-07-22T06:00:00+02:00",
+   "start": "2026-07-23T06:00:00+02:00",
    "tour": "WTA",
    "tournament": "Livesport Prague Open",
    "round": "2. Runde",
    "surface": "Hartplatz",
    "p1": {
-    "name": "Carol Young Suh Lee",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Marie Bouzkova",
-    "rank": 21,
-    "form": [
-     "S",
-     "S",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": null,
-    "onSurface": {
-     "w": 78,
-     "l": 60,
-     "pct": 0.565
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.1086,
-   "model": {
-    "n1": 0,
-    "n2": 213,
-    "pRank": 0.1086
-   },
-   "h2h": [],
-   "analysis": "Carol Young Suh Lee – aktuell ohne Top-Ranking – trifft auf Marie Bouzkova (#21). Auf Hartplatz liegt die Siegquote von Marie Bouzkova zuletzt bei 56 % (78:60). Marie Bouzkovas stärkster Belag ist eigentlich Sand. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Marie Bouzkova mit 89 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": true
-  },
-  {
-   "start": "2026-07-22T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "2. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Oceane Dodin",
-    "rank": 686,
+    "name": "Lanlana Tararudee",
+    "rank": 82,
     "form": [
      "N",
      "N",
      "N",
-     "N",
+     "S",
      "N"
     ],
-    "elo": 1447,
+    "elo": 1530,
     "onSurface": {
-     "w": 6,
-     "l": 13,
-     "pct": 0.316
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Dominika Salkova",
-    "rank": 127,
-    "form": [
-     "S",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1538,
-    "onSurface": {
-     "w": 6,
-     "l": 4,
-     "pct": 0.6
+     "w": 4,
+     "l": 6,
+     "pct": 0.4
     },
     "favSurface": "Hartplatz"
    },
-   "pP1": 0.3271,
-   "model": {
-    "n1": 36,
-    "n2": 15,
-    "elo1": 1447,
-    "elo2": 1538,
-    "pElo": 0.372,
-    "pRank": 0.1925,
-    "wElo": 0.75
-   },
-   "h2h": [],
-   "analysis": "Oceane Dodin (Weltrangliste #686) trifft auf Dominika Salkova (#127). Die aktuelle Form spricht für Dominika Salkova: 2 Siege aus den letzten 5 Matches, Oceane Dodin holte nur 0. Auf Hartplatz liegt die Siegquote von Oceane Dodin zuletzt bei 32 % (6:13), Dominika Salkova kommt auf 60 % (6:4). Oceane Dodins stärkster Belag ist eigentlich Sand. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Dominika Salkova mit 67 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": true
-  },
-  {
-   "start": "2026-07-22T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Livesport Prague Open",
-   "round": "2. Runde",
-   "surface": "Hartplatz",
-   "p1": {
-    "name": "Daria Snigur",
-    "rank": 54,
+   "p2": {
+    "name": "Nikola Bartunkova",
+    "rank": 44,
     "form": [
-     "N",
+     "S",
      "N",
      "S",
      "S",
      "N"
     ],
-    "elo": null,
+    "elo": 1677,
     "onSurface": {
-     "w": 6,
+     "w": 9,
      "l": 7,
-     "pct": 0.462
+     "pct": 0.562
     },
     "favSurface": "Rasen"
    },
-   "p2": {
-    "name": "Ayla Aksu",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.7863,
+   "pP1": 0.3283,
    "model": {
-    "n1": 32,
-    "n2": 0,
-    "pRank": 0.7863
+    "n1": 12,
+    "n2": 28,
+    "elo1": 1530,
+    "elo2": 1677,
+    "pElo": 0.3,
+    "pRank": 0.3707,
+    "wElo": 0.6
    },
    "h2h": [],
-   "analysis": "Daria Snigur (#54) trifft auf Ayla Aksu, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Hartplatz liegt die Siegquote von Daria Snigur zuletzt bei 46 % (6:7). Daria Snigurs stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Daria Snigur mit 79 % vorn.",
+   "analysis": "Lanlana Tararudee (Weltrangliste #82) trifft auf Nikola Bartunkova (#44). Die aktuelle Form spricht für Nikola Bartunkova: 3 Siege aus den letzten 5 Matches, Lanlana Tararudee holte nur 1. Auf Hartplatz liegt die Siegquote von Lanlana Tararudee zuletzt bei 40 % (4:6), Nikola Bartunkova kommt auf 56 % (9:7). Nikola Bartunkovas stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Nikola Bartunkova mit 67 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   },
   {
-   "start": "2026-07-22T06:00:00+02:00",
+   "start": "2026-07-23T06:00:00+02:00",
    "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
+   "tournament": "Livesport Prague Open",
    "round": "2. Runde",
-   "surface": "Sand",
+   "surface": "Hartplatz",
    "p1": {
-    "name": "Lola Radivojevic",
-    "rank": null,
-    "form": [],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "p2": {
-    "name": "Jennifer Ruggeri",
-    "rank": 265,
-    "form": [
-     "N"
-    ],
-    "elo": null,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.5124,
-   "model": {
-    "n1": 0,
-    "n2": 1,
-    "pRank": 0.5124
-   },
-   "h2h": [],
-   "analysis": "Lola Radivojevic – aktuell ohne Top-Ranking – trifft auf Jennifer Ruggeri (#265). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lola Radivojevic mit 51 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": true
-  },
-  {
-   "start": "2026-07-22T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
-   "round": "2. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Yasmine Kabbaj",
-    "rank": 334,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1481,
-    "onSurface": {
-     "w": 2,
-     "l": 3,
-     "pct": 0.4
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Ekaterine Gorgodze",
-    "rank": 164,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1372,
-    "onSurface": null,
-    "favSurface": null
-   },
-   "pP1": 0.4279,
-   "model": {
-    "n1": 5,
-    "n2": 7,
-    "elo1": 1481,
-    "elo2": 1372,
-    "pElo": 0.6518,
-    "pRank": 0.3533,
-    "wElo": 0.25
-   },
-   "h2h": [],
-   "analysis": "Yasmine Kabbaj (Weltrangliste #334) trifft auf Ekaterine Gorgodze (#164). Die aktuelle Form spricht für Yasmine Kabbaj: 2 Siege aus den letzten 5 Matches, Ekaterine Gorgodze holte nur 0. Auf Sand liegt die Siegquote von Yasmine Kabbaj zuletzt bei 40 % (2:3). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Ekaterine Gorgodze mit 57 % vorn. Bemerkenswert: Die Weltrangliste würde eher Ekaterine Gorgodze favorisieren – die Formkurve spricht aber dagegen.",
-   "unconfirmed": false,
-   "timeTBD": true
-  },
-  {
-   "start": "2026-07-22T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "Palermo Ladies Open",
-   "round": "2. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Erika Andreeva",
-    "rank": null,
-    "form": [
-     "N",
-     "N",
-     "N",
-     "N",
-     "N"
-    ],
-    "elo": 1355,
-    "onSurface": {
-     "w": 3,
-     "l": 11,
-     "pct": 0.214
-    },
-    "favSurface": "Hartplatz"
-   },
-   "p2": {
-    "name": "Fiona Ferro",
-    "rank": 181,
-    "form": [
-     "N",
-     "N",
-     "S",
-     "N",
-     "N"
-    ],
-    "elo": 1389,
-    "onSurface": {
-     "w": 4,
-     "l": 12,
-     "pct": 0.25
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.4522,
-   "model": {
-    "n1": 49,
-    "n2": 22,
-    "elo1": 1355,
-    "elo2": 1389,
-    "pElo": 0.4522,
-    "pRank": 0.4318,
-    "wElo": 1.0
-   },
-   "h2h": [
-    {
-     "year": "2024",
-     "tourney": "Internationaux de Strasbourg",
-     "surface": "Sand",
-     "winner": "Fiona Ferro",
-     "winnerIsP1": false,
-     "score": "6:2 6:2",
-     "rnd": "1st Round"
-    }
-   ],
-   "analysis": "Erika Andreeva – aktuell ohne Top-Ranking – trifft auf Fiona Ferro (#181). Auf Sand liegt die Siegquote von Erika Andreeva zuletzt bei 21 % (3:11), Fiona Ferro kommt auf 25 % (4:12). Erika Andreevas stärkster Belag ist eigentlich Hartplatz. Das bisher einzige Duell (2024, Internationaux de Strasbourg) gewann Fiona Ferro mit 6:2 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Fiona Ferro mit 55 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": true
-  },
-  {
-   "start": "2026-07-22T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Paula Badosa",
-    "rank": 93,
-    "form": [
-     "S",
-     "S",
-     "S",
-     "S",
-     "N"
-    ],
-    "elo": 1685,
-    "onSurface": {
-     "w": 34,
-     "l": 21,
-     "pct": 0.618
-    },
-    "favSurface": "Sand"
-   },
-   "p2": {
-    "name": "Katarzyna Kawa",
-    "rank": 131,
-    "form": [
-     "S",
-     "S",
-     "N",
-     "S",
-     "N"
-    ],
-    "elo": 1537,
-    "onSurface": {
-     "w": 7,
-     "l": 5,
-     "pct": 0.583
-    },
-    "favSurface": "Sand"
-   },
-   "pP1": 0.701,
-   "model": {
-    "n1": 190,
-    "n2": 23,
-    "elo1": 1685,
-    "elo2": 1537,
-    "pElo": 0.701,
-    "pRank": 0.5723,
-    "wElo": 1.0
-   },
-   "h2h": [],
-   "analysis": "Paula Badosa (Weltrangliste #93) trifft auf Katarzyna Kawa (#131). Auf Sand liegt die Siegquote von Paula Badosa zuletzt bei 62 % (34:21), Katarzyna Kawa kommt auf 58 % (7:5). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Paula Badosa mit 70 % vorn.",
-   "unconfirmed": false,
-   "timeTBD": true
-  },
-  {
-   "start": "2026-07-22T06:00:00+02:00",
-   "tour": "WTA",
-   "tournament": "MSC Hamburg Ladies Open",
-   "round": "1. Runde",
-   "surface": "Sand",
-   "p1": {
-    "name": "Mayar Sherif",
-    "rank": 73,
+    "name": "Barbora Krejcikova",
+    "rank": 26,
     "form": [
      "S",
      "S",
@@ -3026,17 +1976,170 @@
      "S",
      "S"
     ],
-    "elo": 1593,
+    "elo": 1837,
     "onSurface": {
-     "w": 31,
-     "l": 22,
-     "pct": 0.585
+     "w": 71,
+     "l": 39,
+     "pct": 0.645
     },
-    "favSurface": "Sand"
+    "favSurface": "Rasen"
    },
    "p2": {
-    "name": "Simona Waltert",
-    "rank": 91,
+    "name": "Lucie Havlickova",
+    "rank": 276,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1446,
+    "onSurface": {
+     "w": 2,
+     "l": 4,
+     "pct": 0.333
+    },
+    "favSurface": "Hartplatz"
+   },
+   "pP1": 0.8885,
+   "model": {
+    "n1": 168,
+    "n2": 6,
+    "elo1": 1837,
+    "elo2": 1446,
+    "pElo": 0.9047,
+    "pRank": 0.8816,
+    "wElo": 0.3
+   },
+   "h2h": [],
+   "analysis": "Barbora Krejcikova (Weltrangliste #26) trifft auf Lucie Havlickova (#276). Die aktuelle Form spricht für Barbora Krejcikova: 5 Siege aus den letzten 5 Matches, Lucie Havlickova holte nur 1. Auf Hartplatz liegt die Siegquote von Barbora Krejcikova zuletzt bei 64 % (71:39), Lucie Havlickova kommt auf 33 % (2:4). Barbora Krejcikovas stärkster Belag ist eigentlich Rasen. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Barbora Krejcikova mit 89 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Livesport Prague Open",
+   "round": "2. Runde",
+   "surface": "Hartplatz",
+   "p1": {
+    "name": "Sara Bejlek",
+    "rank": 40,
+    "form": [
+     "S",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1653,
+    "onSurface": {
+     "w": 11,
+     "l": 12,
+     "pct": 0.478
+    },
+    "favSurface": "Hartplatz"
+   },
+   "p2": {
+    "name": "Maria Timofeeva",
+    "rank": 84,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1440,
+    "onSurface": {
+     "w": 5,
+     "l": 6,
+     "pct": 0.455
+    },
+    "favSurface": "Hartplatz"
+   },
+   "pP1": 0.7732,
+   "model": {
+    "n1": 40,
+    "n2": 27,
+    "elo1": 1653,
+    "elo2": 1440,
+    "pElo": 0.7732,
+    "pRank": 0.6526,
+    "wElo": 1.0
+   },
+   "h2h": [],
+   "analysis": "Sara Bejlek (Weltrangliste #40) trifft auf Maria Timofeeva (#84). Die aktuelle Form spricht für Sara Bejlek: 3 Siege aus den letzten 5 Matches, Maria Timofeeva holte nur 1. Auf Hartplatz liegt die Siegquote von Sara Bejlek zuletzt bei 48 % (11:12), Maria Timofeeva kommt auf 46 % (5:6). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Sara Bejlek mit 77 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Livesport Prague Open",
+   "round": "2. Runde",
+   "surface": "Hartplatz",
+   "p1": {
+    "name": "Lilli Tagger",
+    "rank": 74,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1556,
+    "onSurface": {
+     "w": 7,
+     "l": 4,
+     "pct": 0.636
+    },
+    "favSurface": "Hartplatz"
+   },
+   "p2": {
+    "name": "Mai Hontama",
+    "rank": 202,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1374,
+    "onSurface": {
+     "w": 11,
+     "l": 22,
+     "pct": 0.333
+    },
+    "favSurface": "Hartplatz"
+   },
+   "pP1": 0.7367,
+   "model": {
+    "n1": 18,
+    "n2": 35,
+    "elo1": 1556,
+    "elo2": 1374,
+    "pElo": 0.7406,
+    "pRank": 0.7013,
+    "wElo": 0.9
+   },
+   "h2h": [],
+   "analysis": "Lilli Tagger (Weltrangliste #74) trifft auf Mai Hontama (#202). Auf Hartplatz liegt die Siegquote von Lilli Tagger zuletzt bei 64 % (7:4), Mai Hontama kommt auf 33 % (11:22). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Lilli Tagger mit 74 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Palermo Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Lucia Bronzetti",
+    "rank": 120,
     "form": [
      "N",
      "N",
@@ -3044,36 +2147,287 @@
      "N",
      "N"
     ],
-    "elo": 1459,
+    "elo": null,
     "onSurface": {
-     "w": 9,
-     "l": 12,
+     "w": 18,
+     "l": 24,
      "pct": 0.429
     },
     "favSurface": "Sand"
    },
-   "pP1": 0.6833,
+   "p2": {
+    "name": "Dalila Spiteri",
+    "rank": null,
+    "form": [
+     "N"
+    ],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.6511,
    "model": {
-    "n1": 102,
-    "n2": 31,
-    "elo1": 1593,
-    "elo2": 1459,
-    "pElo": 0.6833,
-    "pRank": 0.5467,
+    "n1": 151,
+    "n2": 1,
+    "pRank": 0.6511
+   },
+   "h2h": [],
+   "analysis": "Lucia Bronzetti (#120) trifft auf Dalila Spiteri, der/die aktuell außerhalb der Top-Platzierungen geführt wird. Auf Sand liegt die Siegquote von Lucia Bronzetti zuletzt bei 43 % (18:24). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Lucia Bronzetti mit 65 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Palermo Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Noemi Basiletti",
+    "rank": 427,
+    "form": [
+     "S",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Mina Hodzic",
+    "rank": 334,
+    "form": [
+     "N"
+    ],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.448,
+   "model": {
+    "n1": 2,
+    "n2": 1,
+    "pRank": 0.448
+   },
+   "h2h": [],
+   "analysis": "Noemi Basiletti (Weltrangliste #427) trifft auf Mina Hodzic (#334). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Mina Hodzic mit 55 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Palermo Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Alice Rame",
+    "rank": null,
+    "form": [],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "p2": {
+    "name": "Alevtina Ibragimova",
+    "rank": 275,
+    "form": [
+     "S",
+     "N"
+    ],
+    "elo": null,
+    "onSurface": null,
+    "favSurface": null
+   },
+   "pP1": 0.5202,
+   "model": {
+    "n1": 0,
+    "n2": 2,
+    "pRank": 0.5202
+   },
+   "h2h": [],
+   "analysis": "Alice Rame – aktuell ohne Top-Ranking – trifft auf Alevtina Ibragimova (#275). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Mangels ausreichender Match-Historie stützt sich die Einschätzung auf die Weltrangliste: Alice Rame mit 52 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "Palermo Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Miriam Bulgaru",
+    "rank": 248,
+    "form": [
+     "S",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1331,
+    "onSurface": {
+     "w": 1,
+     "l": 5,
+     "pct": 0.167
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Francesca Jones",
+    "rank": 113,
+    "form": [
+     "N",
+     "N",
+     "N",
+     "N",
+     "N"
+    ],
+    "elo": 1401,
+    "onSurface": {
+     "w": 6,
+     "l": 8,
+     "pct": 0.429
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.3662,
+   "model": {
+    "n1": 9,
+    "n2": 45,
+    "elo1": 1331,
+    "elo2": 1401,
+    "pElo": 0.3995,
+    "pRank": 0.3389,
+    "wElo": 0.45
+   },
+   "h2h": [],
+   "analysis": "Miriam Bulgaru (Weltrangliste #248) trifft auf Francesca Jones (#113). Auf Sand liegt die Siegquote von Miriam Bulgaru zuletzt bei 17 % (1:5), Francesca Jones kommt auf 43 % (6:8). Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Francesca Jones mit 63 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "MSC Hamburg Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Leyre Romero Gormaz",
+    "rank": 146,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "N",
+     "N"
+    ],
+    "elo": 1488,
+    "onSurface": {
+     "w": 3,
+     "l": 4,
+     "pct": 0.429
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Oleksandra Oliynykova",
+    "rank": 45,
+    "form": [
+     "N",
+     "S",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1622,
+    "onSurface": {
+     "w": 9,
+     "l": 7,
+     "pct": 0.562
+    },
+    "favSurface": "Hartplatz"
+   },
+   "pP1": 0.2879,
+   "model": {
+    "n1": 8,
+    "n2": 22,
+    "elo1": 1488,
+    "elo2": 1622,
+    "pElo": 0.3164,
+    "pRank": 0.2689,
+    "wElo": 0.4
+   },
+   "h2h": [],
+   "analysis": "Leyre Romero Gormaz (Weltrangliste #146) trifft auf Oleksandra Oliynykova (#45). Auf Sand liegt die Siegquote von Leyre Romero Gormaz zuletzt bei 43 % (3:4), Oleksandra Oliynykova kommt auf 56 % (9:7). Oleksandra Oliynykovas stärkster Belag ist eigentlich Hartplatz. Ein früheres Aufeinandertreffen auf der Tour ist nicht verzeichnet – es ist das erste direkte Duell. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Oleksandra Oliynykova mit 71 % vorn.",
+   "unconfirmed": false,
+   "timeTBD": true
+  },
+  {
+   "start": "2026-07-23T06:00:00+02:00",
+   "tour": "WTA",
+   "tournament": "MSC Hamburg Ladies Open",
+   "round": "2. Runde",
+   "surface": "Sand",
+   "p1": {
+    "name": "Yulia Putintseva",
+    "rank": 79,
+    "form": [
+     "N",
+     "N",
+     "S",
+     "S",
+     "N"
+    ],
+    "elo": 1615,
+    "onSurface": {
+     "w": 36,
+     "l": 28,
+     "pct": 0.562
+    },
+    "favSurface": "Sand"
+   },
+   "p2": {
+    "name": "Elina Avanesyan",
+    "rank": 224,
+    "form": [
+     "N",
+     "S",
+     "N",
+     "S",
+     "N"
+    ],
+    "elo": 1569,
+    "onSurface": {
+     "w": 25,
+     "l": 18,
+     "pct": 0.581
+    },
+    "favSurface": "Sand"
+   },
+   "pP1": 0.5655,
+   "model": {
+    "n1": 197,
+    "n2": 107,
+    "elo1": 1615,
+    "elo2": 1569,
+    "pElo": 0.5655,
+    "pRank": 0.708,
     "wElo": 1.0
    },
    "h2h": [
     {
-     "year": "2022",
-     "tourney": "Parma Ladies Open",
-     "surface": "Sand",
-     "winner": "Mayar Sherif",
+     "year": "2025",
+     "tourney": "Australian Open",
+     "surface": "Hartplatz",
+     "winner": "Yulia Putintseva",
      "winnerIsP1": true,
-     "score": "6:3 7:6",
-     "rnd": "2nd Round"
+     "score": "4:6 7:5 6:2",
+     "rnd": "1st Round"
     }
    ],
-   "analysis": "Mayar Sherif (Weltrangliste #73) trifft auf Simona Waltert (#91). Die aktuelle Form spricht für Mayar Sherif: 5 Siege aus den letzten 5 Matches, Simona Waltert holte nur 0. Auf Sand liegt die Siegquote von Mayar Sherif zuletzt bei 58 % (31:22), Simona Waltert kommt auf 43 % (9:12). Das bisher einzige Duell (2022, Parma Ladies Open) gewann Mayar Sherif mit 6:3 7:6. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Mayar Sherif mit 68 % vorn.",
+   "analysis": "Yulia Putintseva (Weltrangliste #79) trifft auf Elina Avanesyan (#224). Auf Sand liegt die Siegquote von Yulia Putintseva zuletzt bei 56 % (36:28), Elina Avanesyan kommt auf 58 % (25:18). Das bisher einzige Duell (2025, Australian Open) gewann Yulia Putintseva mit 4:6 7:5 6:2. Das Formmodell (Elo aus Ergebnissen, Gegnerstärke, Belag und Head-to-Head) sieht Yulia Putintseva mit 57 % vorn.",
    "unconfirmed": false,
    "timeTBD": true
   }
@@ -3092,9 +2446,9 @@
  },
  "stats": {
   "overall": {
-   "n": 105,
-   "correct": 69,
-   "pct": 0.6571
+   "n": 144,
+   "correct": 95,
+   "pct": 0.6597
   },
   "football": {
    "n": 3,
@@ -3102,288 +2456,288 @@
    "pct": 0.3333
   },
   "tennis": {
-   "n": 102,
-   "correct": 68,
+   "n": 141,
+   "correct": 94,
    "pct": 0.6667
   },
   "exact": {
    "n": 3,
    "correct": 1
   },
-  "open": 56,
+  "open": 47,
   "recent": [
    {
-    "date": "2026-07-20",
-    "comp": "ATP · Millennium Estoril Open",
-    "label": "Pedro Martinez – Henrique Rocha",
-    "tipName": "Henrique Rocha",
-    "tip": "P2",
-    "prob": 0.5305,
-    "result": "Sieger: P1",
-    "correct": false,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-20",
-    "comp": "WTA · MSC Hamburg Ladies Open",
-    "label": "Moyuka Uchijima – Anna Bondar",
-    "tipName": "Anna Bondar",
-    "tip": "P2",
-    "prob": 0.5267,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-20",
+    "date": "2026-07-21",
     "comp": "WTA · Palermo Ladies Open",
-    "label": "Ane Mintegi Del Olmo – Ekaterine Gorgodze",
-    "tipName": "Ekaterine Gorgodze",
-    "tip": "P2",
-    "prob": 0.5886,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-20",
-    "comp": "WTA · Palermo Ladies Open",
-    "label": "Elizara Yaneva – Federica Urgesi",
-    "tipName": "Elizara Yaneva",
+    "label": "Lucia Bronzetti – Ilary Pistola",
+    "tipName": "Lucia Bronzetti",
     "tip": "P1",
-    "prob": 0.6036,
-    "result": "Sieger: P2",
-    "correct": false,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-20",
-    "comp": "WTA · Palermo Ladies Open",
-    "label": "Ren Yufei – Fiona Ferro",
-    "tipName": "Fiona Ferro",
-    "tip": "P2",
-    "prob": 0.5682,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-19",
-    "comp": "WM",
-    "label": "Spanien – Argentinien",
-    "tipName": "Spanien",
-    "tip": "1",
-    "prob": 0.7108,
-    "result": "1:0",
-    "correct": true,
-    "sport": "fb"
-   },
-   {
-    "date": "2026-07-18",
-    "comp": "WM",
-    "label": "Frankreich – England",
-    "tipName": "Frankreich",
-    "tip": "1",
-    "prob": 0.7108,
-    "result": "4:6",
-    "correct": false,
-    "sport": "fb"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "WTA · Enka Open",
-    "label": "Harmony Tan – Hanne Vandewinkel",
-    "tipName": "Hanne Vandewinkel",
-    "tip": "P2",
-    "prob": 0.649,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "ATP · Nordea Open",
-    "label": "Stefano Travaglia – Adolfo Daniel Vallejo",
-    "tipName": "Adolfo Daniel Vallejo",
-    "tip": "P2",
-    "prob": 0.6538,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "ATP · Nordea Open",
-    "label": "Luciano Darderi – Nuno Borges",
-    "tipName": "Luciano Darderi",
-    "tip": "P1",
-    "prob": 0.7113,
+    "prob": 0.6511,
     "result": "Sieger: P1",
     "correct": true,
     "sport": "tn"
    },
    {
-    "date": "2026-07-17",
-    "comp": "ATP · EFG Swiss Open Gstaad",
-    "label": "Valentin Vacherot – Raphael Collignon",
-    "tipName": "Valentin Vacherot",
-    "tip": "P1",
-    "prob": 0.6432,
+    "date": "2026-07-21",
+    "comp": "WTA · Palermo Ladies Open",
+    "label": "Caijsa Hennemann – Miriam Bulgaru",
+    "tipName": "Miriam Bulgaru",
+    "tip": "P2",
+    "prob": 0.5347,
     "result": "Sieger: P2",
-    "correct": false,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "WTA · Vanda Pharmaceuticals Athens Open",
-    "label": "Maria Sakkari – Alycia Parks",
-    "tipName": "Maria Sakkari",
-    "tip": "P1",
-    "prob": 0.6323,
-    "result": "Sieger: P1",
     "correct": true,
     "sport": "tn"
    },
    {
-    "date": "2026-07-17",
-    "comp": "WTA · Unicredit Iasi Open",
-    "label": "Petra Marcinko – Tamara Zidansek",
-    "tipName": "Petra Marcinko",
-    "tip": "P1",
-    "prob": 0.7334,
+    "date": "2026-07-21",
+    "comp": "WTA · Palermo Ladies Open",
+    "label": "Anastasia Tikhonova – Alice Rame",
+    "tipName": "Alice Rame",
+    "tip": "P2",
+    "prob": 0.7888,
     "result": "Sieger: P2",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Palermo Ladies Open",
+    "label": "Alevtina Ibragimova – Tamara Zidansek",
+    "tipName": "Tamara Zidansek",
+    "tip": "P2",
+    "prob": 0.6482,
+    "result": "Sieger: P1",
     "correct": false,
     "sport": "tn"
    },
    {
-    "date": "2026-07-17",
-    "comp": "WTA · ATV Bancomat Tennis Open",
-    "label": "Noma Noha Akugue – Francesca Jones",
+    "date": "2026-07-21",
+    "comp": "WTA · Palermo Ladies Open",
+    "label": "Mina Hodzic – Caroline Werner",
+    "tipName": "Caroline Werner",
+    "tip": "P2",
+    "prob": 0.5443,
+    "result": "Sieger: P1",
+    "correct": false,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Palermo Ladies Open",
+    "label": "Clara Burel – Anastasia Abbagnato",
+    "tipName": "Anastasia Abbagnato",
+    "tip": "P2",
+    "prob": 0.6869,
+    "result": "Sieger: P1",
+    "correct": false,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Palermo Ladies Open",
+    "label": "Darya Astakhova – Francesca Jones",
     "tipName": "Francesca Jones",
     "tip": "P2",
-    "prob": 0.5407,
+    "prob": 0.6626,
     "result": "Sieger: P2",
     "correct": true,
     "sport": "tn"
    },
    {
-    "date": "2026-07-17",
-    "comp": "WTA · Generali Open Ladies Kitzbühel",
-    "label": "Sinja Kraus – Erika Andreeva",
-    "tipName": "Sinja Kraus",
+    "date": "2026-07-21",
+    "comp": "WTA · MSC Hamburg Ladies Open",
+    "label": "Panna Udvardy – Elena Pridankina",
+    "tipName": "Panna Udvardy",
     "tip": "P1",
-    "prob": 0.6967,
+    "prob": 0.712,
     "result": "Sieger: P1",
     "correct": true,
     "sport": "tn"
    },
    {
-    "date": "2026-07-17",
-    "comp": "ATP · EFG Swiss Open Gstaad",
-    "label": "Dominic Stricker – Aleksandr Shevchenko",
-    "tipName": "Aleksandr Shevchenko",
+    "date": "2026-07-21",
+    "comp": "ATP · Generali Open",
+    "label": "Marco Trungelliti – Juan Manuel Cerundolo",
+    "tipName": "Juan Manuel Cerundolo",
     "tip": "P2",
-    "prob": 0.6691,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "ATP · EFG Swiss Open Gstaad",
-    "label": "Quentin Halys – Alexander Bublik",
-    "tipName": "Alexander Bublik",
-    "tip": "P2",
-    "prob": 0.8565,
+    "prob": 0.6331,
     "result": "Sieger: P1",
     "correct": false,
     "sport": "tn"
    },
    {
-    "date": "2026-07-17",
-    "comp": "WTA · Unicredit Iasi Open",
-    "label": "Mayar Sherif – Yulia Putintseva",
+    "date": "2026-07-21",
+    "comp": "ATP · Generali Open",
+    "label": "Aleksandr Shevchenko – Jan-Lennard Struff",
+    "tipName": "Jan-Lennard Struff",
+    "tip": "P2",
+    "prob": 0.6479,
+    "result": "Sieger: P2",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Livesport Prague Open",
+    "label": "Yuan Yue – Nikola Bartunkova",
+    "tipName": "Nikola Bartunkova",
+    "tip": "P2",
+    "prob": 0.7026,
+    "result": "Sieger: P2",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Livesport Prague Open",
+    "label": "Aliaksandra Sasnovich – Maria Timofeeva",
+    "tipName": "Aliaksandra Sasnovich",
+    "tip": "P1",
+    "prob": 0.7039,
+    "result": "Sieger: P2",
+    "correct": false,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Livesport Prague Open",
+    "label": "Mai Hontama – Diane Parry",
+    "tipName": "Diane Parry",
+    "tip": "P2",
+    "prob": 0.8128,
+    "result": "Sieger: P1",
+    "correct": false,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · MSC Hamburg Ladies Open",
+    "label": "Sinja Kraus – Darja Semenistaja",
+    "tipName": "Darja Semenistaja",
+    "tip": "P2",
+    "prob": 0.5691,
+    "result": "Sieger: P1",
+    "correct": false,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · MSC Hamburg Ladies Open",
+    "label": "Yulia Putintseva – Mona Barthel",
     "tipName": "Yulia Putintseva",
-    "tip": "P2",
-    "prob": 0.5356,
+    "tip": "P1",
+    "prob": 0.7143,
     "result": "Sieger: P1",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · MSC Hamburg Ladies Open",
+    "label": "Veronika Erjavec – Leyre Romero Gormaz",
+    "tipName": "Leyre Romero Gormaz",
+    "tip": "P2",
+    "prob": 0.528,
+    "result": "Sieger: P2",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "ATP · Generali Open",
+    "label": "Miomir Kecmanovic – Sebastian Baez",
+    "tipName": "Sebastian Baez",
+    "tip": "P2",
+    "prob": 0.505,
+    "result": "Sieger: P2",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "ATP · Generali Open",
+    "label": "Quentin Halys – Laslo Djere",
+    "tipName": "Quentin Halys",
+    "tip": "P1",
+    "prob": 0.5723,
+    "result": "Sieger: P1",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Livesport Prague Open",
+    "label": "Maya Joint – Laura Samson",
+    "tipName": "Maya Joint",
+    "tip": "P1",
+    "prob": 0.6215,
+    "result": "Sieger: P1",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Livesport Prague Open",
+    "label": "Tereza Valentova – Priscilla Hon",
+    "tipName": "Tereza Valentova",
+    "tip": "P1",
+    "prob": 0.6473,
+    "result": "Sieger: P1",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · Livesport Prague Open",
+    "label": "Lilli Tagger – Gao Xinyu",
+    "tipName": "Lilli Tagger",
+    "tip": "P1",
+    "prob": 0.7378,
+    "result": "Sieger: P1",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · MSC Hamburg Ladies Open",
+    "label": "Noma Noha Akugue – Valentina Steiner",
+    "tipName": "Noma Noha Akugue",
+    "tip": "P1",
+    "prob": 0.7916,
+    "result": "Sieger: P1",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "ATP · Millennium Estoril Open",
+    "label": "Pablo Carreno Busta – Vilius Gaubas",
+    "tipName": "Pablo Carreno Busta",
+    "tip": "P1",
+    "prob": 0.6659,
+    "result": "Sieger: P1",
+    "correct": true,
+    "sport": "tn"
+   },
+   {
+    "date": "2026-07-21",
+    "comp": "WTA · MSC Hamburg Ladies Open",
+    "label": "Jule Niemeier – Maria Lourdes Carle",
+    "tipName": "Jule Niemeier",
+    "tip": "P1",
+    "prob": 0.5648,
+    "result": "Sieger: P2",
     "correct": false,
     "sport": "tn"
    },
    {
-    "date": "2026-07-17",
-    "comp": "WTA · Generali Open Ladies Kitzbühel",
-    "label": "Jeline Vandromme – Julia Grabher",
-    "tipName": "Julia Grabher",
+    "date": "2026-07-21",
+    "comp": "ATP · Generali Open",
+    "label": "Sebastian Ofner – Alex Molcan",
+    "tipName": "Alex Molcan",
     "tip": "P2",
-    "prob": 0.5226,
+    "prob": 0.7168,
     "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "WTA · Generali Open Ladies Kitzbühel",
-    "label": "Maria Lourdes Carle – Marina Bassols Ribera",
-    "tipName": "Marina Bassols Ribera",
-    "tip": "P2",
-    "prob": 0.6151,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "ATP · EFG Swiss Open Gstaad",
-    "label": "Casper Ruud – Juan Manuel Cerundolo",
-    "tipName": "Casper Ruud",
-    "tip": "P1",
-    "prob": 0.7418,
-    "result": "Sieger: P2",
-    "correct": false,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "WTA · Unicredit Iasi Open",
-    "label": "Clara Burel – Oleksandra Oliynykova",
-    "tipName": "Oleksandra Oliynykova",
-    "tip": "P2",
-    "prob": 0.9453,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "ATP · Nordea Open",
-    "label": "Sebastian Baez – Andrey Rublev",
-    "tipName": "Andrey Rublev",
-    "tip": "P2",
-    "prob": 0.7436,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "WTA · Enka Open",
-    "label": "Tatiana Prozorova – Anastasia Zakharova",
-    "tipName": "Anastasia Zakharova",
-    "tip": "P2",
-    "prob": 0.6112,
-    "result": "Sieger: P2",
-    "correct": true,
-    "sport": "tn"
-   },
-   {
-    "date": "2026-07-17",
-    "comp": "WTA · Enka Open",
-    "label": "Lanlana Tararudee – Vera Zvonareva",
-    "tipName": "Lanlana Tararudee",
-    "tip": "P1",
-    "prob": 0.7474,
-    "result": "Sieger: P1",
     "correct": true,
     "sport": "tn"
    }
