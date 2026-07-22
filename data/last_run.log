@@ -9,18 +9,18 @@
 /tmp/tennisdata/atp_2026.xlsx: OK über http://www.tennis-data.co.uk (269755 Bytes)
 /tmp/tennisdata/wta_2026.xlsx: OK über http://www.tennis-data.co.uk (255350 Bytes)
 total 3796
-drwxr-xr-x  2 runner runner   4096 Jul 22 06:27 .
-drwxrwxrwt 14 root   root    12288 Jul 22 06:26 ..
--rw-r--r--  1 runner runner 417917 Jul 22 06:26 atp_2022.xlsx
--rw-r--r--  1 runner runner 447088 Jul 22 06:26 atp_2023.xlsx
--rw-r--r--  1 runner runner 445729 Jul 22 06:27 atp_2024.xlsx
--rw-r--r--  1 runner runner 426707 Jul 22 06:27 atp_2025.xlsx
--rw-r--r--  1 runner runner 269755 Jul 22 06:27 atp_2026.xlsx
--rw-r--r--  1 runner runner 370069 Jul 22 06:26 wta_2022.xlsx
--rw-r--r--  1 runner runner 407251 Jul 22 06:27 wta_2023.xlsx
--rw-r--r--  1 runner runner 406783 Jul 22 06:27 wta_2024.xlsx
--rw-r--r--  1 runner runner 399398 Jul 22 06:27 wta_2025.xlsx
--rw-r--r--  1 runner runner 255350 Jul 22 06:27 wta_2026.xlsx
+drwxr-xr-x  2 runner runner   4096 Jul 22 14:41 .
+drwxrwxrwt 14 root   root    12288 Jul 22 14:40 ..
+-rw-r--r--  1 runner runner 417917 Jul 22 14:41 atp_2022.xlsx
+-rw-r--r--  1 runner runner 447088 Jul 22 14:41 atp_2023.xlsx
+-rw-r--r--  1 runner runner 445729 Jul 22 14:41 atp_2024.xlsx
+-rw-r--r--  1 runner runner 426707 Jul 22 14:41 atp_2025.xlsx
+-rw-r--r--  1 runner runner 269755 Jul 22 14:41 atp_2026.xlsx
+-rw-r--r--  1 runner runner 370069 Jul 22 14:41 wta_2022.xlsx
+-rw-r--r--  1 runner runner 407251 Jul 22 14:41 wta_2023.xlsx
+-rw-r--r--  1 runner runner 406783 Jul 22 14:41 wta_2024.xlsx
+-rw-r--r--  1 runner runner 399398 Jul 22 14:41 wta_2025.xlsx
+-rw-r--r--  1 runner runner 255350 Jul 22 14:41 wta_2026.xlsx
   WARN: https://www.football-data.co.uk/mmz4281/2627/E0.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/I1.csv nicht erreichbar (HTTP Error 404: Not Found)
   WARN: https://www.football-data.co.uk/mmz4281/2627/SP1.csv nicht erreichbar (HTTP Error 404: Not Found)
@@ -98,6 +98,6 @@ fixtures.csv: 12 Spiele mit Quoten
   Historie: ATP 12356 Matches, WTA 11466 Matches
   Elo ATP: 541 Spieler bewertet
   Elo WTA: 567 Spieler bewertet
-  41 Tennis-Matches in den naechsten 3 Tagen
-  Tipp-Log: 191 Eintraege, 144 ausgewertet, 95 richtig
+  28 Tennis-Matches in den naechsten 3 Tagen
+  Tipp-Log: 197 Eintraege, 145 ausgewertet, 96 richtig
 OK -> /home/runner/work/sport-radar/sport-radar/scripts/../data/data.json
