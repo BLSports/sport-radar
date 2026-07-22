@@ -1,14 +1,8 @@
 name: Tägliches Daten-Update
 
+# Stillgelegt: Das Dashboard läuft jetzt im Repository blsports.github.io
 on:
-  schedule:
-    # 3x täglich (UTC): ~06:00, ~12:00, ~17:00 deutscher Sommerzeit
-    - cron: "0 4 * * *"
-    - cron: "0 10 * * *"
-    - cron: "0 15 * * *"
-  workflow_dispatch: {}   # manueller Start über den Actions-Tab
-  push:
-    branches: [main]      # läuft auch nach jedem Push (z.B. bei Code-Änderungen)
+  workflow_dispatch: {}   # nur noch manuell startbar
 
 permissions:
   contents: write
